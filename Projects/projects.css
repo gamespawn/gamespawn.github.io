@@ -1,11 +1,11 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300);
 
-
 /* -------------- Clock -------------- */
+
 
 .clock{
     border-radius: 60px;
-    border: 3px solid black;
+    border: 3px solid white;
     height: 80px;
     width: 80px;
     position: relative;
@@ -20,7 +20,7 @@
 .clock:after{
     content: "";
     position: absolute;
-    background-color: black;
+    background-color: white;
     top:2px;
     left: 48%;
     height: 38px;
@@ -45,7 +45,7 @@
 .clock:before{
     content: "";
     position: absolute;
-    background-color: black;
+    background-color: white;
     top:6px;
     left: 48%;
     height: 35px;
@@ -65,4 +65,43 @@
 @keyframes ptAiguille{
     0%{transform:rotate(0deg);}
     100%{transform:rotate(360deg);}
+}
+
+/* -------------- Clock -------------- */
+
+body {
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: steelblue;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+.active {
+    background-color: darkslategray;
 }
