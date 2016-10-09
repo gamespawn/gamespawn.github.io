@@ -1,5 +1,13 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300);
 
+/* Colors
+# 00 00 00 Black
+# 06 2F 4F Ink
+# 81 37 72 Posy
+# 88 26 01 Embers
+# 0E 0B 16 Void
+*/
+
 /* -------------- Clock -------------- */
 
 
@@ -69,21 +77,33 @@
 
 /* -------------- Clock -------------- */
 
-body {
-    background-color: black;
-    background-color: rgba(0, 0, 0, 0.9);
-    color: white;
+h1 {
+    font-size: 300%;
 }
 
-ul {
+body {
+    background-color: #0E0B16;
+    color: #EEEEEE;
+    margin: 0;
+}
+
+header {
+    margin-top: 80px;
+    text-align: center;
+    color: white;
+    font-style: bold;
+}
+
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: steelblue;
+    background-color: black;
+    position: fixed;
     top: 0;
-    left: 0;
     width: 100%;
+    z-index: 10;
 }
 
 li {
@@ -93,15 +113,22 @@ li {
 li a {
     display: block;
     color: white;
-    padding: 14px 16px;
+    padding: 20px 42px;
     text-decoration: none;
 }
 
 li a:hover {
-    background-color: #555;
+    background-color: gray;
     color: white;
 }
 
 .active {
-    background-color: darkslategray;
+    background-color: #882601;
+}
+
+p {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 150%;
 }
