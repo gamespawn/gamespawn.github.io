@@ -1,24 +1,23 @@
 window.alert("hi");
 //checksrc("test");
 
-fillImages("test");
+fillImages("test", "Images/", "image_container", 3, "700px", "700px");
 
 //Be sure to have your file names numbered. Everything has to have the same base file name.
 //You can modify this function to take in a different directory instead.
-function fillImages(filename)
+function fillImages(filename, filepath, container, maxphotos, height, width)
 {
   window.alert("Weeee");
   var bfinished = false;
-  var counter = 0;
+  counter = 0;
   while(!bfinished)
   {
     var new_img = document.createElement("IMG");
-    new_img.setAttribute("src", "Images/" + filename + counter + ".jpg");
-    new_img.setAttribute("height", "500px");
-    new_img.setAttribute("width", "500px");
-    document.getElementById("image_container").appendChild(new_img);
-    //counter++;
-    if(++counter == 3)
+    new_img.setAttribute("src", filepath + filename + counter + ".jpg");
+    new_img.setAttribute("height", height);
+    new_img.setAttribute("width", width);
+    document.getElementById(container).appendChild(new_img);
+    if(++counter == maxphotos)
     {
       bfinished = true;
     }
