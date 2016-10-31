@@ -1,0 +1,40 @@
+div.highlighted-project {
+    background-color: rgba(0, 0, 0, 0.7);
+    float: center;
+    width: 85%;
+    padding: 25px 100px 25px 100px;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    position: realtive;
+}
+
+h1.highlighted-project {
+    font-size: 200%;
+    text-align: center;
+    color: #cb3701;
+    text-shadow: 1px 1px 4px;
+}
+
+.highlighted-project p {
+    margin: auto;
+    width: 100%;
+    padding: 0;
+    font-size: 150%;
+    display: block;
+}
+
+img.highlighted-project {
+    width: 304px;
+    height: 228px;
+    float: right;
+    margin: 0 0 10px 10px;
+    opacity: 1;
+    border-style: solid;
+    border-color: #982901;
+}
+
+img.highlighted-project:hover {
+    opacity: 0.5;
+}
