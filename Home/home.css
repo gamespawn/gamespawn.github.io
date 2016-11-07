@@ -50,3 +50,29 @@ li a:hover {
     font-size: 20px;
     font-family: oswald;
 }
+#slideshow {
+    margin: 0 auto;
+    width: 50%; 
+    padding: 150px;
+    outline-style: solid;
+    outline-color: black;
+    text-align: center;
+    z-index: 1;
+}
+#workshop {
+    display: inline-block;
+    max-width: 300px;
+    padding: 20px;
+    vertical-align: top;
+    background-color: antiquewhite;
+    outline-style: solid;
+    outline-color: black;
+    z-index: 2;
+}
+#event {
+    display: inline-block;
+    padding: 20px;
+    background-color: antiquewhite;
+    max-width: 150px;
+    z-index: 2;
+}
