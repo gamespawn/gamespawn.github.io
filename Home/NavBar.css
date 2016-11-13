@@ -1,0 +1,39 @@
+/*Navigation bar*/
+nav {
+    font-size: 20px;
+    background-color: black;
+    margin: 15px;
+    padding: 15px;
+}
+/*List style type*/
+nav ul {
+    list-style-type: none;
+    position: fixed;
+    background-color: black;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    z-index: 10;
+}
+li {
+    display: inline;
+    float: left;
+    margin: 15px;
+}
+/*List link object formatting*/
+li a {
+    padding: 10px 40px;
+    font-family: oswald;
+    color: #2e92ba;
+}
+li a:link {
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #333e51;
+}
+.active {
+    background-color: #f4f5f7;
+}
