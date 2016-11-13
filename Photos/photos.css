@@ -20,10 +20,14 @@
             transform: translate(-50%,-50%);
 }
 */
-#image_table td
+#image_table tr
 {
 }
-
+img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
 #image_container
 {
   width: 100%;
