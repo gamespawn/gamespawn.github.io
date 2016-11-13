@@ -1,7 +1,13 @@
 *
 {
   background-color: aliceblue;
-  width=100%;
+  margin: 0;
+  padding: 0;
+}
+
+body
+{
+    width:40%;
 }
 
 table
@@ -13,4 +19,67 @@ table
 td
 {
     padding-left: 50px;
+}
+
+nav {
+    font-size: 25px;
+    background-color: black;
+    margin: 15px;
+    padding: 15px;
+}
+nav ul {
+    list-style-type: none;
+    position: fixed;
+    background-color: black;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 40%;
+    z-index: 10;
+}
+li {
+    display: inline;
+    float: left;
+    margin: 15px;
+}
+li a {
+    padding: 10px 40px;
+    font-family: oswald;
+    color: #2e92ba;
+}
+li a:link {
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #333e51;
+}
+.active {
+    background-color: #f4f5f7;
+}
+
+@media only screen and (min-width: 768px)
+{
+    body
+    {
+        width:80%;
+    }
+    
+    nav ul
+    {
+        width:80%;
+    }
+}
+
+@media only screen and (min-width: 1920px)
+{
+    body
+    {
+        width:100%;
+    }
+    
+    nav ul
+    {
+        width:100%;
+    }
 }
