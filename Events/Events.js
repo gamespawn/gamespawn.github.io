@@ -1,5 +1,3 @@
-
-
 fillImages("test", "Images/", 3, "500px", "500px");
 
 /*
@@ -65,7 +63,7 @@ function fillText(id)
     }
     else if(id == 3)
     {
-        return "Wow we got 3.";
+        return "Wow we got 4.";
     }
     
     
