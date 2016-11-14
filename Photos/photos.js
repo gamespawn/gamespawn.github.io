@@ -18,7 +18,7 @@ function fillImages(filename)
     var new_img = document.createElement("IMG");
     //window.alert(filename + counter);
     new_img.setAttribute("src", "HN/" + filename + counter + ".jpg");
-    new_img.setAttribute("height", "5%");
+    new_img.setAttribute("height", "100%");
     new_img.setAttribute("width", "auto");
     //document.getElementById("image_container").appendChild(new_img);
     cell.appendChild(new_img);

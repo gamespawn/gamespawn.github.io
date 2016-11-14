@@ -8,10 +8,6 @@
 # 0E 0B 16 Void
 */
 
-h1 {
-    font-size: 300%;
-}
-
 body {
     background-color: #062F4F;
     color: #EEEEEE;
@@ -29,6 +25,12 @@ h1 {
     font-size: 400%;
     text-align: center;
     color: #EEEEEE;
+}
+
+h2 {
+    font-size: 300%;
+    text-align: center;
+    color: #AAAAAA;
 }
 
 nav {
@@ -50,28 +52,68 @@ nav ul {
     z-index: 10;
 }
 
-li {
+nav ul li {
     display: inline;
     float: left;
     margin: 15px;
 }
 
-li a {
+nav ul li a {
     padding: 10px 40px;
     font-family: oswald;
     color: #2e92ba;
 }
 
-li a:link {
+nav ul li a:link {
     text-decoration: none;
 }
 
-li a:hover {
+nav ul li a:hover {
     background-color: #333e51;
 }
 
 .active {
     background-color: #f4f5f7;
+}
+
+div.projects {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 150%;
+    float: center;
+    position: relative;
+    overflow: hidden;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.5);
+    border-width: 0;
+    border-top-width: 2px;
+}
+
+div.projects ul {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    
+}
+
+div.projects ul li{
+    display: block;
+    width: 100%;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.5);
+    border-width: 0;
+    border-bottom-width: 2px;
+    margin: 0;
+    padding: 10px;
+    float: left;
+}
+
+div.projects ul li h1 {
+    text-align: center;
+    font-size: 150%;
 }
 
 p {
