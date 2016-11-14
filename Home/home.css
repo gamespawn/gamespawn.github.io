@@ -1,78 +1,84 @@
-#background {
+.background {
     position:absolute;
     left:0px;
     top:0px;
     z-index: -1;
 }
-nav {
-    font-size: 25px;
-    background-color: black;
-    margin: 15px;
-    padding: 15px;
-}
-nav ul {
-    list-style-type: none;
-    position: fixed;
-    background-color: black;
-    top: 0;
-    left: 0;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    z-index: 10;
-}
-li {
-    display: inline;
-    float: left;
-    margin: 15px;
-}
-li a {
-    padding: 10px 40px;
-    font-family: oswald;
-    color: #2e92ba;
-}
-li a:link {
-    text-decoration: none;
-}
-li a:hover {
-    background-color: #333e51;
-}
-.active {
-    background-color: #f4f5f7;
-}
-#welcome {
+/*Main Header*/
+.header {
+    position: relative;
     text-align: center;
-    font-size: 60px;
+    font-size: 50px;
     font-family: oswald;
 }
-#about {
+/*Opening section of text*/
+.welcome {
+    position: relative;
     text-align: center;
     font-size: 20px;
     font-family: oswald;
 }
-#slideshow {
-    margin: 0 auto;
-    width: 50%; 
-    padding: 150px;
-    outline-style: solid;
-    outline-color: black;
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
     text-align: center;
-    z-index: 1;
 }
-#workshop {
-    display: inline-block;
-    max-width: 300px;
-    padding: 20px;
-    vertical-align: top;
-    background-color: antiquewhite;
-    outline-style: solid;
-    outline-color: black;
-    z-index: 2;
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
 }
-#event {
+/* The dots/bullets/indicators */
+.dot {
+    cursor:pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
     display: inline-block;
-    padding: 20px;
-    background-color: antiquewhite;
-    max-width: 150px;
-    z-index: 2;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+    background-color: #717171;
 }

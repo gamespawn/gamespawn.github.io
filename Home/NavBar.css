@@ -1,32 +1,11 @@
-*
-{
-  background-color: aliceblue;
-  margin: 0;
-  padding: 0;
-}
-
-body
-{
-    width:40%;
-}
-
-table
-{
-    font-family: sans-serif;
-    font-size: 30pt;
-}
-
-td
-{
-    padding-left: 50px;
-}
-
+/*Navigation bar*/
 nav {
-    font-size: 25px;
+    font-size: 20px;
     background-color: black;
     margin: 15px;
     padding: 15px;
 }
+/*List style type*/
 nav ul {
     list-style-type: none;
     position: fixed;
@@ -35,7 +14,7 @@ nav ul {
     left: 0;
     margin: 0;
     padding: 0;
-    width: 40%;
+    width: 100%;
     z-index: 10;
 }
 li {
@@ -43,6 +22,7 @@ li {
     float: left;
     margin: 15px;
 }
+/*List link object formatting*/
 li a {
     padding: 10px 40px;
     font-family: oswald;
@@ -56,30 +36,4 @@ li a:hover {
 }
 .active {
     background-color: #f4f5f7;
-}
-
-@media only screen and (min-width: 768px)
-{
-    body
-    {
-        width:80%;
-    }
-    
-    nav ul
-    {
-        width:80%;
-    }
-}
-
-@media only screen and (min-width: 1920px)
-{
-    body
-    {
-        width:100%;
-    }
-    
-    nav ul
-    {
-        width:100%;
-    }
 }

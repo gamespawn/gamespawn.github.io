@@ -1,14 +1,18 @@
-fillImages("");
+
+
+function deleteRow(){
+  document.getElementById("image_table").deleteRow(0);
+}
 
 //Be sure to have your file names numbered. Everything has to have the same base file name.
 //You can modify this function to take in a different directory instead.
-function fillImages(filename)
+function fillImages(filename, filepath, maxphotos, height, width, tableID)
 {
-  var tableRef = document.getElementById("image_table");
+  deleteRow();
+  var tableRef = document.getElementById(tableID);
   var row;
   var cell;
       row =  tableRef.insertRow();
-  window.alert("Weeee");
   var bfinished = false;
   var counter = 1;
   while(!bfinished)
@@ -17,15 +21,14 @@ function fillImages(filename)
     //cell.innerHTML="New Cell";
     var new_img = document.createElement("IMG");
     //window.alert(filename + counter);
-    new_img.setAttribute("src", "HN/" + filename + counter + ".jpg");
-    new_img.setAttribute("height", "100%");
-    new_img.setAttribute("width", "auto");
+    new_img.setAttribute("src", filepath + filename + counter + ".jpg");
+    new_img.setAttribute("height", height);
+    new_img.setAttribute("width", width);
+    new_img.setAttribute("display", "block");
     //document.getElementById("image_container").appendChild(new_img);
     cell.appendChild(new_img);
     //counter++;
-    if(++counter == 8)
-    {
+    if(++counter == maxphotos)
       bfinished = true;
-    }
   }
 }
