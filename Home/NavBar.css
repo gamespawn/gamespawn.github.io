@@ -1,3 +1,10 @@
+/* Body WARNING: Should be 100%, but may break pages if done so. */
+body{
+	
+	width: 100%;
+	
+}
+
 /*Navigation bar*/
 nav {
     font-size: 20px;
@@ -36,4 +43,46 @@ li a:hover {
 }
 .active {
     background-color: #f4f5f7;
+}
+
+@media only screen and (min-width: 414px) and (max-width: 600px)
+{
+    li
+    {
+        margin-right: 110px;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 960px)
+{
+    li
+    {
+        margin-right: 80px;
+    }
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1024px)
+{
+    li
+    {
+        margin-left: 80px;
+        margin-right: 100px;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1280px)
+{
+    li
+    {
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 1600px)
+{
+
+    li
+    {
+        margin-right: 20px;
+    }
 }
