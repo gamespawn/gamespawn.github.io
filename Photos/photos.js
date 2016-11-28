@@ -1,48 +1,43 @@
-
-
-function deleteRow(){
-  document.getElementById("image_table").deleteRow(0);
+function deleteList(){
+  var myList = document.getElementById('image_list');
+  myList.innerHTML = '';
 }
 function viewImage(path){
   document.getElementById("image_view").src = path;
 }
+
 //Be sure to have your file names numbered. Everything has to have the same base file name.
 //You can modify this function to take in a different directory instead.
-function fillImages(filename, filepath, maxphotos, height, width, tableID)
+function fillImages(filename, filepath, maxphotos, height, width, listID)
 {
-  deleteRow();
-  var tableRef = document.getElementById(tableID);
-  var row;
-  var cell;
-      row =  tableRef.insertRow();
+  //Clear the list of old pictures
+  deleteList();
+
+  var listRef = document.getElementById(listID);
   var bfinished = false;
   var counter = 1;
+
+  //View the first image in the gallery
+  viewImage(filepath + filename + counter + ".jpg");
+  //Load in pictures
   while(!bfinished)
   {
-    cell = row.insertCell();
-    //cell.innerHTML="New Cell";
+    var new_list_item = document.createElement("li");
     var new_img = document.createElement("IMG");
-    //window.alert(filename + counter);
-    var path = filepath + filename + counter + ".jpg";
-    new_img.setAttribute("src", path);
-    new_img.onclick = function(){
-      viewImage(this.src);
-    };
-    //new_img.setAttribute("id", path);
-    //new_img.getElementById(path).addEventListener('click', imageClickHandler(path));
+
+    //Set Attributes
+    new_img.setAttribute("src", filepath + filename + counter + ".jpg");
     new_img.setAttribute("height", height);
     new_img.setAttribute("width", width);
     new_img.setAttribute("display", "block");
-    //new stuff
-    // new_img.setAttribute("top", "50%");
-    // new_img.setAttribute("position", "absolute");
-    // new_img.setAttribute("left", "50%");
+    new_img.onclick = function(){
+      viewImage(this.src);
+    };
+    //Append image onto list item
+    new_list_item.appendChild(new_img);
 
-    //end new stuff
-    //document.getElementById("image_container").appendChild(new_img);
-    cell.appendChild(new_img);
-    //counter++;
-    if(++counter == maxphotos)
-      bfinished = true;
+    //Append the list item onto the unordered list
+    listRef.appendChild(new_list_item);
+    if(++counter == maxphotos) bfinished = true;
   }
 }

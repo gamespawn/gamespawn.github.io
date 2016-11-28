@@ -1,9 +1,17 @@
-/*
-.thumbnail {
+
+#image_container
+{
+  text-align: center;
+  width: 100%;
+}
+
+#image_list li {
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 80px;
+  height: 80px;
   overflow: hidden;
+  display: inline-block;
+  margin: 2px;
 }
 .thumbnail img {
   position: absolute;
@@ -15,34 +23,28 @@
       -ms-transform: translate(-50%,-50%);
           transform: translate(-50%,-50%);
 }
-.thumbnail img.protrait {
+.thumbnail img.portrait {
   width: 100%;
   height: auto;
 }
-*/
-#image_table tr
-{
-  width: auto;
-  height: 500px;
 
-}
-img{
-  display: block;
-  width: 100%;
-  height: auto;
-}
 #display_image{
-  width: 550px;
-  height: 350px;
+  width: 100%;
+  height: 550px;
+  overflow: hidden;
 
 }
 #image_view
 {
   display: block;
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 100%;
+  margin: auto;
 }
-#image_container
+
+#PhotoGallery
 {
+  width: 760px;
+  height: 680px;
 
 }
