@@ -7,16 +7,16 @@
     <script src="photos.js"> </script>
   </head>
   <body>
-    <button onclick="fillImages('', 'GM/', 7, '100%', 'auto', 'image_table')">General Meeting</button>
-    <button onclick="fillImages('', 'HN/', 8, '100%', 'auto', 'image_table')">Hack Night</button>
-    <div id = "display_image">
-      <img id = "image_view"></>
-    </div>
-    <div id="image_container" class="thumbnail">
-      <table id="image_table" border="0">
-        <tr>
-        </tr>
-      </table>
+    <button onclick="fillImages('', 'GM/', 7, '100%', 'auto', 'image_list')">General Meeting</button>
+    <button onclick="fillImages('', 'HN/', 8, '100%', 'auto', 'image_list')">Hack Night</button>
+    <div id = "PhotoGallery">
+      <div id = "display_image">
+        <img id = "image_view"></>
+      </div>
+      <div id="image_container" class="thumbnail">
+        <ul id="image_list">
+        </ul>
+      </div>
     </div>
   </body>
 </html>
