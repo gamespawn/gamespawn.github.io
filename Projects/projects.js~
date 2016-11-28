@@ -1,0 +1,24 @@
+var MAX_PTEXT_LENGTH = 10;
+
+function read_more() {
+    
+
+}
+
+function start() {
+    var projects_text_list = document.getElementsByClassName("projects-text");
+    var i;
+    for (i = 0; i < projects_text_list; i++) {
+	var p = projects_text_list[i].getElementsByTagName('p')[0];
+	var text = p.innerHTML;
+	
+	if (text.length > MAX_PTEXT_LENGTH) {
+	    
+	    var short_content = text.substr(0, MAX_PTEXT_LENGTH);
+	    var long_content = text.substr(MAX_PTEXT_LENGTH);
+
+	    p.innerHTML = short_content;
+	}
+    }
+    
+}
