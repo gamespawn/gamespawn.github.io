@@ -41,3 +41,10 @@ function fillImages(filename, filepath, maxphotos, height, width, listID)
     if(++counter == maxphotos) bfinished = true;
   }
 }
+
+//Toggles the dropdown content of a section whenever it is clicked.
+//NOTE: For the html the section content NEEDS to have its own id.
+function toggleContent(content)
+{
+    content.classList.toggle("show"); 
+}

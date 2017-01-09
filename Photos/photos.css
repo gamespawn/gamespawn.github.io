@@ -48,3 +48,21 @@
   height: 680px;
 
 }
+
+div.section
+{
+    position: relative;
+    display: inline-block;
+}
+
+div.section-content.show
+{
+    display: block;
+}
+
+div.section-content
+{
+    display: none;
+    position: relative;
+    z-index = -1;
+}
