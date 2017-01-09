@@ -9,8 +9,6 @@
         <script src="home.js"> </script>
     </head>
     
-    <img src="keyboard.jpg" class="background" alt="background">
-    
     <nav>
         <ul>
             <li><a class="active" href="index.html">Home</a></li>
@@ -22,40 +20,46 @@
         </ul>
     </nav>
     
-    <div class="h2Wrapper">
-        <h2 class="h2">WELCOME TO GAMESPAWN AT UCR</h2>
-    </div>
-    
-    <div class="bodyWrapper">
-        <body class="body">We are computer programmers, technical artists, and level designers. <br>
-        We work with everything game related. That includes attending awesome Game Jams, hosting workshops <br>that teach everything from basic graphics to advanced Unreal Engine tutorials, and having a great time!<br>
-        Show up to a general meeting to learn more or attend any upcoming events that interest you.</body>
-    </div>
-    
-    <div class="slideshow-container">   
-        <div class="mySlides fade">
-            <div class="numbertext">1 / 3</div>
-            <img class="slideshowImg" src="rose.JPG">
-            <div class="text">Upcoming Workshop: Date and Time</div>
+    <body>
+        <div class="slideshow-container" style="height:100%;">   
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img class="slideshowImg" src="rose.JPG">
+                <div class="text">Upcoming Workshop: Date and Time</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img class="slideshowImg" src="sunflower.jpg">
+                <div class="text">Upcoming Event: Date and Time</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img class="slideshowImg" src="orchid.jpg">
+                <div class="text">Upcoming General Meeting: Date and Time</div>
+            </div>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
-        <div class="mySlides fade">
-            <div class="numbertext">2 / 3</div>
-            <img class="slideshowImg" src="sunflower.jpg">
-            <div class="text">Upcoming Event: Date and Time</div>
+        <br>
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span>  
         </div>
-        <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
-            <img class="slideshowImg" src="orchid.jpg">
-            <div class="text">Upcoming General Meeting: Date and Time</div>
+        <div class="header">
+            <h2 class="h2">WELCOME TO GAMESPAWN AT UCR</h2>
+            <body class="body">We are computer programmers, technical artists, and level designers. <br>
+            We work with everything game related. That includes attending awesome Game Jams, hosting workshops <br>that teach everything from basic graphics to advanced Unreal Engine tutorials, and having a great time!<br>
+            Show up to a general meeting to learn more or attend any upcoming events that interest you.</body>
         </div>
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </div>   
-    <br>
-    <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span> 
-      <span class="dot" onclick="currentSlide(2)"></span> 
-      <span class="dot" onclick="currentSlide(3)"></span> 
-    </div>  
+        <div class="Workshops"></div>
+        <div class="WorkshopText"></div>
+        <div class="Projects"></div>
+        <div class="ProjectsText"></div>
+        <div class="Events"></div>
+        <div class="EventsText"></div>
+        <div class="Socials"></div>
+        <div class="SocialsText"></div>
+    </body>
     
 </html>

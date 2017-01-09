@@ -1,28 +1,47 @@
+body, html {
+    height: 100%;
+}
+.Workshops {
+    background-image: url(4.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+.Projects{
+    background-image: url(1.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+.Events {
+    background-image: url(3.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+.Socials {
+    background-image: url(2.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
 /*Opening Header*/
-.h2Wrapper {
+.header {
     text-align: center;
+    height: 100%;
 }
 .h2 {
     font-size: 70px;
     font-family: oswald;
-    margin-top: 1cm;
     margin-bottom: 0.5cm;
-}
-/*Background image*/
-.background {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-/*Opening section of text and background*/
-.bodyWrapper {
-    text-align: center;
-    margin-bottom: 1cm;
 }
 .body {
     font-size: 20px;
@@ -31,8 +50,7 @@
 /* Slideshow container */
 .slideshow-container {
     position: relative;
-    max-width: 50%;
-    max-height: 50%;
+    max-height: 100%;
     flex-flow: column;
     margin: auto;
 }
@@ -40,8 +58,7 @@
     display: inline-block;
     margin: auto;
     width: 100%;
-    max-height: 200px;
-    height: 100%;
+    max-height: 750px;
 }
 /* Next & previous buttons */
 .prev, .next {
@@ -63,7 +80,7 @@
 }
 /* On hover, add a black background color*/
 .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+    background-color: #191919;
 }
 /* Caption text */
 .text {
