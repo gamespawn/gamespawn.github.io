@@ -21,9 +21,7 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block"; 
   dots[slideIndex-1].className += " active";
 }
-
 var slideIndex = 1;
-
-function start() {
+window.onload=function() {
     showSlides(slideIndex);
 }

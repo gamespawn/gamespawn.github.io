@@ -95,10 +95,6 @@ td
 
 @media only screen and (min-width: 1280px) and (max-width: 1600px)
 {
-    *
-    {
-        font-size: 20pt;
-    }
     img
     {
         height:300px;
@@ -106,6 +102,6 @@ td
     }
     table
     {
-        /*font-size: 20pt;*/
+        font-size: 20pt;
     }
 }
