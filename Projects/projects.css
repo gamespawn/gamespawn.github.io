@@ -8,12 +8,6 @@
 # 0E 0B 16 Void
 */
 
-body {
-    background-color: #062F4F;
-    color: #EEEEEE;
-    margin: 0;
-}
-
 header {
     margin-top: 80px;
     text-align: center;
@@ -21,115 +15,124 @@ header {
     font-style: bold;
 }
 
-h1 {
-    font-size: 600%;
-    text-align: center;
+body {
+    background-color: #555555;
     color: #EEEEEE;
-}
-
-h2 {
-    font-size: 500%;
-    text-align: center;
-    color: #AAAAAA;
+    margin: 0;
 }
 
 p {
     margin-left: auto;
     margin-right: auto;
-    font-size: 16px;
+    font-size: 18px;
 }
 
-nav {
-    font-size: 25px;
-    background-color: black;
-    margin: 15px;
-    padding: 15px;
-}
-
-nav ul {
-    list-style-type: none;
-    position: fixed;
-    background-color: black;
-    top: 0;
-    left: 0;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    z-index: 10;
-}
-
-nav ul li {
-    display: inline;
-    float: left;
-    margin: 15px;
-}
-
-nav ul li a {
-    padding: 10px 40px;
-    font-family: oswald;
-    color: #2e92ba;
-}
-
-nav ul li a:link {
-    text-decoration: none;
-}
-
-nav ul li a:hover {
-    background-color: #333e51;
-}
-
-.active {
-    background-color: #f4f5f7;
+div.main-text {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 div.projects {
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
+    width: 75%;
+
+    float: left;
+
+    /* background-color: Blue; */
 }
+
+
 
 div.projects ul {
     padding: 0px;
     margin: 0 auto;
-    width: 80%;
-
     
     list-style-type: none;
 }
 
 div.projects ul li{
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 0px;
-    margin: 0px 0px 32px 0px;
+    margin: 0px 0px 16px 0px;
     overflow: hidden;
+
+/*    height: 300px; */
 }
 
-h1.projects {
+h1.projects-title {
+    margin: 16px 0px 0px 0px;
     font-size: 48px;
-    text-align: center;
-    color: #A9A9A9;
-    text-shadow: 0px 0px 2px;
-
-    margin: 0px;
-    padding: 32px;
-
-    border-style: solid;
-    border-color: rgba(0, 0, 0, 0.5);
-    border-width: 0;
-    border-top-width: 4px;
-
-    display: block;
+    text-align: left;
+    color: white;
 }
+
+
+
+
+
+/* The check box side ======================================================================== */
+
+div.checkboxes {
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    width: 20%;
+
+    float: right;
+
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+div.box {
+    padding: 16px;
+}
+
+h1.box-title {
+    margin: 0px;
+    padding: 16px 8px;
+    font-size: 22px;
+    text-align: left;
+    color: white;
+
+    background-color: #1F657C;
+}
+
+input[type="checkbox"] {
+    display:none;
+}
+input[type="checkbox"] + label:before {
+    content: url(Checkbox.png);
+    display: inline-block;
+    
+    margin: 16px 16px;
+    padding: 0;
+
+    width: 22px;
+    height: 22px;
+
+    vertical-align: middle;
+ 
+}
+input[type="checkbox"]:checked + label:before {
+    content: url(Checked-Checkbox.png);
+}
+
+/* ============================================================================================ */
 
 div.projects p {
     text-align: left;
     text-indent: inherit;
-    font-size: inherit;
-    margin: 0px;
+    margin: 0px 0px 16px 0px;
 }
 
 .projects-image {
-    float: right;
-    margin: 0px 16px;
+    float: left;
+    margin: 16px 32px 16px 8px;
+    width: 320px;
+    height: 200px;
 }
 
 .projects-text {
