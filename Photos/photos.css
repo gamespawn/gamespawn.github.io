@@ -44,9 +44,17 @@
 
 #PhotoGallery
 {
+  position: absolute;
   width: 760px;
   height: 680px;
+  border: 2px solid blue;
+  top:0; bottom:0; left:200px;
 
+}
+
+div.nav_bar
+{
+    top:0; bottom:0; left:0;
 }
 
 div.section
@@ -54,6 +62,7 @@ div.section
     position: relative;
     display: inline-block;
 }
+
 
 div.section-content.show
 {
