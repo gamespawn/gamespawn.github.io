@@ -1,11 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300);
 
 /* Colors
-# 00 00 00 Black
-# 06 2F 4F Ink
-# 81 37 72 Posy
-# 88 26 01 Embers
-# 0E 0B 16 Void
+
 */
 
 header {
@@ -33,44 +29,58 @@ div.main-text {
     margin-right: auto;
 }
 
+/* Projects Side */
+
 div.projects {
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
     width: 75%;
-
     float: left;
-
     /* background-color: Blue; */
 }
-
-
 
 div.projects ul {
     padding: 0px;
     margin: 0 auto;
-    
     list-style-type: none;
 }
 
 div.projects ul li{
     background-color: rgba(0, 0, 0, 0.7);
-    padding: 0px;
+    padding: 16px;
     margin: 0px 0px 16px 0px;
     overflow: hidden;
+    text-overflow: ellipsis;
 
-/*    height: 300px; */
+}
+
+div.projects ul li p {
+    font-size: 18px;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+div.projects-text {
+    float:right;
+    padding: 0px 16px 16px 8px;
+    width: 60%;
+
 }
 
 h1.projects-title {
-    margin: 16px 0px 0px 0px;
-    font-size: 48px;
+    font-size: 38px;
     text-align: left;
     color: white;
+    margin: 0;
+    padding: 0;
 }
 
-
-
+.projects-image {
+    float: left;
+    width: 35%;
+}
 
 
 /* The check box side ======================================================================== */
@@ -104,7 +114,7 @@ input[type="checkbox"] {
     display:none;
 }
 input[type="checkbox"] + label:before {
-    content: url(Checkbox.png);
+    content: url(../Checkboxes/Checkbox.png);
     display: inline-block;
     
     margin: 16px 16px;
@@ -117,40 +127,12 @@ input[type="checkbox"] + label:before {
  
 }
 input[type="checkbox"]:checked + label:before {
-    content: url(Checked-Checkbox.png);
+    content: url(../Checkboxes/Checked-Checkbox.png);
 }
 
 /* ============================================================================================ */
 
-div.projects p {
-    text-align: left;
-    text-indent: inherit;
-    margin: 0px 0px 16px 0px;
-}
 
-.projects-image {
-    float: left;
-    margin: 16px 32px 16px 8px;
-    width: 320px;
-    height: 200px;
-}
-
-.projects-text {
-    text-indent: 64px;
-    font-size: 28px;
-}
-
-img.projects {
-    width: 480px;
-    height: 300px;
-    opacity: 1;
-    border-style: solid;
-    border-color: #000000;
-}
-
-img.projects:hover {
-    opacity: 0.5;
-}
 
 .read_more_less {
     text-decoration: underlined;
