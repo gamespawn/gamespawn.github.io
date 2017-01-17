@@ -7,25 +7,29 @@
     <script src="photos.js"> </script>
   </head>
   <body>
-        <div onclick="toggleContent(document.getElementById('content1'))" class="section">
-            <span> Fall 2016 - 2017</span> <img src="Assets/ArrowDropDown.png"></img>
+      <div class="nav_bar">
+        <div class="section">
+            <span onclick="toggleContent(document.getElementById('content1'))"> 
+                Fall 2016 - 2017 <img src="Assets/ArrowDropDown.png"></img> 
+            </span> 
             <div id="content1" class="section-content">
-                <p>Unity</p>
+                <p><b>Workshops/Ongoing Events</b></p>
+                <p onclick="fillImages('', 'GM/', 7, '100%', 'auto', 'image_list')" >Unreal 4</p>
+                <p>Unreal 4</p>
+                <p>Unreal 4</p>
                 <p>Unreal 4</p>
             </div>
-      </div>
+        </div>
     <br></br>
             <div onclick="toggleContent(document.getElementById('content2'))" class="section">
             <span> Winter 2017</span> <img src="Assets/ArrowDropDown.png"></img>
             <div id="content2" class="section-content">
-                <p>Unity</p>
+                <p onclick="fillImages('', 'HN/', 8, '100%', 'auto', 'image_list')">Unity</p>
                 <p>Doggos</p>
             </div>
       </div>
-            
-      </div>
-    <button onclick="fillImages('', 'GM/', 7, '100%', 'auto', 'image_list')">General Meeting</button>
-    <button onclick="fillImages('', 'HN/', 8, '100%', 'auto', 'image_list')">Hack Night</button>
+        </div>
+
     <div id = "PhotoGallery">
       <div id = "display_image">
         <img id = "image_view">
