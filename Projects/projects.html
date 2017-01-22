@@ -27,43 +27,68 @@
       <div class="projects">
 	<ul>
 	  <li>
+	    <p class="projects-tags">
+	      ongoing, 2016, shooter
+	    </p>
 	    <img class="projects-image" src="./images/temp.jpg" alt="Project image">
-	    <div class="projects-text">
-	      <h1 class="projects-title"> Title </h1>
-	      <p>
-		Hello darkness my old friend. ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-	      </p>
-	    </div>
+
+	    <h1 class="projects-title"> Title </h1>
+	    <p>	
+	      The tags for this are ongoing, 2016, shooter. Hello darkness my old friend. ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+	    </p>
 	  </li>
 	  <li>
+	    <p class="projects-tags">
+	      rpg
+	    </p>
 	    <img class="projects-image" src="./images/temp.jpg" alt="Project image">
 	    <h1 class="projects-title"> Title </h1>
 	    <p>
-	      Hello darkness my old friend. ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+	      The tags for this are rpg. Hello darkness my old friend. ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
 	    </p>
 	  </li>
 	</ul>
+	<span id="no-results">No results found. </span>
       </div>
 
       <div class="checkboxes">
-		  <h1 class="box-title"> Tags </h1>
-	<div class="box">
+	<h1 class="box-title"> Tags </h1>
+	<form id="tags">
+	  <input type="checkbox" id="rpg" onchange="toggleCheckbox(this)">
+	  <label for="rpg">RPG</label><br>
+	  <input type="checkbox" id="co-op" onchange="toggleCheckbox(this)">
+	  <label for="co-op">Co-Op</label><br>	    
+	  <input type="checkbox" id="shooter" onchange="toggleCheckbox(this)">
+	  <label for="shooter">Shooter</label><br>
+	</form>
+	
+	<h1 class="box-title"> Year </h1>
+	<form id="tags">
+	  <input type="checkbox" id="2017" onchange="toggleCheckbox(this)">
+	  <label for="2017">2017</label><br>
 
-	  <form id="tags">
-	    <input type="checkbox" id="rpg">
-	    <label for="rpg"> RPG </label> <br>
+	  <input type="checkbox" id="2016" onchange="toggleCheckbox(this)">
+	  <label for="2016">2016</label><br>
+	  
+	  <input type="checkbox" id="2015" onchange="toggleCheckbox(this)">
+	  <label for="2015">2015</label><br>
+	</form>
+	
+	<h1 class="box-title"> Status </h1>
+	<form id="tags">
+	  <input type="checkbox" id="completed" onchange="toggleCheckbox(this)">
+	  <label for="completed">Completed</label><br>
 
-	    <input type="checkbox" id="co-op">
-	    <label for="co-op"> Co-Op </label> <br>
-	    
-	    <input type="checkbox" id="shooter">
-	    <label for="shooter"> Shooter </label> <br>
-
-	  </form>
-	</div>
+	  <input type="checkbox" id="ongoing" onchange="toggleCheckbox(this)">
+	  <label for="ongoing">Ongoing</label><br>
+	  
+	  <input type="checkbox" id="recruiting" onchange="toggleCheckbox(this)">
+	  <label for="recruiting">Recruiting</label><br>
+	</form>
       </div>
-
     </div>
+
+    
     <footer>
     </footer>
   </body>
