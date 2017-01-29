@@ -48,3 +48,15 @@ function toggleContent(content)
 {
     content.classList.toggle("show"); 
 }
+
+var content;
+
+function swapContent()
+{
+    if(content)
+    {
+        content.classList.toggle("show");
+    }
+    content = document.getElementById(document.getElementById("SelectBox").value);
+    content.classList.toggle("show");
+}
