@@ -1,4 +1,5 @@
 var tagsMap = {};
+var PageNumber = 1;
 
 function updateProjects() {
     var i;
@@ -59,6 +60,27 @@ function toggleCheckbox(element) {
     updateProjects();
 }
 
+function changePage(number) {
+    console.log("hi from changepage");
+    
+}
+
+// Creates a forward and backward button to navigate pages
+// Also lists the page numbers
+//TODO add better description
+function createPageButtons() {
+    var mainText = document.getElementsByClassName("projects");
+    var forwardButton = document.createElement('a');
+    forwardButton.href = "#";
+    forwardButton.innerHTML = "&#9658";
+    forwardButton.onClick() = changePage(PageNumber);
+
+    console.log(forwardButton);
+    
+
+    mainText[0].appendChild(forwardButton);
+}
+
 function start() {
     console.log("started");
 
@@ -75,5 +97,7 @@ function start() {
 	checkboxes[i].checked = false;
     }
 
+    createPageButtons();
+    
     updateProjects();
 }
