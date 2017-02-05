@@ -6,17 +6,28 @@ function viewImage(path){
   document.getElementById("image_view").src = path;
 }
 
+var currFileName;
+var currFilePath;
+var ssPhotoNum;
+var photoIndex;
+
 //Be sure to have your file names numbered. Everything has to have the same base file name.
 //You can modify this function to take in a different directory instead.
 function fillImages(filename, filepath, maxphotos, height, width, listID)
 {
   //Clear the list of old pictures
   deleteList();
-
+  
+  //Set parameters for the current slideshow
+  currFileName = filename;
+  currFilePath = filepath;
+  ssPhotoNum = maxphotos;
+  photoIndex = 1;
+    
   var listRef = document.getElementById(listID);
   var bfinished = false;
   var counter = 1;
-
+    
   //View the first image in the gallery
   viewImage(filepath + filename + counter + ".jpg");
   //Load in pictures
@@ -40,7 +51,30 @@ function fillImages(filename, filepath, maxphotos, height, width, listID)
     listRef.appendChild(new_list_item);
     if(++counter == maxphotos) bfinished = true;
   }
+
 }
+
+function prevImage()
+{
+    photoIndex--;
+    if(photoIndex < 1)
+    {
+        photoIndex = ssPhotoNum;
+    }
+    viewImage(currFilePath + currFileName + photoIndex + ".jpg");
+}
+
+function nextImage()
+{
+    photoIndex++;
+    if(photoIndex > ssPhotoNum)
+    {
+        photoIndex = 1;
+    }
+    viewImage(currFilePath + currFileName + photoIndex + ".jpg");
+}
+
+
 
 //Toggles the dropdown content of a section whenever it is clicked.
 //NOTE: For the html the section content NEEDS to have its own id.
