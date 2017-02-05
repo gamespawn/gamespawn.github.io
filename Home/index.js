@@ -25,3 +25,12 @@ var slideIndex = 1;
 window.onload=function() {
     showSlides(slideIndex);
 }
+
+//function GetContainerSize ()
+//{
+//    var textContainer = document.getElementById ("DescriptionText");
+//    var imgContainer = document.getElemnentById ("")
+//    while( is_overflow_in_the_second_div() ) {
+//        set_smaller_font();
+//    }
+//}
