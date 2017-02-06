@@ -2,37 +2,51 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Gamespawn</title>
-    <link rel="stylesheet" type="text/css" href="photos.css" media="all">
+    <title>Photos</title>
+    <link rel="icon" href="../logo.jpg" />
+    <link rel="stylesheet" type="text/css" href="../Home/NavBar.css">
+    <link rel="stylesheet" type="text/css" href="photos.css" media="all">.
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <script src="photos.js"> </script>
   </head>
   <body>
       
-      <!--Selection Box -->
+      <nav>
+        <ul>
+            <li><a href="../Home/home.html">Home</a></li>
+            <li><a href="../Projects/projects.html">Projects</a></li>
+            <li><a class="active" href="Events.html">Events</a></li>
+            <li><a href="../Photos/photos.html">Photos</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
       
-      <select id="SelectBox" onchange="swapContent()">
-        <option value='default'>Select Year</option>
-        <option value='content1'>Fall 2016 - 2017</option>
-        <option value='content2'>Winter 2017</option>
       
-      </select>
+      <div class="section-container">
       
+        <!--Selection Box -->
+        <select id="SelectBox" onchange="swapContent()">
+            <option value='default'>Select Year</option>
+            <option value='content1'>Fall 2016 - 2017</option>
+            <option value='content2'>Winter 2017</option>
+        </select>
+          
+        <!--Slideshow content-->
+        <!--For each new option on the select box, make a new div-->
+        <!--with the same id as the option value. See examples below-->  
+        <div id="content1" class="section-content">
+            <p><b>Workshops/Ongoing Events</b></p>
+            <p onclick="fillImages('', 'GM/', 6, '100%', 'auto', 'image_list')" class = "item">Unreal 4</p>
+            <p class = "item">General Meeting #1</p>
+            <p class = "item">Unity</p>
+            <p class = "item">Game Design</p>
+        </div>
       
-      <!--Slideshow content-->
-      <!--For each new option on the select box, make a new div-->
-      <!--with the same id as the option value. See examples below-->
-      
-      <div id="content1" class="section-content">
-        <p><b>Workshops/Ongoing Events</b></p>
-        <p onclick="fillImages('', 'GM/', 6, '100%', 'auto', 'image_list')" >Unreal 4</p>
-        <p>Unreal 4</p>
-        <p>Unreal 4</p>
-        <p>Unreal 4</p>
-      </div>
-      
-      <div id="content2" class="section-content">
-        <p onclick="fillImages('', 'HN/', 7, '100%', 'auto', 'image_list')">Unity</p>
-        <p>Doggos</p>
+        <div id="content2" class="section-content">
+            <p onclick="fillImages('', 'HN/', 7, '100%', 'auto', 'image_list')" class = "item">Level Design</p>
+            <p class = "item">Doggos</p>
+        </div>
       </div>
     
       
@@ -40,8 +54,8 @@
     <div id = "PhotoGallery">
         
       <div id = "display_image">
-         <img class="left_arrow" src="Assets/ArrowDropDown.png" onclick="prevImage()"></img>
-         <img class="right_arrow" src="Assets/ArrowDropDown.png" onclick="nextImage()"></img>
+        <img class="left_arrow" src="Assets/ArrowLeft.png" onclick="prevImage()"></img>
+        <img class="right_arrow" src="Assets/ArrowRight.png" onclick="nextImage()"></img>
         <img id = "image_view">
       </div>
         
