@@ -1,6 +1,8 @@
 body, html {
     height: 100%;
+    background-color: white;
 }
+/* Parallax Backgrounds */
 .Workshops {
     background-image: url(4.jpg);
     background-attachment: fixed;
@@ -33,19 +35,23 @@ body, html {
     background-size: cover;
     height: 75%;
 }
-.DescriptionText1 .DescriptionText2 .DescriptionText3 .DescriptionText4 {
+/* Text divs for each section */
+.DescriptionText1, .DescriptionText2, .DescriptionText3, .DescriptionText4 {
     display: flex;
-    align-items: center;
-    margin: 0 auto;
+/*    align-items: center;*/
+    margin: auto;
     text-align: center;
-    height: 25%;
-    max-width: 70%;
+    font-size: 2.5vh;
+    width: 80%;
+    height: 20%;
 }
+/* Text that overlays photos */
 .imageText {
+    margin: auto;
     text-align: center;
     background-color: gainsboro;
     opacity: 0.5;
-    font-size: 50px;
+    font-size: 5vh;
     max-width: 50%;
 }
 /*Opening Header*/
@@ -53,21 +59,32 @@ body, html {
     text-align: center;
     height: 100%;
 }
-.welcomeText {
-    font-size: 70px;
+.headerText {
+    margin: auto;
+    font-size: 10vh;
     font-family: oswald;
+    line-height: 120%;
     margin-bottom: 0.5cm;
+    border-bottom-style: solid;
+    border-bottom-width: thick;
+    width: 50%;
 }
-.body {
-    font-size: 20px;
+.headerBody {
+    position: absolute;
+    font-size: 2.5vh;
     font-family: oswald;
+    text-align: justify;
+    background-color: white;
 }
 /* Slideshow container */
 .slideshow-container {
     position: relative;
-    max-height: 100%;
+    max-height: 90%;
+    max-width: 90%;
+    align-self: center;
     flex-flow: column;
     margin: auto;
+    background-color: white;
 }
 .slideshowImg {
     display: inline-block;
@@ -84,7 +101,7 @@ body, html {
     padding: 16px;
     color: white;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 3vh;
     transition: 0.6s ease;
     border-radius: 0 0px 3px 0;
 }
@@ -100,7 +117,8 @@ body, html {
 /* Caption text */
 .text {
     color: #f2f2f2;
-    font-size: 15px;
+    font-size: 3vh;
+    color: black;
     padding: 8px 12px;
     position: absolute;
     bottom: 8px;
@@ -110,7 +128,7 @@ body, html {
 /* Number text (1/3 etc) */
 .numbertext {
     color: #f2f2f2;
-    font-size: 12px;
+    font-size: 2vh;
     padding: 8px 12px;
     position: absolute;
     top: 0;
