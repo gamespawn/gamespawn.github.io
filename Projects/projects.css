@@ -85,6 +85,11 @@ img.projects-image {
     
 }
 
+div.pagebuttons {
+    margin: 16px;
+    text-align: center;
+}
+
 
 /* The check box side ======================================================================== */
 
