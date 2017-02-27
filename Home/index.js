@@ -2,7 +2,7 @@ var slideIndex = 1;
 function showSlides(n) {
     "use strict";
     var i,
-        slides = document.getElementsByClassName("mySlides"),
+        slides = document.getElementsByClassName("slideshowInnerContainer"),
         dots = document.getElementsByClassName("dot");
     if (n > slides.length) {
         slideIndex = 1;

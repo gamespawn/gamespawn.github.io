@@ -4,6 +4,8 @@ body, html {
 }
 /* Parallax Backgrounds */
 .Workshops {
+    display: table;
+    width: 100%;
     background-image: url(4.jpg);
     background-attachment: fixed;
     background-position: center;
@@ -12,6 +14,8 @@ body, html {
     height: 75%;
 }
 .Projects{
+    display: table;
+    width: 100%;
     background-image: url(1.jpg);
     background-attachment: fixed;
     background-position: center;
@@ -20,6 +24,8 @@ body, html {
     height: 75%;
 }
 .Events {
+    display: table;
+    width: 100%;
     background-image: url(3.jpg);
     background-attachment: fixed;
     background-position: center;
@@ -28,6 +34,8 @@ body, html {
     height: 75%;
 }
 .Socials {
+    display: table;
+    width: 100%;
     background-image: url(2.jpg);
     background-attachment: fixed;
     background-position: center;
@@ -46,13 +54,19 @@ body, html {
     height: 20%;
 }
 /* Text that overlays photos */
-.imageText {
-    margin: auto;
+.middleContainer {
+    display: table-cell;
+    vertical-align: middle;
+}
+.innerTextContainer {
     text-align: center;
-    background-color: gainsboro;
-    opacity: 0.5;
-    font-size: 5vh;
-    max-width: 50%;
+}
+.inlineText {
+    background-color: #1d2630;
+    opacity: 0.9;
+    color: floralwhite;
+    font-family: inherit;
+    font-size: 8.5vh;
 }
 /*Opening Header*/
 .header {
@@ -76,6 +90,10 @@ body, html {
     text-align: justify;
     background-color: white;
 }
+/*Images that populate below the welcome text*/
+.imgOuterContainer {
+   
+}
 /* Slideshow container */
 .slideshow-container {
     position: relative;
@@ -86,11 +104,12 @@ body, html {
     margin: auto;
     background-color: white;
 }
+.slideshowInnerContainer {
+    height: 100%; /*FIll computer screen height*/
+}
 .slideshowImg {
-    display: inline-block;
-    margin: auto;
-    width: 100%;
-    max-height: 750px;
+    max-height: 90%; /*Leave room for Upcoming Date and Time text*/
+    width: 100%; /*Stretch to end of slideshowInnerContainer horizontally*/
 }
 /* Next & previous buttons */
 .prev, .next {
