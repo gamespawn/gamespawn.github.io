@@ -93,7 +93,7 @@ function fillUnorderedImages(filename, filepath, maxphotos, height, width)
 
 /*
 Returns some string based on an id. We use this to populate our second column for our descriptions.
-Note: Try to keep the text length about the same for all the pictures. It'll look weird on the page for obvious reasons, so keep it consistent.
+Note: Try to keep the text length about the same for all the pictures. Less text is fine, but don't have one box have a large length of text. It'll look weird on the page for obvious reasons, so keep it consistent.
 */
 function fillText(id)
 {
