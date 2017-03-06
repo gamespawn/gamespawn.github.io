@@ -1,4 +1,5 @@
-fillImages("test", "Images/", 8, "300px", "300px");
+FillImages("test", "Images/", 8, "300px", "300px");
+AttachInfoModals();
 //fillUnorderedImages("test", "Images/", 3, "20px", "20px");
 
 /*
@@ -14,7 +15,7 @@ starting from 0. It'll keep doing it until it reaches the max amount of photos t
 */
 //Note: You need to make a table on your html file with an id of "image_table".
 //Note: I would keep a folder of active images and only use that folder and replace them whenever needed. It'll make things easier to manage your photos/text.
-function fillImages(filename, filepath, maxphotos, height, width)
+function FillImages(filename, filepath, maxphotos, height, width)
 {
     var row;
     var cell;
@@ -33,6 +34,7 @@ function fillImages(filename, filepath, maxphotos, height, width)
         new_img.setAttribute("src", filepath + filename + counter + ".jpg");
         new_img.setAttribute("height", height);
         new_img.setAttribute("width", width);
+        AttachImageModal(new_img);
         
         //Add it onto the div.
         new_div.appendChild(new_img);
@@ -42,12 +44,13 @@ function fillImages(filename, filepath, maxphotos, height, width)
         var figCap = document.createElement('div');
         figCap.style.width = width;
         figCap.style.display = 'table-caption';
-        figCap.innerHTML = fillText(counter) + "</br>"; //The </br> tag is used to force a new line 
+        figCap.innerHTML = FillOuterText(counter) + "</br>"; //The </br> tag is used to force a new line 
                                                         //for the button.
         
         //Create a new button under each text.
         var next_btn = document.createElement("IMG");
         next_btn.setAttribute("src", "Assets/ViewMoreButton.png");
+        next_btn.setAttribute("class", "next_button");
         figCap.appendChild(next_btn);
         
         //Add the text onto the image div and add that to the image folder.
@@ -91,11 +94,119 @@ function fillUnorderedImages(filename, filepath, maxphotos, height, width)
 }
 
 
+/* Modal Functions Here */
+
+var imageModal = document.getElementById("ImageModal");
+var modalImg = document.getElementById("modalimg");
+function AttachImageModal(input_img)
+{
+    (function ()
+    {
+        input_img.addEventListener("click", function(){
+        FadeIn(imageModal);
+        modalImg.src = this.src;
+        }, false);
+    }());
+}
+
+
+//Get the modal
+var modal = document.getElementById("InfoModal");
+var modalHeader = document.getElementById("Modal_Header");
+var modalText = document.getElementById("Modal_Description");
+
+function AttachInfoModals()
+{
+    var buttons = document.getElementsByClassName("next_button");
+    
+    for(var i = 0; i < buttons.length; i++)
+    {
+        (function ()
+        {
+            var k = i;
+            buttons[i].addEventListener("click", function(){
+            FadeIn(modal);
+            FillInnerText(k);
+            }, false);
+        }());
+    }
+}
+
+//If the user clicks outside of any modal window, close it.
+window.onclick = function(event)
+{
+  if(event.target == modal)
+  {
+      FadeOut(modal);
+  }
+  else if(event.target == imageModal)
+  {
+      FadeOut(imageModal);
+  }
+}
+
+function FadeIn(element)
+{
+  var op = 0.1;
+  element.style.display = 'block';
+  var timer = setInterval(function () {
+    if (op >= 1){
+      clearInterval(timer);
+    }
+    element.style.opacity = op;
+    op += op * 0.1;
+  }, 30);
+}
+
+function FadeOut(element)
+{
+  var op = 1;
+  var timer = setInterval(function () {
+    if (op <= 0.1){
+      clearInterval(timer);
+      element.style.display = 'none';
+    }
+    element.style.opacity = op;
+    op -= op * 0.1;
+  }, 30);
+}
+
+function FillInnerText(index)
+{
+  if(index == '0')
+  {
+      
+      modalHeader.innerHTML = "Gamespawn General Meeting #420!"
+      
+      modalText.innerHTML = "WowWoo!What is Gamespawn? Well, let me tell you. Gamespawn is a game development club that focuses on making video games. We have a series of workshops that will help teach you how to become a video game developer. You don't need any experience to do this. I am going to keep adding more text because  this div height isn't going any further than I would like it. Oh just kidding. Looks like adding a bunch of exclamation marks somehow just ruins the expansion.Woo!What is Gamespawn? Well, let me tell you. Gamespawn is a game development club that focuses on making video games. We have a series of workshops that will help teach you how to become a video game developer. You don't need any experience to do this. I am going to keep adding more text because  this div height isn't going any further than I would like it. Oh just kidding. Looks like adding a bunch of exclamation marks somehow just ruins the expansion.WowWoo!What is Gamespawn? Well, let me tell you. Gamespawn is a game development club that focuses on making video games.";
+  }
+  else if(index == '1')
+  {
+      modalHeader.innerHTML = "Mr.Puppers Puppy Pupping Puppet Event!"
+      modalText.innerHTML = "Amazing!";
+  }
+  else if(index == '2')
+  {
+      modalHeader.innerHTML = "Mineblock Theater FunTime!"
+      modalText.innerHTML = "AHHH";
+  }
+  else if(index == '3')
+  {
+      modalHeader.innerHTML = "Kyaa-athon at BournsA265!"
+      modalText.innerHTML = "Blah blah blah";
+  }
+  else if(index == '4')
+  {
+      modalHeader.innerHTML = "Finals studying event thing"
+      modalText.innerHTML = "OMGOMG";
+  }
+}
+
 /*
 Returns some string based on an id. We use this to populate our second column for our descriptions.
 Note: Try to keep the text length about the same for all the pictures. Less text is fine, but don't have one box have a large length of text. It'll look weird on the page for obvious reasons, so keep it consistent.
 */
-function fillText(id)
+function FillOuterText(id)
 {
     if(id == 0)
     {
@@ -117,6 +228,4 @@ function fillText(id)
     {
         return "What is Gamespawn? Well, let me tell you. Gamespawn is a game development club that focuses on making video games. We have a series of workshops that will help teach you how to become a video game developer. You don't need any experience to do this. I am going to keep adding more text because  this div height isn't going any further than I would like it. Oh just kidding. Looks like adding a bunch of exclamation marks somehow just ruins the expansion."
     }
-    
-    
 }
