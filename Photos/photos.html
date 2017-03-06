@@ -10,7 +10,7 @@
     <script src="photos.js"> </script>
   </head>
   <body>
-      
+
       <nav>
         <ul>
             <li><a href="../Home/home.html">Home</a></li>
@@ -21,50 +21,54 @@
             <li><a href="about.html">About</a></li>
         </ul>
       </nav>
-      
-      
+
+
       <div class="section-container">
-      
+
         <!--Selection Box -->
         <select id="SelectBox" onchange="swapContent()">
             <option value='default'>Select Year</option>
             <option value='content1'>Fall 2016 - 2017</option>
             <option value='content2'>Winter 2017</option>
         </select>
-          
+
         <!--Slideshow content-->
         <!--For each new option on the select box, make a new div-->
-        <!--with the same id as the option value. See examples below-->  
+        <!--with the same id as the option value. See examples below-->
         <div id="content1" class="section-content">
             <p><b>Workshops/Ongoing Events</b></p>
-            <p onclick="fillImages('', 'GM/', 6, '100%', 'auto', 'image_list')" class = "item">Unreal 4</p>
+            <p onclick="fillImages('', 'GM/', 6, '100%', 'auto', 'image_list1')" class = "item">Unreal 4</p>
             <p class = "item">General Meeting #1</p>
             <p class = "item">Unity</p>
             <p class = "item">Game Design</p>
         </div>
-      
+
         <div id="content2" class="section-content">
-            <p onclick="fillImages('', 'HN/', 7, '100%', 'auto', 'image_list')" class = "item">Level Design</p>
+            <p onclick="fillImages('', 'HN/', 13, '100%', 'auto', 'image_list1')" class = "item">Level Design</p>
             <p class = "item">Doggos</p>
         </div>
       </div>
-    
-      
+
+
     <!--Slideshow related components -->
     <div id = "PhotoGallery">
-        
+
       <div id = "display_image">
         <img class="left_arrow" src="Assets/ArrowLeft.png" onclick="prevImage()"></img>
         <img class="right_arrow" src="Assets/ArrowRight.png" onclick="nextImage()"></img>
         <img id = "image_view">
       </div>
-        
-      <div id="image_container" class="thumbnail">
-        <ul id="image_list">
-        </ul>
+      <div class="carousel-wrapper">
+        <img id="thumbnail_left_arrow" class="left_arrow" src="Assets/ArrowLeft.png" onclick="prevThumbnailSet()"></img>
+        <img id="thumbnail_right_arrow" class="right_arrow" src="Assets/ArrowRight.png" onclick="nextThumbnailSet()"></img>
+        <div id="image_container" class="thumbnail">
+          <ul id="image_list1">
+          </ul>
+        </div>
       </div>
-        
+
+
     </div>
-      
+
   </body>
 </html>
