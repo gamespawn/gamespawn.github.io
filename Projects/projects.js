@@ -47,6 +47,9 @@ function updateCurrentProjectList() {
 function showPages() {
     var i;
 
+    // Hide no-results. If there are no results later we will show it
+    document.getElementById("no-results").style.display = "none";
+    
     // Hides all the projects; will show the correct ones later
     for (i = 0; i < start.projectList.length; ++i) {
 	start.projectList[i].style.display = "none";
@@ -60,6 +63,11 @@ function showPages() {
     }
     // else show the pages on the current projects list
     else {
+	// if there are no current projects to display then show 'No results found'
+	if (start.curProjectList.length == 0) {
+	    console.log("show");
+	    document.getElementById("no-results").style.display = "";
+	}
 	for (i = (PageNumber-1) * PAGESIZE; i < start.curProjectList.length && i < PageNumber * PAGESIZE; ++i) {
 	    start.projectList[start.curProjectList[i]].style.display = "";
 	}
@@ -76,23 +84,25 @@ function toggleCheckbox(element) {
 
     updateTagsMap();
     updateCurrentProjectList();
-    showPages();
     changePage(1);
+    showPages();
+    createPageButtons();
 }
 
 function changePage(number) {
-    if (number < 1 || number > createPageButtons.nPages) { // TODO upperbounds
+    if (number < 1 || number > createPageButtons.nPages) {
 	return;
     }
     var pageNumButtons = document.getElementsByClassName("pagenumbuttons");
-    console.log("Old Page Number: " + PageNumber);
-    pageNumButtons[PageNumber-1].style.color = "white";
-    PageNumber = number;
-    console.log("Page Number: " + PageNumber);
-    pageNumButtons[PageNumber-1].style.color = "#0a2129";
 
+    // Check if there are page buttons
+    // Change color to singfy current page
+    if (pageNumButtons.length > 0) {
+	pageNumButtons[PageNumber-1].style.color = "white";
+	PageNumber = number;
+	pageNumButtons[PageNumber-1].style.color = "#0a2129";
+    }
 
-    showPages();
 }
 
 // Creates a forward and backward button to navigate pages
@@ -100,6 +110,17 @@ function changePage(number) {
 //TODO add better description
 function createPageButtons() {
     var pageButtons = document.getElementsByClassName("pagebuttons");
+
+    // Remove old buttons
+    while (pageButtons[0].hasChildNodes()) {
+	pageButtons[0].removeChild(pageButtons[0].childNodes[0]);
+    }
+
+    // If there are too few items then there is no need for page buttons
+    if (updateTagsMap.emptyMap == false && start.curProjectList.length <= PAGESIZE) {
+	return;
+    }
+    
     var forwardButton = document.createElement('a');
     var backwardButton = document.createElement('a');
     forwardButton.href = "#";

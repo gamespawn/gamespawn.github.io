@@ -88,6 +88,11 @@ img.projects-image {
 div.pagebuttons {
     margin: 16px;
     text-align: center;
+
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
 
@@ -136,7 +141,9 @@ input[type="checkbox"]:checked + label:before {
 
 label {
     user-select: none;
-     /* todo: Browser Support */
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
 /* ============================================================================================ */
@@ -144,7 +151,7 @@ label {
 
 
 .read_more_less {
-    text-decoration: underlined;
+    text-decoration: underline;
     float: right;
     color: black;
 }
