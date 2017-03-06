@@ -1,8 +1,12 @@
+/* General formatting */
 body, html {
-    height: 100%;
+    height: 100%; /* Allows for parallax */
     background-color: white;
+    margin: 0px; /* No horizontal scrolling */
+
 }
-/* Parallax Backgrounds */
+
+/* Parallax Background Photo Divs */
 .Workshops {
     display: table;
     width: 100%;
@@ -11,7 +15,7 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 75%;
+    height: 75%; /* Leaves room for text at the bottom and navbar */
 }
 .Projects{
     display: table;
@@ -43,24 +47,29 @@ body, html {
     background-size: cover;
     height: 75%;
 }
-/* Text divs for each section */
+
+/* Parallax text divs */
 .DescriptionText1, .DescriptionText2, .DescriptionText3, .DescriptionText4 {
     display: flex;
-/*    align-items: center;*/
     margin: auto;
     text-align: center;
     font-size: 2.5vh;
     width: 80%;
     height: 20%;
 }
-/* Text that overlays photos */
+
+/* Text that overlays photos. middleContainer allows the
+   surrounding text div to be centered vertically and horizontally within
+   the Workshops/Projects/Events/Socials divs */
 .middleContainer {
     display: table-cell;
     vertical-align: middle;
 }
+/* This centers the actual text within the middleContainer */
 .innerTextContainer {
     text-align: center;
 }
+/* Background and text formatting */
 .inlineText {
     background-color: #1d2630;
     opacity: 0.9;
@@ -68,33 +77,8 @@ body, html {
     font-family: inherit;
     font-size: 8.5vh;
 }
-/*Opening Header*/
-.header {
-    text-align: center;
-    height: 100%;
-}
-.headerText {
-    margin: auto;
-    font-size: 10vh;
-    font-family: oswald;
-    line-height: 120%;
-    margin-bottom: 0.5cm;
-    border-bottom-style: solid;
-    border-bottom-width: thick;
-    width: 50%;
-}
-.headerBody {
-    position: absolute;
-    font-size: 2.5vh;
-    font-family: oswald;
-    text-align: justify;
-    background-color: white;
-}
-/*Images that populate below the welcome text*/
-.imgOuterContainer {
-   
-}
-/* Slideshow container */
+
+/* Screen 1: Events/Projects Preview Slideshow */
 .slideshow-container {
     position: relative;
     max-height: 90%;
@@ -151,4 +135,36 @@ body, html {
     padding: 8px 12px;
     position: absolute;
     top: 0;
+}
+
+/* Screen 2: Welcome To Gamespawn */
+.headerOuterContainer {
+    text-align: center;
+    height: 100%;
+}
+/* Large text formatting */
+.headerText {
+    margin: auto;
+    font-size: 10vh;
+    font-family: oswald;
+    line-height: 120%;
+    margin-bottom: 0.5cm;
+    border-bottom-style: solid;
+    border-bottom-width: thick;
+    width: 50%;
+}
+/* Small text formatting */
+.headerBody {
+    position: absolute;
+    font-size: 2.5vh;
+    font-family: oswald;
+    text-align: justify;
+    background-color: white;
+}
+/* Images below small text*/
+.imgOuterContainer {
+    width: 100%;
+    text-align: center;
+    margin-top: 10vh;
+    border-bottom-style: solid;
 }
