@@ -38,6 +38,7 @@ function toggleSelected(index)
   var pictureSelect = document.getElementById(index);
   pictureSelect.style.border = "medium solid yellow";
   currentSelectedPicture = index;
+  photoIndex = index;
 }
 //Be sure to have your file names numbered. Everything has to have the same base file name.
 //You can modify this function to take in a different directory instead.
@@ -73,16 +74,20 @@ function fillImages(filename, filepath, maxphotos, height, width, listID)
     new_img.setAttribute("height", height);
     new_img.setAttribute("width", width);
     new_img.setAttribute("display", "block");
-    new_img.onclick = function(){
-      viewImage(this.src);
-      toggleSelected(counter);
-    };
+    new_img.onclick = (function ()
+    {
+        var k = counter;
+        new_img.addEventListener("click", function(){
+        viewImage(this.src);
+        toggleSelected(k);
+        }, false);
+    }());
     //Append image onto list item
     new_list_item.appendChild(new_img);
 
     //Append the list item onto the unordered list
     listRef.appendChild(new_list_item);
-    if(++counter == maxphotos) bfinished = true;
+    if(++counter > maxphotos) bfinished = true;
     if (counter % 8 == 0){ //create a new ul if u have more than 7 pictures
       thumbnailSetMaxNumber++;
       var divContainer = document.getElementById("image_container");
@@ -94,6 +99,7 @@ function fillImages(filename, filepath, maxphotos, height, width, listID)
       listRef = document.getElementById(test);
     }
   }
+  toggleSelected(1);
 
 }
 
