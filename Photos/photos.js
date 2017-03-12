@@ -8,18 +8,20 @@ function deleteList(){
     temp++;
   }
 }
+
+
 function viewImage(path){
   document.getElementById("image_view").src = path;
-  var parent = document.getElementById("image_container");
-  var descendants = parent.getElementsByTagName("LI");
-  var i = 0;
-  while (i < descendants.length){
-    if (descendants[i].getElementsByTagName('img')[0].getAttribute("src") == path){
-      descendants[i].style.border = "medium solid white";
-      return;
-    }
-    i++;
-  }
+  // var parent = document.getElementById("image_container");
+  // var descendants = parent.getElementsByTagName("LI");
+  // var i = 0;
+  // while (i < descendants.length){
+  //   if (descendants[i].getElementsByTagName('img')[0].getAttribute("src") == path){
+  //     descendants[i].style.border = "medium solid yellow";
+  //   }
+  //   else descendants[i].style.border = "none";
+  //   i++;
+  // }
 }
 
 var currFileName;
@@ -28,7 +30,15 @@ var ssPhotoNum;
 var photoIndex;
 var thumbnailIndex;
 var thumbnailSetMaxNumber;
-
+var currentSelectedPicture;
+function toggleSelected(index)
+{
+  var pictureDeselect = document.getElementById(currentSelectedPicture);
+  pictureDeselect.style.border = "none";
+  var pictureSelect = document.getElementById(index);
+  pictureSelect.style.border = "medium solid yellow";
+  currentSelectedPicture = index;
+}
 //Be sure to have your file names numbered. Everything has to have the same base file name.
 //You can modify this function to take in a different directory instead.
 function fillImages(filename, filepath, maxphotos, height, width, listID)
@@ -49,11 +59,13 @@ function fillImages(filename, filepath, maxphotos, height, width, listID)
 
   //View the first image in the gallery
   viewImage(filepath + filename + counter + ".jpg");
+  currentSelectedPicture = counter;
   //Load in pictures
   while(!bfinished)
   {
     var new_list_item = document.createElement("li");
     new_list_item.setAttribute('class', 'imageList');
+    new_list_item.setAttribute('id', counter);
     var new_img = document.createElement("IMG");
 
     //Set Attributes
@@ -63,6 +75,7 @@ function fillImages(filename, filepath, maxphotos, height, width, listID)
     new_img.setAttribute("display", "block");
     new_img.onclick = function(){
       viewImage(this.src);
+      toggleSelected(counter);
     };
     //Append image onto list item
     new_list_item.appendChild(new_img);
@@ -92,6 +105,7 @@ function prevImage()
         photoIndex = ssPhotoNum;
     }
     viewImage(currFilePath + currFileName + photoIndex + ".jpg");
+    toggleSelected(photoIndex);
 }
 
 function nextImage()
@@ -102,6 +116,7 @@ function nextImage()
         photoIndex = 1;
     }
     viewImage(currFilePath + currFileName + photoIndex + ".jpg");
+    toggleSelected(photoIndex);
 }
 
 function prevThumbnailSet()
