@@ -29,16 +29,30 @@ function updateCurrentProjectList() {
 
 	// If the tags map isn't empty
 	// Check if the project item has a currently checked tag
-	if (updateTagsMap.emptyMap == false) {
-	    var j;
-	    for (j = 0; j < tags.length; ++j) {
-		if (tagsMap[tags[j].trim()] == true) {
-		    start.curProjectList.push(i);
-		    break;
+	var show = true;
+	// For all checked tags
+	for (var j in tagsMap) {
+	    if (tagsMap[j] == true) {
+		for (var l = 0; l < tags.length; ++l) {
+		    if (tags[l].trim() == j) {
+			// Current project contains checked tag
+			break;
+		    }
+		    if (l == tags.length-1) {
+			// Current project doesn't contain checked tag
+			// Don't show this project
+			show = false;
+		    }
 		}
 	    }
+	    if (show == false) {
+		break;
+	    }
 	}
-
+	
+	if (show == true) {
+	    start.curProjectList.push(i);    
+	}
     }
 }
 
@@ -47,7 +61,7 @@ function updateCurrentProjectList() {
 function showPages() {
     var i;
 
-    // Hide no-results. If there are no results later we will show it
+    // Hide no-results text. If there are no results later we will show it
     document.getElementById("no-results").style.display = "none";
     
     // Hides all the projects; will show the correct ones later
@@ -55,7 +69,7 @@ function showPages() {
 	start.projectList[i].style.display = "none";
     }
 
-    // If the tags tamp is empty then show the projects on the current page
+    // If the tags map is empty then show the projects on the current page
     if (updateTagsMap.emptyMap == true) {
 	for (i = (PageNumber-1) * PAGESIZE; i < start.projectList.length && i < PageNumber * PAGESIZE ; ++i) {
 	    start.projectList[i].style.display = "";
@@ -85,7 +99,6 @@ function toggleCheckbox(element) {
     updateTagsMap();
     updateCurrentProjectList();
     changePage(1);
-    showPages();
     createPageButtons();
 }
 
@@ -103,6 +116,7 @@ function changePage(number) {
 	pageNumButtons[PageNumber-1].style.color = "#0a2129";
     }
 
+    showPages();
 }
 
 // Creates a forward and backward button to navigate pages
