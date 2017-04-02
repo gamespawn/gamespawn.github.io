@@ -154,7 +154,7 @@ function FadeIn(element)
       clearInterval(timer);
     }
     element.style.opacity = op;
-    op += op * 0.1;
+    op += op * 0.5;
   }, 30);
 }
 
@@ -167,7 +167,7 @@ function FadeOut(element)
       element.style.display = 'none';
     }
     element.style.opacity = op;
-    op -= op * 0.1;
+    op -= op * 0.3;
   }, 30);
 }
 
