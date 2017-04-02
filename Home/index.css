@@ -1,7 +1,7 @@
 /* General formatting */
 body, html {
     height: 100%; /* Allows for parallax */
-    background-color: white;
+    background-color: lightgrey;
     margin: 0px; /* No horizontal scrolling */
 
 }
@@ -15,17 +15,17 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 75%; /* Leaves room for text at the bottom and navbar */
+    height: 80%; /* Leaves room for text at the bottom and navbar */
 }
 .Projects{
     display: table;
     width: 100%;
-    background-image: url(1.jpg);
+    background-image: url(11.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 75%;
+    height: 80%;
 }
 .Events {
     display: table;
@@ -35,7 +35,7 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 75%;
+    height: 80%;
 }
 .Socials {
     display: table;
@@ -45,13 +45,14 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 75%;
+    height: 80%;
 }
 
 /* Parallax text divs */
 .DescriptionText1, .DescriptionText2, .DescriptionText3, .DescriptionText4 {
     display: flex;
     margin: auto;
+    margin-top: 2.5vh;
     text-align: center;
     font-size: 2.5vh;
     width: 80%;
@@ -78,22 +79,24 @@ body, html {
     font-size: 8.5vh;
 }
 
-/* Screen 1: Events/Projects Preview Slideshow */
+/* SLIDESHOW */
 .slideshow-container {
     position: relative;
-    max-height: 90%;
-    max-width: 90%;
+    height: 100%;
+    width: 100%;
     align-self: center;
     flex-flow: column;
     margin: auto;
-    background-color: white;
 }
 .slideshowInnerContainer {
-    height: 100%; /*FIll computer screen height*/
+    height: 100%;
 }
 .slideshowImg {
-    max-height: 90%; /*Leave room for Upcoming Date and Time text*/
-    width: 100%; /*Stretch to end of slideshowInnerContainer horizontally*/
+    height: 100%; /* Leave room for Upcoming Date and Time text */
+    width: 100%; /* Stretch to end of slideshowInnerContainer horizontally */
+}
+.slideshowTextContainer {
+    
 }
 /* Next & previous buttons */
 .prev, .next {
@@ -119,12 +122,8 @@ body, html {
 }
 /* Caption text */
 .text {
-    color: #f2f2f2;
     font-size: 3vh;
-    color: black;
-    padding: 8px 12px;
     position: absolute;
-    bottom: 8px;
     width: 100%;
     text-align: center;
 }
@@ -137,14 +136,15 @@ body, html {
     top: 0;
 }
 
-/* Screen 2: Welcome To Gamespawn */
+/* WELCOME TO GAMESPAWN */
 .headerOuterContainer {
     text-align: center;
     height: 100%;
 }
-/* Large text formatting */
+/* Header text formatting */
 .headerText {
     margin: auto;
+    margin-top: 10vh;
     font-size: 10vh;
     font-family: oswald;
     line-height: 120%;
@@ -153,18 +153,16 @@ body, html {
     border-bottom-width: thick;
     width: 50%;
 }
-/* Small text formatting */
+/* Body text formatting */
 .headerBody {
     position: absolute;
     font-size: 2.5vh;
     font-family: oswald;
     text-align: justify;
-    background-color: white;
 }
 /* Images below small text*/
 .imgOuterContainer {
     width: 100%;
     text-align: center;
-    margin-top: 10vh;
-    border-bottom-style: solid;
+    margin-top: 5vh;
 }
