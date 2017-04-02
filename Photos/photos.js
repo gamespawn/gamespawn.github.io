@@ -105,6 +105,7 @@ function fillImages(filename, filepath, maxphotos, height, width, listID)
 
 function prevImage()
 {
+    if (photoIndex % 7 == 1) prevThumbnailSet();
     photoIndex--;
     if(photoIndex < 1)
     {
@@ -121,6 +122,7 @@ function nextImage()
     {
         photoIndex = 1;
     }
+    if (photoIndex % 7 == 1) nextThumbnailSet();
     viewImage(currFilePath + currFileName + photoIndex + ".jpg");
     toggleSelected(photoIndex);
 }
