@@ -7,42 +7,55 @@ body{
 
 /*Navigation bar*/
 nav {
-    font-size: 20px;
-    background-color: black;
-    margin: 15px;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin:0px;
     padding: 15px;
+    width: 100%;
+    background-color: #1f1f1f;
+    z-index: 10;
+}
+
+nav img
+{
+    padding-left: 300px;
 }
 /*List style type*/
 nav ul {
-    list-style-type: none;
+    list-style-type: inline;
     position: fixed;
-    background-color: black;
     top: 0;
     left: 0;
     margin: 0;
-    padding: 0;
+    padding-left: 900px;
     width: 100%;
-    z-index: 10;
-}
+    
+    
+} 
+
+
 nav ul li {
-    display: inline;
-    float: left;
-    margin: 15px;
+    display:inline-block;
+    margin: -20px;
+    margin-top: 25px;
 }
 /*List link object formatting*/
 nav ul li a {
     padding: 10px 40px;
+    font-size: 18px;
     font-family: oswald;
-    color: #2e92ba;
+    color: white;
 }
 nav ul li a:link {
     text-decoration: none;
 }
 nav ul li a:hover {
-    background-color: #333e51;
+    text-decoration: underline;
 }
 .active {
-    background-color: #f4f5f7;
+    text-decoration: underline;
 }
 
 @media only screen and (min-width: 414px) and (max-width: 600px)
@@ -83,6 +96,6 @@ nav ul li a:hover {
 
     nav ul li
     {
-        margin-right: 20px;
+        margin-right: 10px;
     }
 }
