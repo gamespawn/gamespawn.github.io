@@ -11,10 +11,10 @@ header {
 }
 
 body {
-    background-color: #555555; /* 555555 */
-    color: #EEEEEE;
+    background-color: lightgray; /* 555555 */
+    color: white;
     margin: 0;
-    font-size: 16px;
+    font-size: 2vh;
 
 }
 
@@ -47,7 +47,7 @@ div.projects ul {
 }
 
 div.projects ul li{
-    background-color: #111111;
+    background-color: #222222;
     padding: 0;
     margin: 0px 0px 16px 0px;
     overflow: hidden;
@@ -59,7 +59,7 @@ p.projects-tags {
 
 div.projects ul li p {
     text-align: left;
-    margin: 8px;
+    margin: 1vh 1vw;
     padding: 0;
 }
 
@@ -75,12 +75,13 @@ h1.projects-title {
 img.projects-image {
     float: left;
     width: 22%;
-    margin: 16px 32px 16px 8px;
+    margin: 2vh 1vw 2vh 1vw;
 }
 
 #no-results {
     position: absolute;
     top: 100px;
+    color: black;
     /* check if it is child of ul */
     
 }
@@ -88,6 +89,7 @@ img.projects-image {
 div.pagebuttons {
     margin: 16px;
     text-align: center;
+    font-weight: bold;
 
     user-select: none;
     -moz-user-select: none;
@@ -109,7 +111,7 @@ div.checkboxes {
 #tags {
     padding: 12px;
     margin: 0px 0px 32px 0px;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: #222222;
 }
 
 h1.box-title {

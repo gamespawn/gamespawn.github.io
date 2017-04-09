@@ -111,9 +111,9 @@ function changePage(number) {
     // Check if there are page buttons
     // Change color to singfy current page
     if (pageNumButtons.length > 0) {
-	pageNumButtons[PageNumber-1].style.color = "white";
-	PageNumber = number;
 	pageNumButtons[PageNumber-1].style.color = "#0a2129";
+	PageNumber = number;
+	pageNumButtons[PageNumber-1].style.color = "#1F657C";
     }
 
     showPages();
@@ -145,8 +145,8 @@ function createPageButtons() {
     backwardButton.innerHTML = "&#10094    ";
     forwardButton.style.textDecoration = "none";
     backwardButton.style.textDecoration = "none";
-    forwardButton.style.color = "white";
-    backwardButton.style.color = "white";
+    forwardButton.style.color = "#0a2129";
+    backwardButton.style.color = "#0a2129";
 
     createPageButtons.nPages = Math.ceil(start.projectList.length / PAGESIZE);
     console.log("Number of Pages: " + createPageButtons.nPages);
@@ -159,7 +159,7 @@ function createPageButtons() {
 	button.onclick = function() {changePage(value)};
 	button.innerHTML = i + "    ";
 	button.style.textDecoration = "none";
-	button.style.color = "white";
+	button.style.color = "0a2129";
 	button.className = "pagenumbuttons";
 	pageButtons[0].appendChild(button);
     }
