@@ -79,7 +79,6 @@ function showPages() {
     else {
 	// if there are no current projects to display then show 'No results found'
 	if (start.curProjectList.length == 0) {
-	    console.log("show");
 	    document.getElementById("no-results").style.display = "";
 	}
 	for (i = (PageNumber-1) * PAGESIZE; i < start.curProjectList.length && i < PageNumber * PAGESIZE; ++i) {
@@ -149,7 +148,6 @@ function createPageButtons() {
     backwardButton.style.color = "#0a2129";
 
     createPageButtons.nPages = Math.ceil(start.projectList.length / PAGESIZE);
-    console.log("Number of Pages: " + createPageButtons.nPages);
 
     pageButtons[0].appendChild(backwardButton);
     for (var i = 1; i <= createPageButtons.nPages; ++i) {
@@ -159,7 +157,7 @@ function createPageButtons() {
 	button.onclick = function() {changePage(value)};
 	button.innerHTML = i + "    ";
 	button.style.textDecoration = "none";
-	button.style.color = "0a2129";
+	button.style.color = "#0a2129";
 	button.className = "pagenumbuttons";
 	pageButtons[0].appendChild(button);
     }
@@ -170,8 +168,6 @@ function createPageButtons() {
 }
 
 function start() {
-    console.log("started");
-
     // Get every project list item
     start.height = window.innerHeight;
     start.projectList = document.getElementsByClassName("projects");

@@ -5,7 +5,7 @@
 */
 
 header {
-    margin-top: 80px;
+    margin-top: 80px;;
     text-align: center;
     color: white;
 }
@@ -53,8 +53,13 @@ div.projects ul li{
     overflow: hidden;
 }
 
-p.projects-tags {
-    display: none;
+p.tags {
+    font-size: 1.5vh;
+    font-style: italic;
+}
+div.projects-tags {
+    font-size: 1.5vh;
+    font-style: italic;
 }
 
 div.projects ul li p {
@@ -65,7 +70,7 @@ div.projects ul li p {
 
 
 h1.projects-title {
-    font-size: 30px;
+    font-size: 3vh;
     text-align: left;
     margin: 16px 8px 8px 8px;
     padding: 0;
@@ -86,10 +91,11 @@ img.projects-image {
     
 }
 
-div.pagebuttons {
+.pagebuttons {
     margin: 16px;
     text-align: center;
     font-weight: bold;
+    color: #0a2129;
 
     user-select: none;
     -moz-user-select: none;
