@@ -34,9 +34,9 @@ var currentSelectedPicture;
 function toggleSelected(index)
 {
   var pictureDeselect = document.getElementById(currentSelectedPicture);
-  pictureDeselect.style.border = "none";
+  pictureDeselect.style.marginBottom = "20px";
   var pictureSelect = document.getElementById(index);
-  pictureSelect.style.border = "medium solid yellow";
+  pictureSelect.style.marginBottom = "30px";
   currentSelectedPicture = index;
   photoIndex = index;
 }
