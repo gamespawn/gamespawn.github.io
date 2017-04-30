@@ -14,7 +14,7 @@ body {
     background-color: lightgray; /* 555555 */
     color: white;
     margin: 0;
-    font-size: 2vh;
+    font-size: 1.7vh;
 
 }
 
@@ -48,9 +48,10 @@ div.projects ul {
 
 div.projects ul li{
     background-color: #222222;
-    padding: 0;
+    padding: 2vh 1vw;
     margin: 0px 0px 16px 0px;
     overflow: hidden;
+    
 }
 
 p.tags {
@@ -64,7 +65,7 @@ div.projects-tags {
 
 div.projects ul li p {
     text-align: left;
-    margin: 1vh 1vw;
+    margin: 0;
     padding: 0;
 }
 
@@ -72,7 +73,7 @@ div.projects ul li p {
 h1.projects-title {
     font-size: 3vh;
     text-align: left;
-    margin: 16px 8px 8px 8px;
+    margin: 0;
     padding: 0;
 }
 
@@ -80,7 +81,8 @@ h1.projects-title {
 img.projects-image {
     float: left;
     width: 22%;
-    margin: 2vh 1vw 2vh 1vw;
+    margin-bottom: 0.3vh;
+    margin-right: 1vw;
 }
 
 #no-results {

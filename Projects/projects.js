@@ -73,6 +73,7 @@ function showPages() {
     if (updateTagsMap.emptyMap == true) {
 	for (i = (PageNumber-1) * PAGESIZE; i < start.projectList.length && i < PageNumber * PAGESIZE ; ++i) {
 	    start.projectList[i].style.display = "";
+	    readmore(i);
 	}
     }
     // else show the pages on the current projects list
@@ -83,6 +84,7 @@ function showPages() {
 	}
 	for (i = (PageNumber-1) * PAGESIZE; i < start.curProjectList.length && i < PageNumber * PAGESIZE; ++i) {
 	    start.projectList[start.curProjectList[i]].style.display = "";
+	    readmore(i);
 	}
     }
 }
@@ -167,13 +169,39 @@ function createPageButtons() {
     changePage(PageNumber);
 }
 
+
+function readmore(projnum) {
+    console.log("hii" + projnum);
+    var string = start.originalProjectText[projnum];
+    var height = document.getElementsByClassName("projects-image")[projnum].height + 50;
+    // add 50 for margins
+    
+    start.projectText[projnum].innerHTML = string;
+
+    while (start.projectList[projnum].offsetHeight > height) {
+	string = string.substr(0, string.length - 5);
+	start.projectText[projnum].innerHTML = string;
+    }
+
+}
+
+function resize() {
+    console.log("resize")
+    showPages();
+}
+
 function start() {
     // Get every project list item
     start.height = window.innerHeight;
     start.projectList = document.getElementsByClassName("projects");
     start.projectList = start.projectList[0].getElementsByTagName("UL");
     start.projectList = start.projectList[0].getElementsByTagName("LI");
-
+    start.projectText = document.getElementsByClassName("projects-text");
+    start.originalProjectText = [];
+    for (var i = 0; i < start.projectText.length; ++i) {
+	start.originalProjectText.push(start.projectText[i].innerHTML);
+    }
+    
     start.curProjectList = [];
 
     // Get every input item and uncheck it
@@ -185,8 +213,5 @@ function start() {
 
     updateTagsMap();
     updateCurrentProjectList();
-    showPages();
     createPageButtons();
-    
-    
 }
