@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang ="en">
+
+<head>
+        <link rel="icon" href="../logo.jpg" />
+		<link rel="stylesheet" type="text/css" href="Events.css">
+        <link rel="stylesheet" type="text/css" href="../Home/NavBar.css">
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+</head>
+    <!--Nav Bar Here -->
+    <nav>
+            <img src="../NavBar/Logo.png"></img>
+        <ul>
+            <li><a href="../Home/index.html">Home</a></li>
+            <li><a href="../Projects/projects.html">Projects</a></li>
+            <li><a class="active" href="events.html">Events</a></li>
+            <li><a href="../Photos/photos.html">Photos</a></li>
+            <li><a href="../Signup/signup.html">Sign Up</a></li>
+            <li><a href="../About/about.html">About</a></li>
+        </ul>
+    </nav>
+
+<title> Events </title>
+
+<body>
+
+    <div class = "calendar">
+      <iframe src="https://calendar.google.com/calendar/embed?src=tsch7m3t1qmn9447rai9rpsj6o%40group.calendar.google.com&ctz=America/Los_Angeles" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+<div class="image_holder" id="image_div" style="display:table">
+    
+</div>
+    
+        <!--Modal Here-->
+<div id="InfoModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+        <h2 id="Modal_Header">Modal Header</h2>
+      </div>
+    <div class="modal-body">
+    <p id="Modal_Description"></p>
+    </div>
+  </div>
+</div>
+    
+        <!--Modal Here-->
+<div id="ImageModal" class="modal">    
+    <img class="modal-image" id="modalimg">
+    <div id="caption"></div>
+    
+</div>
+    
+
+
+<script src="Events.js"> </script>
+    
+
+
+</body>
+
+</html>
