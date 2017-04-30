@@ -48,7 +48,7 @@ nav ul li a:link {
 nav ul li a:hover {
     text-decoration: underline;
 }
-.active {
+nav ul li a.active {
     text-decoration: underline;
 }
 
