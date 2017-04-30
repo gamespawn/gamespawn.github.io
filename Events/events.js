@@ -171,19 +171,50 @@ function FadeOut(element)
   }, 30);
 }
 
+/*
+Returns some string based on an id. We use this to populate our second column for our descriptions.
+Note: Try to keep the text length about the same for all the pictures. Less text is fine, but don't have one box have a large length of text. It'll look weird on the page for obvious reasons, so keep it consistent.
+
+Html Tip: <br> = new line
+*/
+function FillOuterText(id)
+{
+    if(id == 0)
+    {
+        return "MCS Festival 2017 <br> Date: 4/26/17 - 5/3/17 <br> Location: INTS 3150 <br> Stamps: 0 <br> The MCS festival is an event where you can show off student made films and games! Gamespawn is working together with the game part of the festival, and we have some games to showcase to you! Stop by at INTS 3150 during the lab hours below to demo some of the games students like you have been working on. <br> Monday: 10 AM - 5 PM <br> Tuesday: 9 AM - 5 PM <br> Wednesday: 9 AM - 4 PM <br> Thursday: 9 AM -  6 PM <br> Friday: 9 AM - 3 PM";
+    }
+    else if(id == 1)
+    {
+        return "Gamespawn and ACM Lan Party Social <br> Date: 5/4/17 <br> Location: WCH 127 <br> Stamps: 0 <br> Gamespawn and ACM will be collaborating together for another LAN party social this Spring Quarter! Feel free to bring your set ups, whether they be console or PC. We'll be playing PC games on the lab computers and also bringing our own consoles to play more fun games!";
+    }
+    else if(id == 2)
+    {
+        return "Meep meep!What is Gamespawn? Well, let me tell you. Gamespawn is a game development club that focuses on making video games. We have a series of workshops that will help teach you how to become a video game developer. You don't need any experience to do this. I am going to keep adding more text because  this div height isn't going any further than I would like it. Oh just kidding. Looks like adding a bunch of exclamation marks somehow just ruins the expansion.";
+    }
+    else if(id == 3)
+    {
+        return "Wow we got 4What is Gamespawn? Well, let me tell you. Gamespawn is a game development club that focuses on making video games. We have a series of workshops that will help teach you how to become a video game developer. You don't need any experience to do this. I am going to keep adding more text because  this div height isn't going any further than I would like it. Oh just kidding. Looks like adding a bunch of exclamation marks somehow just ruins the expansion..";
+    }
+    else if(id == 4)
+    {
+        return "What is Gamespawn? Well, let me tell you. Gamespawn is a game development club that focuses on making video games. We have a series of workshops that will help teach you how to become a video game developer. You don't need any experience to do this. I am going to keep adding more text because  this div height isn't going any further than I would like it. Oh just kidding. Looks like adding a bunch of exclamation marks somehow just ruins the expansion."
+    }
+}
+
+/*Fills the inner modal text in case the outer text has too many words to say. If anything, you can just copy and paste the outer text into the inner text. */
 function FillInnerText(index)
 {
   if(index == '0')
   {
       
-      modalHeader.innerHTML = "Gamespawn General Meeting #420!"
+      modalHeader.innerHTML = "MCS Festival 2017"
       
-      modalText.innerHTML = "WowWoo!What is Gamespawn? Well, let me tell you. Gamespawn is a game development club that focuses on making video games. We have a series of workshops that will help teach you how to become a video game developer. You don't need any experience to do this. I am going to keep adding more text because  this div height isn't going any further than I would like it. Oh just kidding. Looks like adding a bunch of exclamation marks somehow just ruins the expansion.Woo!What is Gamespawn? Well, let me tell you. Gamespawn is a game development club that focuses on making video games. We have a series of workshops that will help teach you how to become a video game developer. You don't need any experience to do this. I am going to keep adding more text because  this div height isn't going any further than I would like it. Oh just kidding. Looks like adding a bunch of exclamation marks somehow just ruins the expansion.WowWoo!What is Gamespawn? Well, let me tell you. Gamespawn is a game development club that focuses on making video games.";
+      modalText.innerHTML = "The MCS festival is an event where you can show off student made films and games! Gamespawn is working together with the game part of the festival, and we have some games to showcase to you! Stop by at INTS 3150 during the lab hours below to demo some of the games students like you have been working on. <br> Monday: 10 AM - 5 PM <br> Tuesday: 9 AM - 5 PM <br> Wednesday: 9 AM - 4 PM <br> Thursday: 9 AM -  6 PM <br> Friday: 9 AM - 3 PM";
   }
   else if(index == '1')
   {
-      modalHeader.innerHTML = "Mr.Puppers Puppy Pupping Puppet Event!"
-      modalText.innerHTML = "Amazing!";
+      modalHeader.innerHTML = "Gamespawn and ACM Spring LAN Party"
+      modalText.innerHTML = "Gamespawn and ACM will be collaborating together for another LAN party social this Spring Quarter! Feel free to bring your set ups, whether they be console or PC. We'll be playing PC games on the lab computers and also bringing our own consoles to play more fun games!";
   }
   else if(index == '2')
   {
@@ -200,32 +231,4 @@ function FillInnerText(index)
       modalHeader.innerHTML = "Finals studying event thing"
       modalText.innerHTML = "OMGOMG";
   }
-}
-
-/*
-Returns some string based on an id. We use this to populate our second column for our descriptions.
-Note: Try to keep the text length about the same for all the pictures. Less text is fine, but don't have one box have a large length of text. It'll look weird on the page for obvious reasons, so keep it consistent.
-*/
-function FillOuterText(id)
-{
-    if(id == 0)
-    {
-        return "What is Gamespawn? Well, let me tell you. Gamespawn is a game development club that focuses on making video games. We have a series of workshops that will help teach you how to become a video game developer. You don't need any experience to do this. I am going to keep adding more text because  this div height isn't going any further than I would like it. Oh just kidding. Looks like adding a bunch of exclamation marks somehow just ruins the expansion.";
-    }
-    else if(id == 1)
-    {
-        return "Woo!What is Gamespawn? Well, let me tell you. Gamespawn is a game development club that focuses on making video games. We have a series of workshops that will help teach you how to become a video game developer. You don't need any experience to do this. I am going to keep adding more text because  this div height isn't going any further than I would like it. Oh just kidding. Looks like adding a bunch of exclamation marks somehow just ruins the expansion.Woo!What is Gamespawn? Well, let me tell you. Gamespawn is a game development club that focuses on making video games. We have a series of workshops that will help teach you how to become a video game developer. You don't need any experience to do this. I am going to keep adding more text because  this div height isn't going any further than I would like it. Oh just kidding. Looks like adding a bunch of exclamation marks somehow just ruins the expansion.";
-    }
-    else if(id == 2)
-    {
-        return "Meep meep!What is Gamespawn? Well, let me tell you. Gamespawn is a game development club that focuses on making video games. We have a series of workshops that will help teach you how to become a video game developer. You don't need any experience to do this. I am going to keep adding more text because  this div height isn't going any further than I would like it. Oh just kidding. Looks like adding a bunch of exclamation marks somehow just ruins the expansion.";
-    }
-    else if(id == 3)
-    {
-        return "Wow we got 4What is Gamespawn? Well, let me tell you. Gamespawn is a game development club that focuses on making video games. We have a series of workshops that will help teach you how to become a video game developer. You don't need any experience to do this. I am going to keep adding more text because  this div height isn't going any further than I would like it. Oh just kidding. Looks like adding a bunch of exclamation marks somehow just ruins the expansion..";
-    }
-    else if(id == 4)
-    {
-        return "What is Gamespawn? Well, let me tell you. Gamespawn is a game development club that focuses on making video games. We have a series of workshops that will help teach you how to become a video game developer. You don't need any experience to do this. I am going to keep adding more text because  this div height isn't going any further than I would like it. Oh just kidding. Looks like adding a bunch of exclamation marks somehow just ruins the expansion."
-    }
 }
