@@ -1,6 +1,7 @@
 body
 {
     background-color: lightgray;
+    font-family: Oswald;
 }
 
 div.Banner
@@ -9,7 +10,6 @@ div.Banner
     display:block;
     margin-left: 23%;
     text-align: center;
-    font-family: Oswald;
     font-size: 20px;
 }
 
@@ -34,7 +34,6 @@ div.Officer
 {
     display:inline-block;
     margin-right: -50px;
-    font-family: Oswald;
 }
 
 p.OfficerTitle
@@ -47,6 +46,5 @@ p.OfficerTitle
 p.BoardTitle
 {
     text-align: center;
-    font-family: Oswald;
     font-size: 50px;
 }
