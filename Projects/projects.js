@@ -2,7 +2,7 @@ var tagsMap = {};
 var PageNumber = 1;
 
 var PAGESIZE = 5; // Number of project items in a page
-var DESC_CHAR = 250; // Character limit of project description
+var DESC_CHAR = 275; // Character limit of project description
 
 
 // Contains the variable emptyMap which is true if no checkboxes are checked
@@ -173,36 +173,29 @@ function createPageButtons() {
 
 function readmore(projnum) {
     var string = start.originalProjectText[projnum];
-    
-    start.projectText[projnum].innerHTML = string;
-    // Limit the number of characters to DESC_CHAR
-    string = string.substr(0, DESC_CHAR);
-    // Get rid of a cut-off word
-    string = string.substr(0, string.lastIndexOf(' ')+1);
-    start.projectText[projnum].innerHTML = string;
 
-    // Create the read-more button at the end of the text
-    var button = document.createElement('a');
-    button.href = "#";
-    button.onclick = function()
-    {
-	start.projectText[projnum].innerHTML = start.originalProjectText[projnum]
-    };
-    button.innerHTML = "show more"
-    button.style.textDecoration = "underline";
-    button.style.color = "lightblue";
-    button.className = "readmore";
-    start.projectText[projnum].appendChild(button);
-    /*
-    var height = document.getElementsByClassName("projects-image")[projnum].height + 50;
-    // add 50 for margins
-    // TODO: Bug fix with small window sizes
-    while (start.projectList[projnum].offsetHeight > height) {
-	string = string.substr(0, string.length - 5);
+    if (string.length > DESC_CHAR + 25) {
+	// Limit the number of characters to DESC_CHAR
+	string = string.substr(0, DESC_CHAR);
+	// Get rid of a cut-off word
+	string = string.substr(0, string.lastIndexOf(' '));
+	string += "... ";
 	start.projectText[projnum].innerHTML = string;
-    }
-    */
 
+	// Create the read-more button at the end of the text
+	var button = document.createElement('a');
+	button.href = "#";
+	button.onclick = function($e)
+	{
+	    $e.preventDefault();
+	    start.projectText[projnum].innerHTML = start.originalProjectText[projnum];
+	};
+	button.innerHTML = "show more"
+	button.style.textDecoration = "underline";
+	button.style.color = "lightblue";
+	button.className = "readmore";
+	start.projectText[projnum].appendChild(button);
+    }
 }
 
 function resize() {

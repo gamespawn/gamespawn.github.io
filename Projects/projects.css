@@ -1,8 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300);
 
-/* Colors
-
-*/
+html {
+    overflow-y: scroll;
+}
 
 header {
     margin-top: 80px;;
@@ -50,7 +50,6 @@ div.projects ul li{
     padding: 2vh 1vw;
     margin: 0px 0px 16px 0px;
     overflow: hidden;
-    
 }
 
 p.tags {
@@ -68,6 +67,12 @@ div.projects ul li p {
     padding: 0;
 }
 
+p.projects-email {
+
+}
+p.projects-text {
+    padding: 3mm 0mm !important;
+}
 
 h1.projects-title {
     font-size: 3vh;
