@@ -10,18 +10,9 @@ function deleteList(){
 }
 
 
-function viewImage(path){
+function viewImage(path)
+{
   document.getElementById("image_view").src = path;
-  // var parent = document.getElementById("image_container");
-  // var descendants = parent.getElementsByTagName("LI");
-  // var i = 0;
-  // while (i < descendants.length){
-  //   if (descendants[i].getElementsByTagName('img')[0].getAttribute("src") == path){
-  //     descendants[i].style.border = "medium solid yellow";
-  //   }
-  //   else descendants[i].style.border = "none";
-  //   i++;
-  // }
 }
 
 var currFileName;
@@ -102,7 +93,20 @@ function fillImages(filename, filepath, maxphotos, height, width, listID)
   toggleSelected(1);
 
 }
-
+function checkCorrectThumbnail()
+{
+    var currentPictureThumbnail;
+    if (photoIndex % 7 == 0) currentPictureThumbnail = photoIndex / 7;
+    else currentPictureThumbnail = parseInt(photoIndex / 7) + 1;
+    if ((currentPictureThumbnail != thumbnailIndex))
+    {
+      document.getElementById("image_list" + thumbnailIndex).style.display = 'none';
+      document.getElementById("image_list" + currentPictureThumbnail).style.display = 'inline-block';
+      thumbnailIndex = currentPictureThumbnail;
+      return 1;
+    }
+    return 0;
+}
 function prevImage()
 {
     if (photoIndex % 7 == 1) prevThumbnailSet();
@@ -113,6 +117,7 @@ function prevImage()
     }
     viewImage(currFilePath + currFileName + photoIndex + ".jpg");
     toggleSelected(photoIndex);
+    if (checkCorrectThumbnail()) return;
 }
 
 function nextImage()
@@ -122,19 +127,22 @@ function nextImage()
     {
         photoIndex = 1;
     }
-    if (photoIndex % 7 == 1) nextThumbnailSet();
     viewImage(currFilePath + currFileName + photoIndex + ".jpg");
     toggleSelected(photoIndex);
+    if (checkCorrectThumbnail()) return;
+    else if (photoIndex % 7 == 1) nextThumbnailSet();
 }
 
 function prevThumbnailSet()
 {
-  if (thumbnailIndex - 1  >= 1){
+  if (thumbnailIndex - 1  >= 1)
+  {
     document.getElementById("image_list" + thumbnailIndex).style.display = 'none';
     thumbnailIndex--;
     document.getElementById("image_list" + thumbnailIndex).style.display = 'inline-block';
   }
-  else {
+  else
+  {
     document.getElementById("image_list" + thumbnailIndex).style.display = 'none';
     document.getElementById("image_list" + thumbnailSetMaxNumber).style.display = 'inline-block';
     thumbnailIndex = thumbnailSetMaxNumber;
@@ -142,12 +150,14 @@ function prevThumbnailSet()
 }
 function nextThumbnailSet()
 {
-  if (thumbnailIndex + 1 <= thumbnailSetMaxNumber){
+  if (thumbnailIndex + 1 <= thumbnailSetMaxNumber)
+  {
     document.getElementById("image_list" + thumbnailIndex).style.display = 'none';
     thumbnailIndex++;
     document.getElementById("image_list" + thumbnailIndex).style.display = 'inline-block';
   }
-  else {
+  else
+  {
     document.getElementById("image_list" + thumbnailIndex).style.display = 'none';
     document.getElementById("image_list1").style.display = 'inline-block';
     thumbnailIndex = 1;
@@ -162,7 +172,6 @@ function toggleContent(content)
 }
 
 var content;
-
 function swapContent()
 {
     if(content)
