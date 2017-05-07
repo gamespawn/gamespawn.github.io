@@ -2,6 +2,7 @@ var tagsMap = {};
 var PageNumber = 1;
 
 var PAGESIZE = 5; // Number of project items in a page
+var DESC_CHAR = 250; // Character limit of project description
 
 
 // Contains the variable emptyMap which is true if no checkboxes are checked
@@ -171,17 +172,36 @@ function createPageButtons() {
 
 
 function readmore(projnum) {
-    console.log("hii" + projnum);
     var string = start.originalProjectText[projnum];
-    var height = document.getElementsByClassName("projects-image")[projnum].height + 50;
-    // add 50 for margins
     
     start.projectText[projnum].innerHTML = string;
+    // Limit the number of characters to DESC_CHAR
+    string = string.substr(0, DESC_CHAR);
+    // Get rid of a cut-off word
+    string = string.substr(0, string.lastIndexOf(' ')+1);
+    start.projectText[projnum].innerHTML = string;
 
+    // Create the read-more button at the end of the text
+    var button = document.createElement('a');
+    button.href = "#";
+    button.onclick = function()
+    {
+	start.projectText[projnum].innerHTML = start.originalProjectText[projnum]
+    };
+    button.innerHTML = "show more"
+    button.style.textDecoration = "underline";
+    button.style.color = "lightblue";
+    button.className = "readmore";
+    start.projectText[projnum].appendChild(button);
+    /*
+    var height = document.getElementsByClassName("projects-image")[projnum].height + 50;
+    // add 50 for margins
+    // TODO: Bug fix with small window sizes
     while (start.projectList[projnum].offsetHeight > height) {
 	string = string.substr(0, string.length - 5);
 	start.projectText[projnum].innerHTML = string;
     }
+    */
 
 }
 
