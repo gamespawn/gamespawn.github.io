@@ -6,7 +6,7 @@ body, html {
 
 }
 
-/* Parallax Background Photo Divs */
+/* Parallax Screens */
 .Slideshow {
     display: table;
     width: 100%;
@@ -57,7 +57,7 @@ body, html {
     height: 80%;
 }
 
-/* Parallax text divs */
+/* Parallax Description Text */
 .DescriptionText1, .DescriptionText2, .DescriptionText3, .DescriptionText4 {
     display: flex;
     margin: auto;
@@ -68,18 +68,14 @@ body, html {
     height: 20%;
 }
 
-/* Text that overlays photos. middleContainer allows the
-   surrounding text div to be centered vertically and horizontally within
-   the Workshops/Projects/Events/Socials divs */
+/* Parallax Photo Text */
 .middleContainer {
     display: table-cell;
     vertical-align: middle;
 }
-/* This centers the actual text within the middleContainer */
 .innerTextContainer {
     text-align: center;
 }
-/* Background and text formatting */
 .inlineText {
     background-color: #1d2630;
     opacity: 0.9;
@@ -88,14 +84,25 @@ body, html {
     font-size: 8.5vh;
 }
 
-/* SLIDESHOW */
-.slideshow-container {
-    width: 500px;
+/* Slideshow formatting*/
+.slideshowContainer {
+    margin-top: 15vh;
+    margin-left: 50vh;
+    margin-right: 50vh;
+    position: relative; 
+    max-width: 80%; 
+    max-height: 75%;  
+}
+.imgContainer {
+    max-width: 100vh;
+    max-height: 100vh;
+    position: absolute;
 }
 .slideshowImg {
-  width: 100%;
+    width: 100%;
+    height: 100%;
+/*  display: none;*/
 }
-/* Caption text */
 .text {
     font-size: 3vh;
     position: absolute;
@@ -103,12 +110,11 @@ body, html {
     text-align: center;
 }
 
-/* WELCOME TO GAMESPAWN */
+/* First parallax page */
 .headerOuterContainer {
     text-align: center;
     height: 100%;
 }
-/* Header text formatting */
 .headerText {
     margin: auto;
     margin-top: 10vh;
@@ -120,14 +126,12 @@ body, html {
     border-bottom-width: thick;
     width: 50%;
 }
-/* Body text formatting */
 .headerBody {
     position: absolute;
     font-size: 2.5vh;
     font-family: oswald;
     text-align: justify;
 }
-/* Images below small text*/
 .imgOuterContainer {
     width: 100%;
     text-align: center;
