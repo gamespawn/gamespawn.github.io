@@ -6,5 +6,13 @@ body
 
 div.Email
 {
-    bottom:40%;
+    margin-top: 100px;
+    float: left;
+    display: inline-block;
+}
+
+div.LinkContainer
+{
+    margin-left: 500px;
+    width: 20%;
 }
