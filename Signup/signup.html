@@ -19,6 +19,9 @@
         </ul>
     </nav>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
 <title> Signup </title>
 
 <body>
@@ -88,12 +91,21 @@
 </div>
 -->
 <div class="Email">
+<p id="p1" style="display: none">gamespawn.ucr@gmail.com</p>
     
 <div class="LinkContainer">
-        <img src="Assets/FB_Logo.png" width="128px" height="128px"> </img>
-        <img src="Assets/Discord.png" width="128px" height="128px"> </img>
-        <img src="Assets/Google_Calendar.png" width="128px" height="128px"> </img>
-        <img src="Assets/Email.png" width="128px" height="128px"> </img>
+        <a href="https://www.facebook.com/groups/gamespawn/" target="_blank">
+            <img src="Assets/FB_Logo.png" width="128px" height="128px"> </img></a>
+        <a href="https://discordapp.com/invite/ejzg2Wb" target="_blank">
+            <img src="Assets/Discord.png" width="128px" height="128px"> </img></a>
+        <a href="http://bit.ly/11i0Qgw" target="_blank">
+            <img src="Assets/Google_Calendar.png" width="128px" height="128px"> </img></a>
+        <a href="http://bit.ly/1vZjRyy" target="_blank">
+            <img src="Assets/Google_Calendar.png" width="128px" height="128px"> </img></a>
+        <a href="https://www.facebook.com/groups/gamespawn/" target="_blank">
+            <img src="Assets/Email.png" width="128px" height="128px"> </img></a>
+        <input type="image" src="Assets/Google_Calendar.png" width="128px" height="128px" onclick="copyToClipboard('#p1')"></input>
+        <p id = "CopyText"></p>
     
 </div>
 
@@ -107,7 +119,7 @@
 
 
 </body>
-
+<script src="signup.js"></script>
 </html> 
 
 
