@@ -1,10 +1,13 @@
 function deleteList(){
-  var temp = 1;
+  var temp = 2;
+  var name = "image_list1";
+  var myList = document.getElementById(name);
+  myList.innerHTML = '';
   while (temp <= thumbnailSetMaxNumber)
   {
     var name = "image_list" + temp;
     var myList = document.getElementById(name);
-    myList.innerHTML = '';
+    myList.remove();
     temp++;
   }
 }
@@ -46,6 +49,7 @@ function fillImages(filename, filepath, maxphotos, height, width, listID)
   thumbnailIndex = 1;
   thumbnailSetMaxNumber = 1;
   var listRef = document.getElementById(listID);
+  listRef.style.display = 'inline-block';
   var bfinished = false;
   var counter = 1;
 
