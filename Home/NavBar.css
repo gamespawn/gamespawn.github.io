@@ -16,25 +16,26 @@ nav img
     display: block;
     padding-left: 300px;
 }
-/*List style type*/
+
+/*Adjusts the contents of the whole list on the nav bar (NOT THE LOGO) */
 nav ul {
     list-style-type: inline;
     position: fixed;
     top: 0;
     left: 0;
     margin: 0;
-    padding-left: 900px;
+    padding-left: 800px;
     width: 100%;
     
     
 } 
-
 
 nav ul li {
     display:inline-block;
     margin: -20px;
     margin-top: 25px;
 }
+
 /*List link object formatting*/
 nav ul li a {
     padding: 10px 40px;
