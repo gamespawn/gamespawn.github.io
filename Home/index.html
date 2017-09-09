@@ -6,10 +6,12 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link href="index.css" rel="stylesheet" type="text/css" />
     <link href="NavBar.css" rel="stylesheet" type="text/css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="index.js"> </script>
   </head> 
+	<style>
+		.slideshowImg {display:none;}
+	</style>
   <body>
+       
     <!-- Navigation Bar -->
     <nav>
       <img src="../NavBar/Logo.png">
@@ -23,7 +25,6 @@
       </ul>
     </nav>
     
-    
     <!-- Slideshow -->
     <div class="Slideshow">
       <div class="slideshowContainer">
@@ -32,13 +33,32 @@
         <div id="img2"><img class="slideshowImg" src="3.jpg"></div>
       </div>
     </div>
-
+		
+		<script>
+				var imgNum = 0;
+				autoSlideshow();
+			
+				function autoSlideshow() {
+					  var i;
+						var x = document.getElementsByClassName("slideshowImg");
+						for (i = 0; i < x.length; i++) {
+							 x[i].style.display = "none";  
+						}		
+    				imgNum++;
+    				if (imgNum > x.length) {
+							imgNum= 1;
+						}    
+    				x[imgNum-1].style.display = "block";  
+    				setTimeout(autoSlideshow, 2500);
+				}
+		</script>
     
     <!-- First parallex page -->
     <!-- Update each page's descriptions before shipping! -->
     <!-- If other sections need to be added, add another parallex section -->
     <div class="headerOuterContainer">
-      <h2 class="headerText">WELCOME TO <br> GAMESPAWN AT UCR</h2>
+      
+      <h2 class="headerText">WELCOME TO <br>GAMESPAWN AT UCR</h2>
       <body class="headerBody">
         We are computer programmers, technical artists, and level designers. 
         <br>We work with everything game related. That includes attending awesome Game Jams, hosting workshops 

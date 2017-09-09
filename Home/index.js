@@ -1,22 +1,18 @@
-var interval = 2000;
 var imageNum = 0;
-var imageArray = [];
 
-$('div').each(function() {
-  var id = $(this).attr('id');
-  $imageArray.push(id);
-});
+var imgArray = ["5.jpg, 2.jpg, 3.jpg"];
 
 function nextImage() {
-  imageNum = (imageNum+1) % totalImages;
+		if(imageNum >= 3) {
+    		imageNum = 0;
+  	} 
+  	img.src = imgArray[imageNum];
+		document.slideshow.src = imgArray[imageNum];
+  	imageNum++;  
 }
- 
-function playSlides() { 
-  var currentImage = nextImage();
-  $('.slideshowContainer > div:first')
-    .fadeOut(1000)
-    .next()
-    .fadeIn(1000)
-    .end();
-  debugger;
-},  5000);
+
+function auto() {
+		setInterval(nextImage, 3000);
+}
+
+window.onload = auto;
