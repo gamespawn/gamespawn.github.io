@@ -3,6 +3,7 @@
   <head>
     <title> Gamespawn at UCR</title>
     <link rel="icon" href="../Projects/images/icon.jpg">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link href="index.css" rel="stylesheet" type="text/css" />
     <link href="NavBar.css" rel="stylesheet" type="text/css" />
@@ -28,9 +29,18 @@
     <!-- Slideshow -->
     <div class="Slideshow">
       <div class="slideshowContainer">
-        <div id="img0"><img class="slideshowImg" src="5.jpg"></div>
-        <div id="img1"><img class="slideshowImg" src="2.jpg"></div>
-        <div id="img2"><img class="slideshowImg" src="3.jpg"></div>
+        <div id="img0">
+					<img class="slideshowImg" src="hacknight.jpg">
+					<div class="captionText">Weekly Hack Night</div>
+				</div>
+        <div id="img1">
+					<img class="slideshowImg" src="bgsocial.jpg">
+					<div class="captionText">Board Game Social</div>
+				</div>				
+        <div id="img2">
+					<img class="slideshowImg" src="obsidian.jpg">
+					<div class="captionText">Obsidian Tech Talk</div>
+				</div>
       </div>
     </div>
 		
@@ -43,13 +53,13 @@
 						var x = document.getElementsByClassName("slideshowImg");
 						for (i = 0; i < x.length; i++) {
 							 x[i].style.display = "none";  
-						}		
-    				imgNum++;
+						}	
+						++imgNum;
     				if (imgNum > x.length) {
-							imgNum= 1;
+							imgNum = 1;
 						}    
     				x[imgNum-1].style.display = "block";  
-    				setTimeout(autoSlideshow, 2500);
+    				setTimeout(autoSlideshow, 3000);
 				}
 		</script>
     
