@@ -29,18 +29,22 @@
     <!-- Slideshow -->
     <div class="Slideshow">
       <div class="slideshowContainer">
-        <div id="img0">
+				
+        <div class="imageHolder">
 					<img class="slideshowImg" src="hacknight.jpg">
-					<div class="captionText">Weekly Hack Night</div>
 				</div>
-        <div id="img1">
+				<div class="captionText">Weekly Hack Night</div>
+				
+        <div class="imageHolder">
 					<img class="slideshowImg" src="bgsocial.jpg">
-					<div class="captionText">Board Game Social</div>
-				</div>				
-        <div id="img2">
-					<img class="slideshowImg" src="obsidian.jpg">
-					<div class="captionText">Obsidian Tech Talk</div>
 				</div>
+				<div class="captionText">Board Game Social</div>
+				
+        <div class="imageHolder">
+					<img class="slideshowImg" src="obsidian.jpg">
+				</div>
+				<div class="captionText">Obsidian Tech Talk</div>
+				
       </div>
     </div>
 		
@@ -49,7 +53,7 @@
 				autoSlideshow();
 			
 				function autoSlideshow() {
-					  var i;
+						var i;
 						var x = document.getElementsByClassName("slideshowImg");
 						for (i = 0; i < x.length; i++) {
 							 x[i].style.display = "none";  
@@ -59,10 +63,28 @@
 							imgNum = 1;
 						}    
     				x[imgNum-1].style.display = "block";  
-    				setTimeout(autoSlideshow, 3000);
+    				setTimeout(autoSlideshow, 4500);
 				}
 		</script>
-    
+    <script>
+				var imgNum1 = 0;
+				autoSlideshowCaption();
+			
+				function autoSlideshowCaption() {
+						var i;
+						var y = document.getElementsByClassName("captionText");
+						for (i = 0; i < y.length; i++) {
+							 y[i].style.display = "none";  
+						}	
+						++imgNum1;
+    				if (imgNum1 > y.length) {
+							imgNum1 = 1;
+						}    
+    				y[imgNum1-1].style.display = "block";  
+    				setTimeout(autoSlideshowCaption, 4500);
+				}
+		</script>
+		
     <!-- First parallex page -->
     <!-- Update each page's descriptions before shipping! -->
     <!-- If other sections need to be added, add another parallex section -->

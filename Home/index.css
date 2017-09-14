@@ -3,7 +3,6 @@ body, html {
     height: 100%; /* Allows for parallax */
     background-color: lightgrey;
     margin: 0px; /* No horizontal scrolling */
-
 }
 
 /* Parallax Screens */
@@ -93,7 +92,7 @@ body, html {
     max-width: 80%; 
     max-height: 75%;  
 }
-#img0, #img1, #img2 {
+.imageHolder {
     max-width: 100vh;
     max-height: 100vh;
     position: absolute;
@@ -103,11 +102,11 @@ body, html {
     height: 100%;
 /*  display: none;*/
 }
-.text {
-    font-size: 3vh;
-    position: absolute;
-    width: 100%;
-    text-align: center;
+.captionText {
+	position:absolute;
+	bottom: 0px;
+	left: 15px;
+	background-color: aliceblue;
 }
 
 /* First parallax page */
