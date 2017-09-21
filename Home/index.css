@@ -18,7 +18,7 @@ body, html {
 .Workshops {
     display: table;
     width: 100%;
-    background-image: url(4.jpg);
+    background-image: url(hacknight.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -28,7 +28,7 @@ body, html {
 .Projects{
     display: table;
     width: 100%;
-    background-image: url(5.jpg);
+    background-image: url(4.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -38,7 +38,7 @@ body, html {
 .Events {
     display: table;
     width: 100%;
-    background-image: url(3.jpg);
+    background-image: url(obsidian.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -48,7 +48,7 @@ body, html {
 .Socials {
     display: table;
     width: 100%;
-    background-image: url(2.jpg);
+    background-image: url(bgsocial.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
