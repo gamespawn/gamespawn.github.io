@@ -2,42 +2,93 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Gamespawn</title>
-    <link rel="stylesheet" type="text/css" href="photos.css" media="all">
+    <title>Photos</title>
+    <link rel="icon" href="../logo.jpg" />
+    <link rel="stylesheet" type="text/css" href="../Home/NavBar.css">
+    <link rel="stylesheet" type="text/css" href="photos.css" media="all">.
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <script src="photos.js"> </script>
   </head>
   <body>
-      <div class="nav_bar">
-        <div class="section">
-            <span onclick="toggleContent(document.getElementById('content1'))"> 
-                Fall 2016 - 2017 <img src="Assets/ArrowDropDown.png"></img> 
-            </span> 
-            <div id="content1" class="section-content">
-                <p><b>Workshops/Ongoing Events</b></p>
-                <p onclick="fillImages('', 'GM/', 7, '100%', 'auto', 'image_list')" >Unreal 4</p>
-                <p>Unreal 4</p>
-                <p>Unreal 4</p>
-                <p>Unreal 4</p>
-            </div>
-        </div>
-    <br></br>
-            <div onclick="toggleContent(document.getElementById('content2'))" class="section">
-            <span> Winter 2017</span> <img src="Assets/ArrowDropDown.png"></img>
-            <div id="content2" class="section-content">
-                <p onclick="fillImages('', 'HN/', 8, '100%', 'auto', 'image_list')">Unity</p>
-                <p>Doggos</p>
-            </div>
-      </div>
+      <nav>
+        <a href="../Home/index.html"><img src="../NavBar/Logo.png"></img></a>
+        <ul>
+            <li><a href="../Home/index.html">Home</a></li>
+            <li><a href="../Projects/projects.html">Projects</a></li>
+            <li><a href="../events/events.html">Events</a></li>
+            <li><a class="active" href="../Photos/photos.html">Photos</a></li>
+            <li><a href="../Signup/signup.html">Sign Up</a></li>
+            <li><a href="../About/about.html">About</a></li>
+        </ul>
+      </nav>
+
+
+      <div class="section-container">
+
+        <!--Selection Box -->
+        <select id="SelectBox" onchange="swapContent()">
+            <option value='default'>Select Year</option>
+            <option value='content1'>FALL 2016</option>
+            <option value='content2'>WINTER 2017</option>
+        </select>
+
+        <!--Slideshow content-->
+        <!--For each new option on the select box, make a new div-->
+        <!--with the same id as the option value. See examples below-->
+        <div id="content1" class="section-content">
+          <p class="heading"><b>GENERAL MEETINGS</b></p>
+          <p onclick="fillImages('', 'GM/', 6, '100%', 'auto', 'image_list1')" class = "item">Unreal 4</p>
+          <p onclick="fillImages('', 'HN/', 13, '100%', 'auto', 'image_list1')" class = "item">Level Design</p>
+
+          <p class="heading"><b>SOCIALS</b></p>
+          <p onclick="fillImages('', 'GM/', 6, '100%', 'auto', 'image_list1')" class = "item">Unreal 4</p>
+          <p onclick="fillImages('', 'HN/', 13, '100%', 'auto', 'image_list1')" class = "item">Level Design</p>
+
+          <p class="heading"><b>WORKSHOPS</b></p>
+          <p onclick="fillImages('', 'GM/', 6, '100%', 'auto', 'image_list1')" class = "item">Unreal 4</p>
+          <p onclick="fillImages('', 'HN/', 13, '100%', 'auto', 'image_list1')" class = "item">Level Design</p>
+
+          <p class="heading"><b>EVENTS</b></p>
+          <p onclick="fillImages('', 'GM/', 6, '100%', 'auto', 'image_list1')" class = "item">Unreal 4</p>
+          <p onclick="fillImages('', 'HN/', 13, '100%', 'auto', 'image_list1')" class = "item">Level Design</p>
         </div>
 
+        <div id="content2" class="section-content">
+          <p class="heading"><b>GENERAL MEETINGS</b></p>
+          <p onclick="fillImages('', 'GM/', 6, '100%', 'auto', 'image_list1')" class = "item">Unreal 4</p>
+
+          <p class="heading"><b>SOCIALS</b></p>
+          <p onclick="fillImages('', 'GM/', 6, '100%', 'auto', 'image_list1')" class = "item">Unreal 4</p>
+
+          <p class="heading"><b>WORKSHOPS</b></p>
+          <p onclick="fillImages('', 'GM/', 6, '100%', 'auto', 'image_list1')" class = "item">Unreal 4</p>
+
+          <p class="heading"><b>EVENTS</b></p>
+          <p onclick="fillImages('', 'GM/', 6, '100%', 'auto', 'image_list1')" class = "item">Unreal 4</p>
+          </div>
+
+      </div>
+
+
+    <!--Slideshow related components -->
     <div id = "PhotoGallery">
+
       <div id = "display_image">
+        <img class="left_arrow" src="Assets/ArrowLeft.png" onclick="prevImage()"></img>
+        <img class="right_arrow" src="Assets/ArrowRight.png" onclick="nextImage()"></img>
         <img id = "image_view">
       </div>
-      <div id="image_container" class="thumbnail">
-        <ul id="image_list">
-        </ul>
+      <div class="carousel-wrapper">
+        <img id="thumbnail_left_arrow" class="left_arrow" src="Assets/ArrowLeft.png" onclick="prevThumbnailSet()"></img>
+        <img id="thumbnail_right_arrow" class="right_arrow" src="Assets/ArrowRight.png" onclick="nextThumbnailSet()"></img>
+        <div id="image_container" class="thumbnail">
+          <ul id="image_list1">
+          </ul>
+        </div>
       </div>
+
+
     </div>
+
   </body>
 </html>

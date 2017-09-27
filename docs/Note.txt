@@ -1,0 +1,6 @@
+Note: To actually deploy this website we need to figure out a way to access our folders. Apparently we can make a docs folder and
+put it there:
+
+https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/
+
+The home page folder may just need to be exposed to the root as well, which should be fine.

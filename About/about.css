@@ -1,0 +1,50 @@
+body
+{
+    background-color: lightgray;
+    font-family: Oswald;
+}
+
+div.Banner
+{
+    margin-top: 100px;
+    display:block;
+    margin-left: 23%;
+    text-align: center;
+    font-size: 20px;
+}
+
+figure
+{
+    display:table;
+}
+
+figcaption
+{
+    display: table-caption; caption-side: bottom;
+}
+
+div.Wrapper
+{
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+div.Officer
+{
+    display:inline-block;
+    margin-right: -50px;
+}
+
+p.OfficerTitle
+{
+    margin: 0px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+p.BoardTitle
+{
+    text-align: center;
+    font-size: 50px;
+}
