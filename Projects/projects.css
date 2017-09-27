@@ -76,14 +76,11 @@ h1.projects-title {
 img.projects-image {
     float: left;
     width: 30%;
-    margin: 16px 32px 0px 8px;
+    margin: 16px 32px 16px 8px;
 }
 
 #no-results {
-    position: absolute;
-    top: 100px;
-    /* check if it is child of ul */
-    
+    display: none;
 }
 
 
