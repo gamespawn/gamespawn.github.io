@@ -48,6 +48,7 @@ div.projects ul {
 }
 
 div.projects ul li{
+    position: relative;
     background-color: #222222;
     padding: 2vh 1vw;
     margin: 0px 0px 16px 0px;
@@ -98,9 +99,18 @@ h1.projects-title {
 
 img.projects-image {
     float: left;
-    width: 22%;
+    width: 30%;
     margin-bottom: 0.3vh;
     margin-right: 1vw;
+}
+
+img.projects-image:hover {
+/*  enable to overlay image on top of text
+    position: absolute;
+    top: 2vh;
+    left: 1vw;
+*/
+    width: 60%;
 }
 
 #no-results {

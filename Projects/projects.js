@@ -2,7 +2,7 @@ var tagsMap = {};
 var PageNumber = 1;
 
 var PAGESIZE = 5; // Number of project items in a page
-var DESC_CHAR = 275; // Character limit of project description
+var DESC_CHAR = 1024; // Character limit of project description
 
 
 // Contains the variable emptyMap which is true if no checkboxes are checked
@@ -174,9 +174,12 @@ function createPageButtons() {
 function readmore(projnum) {
     var string = start.originalProjectText[projnum];
 
+    // +25 because there is no point hiding anything less
+    // than 25 characters
     if (string.length > DESC_CHAR + 25) {
 	// Limit the number of characters to DESC_CHAR
 	string = string.substr(0, DESC_CHAR);
+	console.log(DESC_CHAR);
 	// Get rid of a cut-off word
 	string = string.substr(0, string.lastIndexOf(' '));
 	string += "... ";
