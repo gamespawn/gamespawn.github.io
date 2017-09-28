@@ -1,4 +1,4 @@
-FillImages("flyer", "Images/", 4, "396px", "270px");
+FillImages("flyer", "Images/", 4, "396px", "306px");
 AttachInfoModals();
 //fillUnorderedImages("test", "Images/", 3, "20px", "20px");
 
