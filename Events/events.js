@@ -1,4 +1,4 @@
-FillImages("test", "Images/", 8, "300px", "300px");
+FillImages("flyer", "Images/", 4, "396px", "270px");
 AttachInfoModals();
 //fillUnorderedImages("test", "Images/", 3, "20px", "20px");
 
@@ -12,9 +12,11 @@ width: Width of each photo.
 
 How this works is that it'll create a new image and set its source to be the filename + some counter
 starting from 0. It'll keep doing it until it reaches the max amount of photos to be displayed.
+
+NOTE: MAKE SURE YOUR FILE EXTENSIONS ARE .JPG. Want to use a different file type? Change the part with the .jpg with the desired file type. But be warned, all photos still need to be of that file type.
 */
-//Note: You need to make a table on your html file with an id of "image_table".
-//Note: I would keep a folder of active images and only use that folder and replace them whenever needed. It'll make things easier to manage your photos/text.
+/*Note: You need to make a table on your html file with an id of "image_table".
+Note: I would keep a folder of active images and only use that folder and replace them whenever needed. It'll make things easier to manage your photos/text.*/
 function FillImages(filename, filepath, maxphotos, height, width)
 {
     var row;
