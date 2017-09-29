@@ -171,8 +171,8 @@ function createPageButtons() {
 }
 
 
-function readmore(projnum) {
-    var string = start.originalProjectText[projnum];
+function readmore(projNum) {
+    var string = start.originalProjectText[projNum];
 
     // +25 because there is no point hiding anything less
     // than 25 characters
@@ -183,7 +183,7 @@ function readmore(projnum) {
 	// Get rid of a cut-off word
 	string = string.substr(0, string.lastIndexOf(' '));
 	string += "... ";
-	start.projectText[projnum].innerHTML = string;
+	start.projectText[projNum].innerHTML = string;
 
 	// Create the read-more button at the end of the text
 	var button = document.createElement('a');
@@ -191,19 +191,28 @@ function readmore(projnum) {
 	button.onclick = function($e)
 	{
 	    $e.preventDefault();
-	    start.projectText[projnum].innerHTML = start.originalProjectText[projnum];
+	    start.projectText[projNum].innerHTML = start.originalProjectText[projNum];
 	};
 	button.innerHTML = "show more"
 	button.style.textDecoration = "underline";
 	button.style.color = "lightblue";
 	button.className = "readmore";
-	start.projectText[projnum].appendChild(button);
+	start.projectText[projNum].appendChild(button);
     }
 }
 
 function resize() {
     console.log("resize")
     showPages();
+}
+
+function resizeProjectImage(imageNum) {
+    if (start.projectImages[imageNum].style.width == '30%') {
+	start.projectImages[imageNum].style.width = '100%';
+    }
+    else {
+	start.projectImages[imageNum].style.width = '30%';
+    }
 }
 
 function start() {
@@ -217,8 +226,15 @@ function start() {
     for (var i = 0; i < start.projectText.length; ++i) {
 	start.originalProjectText.push(start.projectText[i].innerHTML);
     }
-    
     start.curProjectList = [];
+    // Create the onlcick event for project images
+    // This event toggles the size from big to small
+    start.projectImages = document.getElementsByClassName("projects-image");
+    for (var i = 0; i < start.projectImages.length; ++i) {
+	const value = i;
+	start.projectImages[i].style.width = '30%';
+	start.projectImages[i].onclick = function () { resizeProjectImage(value); }
+    }
 
     // Get every input item and uncheck it
     // TODO: Make sure we only get checkboxes
@@ -230,4 +246,7 @@ function start() {
     updateTagsMap();
     updateCurrentProjectList();
     createPageButtons();
+
+
+    
 }

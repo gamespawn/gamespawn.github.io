@@ -104,15 +104,6 @@ img.projects-image {
     margin-right: 1vw;
 }
 
-img.projects-image:hover {
-/*  enable to overlay image on top of text
-    position: absolute;
-    top: 2vh;
-    left: 1vw;
-*/
-    width: 60%;
-}
-
 #no-results {
     position: absolute;
     top: 100px;
