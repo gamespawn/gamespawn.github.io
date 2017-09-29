@@ -89,11 +89,11 @@ td
 /* Modal Image */
 .modal-image {
     position: relative;
-    margin: auto;
+    margin-left: 690px;
     display: block;
     top: 12%;
     width: 30%;
-    height: 85%;
+    height: 80%;
     max-width: 700px;
 }
 
@@ -117,5 +117,6 @@ td
 
 div.image_holder
 {
+    margin-left: 225px;
     font-family: Oswald;
 }
