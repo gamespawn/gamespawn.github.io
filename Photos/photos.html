@@ -25,47 +25,95 @@
 
       <div class="section-container">
 
-        <!--Selection Box -->
+        <!--Selection Box
+        Make the latest year on top-->
         <select id="SelectBox" onchange="swapContent()">
             <option value='default'>Select Year</option>
-            <option value='content1'>FALL 2016</option>
-            <option value='content2'>WINTER 2017</option>
+            <option value='content4'>2016-2017</option>
+            <option value='content3'>2015-2016</option>
+            <option value='content2'>2014-2015</option>
+            <option value='content1'>2013-2014</option>
+
         </select>
 
         <!--Slideshow content-->
         <!--For each new option on the select box, make a new div-->
         <!--with the same id as the option value. See examples below-->
-        <div id="content1" class="section-content">
+
+        <!--fillImages(filename, filepath, maxphotos, height, width, listID)
+            filename is blank because we are gonna dynamically add it in
+            image_list1 is the first thumbnail set.-->
+
+        <!--Do this command to rename the files in the folder in seq order:
+            ls | cat -n | while read n f; do mv "$f" "file-$n.jpg"; done
+        -->
+
+        <!--2016-2017-->
+        <div id="content4" class="section-content">
           <p class="heading"><b>GENERAL MEETINGS</b></p>
-          <p onclick="fillImages('', 'GM/', 6, '100%', 'auto', 'image_list1')" class = "item">Unreal 4</p>
-          <p onclick="fillImages('', 'HN/', 13, '100%', 'auto', 'image_list1')" class = "item">Level Design</p>
-
-          <p class="heading"><b>SOCIALS</b></p>
-          <p onclick="fillImages('', 'GM/', 6, '100%', 'auto', 'image_list1')" class = "item">Unreal 4</p>
-          <p onclick="fillImages('', 'HN/', 13, '100%', 'auto', 'image_list1')" class = "item">Level Design</p>
-
-          <p class="heading"><b>WORKSHOPS</b></p>
-          <p onclick="fillImages('', 'GM/', 6, '100%', 'auto', 'image_list1')" class = "item">Unreal 4</p>
-          <p onclick="fillImages('', 'HN/', 13, '100%', 'auto', 'image_list1')" class = "item">Level Design</p>
-
-          <p class="heading"><b>EVENTS</b></p>
-          <p onclick="fillImages('', 'GM/', 6, '100%', 'auto', 'image_list1')" class = "item">Unreal 4</p>
-          <p onclick="fillImages('', 'HN/', 13, '100%', 'auto', 'image_list1')" class = "item">Level Design</p>
+            <p onclick="fillImages('', 'GM/', 6, '100%', 'auto', 'image_list1')" class = "item">Fall</p>
+            <p class="heading"><b>HACKNIGHT</b></p>
+              <p onclick="fillImages('', 'HN/', 13, '100%', 'auto', 'image_list1')" class = "item">Hacknight Fall</p>
+            <p class="heading"><b>EVENTS</b></p>
+              <p onclick="fillImages('', 'HN/', 13, '100%', 'auto', 'image_list1')" class = "item">Tech Talk: Obsidian Entertainment</p>
         </div>
 
+        <!--2015-2016-->
+        <div id="content3" class="section-content">
+          <p class="heading"><b>GENERAL MEETINGS</b></p>
+            <p onclick="fillImages('', 'GM/', 6, '100%', 'auto', 'image_list1')" class = "item">Fall</p>
+          <p class="heading"><b>WORKSHOPS</b></p>
+            <p onclick="fillImages('', 'GM/', 6, '100%', 'auto', 'image_list1')" class = "item">Autodesk Maya (3D Modeling)</p>
+          <p class="heading"><b>HACKNIGHT</b></p>
+            <p onclick="fillImages('', 'HN/', 13, '100%', 'auto', 'image_list1')" class = "item">Hacknight Fall</p>
+            <p onclick="fillImages('', 'HN/', 13, '100%', 'auto', 'image_list1')" class = "item">Hacknight Winter</p>
+          <p class="heading"><b>EVENTS</b></p>
+            <p onclick="fillImages('', 'HN/', 13, '100%', 'auto', 'image_list1')" class = "item">Merit Badge Day</p>
+            <p onclick="fillImages('', 'HN/', 13, '100%', 'auto', 'image_list1')" class = "item">Minecraft Level Design Competition</p>
+            <p onclick="fillImages('', 'HN/', 13, '100%', 'auto', 'image_list1')" class = "item">Tech Talk: Obsidian and Turtle Rock Studios </p>
+          <p class="heading"><b>SOCIALS</b></p>
+            <p onclick="fillImages('', 'HN/', 13, '100%', 'auto', 'image_list1')" class = "item">Board Game Social</p>
+            <p onclick="fillImages('', 'HN/', 13, '100%', 'auto', 'image_list1')" class = "item">Smash Bros. Social</p>
+            <p onclick="fillImages('', 'HN/', 13, '100%', 'auto', 'image_list1')" class = "item">Thanksgiving Potluck</p>
+            <p onclick="fillImages('', 'HN/', 13, '100%', 'auto', 'image_list1')" class = "item">White Elephant</p>
+        </div>
+
+        <!--2014-2015-->
         <div id="content2" class="section-content">
           <p class="heading"><b>GENERAL MEETINGS</b></p>
-          <p onclick="fillImages('', 'GM/', 6, '100%', 'auto', 'image_list1')" class = "item">Unreal 4</p>
-
-          <p class="heading"><b>SOCIALS</b></p>
-          <p onclick="fillImages('', 'GM/', 6, '100%', 'auto', 'image_list1')" class = "item">Unreal 4</p>
-
+            <p onclick="fillImages('', 'GM/', 6, '100%', 'auto', 'image_list1')" class = "item">Fall</p>
+            <p onclick="fillImages('', 'HN/', 13, '100%', 'auto', 'image_list1')" class = "item">Spring</p>
           <p class="heading"><b>WORKSHOPS</b></p>
-          <p onclick="fillImages('', 'GM/', 6, '100%', 'auto', 'image_list1')" class = "item">Unreal 4</p>
-
+            <p onclick="fillImages('', 'GM/', 6, '100%', 'auto', 'image_list1')" class = "item">Autodesk Maya (3D Modeling) Fall</p>
+            <p onclick="fillImages('', 'HN/', 13, '100%', 'auto', 'image_list1')" class = "item">C++ Workshop Fall</p>
+            <p onclick="fillImages('', 'HN/', 13, '100%', 'auto', 'image_list1')" class = "item">Game Design Fall</p>
+            <p onclick="fillImages('', 'HN/', 13, '100%', 'auto', 'image_list1')" class = "item">Photoshop Fall</p>
+            <p onclick="fillImages('', 'HN/', 13, '100%', 'auto', 'image_list1')" class = "item">Unity Fall</p>
+            <p onclick="fillImages('', 'HN/', 13, '100%', 'auto', 'image_list1')" class = "item">Game Design Winter</p>
+            <p onclick="fillImages('', 'HN/', 13, '100%', 'auto', 'image_list1')" class = "item">Unity Winter</p>
+            <p onclick="fillImages('', 'GM/', 6, '100%', 'auto', 'image_list1')" class = "item">Autodesk Maya (3D Modeling) Winter</p>
+          <p class="heading"><b>HACKNIGHT</b></p>
+            <p onclick="fillImages('', 'HN/', 13, '100%', 'auto', 'image_list1')" class = "item">Hacknight Fall</p>
+            <p onclick="fillImages('', 'HN/', 13, '100%', 'auto', 'image_list1')" class = "item">Hacknight Winter</p>
+            <p onclick="fillImages('', 'GM/', 6, '100%', 'auto', 'image_list1')" class = "item">Hacknight Spring</p>
           <p class="heading"><b>EVENTS</b></p>
-          <p onclick="fillImages('', 'GM/', 6, '100%', 'auto', 'image_list1')" class = "item">Unreal 4</p>
-          </div>
+            <p onclick="fillImages('', 'HN/', 13, '100%', 'auto', 'image_list1')" class = "item">Student Game Demo Showcase</p>
+            <p onclick="fillImages('', 'HN/', 13, '100%', 'auto', 'image_list1')" class = "item">Motion Capture Field Trip</p>
+            <p onclick="fillImages('', 'HN/', 13, '100%', 'auto', 'image_list1')" class = "item">Minecraft Level Design Competition</p>
+            <p onclick="fillImages('', 'HN/', 13, '100%', 'auto', 'image_list1')" class = "item">Robocode Competition</p>
+          <p class="heading"><b>SOCIALS</b></p>
+            <p onclick="fillImages('', 'HN/', 13, '100%', 'auto', 'image_list1')" class = "item">Buffalo Wild Wings</p>
+            <p onclick="fillImages('', 'HN/', 13, '100%', 'auto', 'image_list1')" class = "item">Smash Bros. Social</p>
+        </div>
+
+        <!--2013-2014-->
+        <div id="content1" class="section-content">
+          <br>
+          <p onclick="fillImages('', '13-14/UC_Irvine_Visit/', 7, '100%', 'auto', 'image_list1')" class = "item">UC Irvine Visit</p>
+          <p onclick="fillImages('', '13-14/Outreach/', 2, '100%', 'auto', 'image_list1')" class = "item">Tabling/Fundraising</p>
+        </div>
+
+
 
       </div>
 
@@ -73,11 +121,14 @@
     <!--Slideshow related components -->
     <div id = "PhotoGallery">
 
+      <!--Div will show the current selected picture-->
       <div id = "display_image">
         <img class="left_arrow" src="Assets/ArrowLeft.png" onclick="prevImage()"></img>
         <img class="right_arrow" src="Assets/ArrowRight.png" onclick="nextImage()"></img>
         <img id = "image_view">
       </div>
+
+      <!--This is for the thumbnails-->
       <div class="carousel-wrapper">
         <img id="thumbnail_left_arrow" class="left_arrow" src="Assets/ArrowLeft.png" onclick="prevThumbnailSet()"></img>
         <img id="thumbnail_right_arrow" class="right_arrow" src="Assets/ArrowRight.png" onclick="nextThumbnailSet()"></img>
@@ -85,8 +136,8 @@
           <ul id="image_list1">
           </ul>
         </div>
+        <p id="thumbnailPages" style="margin-top: -10px; margin-left: 50%; color:white"></p>
       </div>
-
 
     </div>
 

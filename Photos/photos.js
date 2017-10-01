@@ -82,7 +82,11 @@ function fillImages(filename, filepath, maxphotos, height, width, listID)
 
     //Append the list item onto the unordered list
     listRef.appendChild(new_list_item);
-    if(++counter > maxphotos) bfinished = true;
+    if(++counter > maxphotos)
+    {
+      bfinished = true;
+      continue;
+    }
     if (counter % 8 == 0){ //create a new ul if u have more than 7 pictures
       thumbnailSetMaxNumber++;
       var divContainer = document.getElementById("image_container");
@@ -95,7 +99,7 @@ function fillImages(filename, filepath, maxphotos, height, width, listID)
     }
   }
   toggleSelected(1);
-
+  document.getElementById('thumbnailPages').innerHTML = thumbnailIndex + "/" + thumbnailSetMaxNumber;
 }
 function checkCorrectThumbnail()
 {
@@ -107,9 +111,8 @@ function checkCorrectThumbnail()
       document.getElementById("image_list" + thumbnailIndex).style.display = 'none';
       document.getElementById("image_list" + currentPictureThumbnail).style.display = 'inline-block';
       thumbnailIndex = currentPictureThumbnail;
-      return 1;
+      document.getElementById('thumbnailPages').innerHTML = thumbnailIndex + "/" + thumbnailSetMaxNumber;
     }
-    return 0;
 }
 function prevImage()
 {
@@ -121,7 +124,6 @@ function prevImage()
     }
     viewImage(currFilePath + currFileName + photoIndex + ".jpg");
     toggleSelected(photoIndex);
-    if (checkCorrectThumbnail()) return;
 }
 
 function nextImage()
@@ -133,8 +135,7 @@ function nextImage()
     }
     viewImage(currFilePath + currFileName + photoIndex + ".jpg");
     toggleSelected(photoIndex);
-    if (checkCorrectThumbnail()) return;
-    else if (photoIndex % 7 == 1) nextThumbnailSet();
+    checkCorrectThumbnail();
 }
 
 function prevThumbnailSet()
@@ -151,7 +152,9 @@ function prevThumbnailSet()
     document.getElementById("image_list" + thumbnailSetMaxNumber).style.display = 'inline-block';
     thumbnailIndex = thumbnailSetMaxNumber;
   }
+  document.getElementById('thumbnailPages').innerHTML = thumbnailIndex + "/" + thumbnailSetMaxNumber;
 }
+
 function nextThumbnailSet()
 {
   if (thumbnailIndex + 1 <= thumbnailSetMaxNumber)
@@ -166,6 +169,8 @@ function nextThumbnailSet()
     document.getElementById("image_list1").style.display = 'inline-block';
     thumbnailIndex = 1;
   }
+  document.getElementById('thumbnailPages').innerHTML = thumbnailIndex + "/" + thumbnailSetMaxNumber;
+
 }
 
 //Toggles the dropdown content of a section whenever it is clicked.

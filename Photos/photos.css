@@ -97,7 +97,7 @@ img.left_arrow:hover, img.right_arrow:hover
   margin-left: 13%;
   position: absolute;
   width: 860px;
-  height: 660px;
+  height: 700px;
   top:85px; bottom:0; left:300px;
   border: 8px solid #0c3b4b;
   background-color:#0c3b4b;
@@ -139,7 +139,7 @@ div.section-container
     border: 6px solid #0c3b4b;
     z-index = -1;
     width: 11%;
-    height: 660px;
+    height: 700px;
     background-color: #18566a;
 
 }
