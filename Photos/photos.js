@@ -51,14 +51,19 @@ function fillImages(filename, filepath, maxphotos, height, width, listID)
   var listRef = document.getElementById(listID);
   listRef.style.display = 'inline-block';
   var bfinished = false;
-  var counter = 1;
+  var counter = 0;
 
   //View the first image in the gallery
-  viewImage(filepath + filename + counter + ".jpg");
-  currentSelectedPicture = counter;
+  viewImage(filepath + filename + 1 + ".jpg");
+  currentSelectedPicture = 1;
   //Load in pictures
   while(!bfinished)
   {
+    if(++counter > maxphotos)
+    {
+      bfinished = true;
+      continue;
+    }
     var new_list_item = document.createElement("li");
     new_list_item.setAttribute('class', 'imageList');
     new_list_item.setAttribute('id', counter);
@@ -82,12 +87,8 @@ function fillImages(filename, filepath, maxphotos, height, width, listID)
 
     //Append the list item onto the unordered list
     listRef.appendChild(new_list_item);
-    if(++counter > maxphotos)
-    {
-      bfinished = true;
-      continue;
-    }
-    if (counter % 8 == 0){ //create a new ul if u have more than 7 pictures
+
+    if (counter % 7 == 0){ //create a new ul if u have more than 7 pictures
       thumbnailSetMaxNumber++;
       var divContainer = document.getElementById("image_container");
       var tempListRef = document.createElement('ul');
