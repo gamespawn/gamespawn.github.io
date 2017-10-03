@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One');
 @import url('https://fonts.googleapis.com/css?family=Lobster|Nova+Square');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+
 #SelectBox
 {
   width: 98%;
@@ -97,7 +98,7 @@ img.left_arrow:hover, img.right_arrow:hover
   margin-left: 13%;
   position: absolute;
   width: 860px;
-  height: 700px;
+  height: 750px;
   top:85px; bottom:0; left:300px;
   border: 8px solid #0c3b4b;
   background-color:#0c3b4b;

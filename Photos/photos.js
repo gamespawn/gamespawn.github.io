@@ -10,6 +10,11 @@ function deleteList(){
     myList.remove();
     temp++;
   }
+  elements = document.getElementsByClassName('item');
+  if (!elements) return;
+  for (var i = 0; i < elements.length; i++) {
+      elements[i].style.background="none";
+  }
 }
 
 
@@ -28,19 +33,28 @@ var currentSelectedPicture;
 function toggleSelected(index)
 {
   var pictureDeselect = document.getElementById(currentSelectedPicture);
-  pictureDeselect.style.marginBottom = "20px";
+  //pictureDeselect.style.marginBottom = "20px";
+  pictureDeselect.style.opacity = "1";
   var pictureSelect = document.getElementById(index);
-  pictureSelect.style.marginBottom = "30px";
+  //pictureSelect.style.marginBottom = "30px";
+  pictureSelect.style.opacity = "0.2";
   currentSelectedPicture = index;
   photoIndex = index;
 }
 //Be sure to have your file names numbered. Everything has to have the same base file name.
 //You can modify this function to take in a different directory instead.
-function fillImages(filename, filepath, maxphotos, height, width, listID)
+function fillImages(filename, filepath, maxphotos, height, width, listID, el)
 {
   //Clear the list of old pictures
   deleteList();
 
+  //Set the title name of the gallery
+  if (el)
+  {
+    document.getElementById('galleryTitle').innerHTML = el.innerHTML;
+    el.style.background = '#232322';
+
+  }
   //Set parameters for the current slideshow
   currFileName = filename;
   currFilePath = filepath;
@@ -87,8 +101,7 @@ function fillImages(filename, filepath, maxphotos, height, width, listID)
 
     //Append the list item onto the unordered list
     listRef.appendChild(new_list_item);
-
-    if (counter % 7 == 0){ //create a new ul if u have more than 7 pictures
+    if (counter % 7 == 0 && counter + 1 <= maxphotos){ //create a new ul if u have more than 7 pictures in set
       thumbnailSetMaxNumber++;
       var divContainer = document.getElementById("image_container");
       var tempListRef = document.createElement('ul');
