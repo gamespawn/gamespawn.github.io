@@ -90,6 +90,7 @@ img.left_arrow:hover, img.right_arrow:hover
   width: auto;
   height: 100%;
   margin: auto;
+  image-orientation: from-image;
 }
 
 #PhotoGallery

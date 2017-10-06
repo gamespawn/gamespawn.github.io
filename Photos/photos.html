@@ -31,8 +31,6 @@
             <li><a href="../About/about.html">About</a></li>
         </ul>
       </nav>
-
-
       <div class="section-container">
 
         <!--Selection Box
@@ -43,7 +41,6 @@
             <option value='content3'>2015-2016</option>
             <option value='content2'>2014-2015</option>
             <option value='content1'>2013-2014</option>
-
         </select>
 
         <!--Slideshow content-->
@@ -54,8 +51,9 @@
             filename is blank because we are gonna dynamically add it in
             image_list1 is the first thumbnail set.-->
 
-        <!--Do this command to rename the files in the folder in seq order:
-            ls | cat -n | while read n f; do mv "$f" "file-$n.jpg"; done
+        <!--Do this command to rename the files in the folder in seq order
+          (Make sure you cd into the directory of where the photos are at)
+          ls | cat -n | while read n f; do mv "$f" "file-$n.jpg"; done
         -->
 
         <!--2016-2017-->
@@ -120,37 +118,30 @@
           <p onclick="fillImages('', '13-14/UC_Irvine_Visit/', 7, '100%', 'auto', 'image_list1', this)" class = "item">UC Irvine Visit</p>
           <p onclick="fillImages('', '13-14/Outreach/', 2, '100%', 'auto', 'image_list1', this)" class = "item">Tabling/Fundraising</p>
         </div>
-
-
-
       </div>
-
-
-    <!--Slideshow related components -->
-    <div id = "PhotoGallery">
-      <div style="background-color: #111111;">
-        <p id="galleryTitle" style="text-align: center; color:white;">Fall 2016 General Meeting</p>
-      </div>
-      <!--Div will show the current selected picture-->
-      <div id = "display_image" style="background:#103542;">
-        <img class="left_arrow" src="Assets/ArrowLeft.png" onclick="prevImage()"></img>
-        <img class="right_arrow" src="Assets/ArrowRight.png" onclick="nextImage()"></img>
-        <img id = "image_view">
-      </div>
-
-      <!--This is for the thumbnails-->
-      <div>
-        <img id="thumbnail_left_arrow" class="left_arrow" src="Assets/ArrowLeft.png" onclick="prevThumbnailSet()"></img>
-        <img id="thumbnail_right_arrow" class="right_arrow" src="Assets/ArrowRight.png" onclick="nextThumbnailSet()"></img>
-        <br>
-        <div id="image_container" class="thumbnail">
-          <ul id="image_list1">
-          </ul>
+      <!--Slideshow related components -->
+      <div id = "PhotoGallery">
+        <div style="background-color: #111111;">
+          <p id="galleryTitle" style="text-align: center; color:white;">Fall 2016 General Meeting</p>
         </div>
-        <p id="thumbnailPages" style="margin-top: -30px; text-align: center; color:white"></p>
-      </div>
+        <!--Div will show the current selected picture-->
+        <div id = "display_image" style="background:#103542;">
+          <img class="left_arrow" src="Assets/ArrowLeft.png" onclick="prevImage()"></img>
+          <img class="right_arrow" src="Assets/ArrowRight.png" onclick="nextImage()"></img>
+          <img id = "image_view">
+        </div>
 
-    </div>
-
+        <!--This is for the thumbnails-->
+        <div>
+          <img id="thumbnail_left_arrow" class="left_arrow" src="Assets/ArrowLeft.png" onclick="prevThumbnailSet()"></img>
+          <img id="thumbnail_right_arrow" class="right_arrow" src="Assets/ArrowRight.png" onclick="nextThumbnailSet()"></img>
+          <br>
+          <div id="image_container" class="thumbnail">
+            <ul id="image_list1">
+            </ul>
+          </div>
+          <!--Text to show how many thumbnail sets there are-->
+          <p id="thumbnailPages" style="margin-top: -30px; text-align: center; color:white"></p>
+        </div>
   </body>
 </html>

@@ -1,3 +1,12 @@
+/*
+Sometimes, pictures taken in portrait mode show up in landscape (wrong
+orientation). You can download this problem that can fix it for you:
+https://savolai.net/software/JPEG-EXIF_autorotate
+Another way is to open the picture in Paint and save it again.
+*/
+
+
+//Delete the photo gallery and thumbnail set
 function deleteList(){
   var temp = 2;
   var name = "image_list1";
@@ -17,7 +26,7 @@ function deleteList(){
   }
 }
 
-
+//Displays the image on the "big screen"
 function viewImage(path)
 {
   document.getElementById("image_view").src = path;
@@ -30,6 +39,8 @@ var photoIndex;
 var thumbnailIndex;
 var thumbnailSetMaxNumber;
 var currentSelectedPicture;
+
+//This will make the thumbnail lower opacity if it is the current picture
 function toggleSelected(index)
 {
   var pictureDeselect = document.getElementById(currentSelectedPicture);
@@ -41,6 +52,7 @@ function toggleSelected(index)
   currentSelectedPicture = index;
   photoIndex = index;
 }
+
 //Be sure to have your file names numbered. Everything has to have the same base file name.
 //You can modify this function to take in a different directory instead.
 function fillImages(filename, filepath, maxphotos, height, width, listID, el)
@@ -53,8 +65,8 @@ function fillImages(filename, filepath, maxphotos, height, width, listID, el)
   {
     document.getElementById('galleryTitle').innerHTML = el.innerHTML;
     el.style.background = '#232322';
-
   }
+
   //Set parameters for the current slideshow
   currFileName = filename;
   currFilePath = filepath;
@@ -70,6 +82,7 @@ function fillImages(filename, filepath, maxphotos, height, width, listID, el)
   //View the first image in the gallery
   viewImage(filepath + filename + 1 + ".jpg");
   currentSelectedPicture = 1;
+
   //Load in pictures
   while(!bfinished)
   {
@@ -101,6 +114,7 @@ function fillImages(filename, filepath, maxphotos, height, width, listID, el)
 
     //Append the list item onto the unordered list
     listRef.appendChild(new_list_item);
+
     if (counter % 7 == 0 && counter + 1 <= maxphotos){ //create a new ul if u have more than 7 pictures in set
       thumbnailSetMaxNumber++;
       var divContainer = document.getElementById("image_container");
@@ -115,6 +129,7 @@ function fillImages(filename, filepath, maxphotos, height, width, listID, el)
   toggleSelected(1);
   document.getElementById('thumbnailPages').innerHTML = thumbnailIndex + "/" + thumbnailSetMaxNumber;
 }
+
 function checkCorrectThumbnail()
 {
     var currentPictureThumbnail;
@@ -128,6 +143,7 @@ function checkCorrectThumbnail()
       document.getElementById('thumbnailPages').innerHTML = thumbnailIndex + "/" + thumbnailSetMaxNumber;
     }
 }
+
 function prevImage()
 {
     if (photoIndex % 7 == 1) prevThumbnailSet();
@@ -184,7 +200,6 @@ function nextThumbnailSet()
     thumbnailIndex = 1;
   }
   document.getElementById('thumbnailPages').innerHTML = thumbnailIndex + "/" + thumbnailSetMaxNumber;
-
 }
 
 //Toggles the dropdown content of a section whenever it is clicked.
