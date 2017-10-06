@@ -1,45 +1,45 @@
 /*Navigation bar*/
 nav {
     display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    margin:0px;
     padding: 15px;
     width: 100%;
     background-color: #1f1f1f;
     z-index: 10;
+    position: fixed;
+    margin-bottom: 200px;
 }
 
 nav img
 {
-    display: block;
-    padding-left: 300px;
+    position: fixed;
+    margin-left: 470px;
+    top: 1.2%; 
 }
 
 /*Adjusts the contents of the whole list on the nav bar (NOT THE LOGO) */
 nav ul {
     list-style-type: inline;
-    position: fixed;
+    display: inline;
+    position: relative;
     top: 0;
     left: 0;
-    margin: 0;
-    padding-left: 800px;
+    margin-left: 850px;
     width: 100%;
     
     
 } 
 
 nav ul li {
-    display:inline-block;
+    display:inline;
     margin: -20px;
-    margin-top: 25px;
+    margin-top: 15px;
 }
 
 /*List link object formatting*/
 nav ul li a {
     padding: 10px 40px;
-    font-size: 18px;
+    margin-top: 50px;
+    font-size: 20px;
     font-family: oswald;
     color: white;
 }

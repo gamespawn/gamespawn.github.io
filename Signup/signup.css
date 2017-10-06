@@ -1,7 +1,13 @@
+*
+{
+    margin: 0px;
+}
+
 body
 {
     background-color: lightgray;
     font-family: Oswald;
+    margin: 0px;
 }
 
 div.Email

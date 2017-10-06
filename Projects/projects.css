@@ -28,13 +28,16 @@ div.main-text {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: -80px;
 }
 
 /* Projects Side */
 
 div.projects {
+
     margin-left: auto;
     margin-right: auto;
+    margin-top: 100px;
     overflow: hidden;
     width: 75%;
     float: left;
@@ -130,6 +133,7 @@ img.projects-image {
 div.checkboxes {
     margin-left: auto;
     margin-right: auto;
+    margin-top: 100px;
     overflow: hidden;
     width: 20%;
     float: right;
