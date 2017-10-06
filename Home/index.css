@@ -3,6 +3,7 @@ body, html {
     height: 100%; /* Allows for parallax */
     background-color: lightgrey;
     margin: 0px; /* No horizontal scrolling */
+    font-family: oswald;
 }
 
 /* Parallax Screens */
@@ -18,7 +19,7 @@ body, html {
 .Workshops {
     display: table;
     width: 100%;
-    background-image: url(hacknight.jpg);
+    background-image: url(4.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -28,7 +29,7 @@ body, html {
 .Projects{
     display: table;
     width: 100%;
-    background-image: url(4.jpg);
+    background-image: url(hacknight.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -88,9 +89,9 @@ body, html {
     margin-top: 15vh;
     margin-left: 50vh;
     margin-right: 50vh;
-    position: relative; 
-    max-width: 80%; 
-    max-height: 75%;  
+    position: relative;
+    max-width: 80%;
+    max-height: 75%;
 }
 .imageHolder {
     max-width: 100vh;
@@ -126,10 +127,11 @@ body, html {
     width: 50%;
 }
 .headerBody {
-    position: absolute;
+    position: relative;
     font-size: 2.5vh;
     font-family: oswald;
-    text-align: justify;
+    text-align: center;
+    margin: 0;
 }
 .imgOuterContainer {
     width: 100%;
