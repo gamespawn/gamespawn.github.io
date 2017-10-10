@@ -7,6 +7,20 @@
     margin: 0px;
 }
 
+body
+{
+    position: relative;
+    height: 100vh;
+}
+
+.Wrapper
+{
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+
 #SelectBox
 {
   width: 98%;
@@ -15,18 +29,19 @@
   font-weight: 20px;
   font-size: 16px;
 }
-.section-container
+
+/*Note sure if needed, this scales the page numbers correctly but not the thumbnails for some reason */
+div.Thumbnail_Wrapper
 {
-  margin-left: 16%;
-  margin-top: 6.2%;
-  box-shadow: 4px 4px grey;
-  position: absolute;
-    top:37px; bottom:0; left:10px;
+    width: 100%;
+    height: 35%;
 }
+
 #image_container
 {
   text-align: center;
   width: 100%;
+  height: 40%;
 }
 .imageList {
   position: relative;
@@ -54,7 +69,7 @@ img.left_arrow, img.right_arrow
 {
    z-index: 1;
    position: absolute;
-   top: 40%;
+   top: 350px;
    font-weight: bold;
    font-size: 50px;
    color: white;
@@ -63,7 +78,7 @@ img.left_arrow, img.right_arrow
 
 img.right_arrow
 {
-    left:92.6%;
+    left:90.6%;
 }
 
 img.left_arrow:hover, img.right_arrow:hover
@@ -74,20 +89,20 @@ img.left_arrow:hover, img.right_arrow:hover
 {
   width: 3%;
   height: 8%;
-  top: 88%;
-  left: 97%;
+  top: 81%;
+  left: 90.6%;
 }
 #thumbnail_left_arrow
 {
   width: 3%;
   height: 8%;
-  top: 88%;
-  left: 1%;
+  top: 81%;
+  left: 35%;
 }
 
 #display_image{
   width: 100%;
-  height: 550px;
+  height: 80%;
   overflow: hidden;
 
 }
@@ -102,12 +117,11 @@ img.left_arrow:hover, img.right_arrow:hover
 
 #PhotoGallery
 {
-  margin-top: 3%;
-  margin-left: 13%;
-  position: absolute;
-  width: 860px;
-  height: 750px;
-  top:85px; bottom:0; left:300px;
+  margin-top: 100px;
+  margin-right: 5%;
+  float: right;
+  width: 60%;
+  height: 80%;
   border: 8px solid #0c3b4b;
   background-color:#0c3b4b;
   box-shadow: 4px 4px grey;
@@ -145,10 +159,15 @@ div.section
 
 div.section-container
 {
+    margin-top: 100px;
+    margin-left: 20%;
+    overflow: hidden;
+    float: left;
+    box-shadow: 4px 4px grey;
     border: 6px solid #0c3b4b;
     z-index = -1;
     width: 11%;
-    height: 750px;
+    height: 80%;
     background-color: #18566a;
 
 }
@@ -167,3 +186,4 @@ div.section-content.show
 {
     display: block;
 }
+
