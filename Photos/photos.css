@@ -19,6 +19,7 @@ body
     margin: auto;
     width: 100%;
     height: 100%;
+
 }
 
 #SelectBox
@@ -34,24 +35,33 @@ body
 div.Thumbnail_Wrapper
 {
     width: 100%;
-    height: 35%;
+    height: auto;
+    overflow: hidden;
 }
 
 #image_container
 {
   text-align: center;
   width: 100%;
-  height: 40%;
+  height: 100%;
+
 }
+div > ul
+{
+  width: auto;
+  height: auto;
+  display: table;
+  border-spacing: 10px;
+  margin: 0;
+}
+
 .imageList {
   position: relative;
   width: 80px;
   height: 80px;
   overflow: hidden;
-  display: inline-block;
-  margin: 2px;
-  margin-bottom: 20px;
-
+  display: table-cell;
+  text-align: center;
 }
 .thumbnail img {
   position: absolute;
@@ -69,7 +79,7 @@ img.left_arrow, img.right_arrow
 {
    z-index: 1;
    position: absolute;
-   top: 350px;
+   margin-top: 10%;
    font-weight: bold;
    font-size: 50px;
    color: white;
@@ -85,21 +95,34 @@ img.left_arrow:hover, img.right_arrow:hover
 {
     background-color: #191919;
 }
+#thumbnail_right_arrow:hover, #thumbnail_left_arrow:hover
+{
+  background-color: #191919;
+}
+
 #thumbnail_right_arrow
 {
   width: 3%;
   height: 8%;
-  top: 81%;
+  margin-top: 2%;
   left: 90.6%;
+  position: absolute;
 }
 #thumbnail_left_arrow
 {
   width: 3%;
   height: 8%;
-  top: 81%;
+  margin-top: 2%;
   left: 35%;
+  position: absolute;
 }
-
+#thumbnailPages
+{
+  margin-top: -1%;
+  text-align: center;
+  color: white;
+  position: relative;
+}
 #display_image{
   width: 100%;
   height: 80%;
@@ -125,6 +148,7 @@ img.left_arrow:hover, img.right_arrow:hover
   border: 8px solid #0c3b4b;
   background-color:#0c3b4b;
   box-shadow: 4px 4px grey;
+  overflow: hidden;
 }
 
 /*Restrict width only to make the bg color not extend too far */
@@ -186,4 +210,3 @@ div.section-content.show
 {
     display: block;
 }
-
