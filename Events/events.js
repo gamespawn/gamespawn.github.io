@@ -183,7 +183,7 @@ function FillOuterText(id)
 {
     if(id == 0)
     {
-        return "MCS Festival 2017 <br> Date: 4/26/17 - 5/3/17 <br> Location: INTS 3150 <br> Stamps: 0 <br> The MCS festival is an event where you can show off student made films and games! Gamespawn is working together with the game part of the festival, and we have some games to showcase to you! Stop by at INTS 3150 during the lab hours below to demo some of the games students like you have been working on. <br> Monday: 10 AM - 5 PM <br> Tuesday: 9 AM - 5 PM <br> Wednesday: 9 AM - 4 PM <br> Thursday: 9 AM -  6 PM <br> Friday: 9 AM - 3 PM";
+        return "Obsidian Tech Talk <br> Date: 10/18/17 <br> Location: Bourns A265 <br> Meet and greet with Obsidian Entertainment's Game Developer, Roby Atadero, a UCR almunus. Learn how he became successful and what goes on inside a game development company. We will be giving away copies of Pillars of Eternity ($45 value) as prizes for trivia and a raffle (while supplies last).";
     }
     else if(id == 1)
     {
@@ -209,9 +209,9 @@ function FillInnerText(index)
   if(index == '0')
   {
       
-      modalHeader.innerHTML = "MCS Festival 2017"
+      modalHeader.innerHTML = "Obsidian Tech Talk"
       
-      modalText.innerHTML = "The MCS festival is an event where you can show off student made films and games! Gamespawn is working together with the game part of the festival, and we have some games to showcase to you! Stop by at INTS 3150 during the lab hours below to demo some of the games students like you have been working on. <br> Monday: 10 AM - 5 PM <br> Tuesday: 9 AM - 5 PM <br> Wednesday: 9 AM - 4 PM <br> Thursday: 9 AM -  6 PM <br> Friday: 9 AM - 3 PM";
+      modalText.innerHTML = "Meet and greet with Obsidian Entertainment's Game Developer, Roby Atadero, a UCR almunus. Learn how he became successful and what goes on inside a game development company. We will be giving away copies of Pillars of Eternity ($45 value) as prizes for trivia and a raffle (while supplies last).";
   }
   else if(index == '1')
   {
