@@ -183,11 +183,11 @@ function FillOuterText(id)
 {
     if(id == 0)
     {
-        return "Obsidian Tech Talk <br> Date: 10/18/17 <br> Location: Bourns A265 <br> Meet and greet with Obsidian Entertainment's Game Developer, Roby Atadero, a UCR almunus. Learn how he became successful and what goes on inside a game development company. We will be giving away copies of Pillars of Eternity ($45 value) as prizes for trivia and a raffle (while supplies last).";
+        return "Come see the amazine new events we have planned! Join a project and/or start your own. Snacks and pizza WILL be provided.";
     }
     else if(id == 1)
     {
-        return "Gamespawn and ACM Lan Party Social <br> Date: 5/4/17 <br> Location: WCH 127 <br> Stamps: 0 <br> Gamespawn and ACM will be collaborating together for another LAN party social this Spring Quarter! Feel free to bring your set ups, whether they be console or PC. We'll be playing PC games on the lab computers and also bringing our own consoles to play more fun games!";
+        return "We provide the minecraft accounts, you play around and make/play through spooky levels! We will all hang out, have fun, and snacks WILL be provided!";
     }
     else if(id == 2)
     {
@@ -209,14 +209,14 @@ function FillInnerText(index)
   if(index == '0')
   {
       
-      modalHeader.innerHTML = "Obsidian Tech Talk"
+      modalHeader.innerHTML = "Second General Meeting"
       
-      modalText.innerHTML = "Meet and greet with Obsidian Entertainment's Game Developer, Roby Atadero, a UCR almunus. Learn how he became successful and what goes on inside a game development company. We will be giving away copies of Pillars of Eternity ($45 value) as prizes for trivia and a raffle (while supplies last).";
+      modalText.innerHTML = "Come see the amazine new events we have planned! Join a project and/or start your own. Snacks and pizza WILL be provided.";
   }
   else if(index == '1')
   {
-      modalHeader.innerHTML = "Gamespawn and ACM Spring LAN Party"
-      modalText.innerHTML = "Gamespawn and ACM will be collaborating together for another LAN party social this Spring Quarter! Feel free to bring your set ups, whether they be console or PC. We'll be playing PC games on the lab computers and also bringing our own consoles to play more fun games!";
+      modalHeader.innerHTML = "Minecraft Halloween Social"
+      modalText.innerHTML = "We provide the minecraft accounts, you play around and make/play through spooky levels! We will all hang out, have fun, and snacks WILL be provided!";
   }
   else if(index == '2')
   {
