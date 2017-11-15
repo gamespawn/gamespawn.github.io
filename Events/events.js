@@ -1,4 +1,4 @@
-FillImages("flyer", "Images/", 4, "396px", "306px");
+FillImages("flyer", "Images/", 5, "306px", "396px");
 AttachInfoModals();
 fillUnorderedImages("test", "Images/", 3, "20px", "20px");
 
@@ -201,6 +201,10 @@ function FillOuterText(id)
     {
         return "What is Gamespawn? Well, let me tell you. Gamespawn is a game development club that focuses on making video games. We have a series of workshops that will help teach you how to become a video game developer. You don't need any experience to do this. I am going to keep adding more text because  this div height isn't going any further than I would like it. Oh just kidding. Looks like adding a bunch of exclamation marks somehow just ruins the expansion."
     }
+    else if(id == 5)
+    {
+        return "What is Gamespawn? Well, let me tell you. Gamespawn is a game development club that focuses on making video games. We have a series of workshops that will help teach you how to become a video game developer. You don't need any experience to do this. I am going to keep adding more text because  this div height isn't going any further than I would like it. Oh just kidding. Looks like adding a bunch of exclamation marks somehow just ruins the expansion."
+    }
 }
 
 /*Fills the inner modal text in case the outer text has too many words to say. If anything, you can just copy and paste the outer text into the inner text. */
@@ -229,6 +233,11 @@ function FillInnerText(index)
       modalText.innerHTML = "Blah blah blah";
   }
   else if(index == '4')
+  {
+      modalHeader.innerHTML = "Finals studying event thing"
+      modalText.innerHTML = "OMGOMG";
+  }
+  else if(index == '5')
   {
       modalHeader.innerHTML = "Finals studying event thing"
       modalText.innerHTML = "OMGOMG";
