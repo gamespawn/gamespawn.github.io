@@ -1,4 +1,4 @@
-FillImages("flyer", "Images/", 5, "306px", "396px");
+FillImages("flyer", "Images/", 6, "306px", "396px");
 AttachInfoModals();
 fillUnorderedImages("test", "Images/", 3, "20px", "20px");
 
@@ -183,27 +183,27 @@ function FillOuterText(id)
 {
     if(id == 0)
     {
-        return "Come see the amazine new events we have planned! Join a project and/or start your own. Snacks and pizza WILL be provided.";
+        return "Network with fellow game developers at Gamespawn! Have fun while making new friends. Snacks will be provided. This event will happen after the first general meeting.";
     }
     else if(id == 1)
     {
-        return "We provide the minecraft accounts, you play around and make/play through spooky levels! We will all hang out, have fun, and snacks WILL be provided!";
+        return "Meet and greet with Obsidian Entertainment's Game Developer, Roby Atadero, a UCR almunus. Learn how he became successful and what goes on inside a game development company. We will be giving away copies of Pillars of Eternity ($45 value) as prizes for trivia and a raffle (while supplies last).";
     }
     else if(id == 2)
     {
-        return "Meep meep!What is Gamespawn? Well, let me tell you. Gamespawn is a game development club that focuses on making video games. We have a series of workshops that will help teach you how to become a video game developer. You don't need any experience to do this. I am going to keep adding more text because  this div height isn't going any further than I would like it. Oh just kidding. Looks like adding a bunch of exclamation marks somehow just ruins the expansion.";
+        return "We provide the minecraft accounts, you play around and make/play through spooky levels! We will all hang out, have fun, and snacks WILL be provided!";
     }
     else if(id == 3)
     {
-        return "Wow we got 4What is Gamespawn? Well, let me tell you. Gamespawn is a game development club that focuses on making video games. We have a series of workshops that will help teach you how to become a video game developer. You don't need any experience to do this. I am going to keep adding more text because  this div height isn't going any further than I would like it. Oh just kidding. Looks like adding a bunch of exclamation marks somehow just ruins the expansion..";
+        return "Take a break from studying and come play super smash brothers with other Gamespawn and Highlander Gaming Students! All the consoles, games and snacks will be provided.";
     }
     else if(id == 4)
     {
-        return "What is Gamespawn? Well, let me tell you. Gamespawn is a game development club that focuses on making video games. We have a series of workshops that will help teach you how to become a video game developer. You don't need any experience to do this. I am going to keep adding more text because  this div height isn't going any further than I would like it. Oh just kidding. Looks like adding a bunch of exclamation marks somehow just ruins the expansion."
+        return "Come listen to a guest speaker from Blizzard and learn how it is to work in one of the biggest video game developers right here in L.A. County. This is your chance to meet and find out how to you can work there too!"
     }
     else if(id == 5)
     {
-        return "What is Gamespawn? Well, let me tell you. Gamespawn is a game development club that focuses on making video games. We have a series of workshops that will help teach you how to become a video game developer. You don't need any experience to do this. I am going to keep adding more text because  this div height isn't going any further than I would like it. Oh just kidding. Looks like adding a bunch of exclamation marks somehow just ruins the expansion."
+        return "Come join Gamespawn and IEEE at our official Thanksgiving potluck. Feel free to bring your favorite dish! Make sure to show up to the Blizzard Tech talk on the same day!"
     }
 }
 
@@ -213,33 +213,33 @@ function FillInnerText(index)
   if(index == '0')
   {
       
-      modalHeader.innerHTML = "Second General Meeting"
+      modalHeader.innerHTML = "Board Game Social"
       
-      modalText.innerHTML = "Come see the amazine new events we have planned! Join a project and/or start your own. Snacks and pizza WILL be provided.";
+      modalText.innerHTML = "Network with fellow game developers at Gamespawn! Have fun while making new friends. Snacks will be provided. This event will happen after the first general meeting.";
   }
   else if(index == '1')
+  {
+      modalHeader.innerHTML = "Obsidian Tech Talk"
+      modalText.innerHTML = "Meet and greet with Obsidian Entertainment's Game Developer, Roby Atadero, a UCR almunus. Learn how he became successful and what goes on inside a game development company. We will be giving away copies of Pillars of Eternity ($45 value) as prizes for trivia and a raffle (while supplies last).";
+  }
+  else if(index == '2')
   {
       modalHeader.innerHTML = "Minecraft Halloween Social"
       modalText.innerHTML = "We provide the minecraft accounts, you play around and make/play through spooky levels! We will all hang out, have fun, and snacks WILL be provided!";
   }
-  else if(index == '2')
-  {
-      modalHeader.innerHTML = "Mineblock Theater FunTime!"
-      modalText.innerHTML = "AHHH";
-  }
   else if(index == '3')
   {
-      modalHeader.innerHTML = "Kyaa-athon at BournsA265!"
-      modalText.innerHTML = "Blah blah blah";
+      modalHeader.innerHTML = "Smash Social"
+      modalText.innerHTML = "Take a break from studying and come play super smash brothers with other Gamespawn and Highlander Gaming Students! All the consoles, games and snacks will be provided.";
   }
   else if(index == '4')
   {
-      modalHeader.innerHTML = "Finals studying event thing"
-      modalText.innerHTML = "OMGOMG";
+      modalHeader.innerHTML = "Blizzard Tech Talk"
+      modalText.innerHTML = "Come listen to a guest speaker from Blizzard and learn how it is to work in one of the biggest video game developers right here in L.A. County. This is your chance to meet and find out how to you can work there too!";
   }
   else if(index == '5')
   {
-      modalHeader.innerHTML = "Finals studying event thing"
-      modalText.innerHTML = "OMGOMG";
+      modalHeader.innerHTML = "Thanksgiving Potluck"
+      modalText.innerHTML = "Please Sign up with what you are bringing here: https://docs.google.com/spreadsheets/d/1B_nlXPrx1qSZTlHZ4fMZ_IkQ3vsnuFKaIsQzGkWW75M/edit#gid=0";
   }
 }
