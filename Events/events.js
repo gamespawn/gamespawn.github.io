@@ -1,4 +1,4 @@
-FillImages("flyer", "Images/", 6, "306px", "396px");
+FillImages("flyer", "Images/", 7, "306px", "396px");
 AttachInfoModals();
 fillUnorderedImages("test", "Images/", 3, "20px", "20px");
 
@@ -205,6 +205,10 @@ function FillOuterText(id)
     {
         return "Come join Gamespawn and IEEE at our official Thanksgiving potluck. Feel free to bring your favorite dish! Make sure to show up to the Blizzard Tech talk on the same day!"
     }
+    else if(id == 6)
+    {
+        return "Relieve finals stress at the Round 1 Arcade! If you need a ride, our drivers will meet up at Bytes (in WCH) by 7 PM before heading to Round 1 in Moreno Valley Mall. Bring your own $. All you need is $10 to play unlimited arcade games for 1 hour! For those that are in need of carpool, please sign up in the link below: https://docs.google.com/forms/d/e/1FAIpQLSeIo6SC_WMYANQt7SHI4dMY9Y0DZNhN_YiT58OiuQ7l2BRLUw/viewform?usp=sf_link"
+    }
 }
 
 /*Fills the inner modal text in case the outer text has too many words to say. If anything, you can just copy and paste the outer text into the inner text. */
@@ -241,5 +245,10 @@ function FillInnerText(index)
   {
       modalHeader.innerHTML = "Thanksgiving Potluck"
       modalText.innerHTML = "Please Sign up with what you are bringing here: https://docs.google.com/spreadsheets/d/1B_nlXPrx1qSZTlHZ4fMZ_IkQ3vsnuFKaIsQzGkWW75M/edit#gid=0";
+  }
+  else if(index == '6')
+  {
+      modalHeader.innerHTML = "Round 1 Social"
+      modalText.innerHTML = "For those that are in need of carpool, please sign up in the link below: https://docs.google.com/forms/d/e/1FAIpQLSeIo6SC_WMYANQt7SHI4dMY9Y0DZNhN_YiT58OiuQ7l2BRLUw/viewform?usp=sf_link";
   }
 }
