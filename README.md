@@ -1,5 +1,5 @@
-# GamespawnRedesignV2
-2nd revision of Gamespawn website redesign
-https://khuan028.github.io/
+# Official Gamespawn @ UCR Website
+Welcome to the repo hosting Gamespawn's official website! Follow the link to our site below:
+https://gamespawn.github.io/
 
 ![Thumbnail](thumbnail.png)
