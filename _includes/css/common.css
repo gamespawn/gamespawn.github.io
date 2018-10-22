@@ -68,6 +68,12 @@ hr {
     margin-right: auto;
 }
 
+.center-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .inline-centered {
     text-align: center;
 }
