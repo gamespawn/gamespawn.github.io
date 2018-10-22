@@ -1,3 +1,5 @@
-# Official Gamespawn Site
-Welcome to the Github repository hosting our organization's official website! Follow the link to our site below:
-https://gamespawn.github.io/Home/index.html
+# GamespawnRedesignV2
+2nd revision of Gamespawn website redesign
+https://khuan028.github.io/
+
+![Thumbnail](thumbnail.png)

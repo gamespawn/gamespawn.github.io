@@ -1,0 +1,49 @@
+---
+layout: default
+---
+<div class="centered">
+    <div class="spacer-large"></div>
+    <div class="floatstop">
+        <a href="{{site.baseurl}}/projects.html"> &lt; Back to Projects</a>
+        <h1 id="page-title">{{page.title}}</h1>
+        <p id="page-subtitle">By {{ page.team | join: ", " }}</p>
+        <br>
+        {% if page.tags contains "recruiting" %}
+        <div class="recruitment-banner">&#x2605; {{page.title}} is currently recruiting
+            {% if page.recruiting and page.recruiting != "" %}
+            {{page.recruiting | join: ", "}} and more!
+            {% else %}
+            new members! 
+            {% endif %}
+            &nbsp;
+            <a href="mailto:{{page.email}}?subject=Hi%21 Can I join {{page.title}}%3F" class="btn-outlined margin-10 mobile-center-button">Apply now!</a></div>
+        <br>
+        {% endif %}
+        <img src="{{site.baseurl}}/{{page.thumbnail}}" id="project-page-thumbnail">
+        {% if page.download-link and page.download-link != "" %}
+        <div class="download-link-container">
+            <a class="btn-standard-wide" href='{{page.download-link}}'>Play</a>
+            <p>{{page.title}}</p>
+        </div>
+        
+        {% endif %}
+        <div class="spacer-medium"></div>
+        <p>
+            Contact: <a href="mailto:{{page.email}}">{{page.email}}</a> <br>
+            Added on: {{page.date-added}} <br>
+            Tags: {{ page.tags | join: ", "}}
+        </p>
+        <hr>
+        <p>
+            {% assign description = "" %}
+            {% if page.description and page.description != "" %}
+            {% assign description = page.description %}
+            {% endif %}
+            {{description}}
+        </p>
+    </div>
+    <div class="spacer-large"></div>
+
+</div>
+
+{{content}}

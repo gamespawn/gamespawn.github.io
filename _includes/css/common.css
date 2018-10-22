@@ -1,0 +1,407 @@
+/*******************************************
+
+    COMMON.GENERAL
+
+********************************************/
+
+* {
+    /* Clear default padding and margins */
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Rubik', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+p {
+    line-height: 1.5em;
+    margin: auto;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.2em;
+    font-weight: 500;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    font-weight: 600;
+}
+
+h3 {
+    margin-bottom: 12px;
+    font-size: 1.3em;
+    font-weight: 400;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.floatstop:after {
+    /* For clearing both floats before the end of the container */
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+    content: ".";
+}
+
+.centered {
+    /* For centering elements */
+    max-width: 1000px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.inline-centered {
+    text-align: center;
+}
+
+.floatright {
+    display: block;
+    float: right;
+}
+
+.vertical-align-responsive {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+}
+
+/*******************************************
+
+    COMMON.BACKGROUND
+
+********************************************/
+
+.black-bg {
+    background-color: black;
+}
+
+.grey-bg {
+    background-color: #2e2e2e;
+}
+
+.blue-bg {
+    background-color: #0d8cb6;
+}
+
+/*******************************************
+
+    COMMON.WIDTH AND HEIGHT
+
+********************************************/
+
+.full-width {
+    width: 100%;
+}
+
+.height-200 {
+    height: 200px;
+}
+
+.height-500 {
+    height: 500px;
+}
+
+/*******************************************
+
+    COMMON.PADDING AND MARGINS
+
+********************************************/
+
+.padding-10 {
+    padding: 10px;
+}
+
+.padding-10-right {
+    padding-right: 10px;
+}
+
+.padding-20 {
+    padding: 20px;
+}
+
+.padding-lr {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.padded-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.margin-auto {
+    margin: auto;
+}
+
+.margin-10 {
+    margin: 10px;
+}
+
+/*******************************************
+
+    COMMON.TEXT
+
+********************************************/
+
+.text-align-center {
+    text-align: center;
+}
+
+.text-optimal {
+    max-width: 700px;
+}
+
+.text-optimal-centered {
+    max-width: 700px;
+    margin: auto;
+}
+
+.text-black {
+    color: black;
+}
+
+.text-light-grey {
+    color: #afafaf;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-turquoise {
+    color: #23d0ff;
+}
+
+.top-gun-font {
+    letter-spacing: 2px;
+    font-family: 'top_gunregular', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+}
+
+/*******************************************
+
+    COMMON.IMAGES
+
+********************************************/
+
+.image-can-load {
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+
+.image-loaded {
+    opacity: 1;
+}
+
+.thumbnail-height {
+    height: 180px;
+}
+
+.cover-img-container {
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+}
+
+.cover-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-clip: content-box;
+    transition: transform 0.3s ease-out;
+}
+
+.cover-img:hover {
+    transform: scale(1.05);
+}
+
+/*******************************************
+
+    COMMON.SPACING
+
+********************************************/
+
+.spacer-small {
+    width: 100%;
+    height: 10px;
+}
+
+.spacer-medium {
+    width: 100%;
+    height: 25px;
+}
+
+.spacer-large {
+    width: 100%;
+    height: 50px;
+}
+
+/*******************************************
+
+    COMMON.COLUMNS
+
+********************************************/
+
+.col-2 {
+    display: block;
+    position: relative;
+    float: left;
+    box-sizing: border-box;
+    width: 50%;
+}
+
+.col-3 {
+    display: block;
+    position: relative;
+    float: left;
+    box-sizing: border-box;
+    width: 33%;
+}
+
+.col-4 {
+    display: block;
+    position: relative;
+    float: left;
+    box-sizing: border-box;
+    width: 25%;
+}
+
+/*******************************************
+
+    COMMON.BUTTONS
+
+********************************************/
+
+.btn-standard {
+    display: inline-block;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: auto;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    background-color: #10739b;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.1s;
+}
+
+.btn-standard-wide {
+    display: inline-block;
+    position: relative;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: auto;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    background-color: #10739b;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.1s;
+}
+
+.btn-outlined {
+    display: inline-block;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: auto;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    background-color: #ffffff00;
+    border: 2px solid white;
+    border-radius: 5px;
+    transition: background-color 0.1s, color 0.1s;
+}
+
+.btn-outlined-grey {
+    display: inline-block;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: auto;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #2e2e2e;
+    text-decoration: none;
+    text-align: center;
+    background-color: #2e2e2e00;
+    border: 2px solid #2e2e2e;
+    border-radius: 5px;
+    transition: background-color 0.1s, color 0.1s;
+}
+
+.btn-standard:hover, .btn-standard-wide:hover {
+    background-color: #1590c0;
+}
+
+.btn-outlined:hover {
+    background-color: white;
+    color: #10739b;
+}
+
+.btn-outlined-grey:hover {
+    background-color: #2e2e2e;
+    color: white;
+}
+
+/*******************************************
+
+    COMMON.MEDIA QUERIES
+
+********************************************/
+
+@media only screen and (max-width: 800px) {
+    .vertical-align-responsive {
+        vertical-align: none;
+    }
+    .col-2 {
+        width: 100%;
+    }
+    .col-3 {
+        width: 100%;
+    }
+    .col-4 {
+        width: 50%;
+    }
+
+}

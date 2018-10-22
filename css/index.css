@@ -1,0 +1,60 @@
+---
+
+---
+
+/*******************************************
+
+    INDEX.HERO
+
+********************************************/
+
+#hero {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    min-height: 400px;
+}
+
+#hero-image-container {
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+    background-color: black;
+}
+
+#hero-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    background-image: url({{site.baseurl}}/img/index/hero.png);
+    background-position: center;
+    background-size: cover;
+    background-clip: content-box;
+    
+    filter: brightness(50%);
+    transform: scale(1.1);
+}
+
+#hero-text {
+    position: absolute;
+    max-width: 700px;
+    left: 50%;
+    top: 50%;
+
+    color: white;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+#hero-text h1 {
+    font-weight: 500;
+    font-size: 2.5em;
+    color: white;
+}
+
+#hero-text h3 {
+    font-weight: 300;
+    color: white;
+}

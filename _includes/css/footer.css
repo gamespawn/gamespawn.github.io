@@ -1,0 +1,70 @@
+footer a {
+    color: #afafaf;
+    line-height: 2em;
+}
+
+footer a:hover {
+    color: white;
+    font-weight: 500;
+}
+
+footer h3 {
+    font-weight: 500;
+}
+
+.copyright {
+    color: #afafaf;
+    font-size: 0.8em;
+}
+
+/*******************************************
+
+    NAVBAR.SOCIAL MEDIA LINKS
+
+********************************************/
+
+/* .navbar-social-links {
+    display: inline-block;
+    height: 53px;
+    list-style-type: none;
+    text-align: center;
+    vertical-align: top;
+}
+
+.navbar-social-links li {
+    display: inline-block;
+    height: 100%;
+}
+
+.navbar-social-links li a {
+    display: block;
+    box-sizing: border-box;
+    width: 53px;
+    height: 53px;
+    padding: 13px;
+}
+
+.navbar-social-links li a div {
+    width: auto;
+    height: 100%;
+    vertical-align: top;
+    background-size: cover;
+}
+
+#navbar-bookface-img {
+    background-image: url({{site.baseurl}}/img/bookface_logo.png);
+    transition: background-image 0.15s;
+}
+
+#navbar-discord-img {
+    background-image: url({{site.baseurl}}/img/discord_logo.png);
+    transition: background-image 0.15s;
+}
+
+#navbar-bookface-img:hover {
+    background-image: url({{site.baseurl}}/img/bookface_logo_blue.png);
+}
+
+#navbar-discord-img:hover {
+    background-image: url({{site.baseurl}}/img/discord_logo_blue.png);
+} */

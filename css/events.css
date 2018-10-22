@@ -1,0 +1,94 @@
+---
+---
+
+/*******************************************
+
+    EVENTS.CALENDAR
+
+********************************************/
+
+.event-calendar {
+    display: block;
+    margin: auto;
+}
+
+.event-calendar {
+    position: relative;
+    height: 600px;
+    width: 100%;
+}
+
+.event-calendar iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*******************************************
+
+    EVENTS.MAIN-EVENT
+
+********************************************/
+
+#main-event {
+    position: relative;
+    width: 100%;
+    border-radius: 8px;
+    /* min-height: 400px; */
+
+    background-image: url({{site.baseurl}}/img/events/gm.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+
+
+#main-event-text {
+    /* max-width: 700px;
+    left: 50%;
+    top: 50%; */
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    color: white;
+    text-align: left;
+    
+
+    /* transform: translate(-50%, -50%); */
+}
+
+#main-event-text h1 {
+    font-weight: 500;
+    font-size: 2.5em;
+    color: white;
+}
+
+#main-event-text ul {
+    font-weight: 300;
+    font-size: 1.2em;
+    color: white;
+    line-height: 1.5em;
+}
+
+@media only screen and (max-width: 800px) {
+    .event-calendar {
+        width: 100%;
+        height: 100vw;
+    }
+
+    #main-event-text h1 {
+        font-weight: 500;
+        font-size: 1.5em;
+        color: white;
+    }
+
+    #main-event-text ul {
+        font-size: 1em;
+    }
+}

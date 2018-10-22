@@ -1,0 +1,50 @@
+---
+title: Projects - Gamespawn
+extra_css: projects.css
+layout: default
+---
+<div class="centered">
+    <div class="text-align-center text-black">
+        <div class="spacer-large"></div>
+        <h1>Projects</h1>
+        <a href="https://goo.gl/RNvjgj" class="btn-standard">&#x2b; Submit project</a>
+        <hr>
+        <div class="spacer-small"></div>
+        <h2>Ongoing</h2>
+        <hr>
+        <div class="project-grid-container">
+            {% assign projects = site.projects | where_exp:"project", "project.tags contains 'ongoing'" %}
+            {% for project in projects %}
+            <a href="{{site.baseurl}}{{project.url}}" class="text-black">
+                <div class="padding-20">
+                    <div class="cover-img-container thumbnail-height">
+                        <div class="cover-img" style="background-image: url({{project.thumbnail}})"></div>
+                    </div>
+                    <div class="spacer-small"></div>
+                    <h3>{{project.title}}</h3>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+        <h2>All</h2>
+        <hr>
+        <div class="project-grid-container">
+            {% assign projects = site.projects %}
+            {% for project in projects %}
+            <a href="{{site.baseurl}}{{project.url}}" class="text-black">
+                <div class="padding-20">
+                    <div class="cover-img-container thumbnail-height">
+                        <div class="cover-img" style="background-image: url({{project.thumbnail}})"></div>
+                    </div>
+                    <div class="spacer-small"></div>
+                    <h3>{{project.title}}</h3>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+        <div class="spacer-large"></div>
+    </div>
+</div>
+
+
+{% include html/cta_banner.html %}

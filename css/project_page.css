@@ -1,0 +1,46 @@
+#project-page-thumbnail {
+    height: 400px;
+    width: 570px;
+    float: left;
+    margin-right: 40px;
+    object-fit: contain;
+    background: #e7e7e7;
+}
+
+.recruitment-banner {
+    background: #00c3e6;
+    color: white;
+    padding: 10px;
+    margin: 0;
+}
+
+.download-link-container {
+    background: #0000001c;
+    display: flex;
+    padding: 12px;
+}
+
+.download-link-container p {
+    margin-left: 20px;
+    font-style: italic;
+}
+
+#download-button {
+    display: inline-block;
+    background: #c03783;
+}
+
+@media only screen and (max-width: 1000px) {
+    #project-page-thumbnail {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+    }
+
+    .mobile-center-button {
+        display: block;
+        margin-top: 10px;
+        max-width: 30vw;
+        min-width: 100px;
+    }
+}
