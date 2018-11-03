@@ -1,8 +1,8 @@
 ---
 title: "Star-Crossed"
 thumbnail: "img/projects/Star_Crossed/thumbnail.png"
-team: ["RainbowJellie"]
-email: "#"
+team: ["Evie Chen", "Dan Ngo"]
+email: "ychen431@ucr.edu"
 platforms: ["PC"]
 description:
     "What’s better than gays? Space gays! Date cute constellation guys from outer space while trying to help them save the Earth from destruction!
