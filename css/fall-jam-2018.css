@@ -1,0 +1,75 @@
+---
+
+---
+
+/*******************************************
+
+    COMMON.GENERAL
+
+********************************************/
+
+body {
+    background-color: #2f265a;
+}
+
+/*******************************************
+
+    FALL-JAM-2018.HERO
+
+********************************************/
+
+#jam-logo {
+    height: auto; 
+    width: 200px;
+}
+
+.hidden-2 {
+    transform: translateY(20px);
+    opacity: 0;
+
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.showing-2 {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#hero {
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    background-image: url({{site.baseurl}}/img/fall-jam-2018/cover.png);
+    background-position: center;
+    background-size: cover;
+}
+
+
+#hero-text {
+    position: relative;
+    margin: auto;
+    padding: 200px 20px;
+
+    color: white;
+    text-align: center;
+}
+
+#hero-text h1 {
+    font-weight: 600;
+    font-size: 4em;
+    line-height: 1em;
+    font-style: italic;
+    font-family: 'Roboto', 'Rubik', sans-serif;
+    color: white;
+}
+
+#hero-text h3 {
+    font-weight: 300;
+    font-size: 1.8em;
+    color: white;
+}
+
+hr {
+    max-width: 800px;
+    margin: auto;
+}

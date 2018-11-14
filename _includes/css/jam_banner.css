@@ -1,0 +1,20 @@
+/*******************************************
+
+    JAM_BANNER.GENERAL
+
+********************************************/
+
+.jam-banner-text {
+    display: inline-block;
+    font-size: 1em;
+}
+
+#jam-banner-logo {
+    height: 50px;
+    width: auto;
+    vertical-align: middle;
+}
+
+#jam-link {
+    float: right;
+}

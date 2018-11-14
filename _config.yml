@@ -1,6 +1,6 @@
 markdown: redcarpet
 baseurl: 
-exclude: ['README.md', 'LICENSE']
+exclude: ['README.md', 'LICENSE', '_old']
 
 collections:
   projects:
