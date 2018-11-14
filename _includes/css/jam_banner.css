@@ -18,3 +18,19 @@
 #jam-link {
     float: right;
 }
+
+/*******************************************
+
+    JAM_BANNER.MEDIA QUERIES
+
+********************************************/
+
+@media only screen and (max-width: 800px) {
+    #jam-banner-container {
+        text-align: center;
+    }
+
+    #jam-link {
+        float: none;
+    }
+}
