@@ -13,6 +13,3 @@ defaults:
     values:
       layout: project_page
       extra_css: project_page.css
-
-plugins:
-  - jekyll-seo-tag
