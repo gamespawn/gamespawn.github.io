@@ -24,7 +24,11 @@ layout: default
             <a href="https://goo.gl/forms/BOnQ4SnIVQcyTD7I2" class="btn-outlined margin-10 mobile-center-button">Apply now!</a></div>
         <br>
         {% endif %}
-        <img src="{{site.baseurl}}/{{page.thumbnail}}" id="project-page-thumbnail">
+        {% if page.video-embed and page.video-embed != "" %}
+            <iframe id="project-page-thumbnail" src="{{page.video-embed}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        {% else %}
+            <img src="{{site.baseurl}}/{{page.thumbnail}}" id="project-page-thumbnail">
+        {% endif %}
         {% if page.download-link and page.download-link != "" %}
         <div class="download-link-container">
             <a class="btn-standard-wide" href='{{page.download-link}}'>Play</a>

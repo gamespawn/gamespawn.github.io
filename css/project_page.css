@@ -11,6 +11,15 @@ html {
     background: #000000be;
 }
 
+#project-page-video {
+    height: 400px;
+    width: 570px;
+    float: left;
+    margin-right: 40px;
+    object-fit: contain;
+    background: #000000be;
+}
+
 .recruitment-banner {
     background: #219aaf;
     color: white;
