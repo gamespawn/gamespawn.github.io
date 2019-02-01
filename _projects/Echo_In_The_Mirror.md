@@ -1,6 +1,6 @@
 ---
 title: "Echo in the Mirror"
-thumbnail: "img/projects/Echo_In_The_Mirror/thumbnail.jpg"
+thumbnail: "img/projects/Echo_In_The_Mirror/thumbnail.png"
 video-embed: "https://www.youtube.com/embed/3_RlV9PrQlA"
 team: ["Dan Ngo", "Evie Chen", "Mari Hayashi", "Rotem Werner", "Noah"]
 email: "dngo024@ucr.edu"
