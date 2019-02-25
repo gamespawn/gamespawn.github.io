@@ -1,6 +1,7 @@
 ---
 title: "Parasol"
 thumbnail: "img/projects/Parasol/thumbnail.png"
+video-embed: "https://www.youtube.com/embed/9fHeIAXrTcw"
 team:  ["Gamespawn"]
 email: "gamespawn.ucr@gmail.com"
 platforms: ["PC"]
