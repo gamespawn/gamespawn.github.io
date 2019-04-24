@@ -28,6 +28,23 @@ layout: default
             {% endfor %}
         </div>
 
+        <h2>Winter Game Jam 2019</h2>
+        <hr>
+        <div class="project-grid-container">
+            {% assign projects = site.projects | where_exp:"project", "project.tags contains 'Winter Game Jam 2019'" %}
+            {% for project in projects %}
+            <a href="{{site.baseurl}}{{project.url}}" class="text-black">
+                <div class="padding-20">
+                    <div class="cover-img-container thumbnail-height">
+                        <div class="cover-img" style="background-image: url({{project.thumbnail}})"></div>
+                    </div>
+                    <div class="spacer-small"></div>
+                    <h3>{{project.title}}</h3>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+
         <h2>Fall Game Jam 2018</h2>
         <hr>
         <div class="project-grid-container">
