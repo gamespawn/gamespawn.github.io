@@ -1,0 +1,39 @@
+---
+---
+
+* {
+	color: white;
+}
+
+#cool-image {
+	background-image: url({{site.baseurl}}/img/index/evolve_guest_lecture.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.light-grey-bg {
+	background-color: #1b1b1b;
+}
+
+.btn input {
+	color: white;
+}
+
+@keyframes slideInFromBottom {
+	0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+	100% {
+        transform: translateX(0);
+        opacity: 100%;
+	}
+}
+
+#mc-embedded-subscribe-form {
+	animation: 0.35s ease-out 0s 1 slideInFromBottom;
+}
