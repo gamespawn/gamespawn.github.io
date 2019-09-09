@@ -14,7 +14,7 @@ a {
     text-decoration: none;
 }
 
-body {
+body, select {
     font-family: 'Rubik', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -48,6 +48,15 @@ hr {
     border-top: 1px solid #ccc;
     margin: 1em 0;
     padding: 0;
+}
+
+select {
+    font-size: 1em;
+    border:none;
+}
+
+select:hover {
+    cursor: pointer;
 }
 
 .floatstop:after {

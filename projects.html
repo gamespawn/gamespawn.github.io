@@ -11,7 +11,13 @@ layout: default
         <a href="https://goo.gl/RNvjgj" class="btn-standard">&#x2b; Submit project</a>
         <hr>
         <div class="spacer-small"></div>
-        <h2>Ongoing</h2>
+
+        <p id="sort-selector-text">Sort by<select id="sort-selector"></select>
+        </p>
+        <div id="projects"></div>
+
+
+        <!-- <h2>Ongoing</h2>
         <hr>
         <div class="project-grid-container">
             {% assign projects = site.projects | where_exp:"project", "project.tags contains 'ongoing'" %}
@@ -77,10 +83,169 @@ layout: default
                 </div>
             </a>
             {% endfor %}
-        </div>
+        </div> -->
         <div class="spacer-large"></div>
     </div>
 </div>
 
 
 {% include html/cta_banner.html %}
+
+<script>
+    // Data injection by Jekyll
+    var projects = [
+        {% for project in site.projects %}{
+            title: "{{project.title}}",
+            link: "{{site.baseurl}}{{project.url}}",
+            thumbnail: "{{project.thumbnail}}",
+            description: "{{project.description}}",
+            tags: [{% for tag in project.tags %}"{{tag}}",{% endfor %}],
+            dateAdded: "{{project.school-year}}"
+        },
+        {% endfor %}
+    ];
+</script>
+
+<script>
+    // Projects controller
+    var projectsElement = document.getElementById('projects');
+
+    function clearChildren(element) {
+        while(element.firstChild) {
+            element.removeChild(element.firstChild);
+        }
+    }
+
+    function createProjectGrid(header, projects) {
+
+        var parent = document.createElement('div');
+
+        /*
+        <h2>All ({{ site.projects.size }})</h2>
+        <hr>
+        */
+        var headerElement = document.createElement('h2');
+        headerElement.appendChild(document.createTextNode(header));
+        parent.appendChild(headerElement);
+        parent.appendChild(document.createElement('hr'));
+
+        // <div class="project-grid-container">
+        var projectGridContainer = document.createElement('div');
+        projectGridContainer.classList.add('project-grid-container');
+        parent.appendChild(projectGridContainer);
+
+        projects.forEach((project) => {
+            /*
+            <a href="{{site.baseurl}}{{project.url}}" class="text-black project-grid-item">
+                <div class="padding-20">
+                    <div class="cover-img-container thumbnail-height rounded-1">
+                        <div class="cover-img" style="background-image: url({{project.thumbnail}})"></div>
+                    </div>
+                    <div class="spacer-small"></div>
+                    <h3>{{project.title}}</h3>
+                </div>
+            </a>
+            */
+            var anchorElement = document.createElement('a');
+            anchorElement.classList.add('text-black','project-grid-item');
+            anchorElement.href = project.link;
+            projectGridContainer.appendChild(anchorElement);
+
+            var d1 = document.createElement('div');
+            d1.classList.add('padding-20');
+            anchorElement.appendChild(d1);
+
+            var d2 = document.createElement('div');
+            d2.classList.add('cover-img-container', 'thumbnail-height', 'rounded-1');
+            d1.appendChild(d2);
+
+            var d3 = document.createElement('div');
+            d3.classList.add('cover-img');
+            d3.style = `background-image: url(${project.thumbnail})`;
+            d2.appendChild(d3);
+
+            var d2b = document.createElement('div');
+            d2b.classList.add('spacer-small');
+            d1.appendChild(d2b);
+
+            var h = document.createElement('h3');
+            h.appendChild(document.createTextNode(project.title));
+            d1.appendChild(h);
+
+        })
+
+        return parent;
+    }
+
+    function renderProjects() {
+        clearChildren(projectsElement);
+        projectsElement.appendChild(createProjectGrid('Projects', projects));
+    }
+
+    // Utility functions
+    function unique(value, index, self) { 
+        return self.indexOf(value) === index;
+    }
+
+    function onlyInts(value) {
+        return !isNaN(parseInt(value));
+    }
+
+    function chunk(arr, propGetter) {
+        var chunked = {};
+        arr.forEach((elem) => {
+            if(!chunked[propGetter(elem)]) {
+                chunked[propGetter(elem)] = [elem];
+            }
+            else {
+                chunked[propGetter(elem)].push(elem);
+            }
+        });
+        return chunked;
+    }
+
+    // Sort selector
+    var sortSelector = document.getElementById('sort-selector');
+    var sortOptions = {
+        'school year': {
+            onSelect: function() {
+                clearChildren(projectsElement);
+                var years = projects.map(project => parseInt(project.dateAdded)).filter(onlyInts).filter(unique).sort().reverse();
+                var projectsChunkedByYear = chunk(projects, project => project.dateAdded);
+                years.forEach(year => {
+                    var yearProjects = projectsChunkedByYear[year];
+                    projectsElement.appendChild(createProjectGrid(`${year} - ${year + 1}`, yearProjects));
+                })
+                
+            }
+        },
+        'name': {
+            onSelect: function() {
+                clearChildren(projectsElement);
+                var sortedProjects = projects.slice(0).sort((a, b) => (a.title > b.title) ? 1 : -1);
+                projectsElement.appendChild(createProjectGrid('All Projects (A-Z)', sortedProjects));
+            }
+        }
+    };
+
+    for(prop in sortOptions) {
+        if(sortOptions.hasOwnProperty(prop)) {
+            var option = document.createElement('option');
+            option.value = prop;
+            option.appendChild(document.createTextNode(prop));
+            sortSelector.appendChild(option);
+        }
+    }
+
+    sortSelector.onchange = updateProjectGrid;
+    
+    function updateProjectGrid() {
+        var k = sortOptions[sortSelector.value];
+        if(!!k && k.onSelect) {
+            k.onSelect();
+        }
+    }
+
+    updateProjectGrid();
+    
+</script>

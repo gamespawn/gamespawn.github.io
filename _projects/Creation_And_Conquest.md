@@ -8,6 +8,6 @@ description: "This is a two player game where you can select two classes to make
 Controls: Player 1: WASD Player 2: IJKL. Keys will have a different purpose per game. 
 Instructions: Select two classes and those will make your character. Your second class is your model. Once you both select a character, you can select a game to play! Your stats will influence how you play in each game."
 tags: ["2D", "mini games", "completed"]
-date-added: 2016
+school-year: 2016
 download-link: "https://drive.google.com/a/ucr.edu/file/d/0B_dRwa4KtnbWd3I1VWZUYUpYZFE/view?usp=sharing"
 ---

@@ -15,6 +15,6 @@ tags:
         "Yuri",
         "completed",
     ]
-date-added: 2018
+school-year: 2018
 download-link: "https://rainbowjellie.itch.io/synthetic-garden"
 ---
