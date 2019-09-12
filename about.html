@@ -25,9 +25,9 @@ extra_css: about.css
             programmers, designers, and artists.</p>
         <div class="spacer-large"></div>
 
-        <h2>Executive Board 2019-2020</h2>
+        <h2 id="H-executive-board-2019">Executive Board 2019-2020</h2>
         <div class="member-grid">
-            {% for member in site.data.members%}
+            {% for member in site.data.members_2019%}
             <div class="member-item">
                 <img class="member-img" src="{{site.baseurl}}/img/{{member.image}}"
                     alt="{{member.name}}'s profile image'">
@@ -40,10 +40,30 @@ extra_css: about.css
         </div>
 
         <div class="spacer-large"></div>
+        <hr>
+        <div class="spacer-large"></div>
 
-        <h2>Executive Board 2018-2019</h2>
+        <h2 id="H-executive-board-2018">Executive Board 2018-2019</h2>
         <div class="member-grid">
             {% for member in site.data.members_2018%}
+            <div class="member-item">
+                <img class="member-img" src="{{site.baseurl}}/img/{{member.image}}"
+                    alt="{{member.name}}'s profile image'">
+                <div class="spacer-small"></div>
+                <h3 class="member-name">{{member.name}}</h3>
+                <p class="member-position">{{member.position}}</p>
+                <p><a class="member-email" href="mailto:{{member.email}}">{{member.email}}</a></p>
+            </div>
+            {% endfor %}
+        </div>
+
+        <div class="spacer-large"></div>
+        <hr>
+        <div class="spacer-large"></div>
+
+        <h2 id="H-executive-board-2017">Executive Board 2017-2018</h2>
+        <div class="member-grid">
+            {% for member in site.data.members_2017%}
             <div class="member-item">
                 <img class="member-img" src="{{site.baseurl}}/img/{{member.image}}"
                     alt="{{member.name}}'s profile image'">
