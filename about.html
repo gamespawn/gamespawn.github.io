@@ -39,9 +39,8 @@ extra_css: about.css
             {% endfor %}
         </div>
 
-        <div class="spacer-large"></div>
         <hr>
-        <div class="spacer-large"></div>
+        <div class="spacer-medium"></div>
 
         <h2 id="H-executive-board-2018">Executive Board 2018-2019</h2>
         <div class="member-grid">
@@ -57,9 +56,8 @@ extra_css: about.css
             {% endfor %}
         </div>
 
-        <div class="spacer-large"></div>
         <hr>
-        <div class="spacer-large"></div>
+        <div class="spacer-medium"></div>
 
         <h2 id="H-executive-board-2017">Executive Board 2017-2018</h2>
         <div class="member-grid">
@@ -74,9 +72,43 @@ extra_css: about.css
             </div>
             {% endfor %}
         </div>
+
+        <hr>
+        <div class="spacer-medium"></div>
+
+        <h2 id="H-executive-board-2016">Executive Board 2016-2017</h2>
+        <div class="member-grid">
+            {% for member in site.data.members_2016%}
+            <div class="member-item">
+                <img class="member-img" src="{{site.baseurl}}/img/{{member.image}}"
+                    alt="{{member.name}}'s profile image'">
+                <div class="spacer-small"></div>
+                <h3 class="member-name">{{member.name}}</h3>
+                <p class="member-position">{{member.position}}</p>
+                <p><a class="member-email" href="mailto:{{member.email}}">{{member.email}}</a></p>
+            </div>
+            {% endfor %}
+        </div>
+
+        <hr>
+        <div class="spacer-medium"></div>
+
+        <h2 id="H-website-inventors">Website Inventors</h2>
+        <div class="member-grid">
+            {% for member in site.data.website_inventors%}
+            <div class="member-item">
+                <img class="member-img" src="{{site.baseurl}}/img/{{member.image}}"
+                    alt="{{member.name}}'s profile image'">
+                <div class="spacer-small"></div>
+                <h3 class="member-name">{{member.name}}</h3>
+                <p class="member-position">{{member.position}}</p>
+                <p><a class="member-email" href="mailto:{{member.email}}">{{member.email}}</a></p>
+            </div>
+            {% endfor %}
+        </div>
     </div>
 
-
+    
 
     <div class="spacer-large"></div>
 </div>
