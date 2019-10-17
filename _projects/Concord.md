@@ -6,6 +6,6 @@ email: "calva038@ucr.edu"
 platforms: ["PC"]
 description: "Concord is a tactical 3D hack n' slash game, reborn from the project of yesteryear. We really need programmers, artists, and designers."
 recruiting: ["programmers", "artists", "designers"]
-tags: ["3D", "ongoing", "recruiting"]
+tags: ["3D", "ongoing"]
 school-year: 2018
 ---
