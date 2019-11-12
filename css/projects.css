@@ -5,7 +5,7 @@
 ********************************************/
 .project-grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
 .project-grid-item:hover {
@@ -34,7 +34,7 @@
 
 @media only screen and (max-width: 800px) {
     .project-grid-container {
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
     }
 
     .project-grid-container .thumbnail-height {

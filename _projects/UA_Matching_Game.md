@@ -1,8 +1,8 @@
 ---
 title: "U.A. Matching Game"
 thumbnail: "img/projects/UA_Matching_Game/thumbnail.png"
-team: ["Mari"]
-email: "#"
+team: ["Mari Hayashi"]
+email: "mhaya010@ucr.edu"
 platforms: ["PC"]
 description: "This is a fan game of Boku no Hero Academia.
 Please report any bugs you found by comments :)"

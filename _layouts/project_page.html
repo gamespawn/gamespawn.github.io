@@ -44,11 +44,9 @@ layout: default
         </p>
         <hr>
         <p>
-            {% assign description = "" %}
             {% if page.description and page.description != "" %}
-            {% assign description = page.description %}
+            {{ page.description | mardownify }}
             {% endif %}
-            {{description}}
         </p>
     </div>
     <div class="spacer-large"></div>
