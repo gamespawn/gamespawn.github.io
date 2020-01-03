@@ -8,7 +8,7 @@ html {
     float: left;
     margin-right: 40px;
     object-fit: contain;
-    background: #000000be;
+    background:transparent;
 }
 
 #project-page-video {
