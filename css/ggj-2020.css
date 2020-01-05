@@ -1,0 +1,76 @@
+---
+---
+
+h2, .lead {
+  font-family: "Fredoka One";
+}
+
+h2 {
+  text-transform: uppercase;
+  color: #36a9e0ff;
+  font-size: 2rem;
+}
+
+.ggj-page {
+  background: url({{site.baseurl}}/img/ggj-2020/bg.png) white;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+}
+
+.ggj-hero {
+  position: relative;
+  min-height: 100vh;
+}
+
+#ggj-logo {
+  width: 75vw;
+  max-width: 60rem;
+}
+
+.btn-standard, .btn-outlined, .btn-outlined-grey {
+  margin: 5px 5px;
+}
+
+.lead {
+  color: #727272;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.centered-absolute {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 800px) {
+  #ggj-logo {
+    width: 90vw;
+  }
+}
+
+.ggj-page a.btn-standard, .ggj-page a.btn-outlined, .ggj-page a.btn-outlined-grey {
+  text-decoration: none;
+}
+
+.ggj-page a {
+  text-decoration: underline;
+}
+
+.ggj-page h2 {
+  margin-bottom: 2rem;
+  line-height: 3rem;
+  padding-bottom: .5rem;
+  border-bottom: 4px dotted #afafaf;
+}
+
+.ggj-page p, .ggj-page li {
+  line-height: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.ggj-page ul {
+  padding-left: 1.25rem;
+}
