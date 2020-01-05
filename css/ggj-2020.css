@@ -1,6 +1,17 @@
 ---
 ---
 
+@keyframes grow-in {
+  0% {
+    transform: scale(.5);
+    opacity: 0%;
+  }
+  100% {
+    transform: scale(1.0);
+    opacity: 100%;
+  }
+}
+
 h2, .lead {
   font-family: "Fredoka One";
 }
@@ -26,7 +37,10 @@ h2 {
 #ggj-logo {
   width: 75vw;
   max-width: 60rem;
+  animation: .5s cubic-bezier(.22,1.28,.87,1.2) 0s 1 grow-in;
 }
+
+
 
 .btn-standard, .btn-outlined, .btn-outlined-grey {
   margin: 5px 5px;
