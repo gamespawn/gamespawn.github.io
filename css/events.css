@@ -45,13 +45,16 @@
     font-size: 1.75rem;
 }
 
+#masthead-container {
+    margin-bottom: 50px;
+}
+
 #masthead {
     background: rgb(39, 101, 143);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     padding: 0;
-    margin-bottom: 50px;
 }
 
 #masthead-overlay {
@@ -70,6 +73,12 @@
 
 
 @media only screen and (max-width: 800px) {
+
+    #masthead {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
     #masthead-text h2 {
         font-size: 2rem;
     }
@@ -82,11 +91,25 @@
         padding-top: 150px;
     }
 
+    .event-item {
+        margin: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
     .event-item-overlay {
         background: rgba(15, 39, 75, 0.75);
     }
 
     .events-container {
         grid-template-columns: 1fr;
+    }
+
+    .event-item-overlay p {
+        font-size: .825rem;
+    }
+
+    .event-item-overlay h3 {
+        font-size: 1.25rem;
     }
 }

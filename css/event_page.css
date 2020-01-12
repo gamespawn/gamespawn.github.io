@@ -2,6 +2,17 @@ h1 {
   font-size: 3rem;
 }
 
+#back-button {
+  color: white;
+  margin-bottom: 1rem;
+  display: inline-block;
+  text-decoration: underline;
+}
+
+#back-button:visited {
+  color: white;
+}
+
 #header-img-text {
   padding-top: 300px;
   padding-bottom: 30px;
@@ -9,7 +20,7 @@ h1 {
 }
 
 #header-img-overlay {
-  background-color: #00000060;
+  background-color: #00000086;
 }
 
 #header-img {

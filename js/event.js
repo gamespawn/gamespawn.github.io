@@ -39,7 +39,8 @@ var featured_event_template = Handlebars.compile(
 );
 
 var events_container_template = Handlebars.compile(
-`{{#each events}}
+`<div class="events-container">
+{{#each events}}
 <a href="{{this.url}}">
 <div class="text-align-left event-item" style="background-image: url({{this.bg_img}})">
   <div class="event-item-overlay">
@@ -70,7 +71,7 @@ var events_container_template = Handlebars.compile(
 </div>
 </a>
 {{/each}}
-`);
+</div>`);
 
 document.getElementById("masthead-container").innerHTML = featured_event_template({featured_event: featured_event});
 document.getElementById("special-events-container").innerHTML = events_container_template({events: special_events});
