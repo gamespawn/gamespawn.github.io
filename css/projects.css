@@ -48,7 +48,7 @@
         padding: 10px;
     }
 
-    .project-grid-container h3 {
+    .project-grid-container .thumbnail-title {
         font-size: 0.8em;
     }
 }

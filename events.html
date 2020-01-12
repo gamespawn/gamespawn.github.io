@@ -4,20 +4,53 @@ layout: default
 extra_css: events.css
 ---
 
+
 <div class="centered">
     <div class="text-align-center">
         <div class="spacer-large"></div>
         <h1>Events</h1>
-        <hr>
         <div class="spacer-small"></div>
-
     </div>
-
-    <iframe src="https://calendar.google.com/calendar/embed?src=tsch7m3t1qmn9447rai9rpsj6o%40group.calendar.google.com&ctz=America%2FLos_Angeles"
-        class="event-calendar" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-
-    <div class="spacer-large"></div>
-
-    <script src="{{site.baseurl}}/js/event.js"></script>
-
 </div>
+
+<div id="masthead-container">
+</div>
+
+
+<div class="centered text-align-center">
+    <h2>Special events</h2>
+    <div class="spacer-small"></div>
+    <div id="special-events-container" class="events-container"></div>
+    <div class="spacer-large"></div>
+    <h2>Weekly/Biweekly events</h2>
+    <div class="spacer-small"></div>
+    <div id="regular-events-container" class="events-container"></div>
+    <div class="spacer-large"></div>
+</div>
+
+
+<script>
+    var events = [
+    {% for event in site.events %}
+    {
+        path: "{{event.path | split: '/' | last }}",
+        name: "{{event.event-name}}",
+        date: "{{event.event-date}}",
+        regular_date: "{{event.event-regular-date}}",
+        time: "{{event.event-time}}",
+        location: "{{event.event-location}}",
+        description: "{{event.event-description}}",
+        bg_img: {% if event.event-bg-img %} "{{site.baseurl}}/{{event.event-bg-img}}" {% else if %} null {% endif %},
+        url: "{{site.baseurl}}{{event.url}}"
+    },
+    {% endfor %}
+    ];
+
+    var special_events = events.filter(e => !!e.date);
+    var regular_events = events.filter(e => !!e.regular_date);
+
+    var featured_event_path = "2020_01_31_Global_Game_Jam.md";
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.0/handlebars.min.js"></script>
+<script src="{{site.baseurl}}/js/event.js"></script>

@@ -1,15 +1,26 @@
 markdown: kramdown
 baseurl:
 exclude: ['README.md', 'LICENSE', '_old']
+future: true
 
 collections:
   projects:
     output: true
+  events:
+    output: true
 
 defaults:
-  - scope:
+  - 
+    scope:
       path: ''
       type: projects
     values:
       layout: project_page
       extra_css: project_page.css
+  - 
+    scope:
+      path: ''
+      type: events
+    values:
+      layout: event_page
+      extra_css: event_page.css

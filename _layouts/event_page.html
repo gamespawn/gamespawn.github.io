@@ -1,0 +1,49 @@
+---
+layout: default
+---
+<div id="header-img" style="background-image: url({%if page.event-bg-img %} {{site.baseurl}}/{{page.event-bg-img}} {% else if %} {{site.baseurl}}/img/geo.png {% endif %});">
+  <div id="header-img-overlay">
+    <div class="centered">
+      <div id="header-img-text">
+        <h1>{{page.event-name}}</h1>
+
+        {% if page.event-date %}
+          <p>{{page.event-date | date: "%B %d, %Y"}}</p>
+        {% else if page.event-regular-date %}
+          <p>{{page.event-regular-date}}</p>
+        {% else %}
+          <p>Date TBD</p>
+        {% endif %}
+        
+        {% if page.event-time %}
+          <p>{{page.event-time}}</p>
+        {% endif %}
+
+        {% if page.event-location %}
+          <p>{{page.event-location}}</p>
+        {% else %}
+          <p>Location TBD</p>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+<div class="centered" id="page-area">
+  {% if page.fb-link or page.details-link%}
+  <div id="extra-links">
+    {% if page.fb-link %}
+    <a href="{{page.fb-link}}" class="btn-outlined-grey">Facebook Event Page</a>
+    {% endif %}
+    {% if page.details-link %}
+    <a href="{{page.details-link}}" class="btn-standard">Main Event Page</a>
+    {% endif %}
+  </div>
+  {% endif %}
+  <h2>About this event</h2>
+  <div class="spacer-small"></div>
+  <p id="description">{{page.event-description}}</p>
+  {{page.content}}
+</div>
