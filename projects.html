@@ -8,13 +8,13 @@ layout: default
     <div class="text-align-center text-black">
         <div class="spacer-large"></div>
         <h1>Projects</h1>
-        <a href="https://goo.gl/RNvjgj" class="btn-standard">&#x2b; Submit project</a>
-        <hr>
         <div class="spacer-small"></div>
 
-        <p id="sort-selector-text">Sort by<select id="sort-selector"></select>
+        <p id="sort-selector-text">Sort by <select id="sort-selector"></select>
         </p>
-        <div id="projects"></div>
+        <div id="projects">
+            <div class="loading-spinner"></div>
+        </div>
 
 
         <!-- <h2>Ongoing</h2>
@@ -106,6 +106,8 @@ layout: default
     ];
 </script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.0/handlebars.min.js"></script>
+
 <script>
     // Projects controller
     var projectsElement = document.getElementById('projects');
@@ -124,10 +126,11 @@ layout: default
         <h2>All ({{ site.projects.size }})</h2>
         <hr>
         */
+        parent.appendChild(document.createElement('hr'));
         var headerElement = document.createElement('h2');
         headerElement.appendChild(document.createTextNode(header));
         parent.appendChild(headerElement);
-        parent.appendChild(document.createElement('hr'));
+        
 
         // <div class="project-grid-container">
         var projectGridContainer = document.createElement('div');

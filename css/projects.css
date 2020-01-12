@@ -19,11 +19,18 @@
 
 ********************************************/
 #sort-selector-text {
-    text-align: right;
+    display: inline-block;
+    margin: auto;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    
 }
 
 #sort-selector {
     font-weight: 500;
+    border-radius: 5px;
+    background-color: #f3f3f3;
+    padding: 0.25rem;
 }
 
 /*******************************************
