@@ -8,7 +8,7 @@ event-description: "Take your Unity skills to the next level. This workshop seri
 ---
 <div class="warning-box">
   <h2> Important Notice </h2>
-  <p>The first workshop will start on Week 3. Since Monday of Week 3 is a holiday, we will have to reschedule the time and location of the workshop for Week 3 only.</p>
+  <p>The first workshop will start on Week 4.</p>
 </div>
 
 ## Prerequisites
