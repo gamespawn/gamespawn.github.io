@@ -88,3 +88,12 @@ h2 {
 .ggj-page ul {
   padding-left: 1.25rem;
 }
+
+#sponsors-images {
+  text-align: center;
+}
+
+#sponsors-images img {
+  max-height: 8rem;
+  margin: 2rem;
+}
