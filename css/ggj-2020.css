@@ -95,5 +95,6 @@ h2 {
 
 #sponsors-images img {
   max-height: 8rem;
+  max-width: 80%;
   margin: 2rem;
 }
