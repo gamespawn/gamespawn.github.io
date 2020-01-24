@@ -59,11 +59,7 @@ h2 {
   transform: translate(-50%, -50%);
 }
 
-@media only screen and (max-width: 800px) {
-  #ggj-logo {
-    width: 90vw;
-  }
-}
+
 
 .ggj-page a.btn-standard, .ggj-page a.btn-outlined, .ggj-page a.btn-outlined-grey {
   text-decoration: none;
@@ -97,4 +93,16 @@ h2 {
   max-height: 8rem;
   max-width: 80%;
   margin: 2rem;
+}
+
+@media only screen and (max-width: 800px) {
+  #ggj-logo {
+    width: 90vw;
+  }
+
+  #sponsors-images img {
+    max-height: 6rem;
+    max-width: 80%;
+    margin: 1rem;
+  }
 }
