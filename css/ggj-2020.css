@@ -102,9 +102,10 @@ h2 {
 
 #schedule-iframe {
   width: 100%;
-  height: 86.5rem;
+  height: 88rem;
   max-width: 68rem;
   border: none;
+  overflow-y: hidden;
 }
 
 @media only screen and (max-width: 800px) {
