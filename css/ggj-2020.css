@@ -22,11 +22,16 @@ h2 {
   font-size: 2rem;
 }
 
+.ggj-page ul a:visited, .ggj-page p a:visited {
+  color: rgb(152, 115, 212);
+}
+
 .ggj-page {
-  background: url({{site.baseurl}}/img/ggj-2020/bg.png) white;
+  background: url({{site.baseurl}}/img/ggj-2020/bg-dark.png) white;
   background-attachment: fixed;
   background-position: center;
   background-repeat: repeat;
+  color: white;
 }
 
 .ggj-hero {
@@ -47,7 +52,7 @@ h2 {
 }
 
 .lead {
-  color: #727272;
+  color: #969696;
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
@@ -73,7 +78,7 @@ h2 {
   margin-bottom: 2rem;
   line-height: 3rem;
   padding-bottom: .5rem;
-  border-bottom: 4px dotted #afafaf;
+  border-bottom: 4px dotted #888888;
 }
 
 .ggj-page p, .ggj-page li {
@@ -97,8 +102,9 @@ h2 {
 
 #schedule-iframe {
   width: 100%;
-  height: 100rem;
-  max-height: 150vh;
+  height: 86.5rem;
+  max-width: 68rem;
+  border: none;
 }
 
 @media only screen and (max-width: 800px) {
