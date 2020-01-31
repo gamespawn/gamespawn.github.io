@@ -95,6 +95,12 @@ h2 {
   margin: 2rem;
 }
 
+#schedule-iframe {
+  width: 100%;
+  height: 100rem;
+  max-height: 150vh;
+}
+
 @media only screen and (max-width: 800px) {
   #ggj-logo {
     width: 90vw;
