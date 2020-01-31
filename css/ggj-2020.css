@@ -90,6 +90,12 @@ h2 {
   padding-left: 1.25rem;
 }
 
+#wifi-logo {
+  width: 100%;
+  max-width: 12rem;
+  margin-bottom: 2rem;
+}
+
 #sponsors-images {
   text-align: center;
 }
