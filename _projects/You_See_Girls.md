@@ -1,6 +1,6 @@
 ---
 title: "You See Girls"
-thumbnail: "img/projects/You_See_Girls/thumbnail.jpg"
+thumbnail: "img/projects/You_See_Girls/thumbnail.png"
 team: ["Leilia Lin + Team"]
 email: "llin063@ucr.edu"
 platforms: ["PC"]
