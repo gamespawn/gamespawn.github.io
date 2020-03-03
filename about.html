@@ -32,14 +32,21 @@ extra_css: about.css
 
         <div class="spacer-medium"></div>
 
+        <!-- We need to sort the officer boards in alphabetical order. We do this by extracting the filename of each officer board and putting it in an array. -->
+        {% capture officer_board_arr %}
+            {% for board_hash in site.data.officers %}{% assign board_filename = board_hash[0] %}{{board_filename}} {% endfor %}
+        {% endcapture %}
+        {% assign officer_board_arr = officer_board_arr | split: ' ' %}
         
-        <!-- We iterate over all officer boards in reverse order (Z->A) so that the newest officer board shows up first-->
-        {% for board_hash in site.data.officers reversed %}
-            {% assign board_filename = board_hash[0] | replace: "_", " " %}
-            {% assign board_data = board_hash[1] %}
+        <!-- Then we'll sort the array in reverse alphabetical order -->
+        {% assign officer_board_arr = officer_board_arr | sort | reverse %}
+        
+        {% for board_filename in officer_board_arr %}
+            {% assign board_data = site.data.officers[board_filename] %}
+            {% assign board_name = board_filename | replace: "_", " " %}
             <hr>
             <div class="spacer-medium"></div>
-            <h2>{{board_filename}}</h2>
+            <h2>{{board_name}}</h2>
             <div class="member-grid">
                 {% for member in board_data%}
                 <div class="member-item">
@@ -56,11 +63,11 @@ extra_css: about.css
         
         <!-- We can't forget about our wonderful website inventors -->
         {% for board_hash in site.data.contributors %}
-            {% assign board_filename = board_hash[0] | replace: "_", " " %}
             {% assign board_data = board_hash[1] %}
+            {% assign board_name = board_hash[0] | replace: "_", " " %}
             <hr>
             <div class="spacer-medium"></div>
-            <h2>{{board_filename}}</h2>
+            <h2>{{board_name}}</h2>
             <div class="member-grid">
                 {% for member in board_data%}
                 <div class="member-item">
