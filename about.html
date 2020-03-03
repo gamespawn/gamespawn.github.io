@@ -19,8 +19,7 @@ extra_css: about.css
         <div class="spacer-medium"></div>
 
         <h2>Who we are</h2>
-        <p>Founded in 2014, Gamespawn @ University of California Riverside is a student organization that focuses on
-            introducting
+        <p>Founded in 2014, Gamespawn @ University of California Riverside is a student organization that focuses on introducing
             students to game development. Our organization teaches students game design, art, and programming through
             competitions and guest speakers. We do our best not only to motivate and encourage students to learn about
             game development, but also to provide a professional and comfortable environment for engineers,
@@ -31,92 +30,51 @@ extra_css: about.css
         <h2>Constitution</h2>
         <p><a href="{{site.baseurl}}/constitution" style="text-decoration: underline">Gamespawn Constitution.pdf</a></p>
 
-        <div class="spacer-large"></div>
-
-        <h2 id="H-executive-board-2019">Executive Board 2019-2020</h2>
-        <div class="member-grid">
-            {% for member in site.data.members_2019%}
-            <div class="member-item">
-                <img class="member-img" src="{{site.baseurl}}/img/{{member.image}}"
-                    alt="{{member.name}}'s profile image'">
-                <div class="spacer-small"></div>
-                <h3 class="member-name">{{member.name}}</h3>
-                <p class="member-position">{{member.position}}</p>
-                <p><a class="member-email" href="mailto:{{member.email}}">{{member.email}}</a></p>
-            </div>
-            {% endfor %}
-        </div>
-
-        <hr>
         <div class="spacer-medium"></div>
 
-        <h2 id="H-executive-board-2018">Executive Board 2018-2019</h2>
-        <div class="member-grid">
-            {% for member in site.data.members_2018%}
-            <div class="member-item">
-                <img class="member-img" src="{{site.baseurl}}/img/{{member.image}}"
-                    alt="{{member.name}}'s profile image'">
-                <div class="spacer-small"></div>
-                <h3 class="member-name">{{member.name}}</h3>
-                <p class="member-position">{{member.position}}</p>
-                <p><a class="member-email" href="mailto:{{member.email}}">{{member.email}}</a></p>
+        
+        <!-- We iterate over all officer boards in reverse order (Z->A) so that the newest officer board shows up first-->
+        {% for board_hash in site.data.officers reversed %}
+            {% assign board_filename = board_hash[0] | replace: "_", " " %}
+            {% assign board_data = board_hash[1] %}
+            <hr>
+            <div class="spacer-medium"></div>
+            <h2>{{board_filename}}</h2>
+            <div class="member-grid">
+                {% for member in board_data%}
+                <div class="member-item">
+                    <img class="member-img" src="{{site.baseurl}}/img/{{member.image}}"
+                        alt="{{member.name}}'s profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">{{member.name}}</h3>
+                    <p class="member-position">{{member.position}}</p>
+                    <p><a class="member-email" href="mailto:{{member.email}}">{{member.email}}</a></p>
+                </div>
+                {% endfor %}
             </div>
-            {% endfor %}
-        </div>
-
-        <hr>
-        <div class="spacer-medium"></div>
-
-        <h2 id="H-executive-board-2017">Executive Board 2017-2018</h2>
-        <div class="member-grid">
-            {% for member in site.data.members_2017%}
-            <div class="member-item">
-                <img class="member-img" src="{{site.baseurl}}/img/{{member.image}}"
-                    alt="{{member.name}}'s profile image'">
-                <div class="spacer-small"></div>
-                <h3 class="member-name">{{member.name}}</h3>
-                <p class="member-position">{{member.position}}</p>
-                <p><a class="member-email" href="mailto:{{member.email}}">{{member.email}}</a></p>
+        {% endfor %}
+        
+        <!-- We can't forget about our wonderful website inventors -->
+        {% for board_hash in site.data.contributors %}
+            {% assign board_filename = board_hash[0] | replace: "_", " " %}
+            {% assign board_data = board_hash[1] %}
+            <hr>
+            <div class="spacer-medium"></div>
+            <h2>{{board_filename}}</h2>
+            <div class="member-grid">
+                {% for member in board_data%}
+                <div class="member-item">
+                    <img class="member-img" src="{{site.baseurl}}/img/{{member.image}}"
+                        alt="{{member.name}}'s profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">{{member.name}}</h3>
+                    <p class="member-position">{{member.position}}</p>
+                    <p><a class="member-email" href="mailto:{{member.email}}">{{member.email}}</a></p>
+                </div>
+                {% endfor %}
             </div>
-            {% endfor %}
-        </div>
+        {% endfor %}
 
-        <hr>
-        <div class="spacer-medium"></div>
-
-        <h2 id="H-executive-board-2016">Executive Board 2016-2017</h2>
-        <div class="member-grid">
-            {% for member in site.data.members_2016%}
-            <div class="member-item">
-                <img class="member-img" src="{{site.baseurl}}/img/{{member.image}}"
-                    alt="{{member.name}}'s profile image'">
-                <div class="spacer-small"></div>
-                <h3 class="member-name">{{member.name}}</h3>
-                <p class="member-position">{{member.position}}</p>
-                <p><a class="member-email" href="mailto:{{member.email}}">{{member.email}}</a></p>
-            </div>
-            {% endfor %}
-        </div>
-
-        <hr>
-        <div class="spacer-medium"></div>
-
-        <h2 id="H-website-inventors">Website Inventors</h2>
-        <div class="member-grid">
-            {% for member in site.data.website_inventors%}
-            <div class="member-item">
-                <img class="member-img" src="{{site.baseurl}}/img/{{member.image}}"
-                    alt="{{member.name}}'s profile image'">
-                <div class="spacer-small"></div>
-                <h3 class="member-name">{{member.name}}</h3>
-                <p class="member-position">{{member.position}}</p>
-                <p><a class="member-email" href="mailto:{{member.email}}">{{member.email}}</a></p>
-            </div>
-            {% endfor %}
-        </div>
     </div>
-
-    
-
     <div class="spacer-large"></div>
 </div>
