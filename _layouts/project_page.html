@@ -34,15 +34,21 @@ layout: default
             <div class="footer">
                 <div class="webgl-logo"></div>
                 <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
-                <div class="title">Ocean's Demise</div>
+                <div class="title">{{page.unity-webgl}}</div>
             </div>
         </div>
         <div style="height: 2rem;"></div>
         
-        <script src="{{site.baseurl}}/Game Builds/Oceans Demise/TemplateData/UnityProgress.js"></script>  
-        <script src="{{site.baseurl}}/Game Builds/Oceans Demise/Build/UnityLoader.js"></script>
+        <script src="{{site.baseurl}}/Game Builds/{{page.unity-webgl}}/TemplateData/UnityProgress.js"></script>  
+        <script src="{{site.baseurl}}/Game Builds/{{page.unity-webgl}}/Build/UnityLoader.js"></script>
         <script>
-            var gameInstance = UnityLoader.instantiate("gameContainer", "{{site.baseurl}}/Game Builds/Oceans Demise/Build/WebGL.json", {onProgress: UnityProgress});
+            var webglPath = "{{site.baseurl}}/Game Builds/{{page.unity-webgl}}/Build/";
+            {% if page.unity-webgl-prefix %}
+                webglPath += "{{page.unity-webgl-prefix}}.json";
+            {% else %}
+                webglPath += "WebGL.json";
+            {% endif %}
+            var gameInstance = UnityLoader.instantiate("gameContainer", webglPath, {onProgress: UnityProgress});
         </script>
         {% endif %}
 
