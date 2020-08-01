@@ -1,0 +1,31 @@
+{% raw %}
+{{#with featured_event}}
+<div class="centered" id="masthead" style="background-image: url({{bg_img}})">
+<a href="{{url}}">
+  <div id="masthead-overlay">
+    <div id="masthead-text">
+      <div class="animate-left-in">
+        <h2>{{name}}</h2>
+
+        <p>
+          {{#if regular_date}}
+            {{regular_date}}
+          {{else if date}}
+            {{prettydate date}} 
+          {{else}}
+            Date TBD
+          {{/if}}
+          
+          {{#if time}}
+            , {{time}}
+          {{/if}}
+        </p>
+
+        <p>{{location}}</p>
+      </div>
+    </div>
+  </div>
+  </a>
+</div>
+{{/with}}
+{% endraw %}

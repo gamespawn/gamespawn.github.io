@@ -1,0 +1,27 @@
+<div>
+  <hr>
+  <h2>{{section_name}}</h2>
+  <div class="project-grid-container">
+    {% for project in section_projects %}
+      <a class="text-black project-grid-item" href="{{site.baseurl}}{{project.url}}">
+        <div class="padding-20">
+          <div class="thumbnail-height"  style="position: relative;">
+            <div class="cover-img-container rounded-1" style="height: 100%;">
+              <div class="cover-img" style="background-image: url('{{project.thumbnail}}');"></div>
+            </div>
+            
+            {% if project.unity-webgl or project.download-link %}
+            <object type="image/svg+xml" data="img/playable.svg" alt="Playable demo available" class="playable">
+              Your browser does not support SVG
+            </object>
+            {% endif %}
+          </div>
+          <div class="spacer-small"></div>
+          <p class="thumbnail-title">{{project.title}}</p>
+        </div>
+      </a>
+    {% endfor %}
+  </div>
+</div>
+
+{% assign download-link-domain = project.download-link | remove:'http://' | remove:'https://' | split:'/' | first | split:'.' | slice: -2, 2 | join: '.'%}

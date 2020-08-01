@@ -5,251 +5,63 @@ layout: default
 ---
 
 <div class="centered">
-    <div class="text-align-center text-black">
-        <div class="spacer-large"></div>
-        <h1>Projects</h1>
-        <div class="spacer-small"></div>
+  <div class="text-align-center text-black">
+    <div class="spacer-large"></div>
+    <h1>Projects</h1>
+    <div class="spacer-small"></div>
 
-        <p id="sort-selector-text">Sort by <select id="sort-selector"></select>
-        </p>
-        <div id="projects">
-            <div class="loading-spinner"></div>
-        </div>
-
-
-        <!-- <h2>Ongoing</h2>
-        <hr>
-        <div class="project-grid-container">
-            {% assign projects = site.projects | where_exp:"project", "project.tags contains 'ongoing'" %}
-            {% for project in projects %}
-            <a href="{{site.baseurl}}{{project.url}}" class="text-black project-grid-item">
-                <div class="padding-20">
-                    <div class="cover-img-container thumbnail-height rounded-1">
-                        <div class="cover-img" style="background-image: url({{project.thumbnail}})"></div>
-                    </div>
-                    <div class="spacer-small"></div>
-                    <h3>{{project.title}}</h3>
-                </div>
-            </a>
-            {% endfor %}
-        </div>
-        <div class="spacer-small"></div>
-        <h2>Winter Game Jam 2019</h2>
-        <hr>
-        <div class="project-grid-container">
-            {% assign projects = site.projects | where_exp:"project", "project.tags contains 'Winter Game Jam 2019'" %}
-            {% for project in projects %}
-            <a href="{{site.baseurl}}{{project.url}}" class="text-black project-grid-item">
-                <div class="padding-20">
-                    <div class="cover-img-container thumbnail-height rounded-1">
-                        <div class="cover-img" style="background-image: url({{project.thumbnail}})"></div>
-                    </div>
-                    <div class="spacer-small"></div>
-                    <h3>{{project.title}}</h3>
-                </div>
-            </a>
-            {% endfor %}
-        </div>
-        <div class="spacer-small"></div>
-        <h2>Fall Game Jam 2018</h2>
-        <hr>
-        <div class="project-grid-container">
-            {% assign projects = site.projects | where_exp:"project", "project.tags contains 'Fall Game Jam 2018'" %}
-            {% for project in projects %}
-            <a href="{{site.baseurl}}{{project.url}}" class="text-black project-grid-item">
-                <div class="padding-20">
-                    <div class="cover-img-container thumbnail-height rounded-1">
-                        <div class="cover-img" style="background-image: url({{project.thumbnail}})"></div>
-                    </div>
-                    <div class="spacer-small"></div>
-                    <h3>{{project.title}}</h3>
-                </div>
-            </a>
-            {% endfor %}
-        </div>
-        <div class="spacer-small"></div>
-        <h2>All ({{ site.projects.size }})</h2>
-        <hr>
-        <div class="project-grid-container">
-            {% assign projects = site.projects %}
-            {% for project in projects %}
-            <a href="{{site.baseurl}}{{project.url}}" class="text-black project-grid-item">
-                <div class="padding-20">
-                    <div class="cover-img-container thumbnail-height rounded-1">
-                        <div class="cover-img" style="background-image: url({{project.thumbnail}})"></div>
-                    </div>
-                    <div class="spacer-small"></div>
-                    <h3>{{project.title}}</h3>
-                </div>
-            </a>
-            {% endfor %}
-        </div> -->
-        <div class="spacer-large"></div>
+    <p id="sort-selector-text">Sort by <select id="sort-selector"></select>
+    </p>
+    <div id="projects">
+      <div id="projects-by-year" class="">
+        {% assign groupedProjects = site.projects | group_by:"school-year" %}
+        {% for project_section in groupedProjects %}
+        {% capture section_name %}
+        {{project_section.name | round}} - {{project_section.name | round | plus: 1}}
+        {% endcapture %}
+        {% assign section_projects = project_section.items %}
+        {% include html/local/project_section.html %}
+        {% endfor %}
+      </div>
+      <div id="projects-by-title" class="hidden">
+        {% assign section_name = "Projects (A-Z)" %}
+        {% assign section_projects = site.projects | sort:"title" %}
+        {% include html/local/project_section.html %}
+      </div>
     </div>
+    <div class="spacer-large"></div>
+  </div>
 </div>
-
 
 {% include html/cta_banner.html %}
 
 <script>
-    // Data injection by Jekyll
-    var projects = [
-        {% for project in site.projects %}{
-            title: "{{project.title}}",
-            link: "{{site.baseurl}}{{project.url}}",
-            thumbnail: "{{project.thumbnail}}",
-            description: "{{project.description | escape}}",
-            tags: [{% for tag in project.tags %}"{{tag}}",{% endfor %}],
-            dateAdded: "{{project.school-year}}"
-        },
-        {% endfor %}
-    ];
-</script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.0/handlebars.min.js"></script>
-
-<script>
-    // Projects controller
-    var projectsElement = document.getElementById('projects');
-
-    function clearChildren(element) {
-        while(element.firstChild) {
-            element.removeChild(element.firstChild);
-        }
+  let se = document.getElementById('sort-selector');
+  let sortOptionsList = se.options;
+  let sortOptions = [
+    {
+      name: "school year",
+      id: "projects-by-year"
+    },
+    {
+      name: "title",
+      id: "projects-by-title"
     }
+  ];
 
-    function createProjectGrid(header, projects) {
-
-        var parent = document.createElement('div');
-
-        /*
-        <h2>All ({{ site.projects.size }})</h2>
-        <hr>
-        */
-        parent.appendChild(document.createElement('hr'));
-        var headerElement = document.createElement('h2');
-        headerElement.appendChild(document.createTextNode(header));
-        parent.appendChild(headerElement);
-        
-
-        // <div class="project-grid-container">
-        var projectGridContainer = document.createElement('div');
-        projectGridContainer.classList.add('project-grid-container');
-        parent.appendChild(projectGridContainer);
-
-        projects.forEach((project) => {
-            /*
-            <a href="{{site.baseurl}}{{project.url}}" class="text-black project-grid-item">
-                <div class="padding-20">
-                    <div class="cover-img-container thumbnail-height rounded-1">
-                        <div class="cover-img" style="background-image: url({{project.thumbnail}})"></div>
-                    </div>
-                    <div class="spacer-small"></div>
-                    <h3>{{project.title}}</h3>
-                </div>
-            </a>
-            */
-            var anchorElement = document.createElement('a');
-            anchorElement.classList.add('text-black','project-grid-item');
-            anchorElement.href = project.link;
-            projectGridContainer.appendChild(anchorElement);
-
-            var d1 = document.createElement('div');
-            d1.classList.add('padding-20');
-            anchorElement.appendChild(d1);
-
-            var d2 = document.createElement('div');
-            d2.classList.add('cover-img-container', 'thumbnail-height', 'rounded-1');
-            d1.appendChild(d2);
-
-            var d3 = document.createElement('div');
-            d3.classList.add('cover-img');
-            d3.style = `background-image: url(${project.thumbnail})`;
-            d2.appendChild(d3);
-
-            var d2b = document.createElement('div');
-            d2b.classList.add('spacer-small');
-            d1.appendChild(d2b);
-
-            var h = document.createElement('p');
-            h.appendChild(document.createTextNode(project.title));
-            h.classList.add('thumbnail-title');
-            d1.appendChild(h);
-
-        })
-
-        return parent;
+  function updateProjectsDisplay(sortName) {
+    var visibleElement = sortOptions.find(op => op.name == sortName);
+    if (visibleElement) {
+      var visibleElementId = visibleElement.id;
+      sortOptions.forEach(op => document.getElementById(op.id).classList.add("hidden"));
+      document.getElementById(visibleElementId).classList.remove("hidden");
     }
-
-    function renderProjects() {
-        clearChildren(projectsElement);
-        projectsElement.appendChild(createProjectGrid('Projects', projects));
+    else {
+      console.log(`Failed to find sort option with name ${sortName}`);
     }
+  }
 
-    // Utility functions
-    function unique(value, index, self) { 
-        return self.indexOf(value) === index;
-    }
+  se.onchange = (evt) => updateProjectsDisplay(evt.target.value);
 
-    function onlyInts(value) {
-        return !isNaN(parseInt(value));
-    }
-
-    function chunk(arr, propGetter) {
-        var chunked = {};
-        arr.forEach((elem) => {
-            if(!chunked[propGetter(elem)]) {
-                chunked[propGetter(elem)] = [elem];
-            }
-            else {
-                chunked[propGetter(elem)].push(elem);
-            }
-        });
-        return chunked;
-    }
-
-    // Sort selector
-    var sortSelector = document.getElementById('sort-selector');
-    var sortOptions = {
-        'school year': {
-            onSelect: function() {
-                clearChildren(projectsElement);
-                var years = projects.map(project => parseInt(project.dateAdded)).filter(onlyInts).filter(unique).sort().reverse();
-                var projectsChunkedByYear = chunk(projects, project => project.dateAdded);
-                years.forEach(year => {
-                    var yearProjects = projectsChunkedByYear[year];
-                    projectsElement.appendChild(createProjectGrid(`${year} - ${year + 1}`, yearProjects));
-                })
-                
-            }
-        },
-        'name': {
-            onSelect: function() {
-                clearChildren(projectsElement);
-                var sortedProjects = projects.slice(0).sort((a, b) => (a.title > b.title) ? 1 : -1);
-                projectsElement.appendChild(createProjectGrid('All Projects (A-Z)', sortedProjects));
-            }
-        }
-    };
-
-    for(prop in sortOptions) {
-        if(sortOptions.hasOwnProperty(prop)) {
-            var option = document.createElement('option');
-            option.value = prop;
-            option.appendChild(document.createTextNode(prop));
-            sortSelector.appendChild(option);
-        }
-    }
-
-    sortSelector.onchange = updateProjectGrid;
-    
-    function updateProjectGrid() {
-        var k = sortOptions[sortSelector.value];
-        if(!!k && k.onSelect) {
-            k.onSelect();
-        }
-    }
-
-    updateProjectGrid();
-    
+  sortOptions.forEach(op => sortOptionsList.add(new Option(op.name)));
 </script>

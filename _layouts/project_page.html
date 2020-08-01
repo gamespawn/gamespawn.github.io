@@ -59,7 +59,15 @@ layout: default
         {% endif %}
         {% if page.download-link and page.download-link != "" %}
         <div class="download-link-container">
-            <a class="download-button" href='{{page.download-link}}'>&#9654; &nbsp;Play</a>
+            {% assign download-link-domain = page.download-link | remove:'http://' | remove:'https://' | split:'/' | first | split:'.' | slice: -2, 2 | join: '.'%}
+            {% if download-link-domain == "itch.io" %}
+                <a class="download-button itch" href='{{page.download-link}}'>&#9654; &nbsp;Play on itch.io</a>
+            {% elsif download-link-domain == "google.com" or download-link-domain == "github.com" %}
+                <a class="download-button" href='{{page.download-link}}'>Download</a>
+            {% else %}
+                <a class="download-button" href='{{page.download-link}}'>&#9654; &nbsp;Play</a>
+            {% endif %}
+            
             <p>{{page.title}}</p>
         </div>
         

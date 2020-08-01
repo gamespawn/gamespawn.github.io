@@ -1,0 +1,35 @@
+{% raw %}
+<div class="events-container">
+{{#events}}
+<a href="{{url}}">
+<div class="text-align-left event-item" style="background-image: url({{bg_img}})">
+  <div class="event-item-overlay">
+    <h3>{{name}}</h3>
+    <div class="spacer-small"></div>
+    <p>
+      {{#if regular_date}}
+        {{regular_date}}
+      {{else if date}}
+        {{prettydate date}} 
+      {{else}}
+        Date TBD
+      {{/if}}
+      
+      {{#if time}}
+        , {{time}}
+      {{/if}}
+    </p>
+    
+    <p>
+    {{#if location}}
+      {{location}}
+    {{else}}
+      Location TBD
+    {{/if}}
+    </p>
+  </div>
+</div>
+</a>
+{{/events}}
+</div>
+{% endraw %}

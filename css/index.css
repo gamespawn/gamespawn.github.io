@@ -20,7 +20,7 @@
     height: 100%;
 
     overflow: hidden;
-    background-color: black;
+    background-color: #000000;
 }
 
 #hero-image {
@@ -56,5 +56,18 @@
 
 #hero-text h3 {
     font-weight: 300;
+    font-size: 1.33rem;
     color: white;
+}
+
+@media only screen and (max-width: 800px) {
+    #hero-text {
+        max-width: 100%;
+        left: 0;
+        top: 50%;
+
+        color: white;
+        text-align: center;
+        transform: translate(0, -50%);
+    }
 }

@@ -104,6 +104,10 @@ select:hover {
     width: 75%;
 }
 
+.hidden {
+    display: none;
+}
+
 /*******************************************
 
     COMMON.BACKGROUND

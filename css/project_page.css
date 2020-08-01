@@ -57,7 +57,14 @@ html {
     background-color: #178bb9;
     border: none;
     border-radius: 5px;
-    transition: background-color 0.1s;
+}
+
+.itch {
+    background-color: #fa5c5c;
+}
+
+.itch:hover {
+    background-color: #b43636;
 }
 
 a {
