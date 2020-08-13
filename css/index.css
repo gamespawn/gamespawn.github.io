@@ -11,41 +11,21 @@
 #hero {
     position: relative;
     width: 100%;
-    height: 70vh;
-    min-height: 400px;
-}
-
-#hero-image-container {
-    width: 100%;
-    height: 100%;
-
-    overflow: hidden;
-    background-color: #000000;
-}
-
-#hero-image {
-    position: relative;
-    width: 100%;
-    height: 100%;
 
     background-image: url({{site.baseurl}}/img/index/hero.png);
     background-position: center;
     background-size: cover;
     background-clip: content-box;
-    
-    filter: brightness(50%);
-    transform: scale(1.1);
+    /* filter: brightness(50%); */
 }
 
 #hero-text {
-    position: absolute;
     max-width: 700px;
-    left: 50%;
-    top: 50%;
-
     color: white;
     text-align: center;
-    transform: translate(-50%, -50%);
+    margin: auto;
+    padding-top: 150px;
+    padding-bottom: 150px;
 }
 
 #hero-text h1 {
@@ -58,17 +38,4 @@
     font-weight: 300;
     font-size: 1.33rem;
     color: white;
-}
-
-@media only screen and (max-width: 800px) {
-    #hero-text {
-        max-width: 100%;
-        width: 100%;
-        left: 0;
-        top: 50%;
-
-        color: white;
-        text-align: center;
-        transform: translate(0, -50%);
-    }
 }

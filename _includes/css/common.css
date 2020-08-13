@@ -280,11 +280,11 @@ select:hover {
     background-position: center;
     background-size: cover;
     background-clip: content-box;
-    transition: transform 0.3s ease-out;
+    transition: transform 0.1s ease-out;
 }
 
-.cover-img:hover {
-    transform: scale(1.05);
+a:hover .cover-img {
+    transform: scale(1.1);
 }
 
 /*******************************************
@@ -311,6 +311,17 @@ select:hover {
 .spacer-xl {
     width: 100%;
     height: 100px;
+}
+
+/*******************************************
+
+    COMMON.GRID
+
+********************************************/
+
+.grid-1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 /*******************************************
