@@ -13,7 +13,7 @@ https://gamespawn.github.io/
 - See [Jekyll's Official Website](https://jekyllrb.com/docs/installation/#requirements) for more detailed information
 
 ### Build the site and run on your local server
-- Create a Gemfile: `bundle init`
+- In the repo folder, create a Gemfile: `bundle init`
 
 - Populate the Gemfile with Jekyll: `bundle add jekyll`
 
