@@ -8,4 +8,5 @@ description: "A fun rhythm game with a gacha minigame that features your favorit
 tags: ["2D", "Rhythm", "Gacha", "Winter Game Jam 2019"]
 download-link: "https://drive.google.com/file/d/1HvvaGVZlei6vqI2fM9s0INY_3wdT5j6l/view?usp=sharing"
 school-year: 2018
+quarter-start-end: ""
 ---

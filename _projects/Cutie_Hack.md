@@ -8,5 +8,6 @@ description: "Quick! There's a bunch of computers you need to hack, and you are 
 recruiting: [ ]
 tags: ["2D", "isometric", "puzzle", "completed"]
 school-year: 2016
+quarter-start-end: ""
 download-link: "https://drive.google.com/a/ucr.edu/file/d/0B_dRwa4KtnbWTlNsaWlUb0dMYXM/view?usp=sharing"
 ---

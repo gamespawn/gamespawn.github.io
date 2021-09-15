@@ -8,5 +8,6 @@ description: "The teddy bears have come alive and are out for revenge! Shoot you
 "
 tags: ["2D", "platformer", "shooting", "funny", "Fall Game Jam 2018", "completed"]
 school-year: 2018
+quarter-start-end: ""
 download-link: "https://github.com/LadyEbony/steampunk_teddies/raw/master/Build.zip"
 ---

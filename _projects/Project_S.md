@@ -7,4 +7,5 @@ platforms: ["PC"]
 description: "Project S is a 2d fighting game with a pixelated anime art style. Each character will have a unique playstyle and ultimately we will have 3 characters by spring. Project S will make you feel like you are truly a character inside a fighting game."
 tags: ["2D", "Action", "Anime", "Fighting", "Pixel Art"]
 school-year: 2019
+quarter-start-end: ""
 ---

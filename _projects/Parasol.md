@@ -9,5 +9,6 @@ description: "Parasol is a single player side scroller where players fight enemi
 "
 tags: ["2D", "platformer", "Fall Game Jam 2018", "ongoing"]
 school-year: 2018
+quarter-start-end: ""
 download-link: "https://github.com/gamespawn/Parasol/releases/download/1.0/Parasol.7z"
 ---

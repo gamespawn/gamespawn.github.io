@@ -24,5 +24,6 @@ tags:
         "completed",
     ]
 school-year: 2017
+quarter-start-end: ""
 download-link: "https://rainbowjellie.itch.io/star"
 ---

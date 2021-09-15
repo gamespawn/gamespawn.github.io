@@ -8,5 +8,6 @@ description: "This is an isometric puzzle game where you are a blind person lost
 recruiting: [ ]
 tags: ["2D", "completed"]
 school-year: 2016
+quarter-start-end: ""
 download-link: "https://drive.google.com/a/ucr.edu/file/d/0B_dRwa4KtnbWRmpTZTg3RWpuaFk/view?usp=sharing"
 ---

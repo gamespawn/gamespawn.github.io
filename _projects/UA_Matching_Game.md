@@ -8,5 +8,6 @@ description: "This is a fan game of Boku no Hero Academia.
 Please report any bugs you found by comments :)"
 tags: ["2D", "Anime", "Hand-drawn", "mha", "completed"]
 school-year: 2017
+quarter-start-end: ""
 download-link: "https://mari-parasa126.itch.io/ua-matching-game"
 ---

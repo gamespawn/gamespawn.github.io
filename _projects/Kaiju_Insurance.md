@@ -24,5 +24,6 @@ tags: [
   "Unity"
 ]
 school-year: 2019
+quarter-start-end: ""
 download-link: "https://globalgamejam.org/2020/games/kaiju-insurance-9"
 ---

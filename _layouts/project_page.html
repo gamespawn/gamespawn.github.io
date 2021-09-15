@@ -75,8 +75,16 @@ layout: default
         {% endif %}
         <div class="spacer-medium"></div>
         <p>
-            Contact: <a href="mailto:{{page.email}}">{{page.email}}</a> <br>
-            Added on: {{page.school-year}} <br>
+            {% if page.email != "" %}
+              Contact: <a href="mailto:{{page.email}}">{{page.email}}</a> <br>
+            {% endif %}
+            
+            {% if page.quarter-start-end == "" %}
+              Added on: {{page.school-year}} <br>
+            {% else %}
+              {{page.quarter-start-end}} <br>
+            {% endif %}
+            
             Tags: {{ page.tags | join: ", "}}
         </p>
         <hr>

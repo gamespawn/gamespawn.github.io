@@ -20,5 +20,6 @@ tags: [
   "unity"
 ]
 school-year: 2018
+quarter-start-end: ""
 download-link: "https://globalgamejam.org/2019/games/bonds-treasure"
 ---

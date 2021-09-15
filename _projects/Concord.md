@@ -8,4 +8,6 @@ description: "Concord is a tactical 3D hack n' slash game, reborn from the proje
 recruiting: ["programmers", "artists", "designers"]
 tags: ["3D", "ongoing"]
 school-year: 2018
+quarter-start-end: ""
+
 ---

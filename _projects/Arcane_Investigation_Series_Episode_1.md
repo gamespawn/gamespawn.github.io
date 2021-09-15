@@ -15,5 +15,6 @@ tags: [
   "story"
 ]
 school-year: 2019
+quarter-start-end: ""
 download-link: "https://slvrchariotvii.itch.io/arcana-investigation-series-episode-1"
 ---

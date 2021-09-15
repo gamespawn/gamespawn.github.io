@@ -20,3 +20,8 @@ https://gamespawn.github.io/
 - Build the site and make it available on a local server: `bundle exec jekyll serve`
 
 - Browse to [http://localhost:4000](http://localhost:4000).
+
+#### Troubleshooting
+
+- If the terminal shows `bundler: command not found: jekyll` when running `bundle exec jekyll serve`, try run this command to install gem in another location: `sudo gem install -n /usr/local/bin jekyll`. See this SO thread for more info: [Jekyll - command not found](https://stackoverflow.com/questions/8146249/jekyll-command-not-found)
+
