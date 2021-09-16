@@ -2,8 +2,6 @@
 layout: default
 ---
 
-
-
 <div style="position: relative;">
     <div id="bg-image" style="background-image: url({{site.baseurl}}/{{page.thumbnail}});"></div>
     <div class="centered">
@@ -19,7 +17,7 @@ layout: default
             {% if page.recruiting and page.recruiting != "" %}
             {{page.recruiting | join: ", "}} and more!
             {% else %}
-            new members! 
+            new members!
             {% endif %}
             &nbsp;
             <a href="https://goo.gl/forms/BOnQ4SnIVQcyTD7I2" class="btn-outlined margin-10 mobile-center-button">Apply now!</a></div>
@@ -29,7 +27,7 @@ layout: default
         {% if page.unity-webgl and page.unity-webgl != "" %}
         <link rel="shortcut icon" href="{{site.baseurl}}/Game Builds/{{page.unity-webgl}}/TemplateData/favicon.ico">
         <link rel="stylesheet" href="{{site.baseurl}}/Game Builds/{{page.unity-webgl}}/TemplateData/style.css">
-        
+
         <div class="webgl-content" style="position: relative; transform: none; top: 0; left: 0;">
             <div id="gameContainer"></div>
             <div class="footer">
@@ -39,8 +37,8 @@ layout: default
             </div>
         </div>
         <div style="height: 2rem;"></div>
-        
-        <script src="{{site.baseurl}}/Game Builds/{{page.unity-webgl}}/TemplateData/UnityProgress.js"></script>  
+
+        <script src="{{site.baseurl}}/Game Builds/{{page.unity-webgl}}/TemplateData/UnityProgress.js"></script>
         <script src="{{site.baseurl}}/Game Builds/{{page.unity-webgl}}/Build/UnityLoader.js"></script>
         <script>
             var webglPath = "{{site.baseurl}}/Game Builds/{{page.unity-webgl}}/Build/";
@@ -68,23 +66,23 @@ layout: default
             {% else %}
                 <a class="download-button" href='{{page.download-link}}'>&#9654; &nbsp;Play</a>
             {% endif %}
-            
+
             <p>{{page.title}}</p>
         </div>
-        
+
         {% endif %}
         <div class="spacer-medium"></div>
         <p>
             {% if page.email != "" %}
               Contact: <a href="mailto:{{page.email}}">{{page.email}}</a> <br>
             {% endif %}
-            
+
             {% if page.quarter-start-end == "" %}
               Added on: {{page.school-year}} <br>
             {% else %}
               {{page.quarter-start-end}} <br>
             {% endif %}
-            
+
             Tags: {{ page.tags | join: ", "}}
         </p>
         <hr>
