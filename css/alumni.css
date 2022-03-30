@@ -1,0 +1,18 @@
+table, th, td {
+  border: 1px solid;
+  border-collapse: collapse;
+  table-layout: fixed;
+  overflow: hidden;
+}
+table {
+  width: 100%
+}
+.alumni-pfp-cell {
+  width: 20%;
+  height: 250px;
+}
+.alumni-intro-cell {
+  padding: 8px 10px 10px 10px;
+  font-size: 16px;
+  vertical-align: top;
+}
