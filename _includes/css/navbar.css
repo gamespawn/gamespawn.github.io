@@ -190,12 +190,30 @@ nav a {
     transition: background-image 0.15s;
 }
 
+#navbar-instagram-img {
+    background-image: url({{site.baseurl}}/img/instagram_logo.png);
+    transition: background-image 0.15s;
+}
+
+#navbar-highlanderlink-img {
+    background-image: url({{site.baseurl}}/img/highlander_link_logo.jpg);
+    transition: background-image 0.15s;
+}
+
 #navbar-bookface-img:hover {
     background-image: url({{site.baseurl}}/img/bookface_logo_blue.png);
 }
 
 #navbar-discord-img:hover {
     background-image: url({{site.baseurl}}/img/discord_logo_blue.png);
+}
+
+#navbar-instagram-img:hover {
+    background-image: url({{site.baseurl}}/img/instagram_logo_blue.png);
+}
+
+#navbar-highlanderlink-img:hover {
+    background-image: url({{site.baseurl}}/img/highlander_link_logo_blue.jpg);
 }
 
 /*******************************************

@@ -1,6 +1,6 @@
 ---
-title: "Intermediate Unity"
-event-name: "Intermediate Unity"
+title: "Advanced Unity"
+event-name: "Advanced Unity"
 event-regular-date: "Date: Thursday"
 event-time: "4:00 ~ 5:00 pm"
 event-location: "Location: Discord VC"
@@ -10,7 +10,7 @@ Please fill out this when2meet form: https://www.when2meet.com/?8838835-i61cc"
 ---
 <div class="warning-box">
   <h2> Important Notice </h2>
-  <p>The first workshop will start on Week 4.</p>
+  <p>The first workshop will start on Week 2.</p>
 </div>
 
 ## Prerequisites
