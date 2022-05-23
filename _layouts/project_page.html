@@ -63,6 +63,8 @@ layout: default
                 <a class="download-button itch" href='{{page.download-link}}'>&#9654; &nbsp;Play on itch.io</a>
             {% elsif download-link-domain == "google.com" or download-link-domain == "github.com" %}
                 <a class="download-button" href='{{page.download-link}}'>Download</a>
+            {% elsif download-link-domain == "steampowered.com" %}
+                <a class = "download-button steam" href = '{{page.download-link}}'>Play on Steam</a>
             {% else %}
                 <a class="download-button" href='{{page.download-link}}'>&#9654; &nbsp;Play</a>
             {% endif %}

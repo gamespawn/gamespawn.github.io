@@ -67,6 +67,14 @@ html {
     background-color: #b43636;
 }
 
+.steam{
+    background-color: #66c0f4;
+}
+
+.steam:hover{
+    background-color:#219aaf;
+}
+
 a {
     color: white;
     text-decoration: underline;
