@@ -26,6 +26,6 @@ tags: [
   "Sci-Fi"
 ]
 school-year: 2021
-quarter-start-end: "Fall 2021 - Spring 2022"
+quarter-start-end: "Fall 2021 - ongoing"
 download-link: ""
 ---
