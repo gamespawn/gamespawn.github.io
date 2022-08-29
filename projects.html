@@ -16,11 +16,11 @@ layout: default
       <div id="projects-by-year" class="">
         {% assign groupedProjects = site.projects | sort:"school-year" | group_by:"school-year" | reverse %}
         {% for project_section in groupedProjects %}
-        {% capture section_name %}
-        {{project_section.name | round}} - {{project_section.name | round | plus: 1}}
-        {% endcapture %}
-        {% assign section_projects = project_section.items %}
-        {% include html/local/project_section.html %}
+          {% capture section_name %}
+          {{project_section.name | round}} - {{project_section.name | round | plus: 1}}
+          {% endcapture %}
+          {% assign section_projects = project_section.items %}
+          {% include html/local/project_section.html %}
         {% endfor %}
       </div>
       <div id="projects-by-title" class="hidden">

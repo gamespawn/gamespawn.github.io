@@ -1,6 +1,7 @@
 ---
 title: Assets
 layout: default
+extra_css: assets.css
 description: Game development is hard... So here are some resources that can make both your life and your team's life just a bit easier! 
 ---
 <div class="centered">
@@ -18,20 +19,83 @@ description: Game development is hard... So here are some resources that can mak
 
         <div class="spacer-medium"></div>
 
-        <h2>Assets? Like what?</h2>
-        <p>Founded in 2014, Gamespawn @ University of California Riverside is a student organization that focuses on introducing
-            students to game development. Our organization teaches students game design, art, and programming through
-            competitions and guest speakers. We do our best not only to motivate and encourage students to learn about
-            game development, but also to provide a professional and comfortable environment for engineers,
-            programmers, designers, and artists.</p>
+        <div class="introCube">
+            <div>
+                <h2>Assets? Like what?</h2>
+                <p>Well, we can first start off with the "why". So, why assets and resources? Well, you can't get much done without them otherwise, of course! Resources refer to 
+                    things such as softwares and other things that we use to make game devving easier, and so, here we have compiled
+                    a list of resources that we have used in games of our very own!
+                </p>
+            </div>
 
-        <div class="spacer-medium"></div>
+            <div class="spacer-medium"></div>
 
-        <h2>Gamespawn Certified Assets for Gamespawn Purposes</h2>
-        <p><a href="{{site.data.outgoing.misc.assets}}" style="text-decoration: underline">Gamespawn Assets Drive</a></p>
+            <div>
+            <h2>Gamespawn Certified Assets for Gamespawn Purposes</h2>
+            <p><a href="{{site.data.outgoing.misc.assets}}" style="text-decoration: underline;">Gamespawn Assets Drive</a></p>
+            </div>
+        </div>
+
+        <div class="introCube">
+            <div style="background-image: url({{site.baseurl}}/img/about/group.jpg); height:300px;"></div>
+        </div>
 
         <div class="spacer-medium"></div>
 
     </div>
+    <!-- Dear future webmasters I'm terribly sorry but I have no clue how these spacers work -->
     <div class="spacer-large"></div>
+    <div class="spacer-large"></div>
+    <div class="spacer-large"></div>
+    <div class="spacer-large"></div>
+    <div class="spacer-large"></div>
+    <div class="spacer-large"></div>
+    <div class="spacer-large"></div>
+    <div class="spacer-large"></div>
+</div>
+
+
+<div class="centered">
+    <hr>
+    <h2>Artists</h2>
+    {% for board_filename in officer_board_arr %}
+        {% assign board_data = site.data.officers[board_filename] %}
+        {% assign board_name = board_filename | replace: "_", " " %}
+        <hr>
+        <div class="spacer-medium"></div>
+        <h2>{{board_name}}</h2>
+        <div>
+            {% for member in board_data%}
+            <div>
+                <img src="{{site.baseurl}}/img/{{member.image}}"
+                    alt="{{member.name}}'s profile image'">
+                <div class="spacer-small"></div>
+                <h3>{{member.name}}</h3>
+                <p>{{member.position}}</p>
+                <p><a href="mailto:{{member.email}}">{{member.email}}</a></p>
+            </div>
+            {% endfor %}
+        </div>
+    {% endfor %}
+
+</div>
+
+<div class="centered">
+    <hr>
+    <h2>Programmers</h2>
+</div>
+
+<div class="centered">
+    <hr>
+    <h2>Writers</h2>
+</div>
+
+<div class="centered">
+    <hr>
+    <h2>Musicians</h2>
+</div>
+
+<div class="centered">
+    <hr>
+    <h2>Level Designers</h2>
 </div>
