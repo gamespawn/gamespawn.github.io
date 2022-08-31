@@ -4,6 +4,15 @@ layout: default
 extra_css: assets.css
 description: Game development is hard... So here are some resources that can make both your life and your team's life just a bit easier! 
 ---
+<script>
+    window.onload = function(){
+        console.log("making sure this works");
+    }
+    function doThing(){
+        console.log("wassup");
+    }
+</script>
+
 <div class="centered">
     <div class="text-align-center">
         <div class="spacer-large"></div>
@@ -58,24 +67,11 @@ description: Game development is hard... So here are some resources that can mak
 <div class="centered">
     <hr>
     <h2>Artists</h2>
-    {% for board_filename in officer_board_arr %}
-        {% assign board_data = site.data.officers[board_filename] %}
-        {% assign board_name = board_filename | replace: "_", " " %}
-        <hr>
-        <div class="spacer-medium"></div>
-        <h2>{{board_name}}</h2>
-        <div>
-            {% for member in board_data%}
-            <div>
-                <img src="{{site.baseurl}}/img/{{member.image}}"
-                    alt="{{member.name}}'s profile image'">
-                <div class="spacer-small"></div>
-                <h3>{{member.name}}</h3>
-                <p>{{member.position}}</p>
-                <p><a href="mailto:{{member.email}}">{{member.email}}</a></p>
-            </div>
-            {% endfor %}
-        </div>
+    {% assign resources = site.data.resources %}
+    {% for individualResource in resources %}
+        <script type="text/javascript">
+            doThing();
+        </script>
     {% endfor %}
 
 </div>
@@ -99,3 +95,4 @@ description: Game development is hard... So here are some resources that can mak
     <hr>
     <h2>Level Designers</h2>
 </div>
+
