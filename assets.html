@@ -5,8 +5,25 @@ extra_css: assets.css
 description: Game development is hard... So here are some resources that can make both your life and your team's life just a bit easier! 
 ---
 <script>
+    var stuff = [];
+
+    function populateStuff(){
+    stuff = [
+        {% for resource in site.data.resources %}
+        {
+            name: "{{resource.title}}",
+            description: "{{resource.description}}"
+        },
+        {% endfor %}
+        ];
+    }
+
     window.onload = function(){
         console.log("making sure this works");
+        populateStuff();
+        for(var i=0; i<stuff.length; ++i){
+            console.log("wassup");
+        }
     }
     function doThing(){
         console.log("wassup");
@@ -67,12 +84,6 @@ description: Game development is hard... So here are some resources that can mak
 <div class="centered">
     <hr>
     <h2>Artists</h2>
-    {% assign resources = site.data.resources %}
-    {% for individualResource in resources %}
-        <script type="text/javascript">
-            doThing();
-        </script>
-    {% endfor %}
 
 </div>
 
