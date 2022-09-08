@@ -1,34 +1,8 @@
 ---
 title: Assets
-layout: default
-extra_css: assets.css
-description: Game development is hard... So here are some resources that can make both your life and your team's life just a bit easier! 
+layout: assets_page
+extra_css: asset-page.css
 ---
-<script>
-    var stuff = [];
-
-    function populateStuff(){
-    stuff = [
-        {% for resource in site.data.resources %}
-        {
-            name: "{{resource.title}}",
-            description: "{{resource.description}}"
-        },
-        {% endfor %}
-        ];
-    }
-
-    window.onload = function(){
-        console.log("making sure this works");
-        populateStuff();
-        for(var i=0; i<stuff.length; ++i){
-            console.log("wassup");
-        }
-    }
-    function doThing(){
-        console.log("wassup");
-    }
-</script>
 
 <div class="centered">
     <div class="text-align-center">
@@ -80,30 +54,20 @@ description: Game development is hard... So here are some resources that can mak
     <div class="spacer-large"></div>
 </div>
 
+<script>
+    var assets = [
+    {% for resource in site.assets %}
+    {
+        name: "{{resource.title}}",
+        description: "{{resource.description}}"
+    },
+    {% endfor %}
+    ];
 
-<div class="centered">
-    <hr>
-    <h2>Artists</h2>
-
-</div>
-
-<div class="centered">
-    <hr>
-    <h2>Programmers</h2>
-</div>
-
-<div class="centered">
-    <hr>
-    <h2>Writers</h2>
-</div>
-
-<div class="centered">
-    <hr>
-    <h2>Musicians</h2>
-</div>
-
-<div class="centered">
-    <hr>
-    <h2>Level Designers</h2>
-</div>
-
+    window.onload = function(){
+        console.log("making sure this works");
+        for(var i=0; i<assets.length; ++i){
+            console.log("wassup");
+        }
+    }
+</script>

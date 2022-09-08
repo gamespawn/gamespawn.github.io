@@ -8,6 +8,8 @@ collections:
     output: true
   events:
     output: true
+  assets:
+    output: true
 
 defaults:
   - 
@@ -24,3 +26,10 @@ defaults:
     values:
       layout: event_page
       extra_css: event_page.css
+  - 
+    scope:
+      path: ''
+      type: assets
+    values:
+      layout: asset_page
+      extra_css: asset_page.css
