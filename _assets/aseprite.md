@@ -6,4 +6,5 @@ description:
   "Aseprite is a software for all your pixel art needs!"
 projects: ["2D Platformer"]
 download-link: "https://rainbowjellie.itch.io/at-the-heart-of-the-forest"
+tutorial-links: ["https://www.youtube.com/watch?v=WKeNJh_gIJU&ab_channel=olenvn"]
 ---

@@ -5,25 +5,49 @@ layout: default
 <div class="centered">
   <hr>
   <h2>Artists</h2>
-
+  {% assets.each do |resource|}
+    {% if resource.for == "Artists" %}
+      <h1>PLACEHOLDER</h1>
+    {% endif %}
+  {% endfor %}
 </div>
 
 <div class="centered">
   <hr>
   <h2>Programmers</h2>
+  {% for resource in assets %}
+    {% if resource.for == "Programmers" %}
+      <h1>PLACEHOLDER</h1>
+    {% endif %}
+  {% endfor %}
 </div>
 
 <div class="centered">
   <hr>
   <h2>Writers</h2>
+  {% for resource in assets %}
+    {% if resource.for == "Writers" %}
+      <h1>PLACEHOLDER</h1>
+    {% endif %}
+  {% endfor %}
 </div>
 
 <div class="centered">
   <hr>
   <h2>Musicians</h2>
+  {% for resource in assets %}
+    {% if resource.for == "Musicians" %}
+      <h1>PLACEHOLDER</h1>
+    {% endif %}
+  {% endfor %}
 </div>
 
 <div class="centered">
   <hr>
   <h2>Level Designers</h2>
+  {% for resource in assets %}
+    {% if resource.for == "Level Designers" %}
+      <h1>PLACEHOLDER</h1>
+    {% endif %}
+  {% endfor %}
 </div>

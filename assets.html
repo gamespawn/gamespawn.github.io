@@ -59,15 +59,17 @@ extra_css: asset-page.css
     {% for resource in site.assets %}
     {
         name: "{{resource.title}}",
+        for: "{{resource.for}}",
+        projects: "{{resource.projects}}",
         description: "{{resource.description}}"
     },
     {% endfor %}
     ];
 
-    window.onload = function(){
-        console.log("making sure this works");
-        for(var i=0; i<assets.length; ++i){
-            console.log("wassup");
-        }
-    }
+    // window.onload = function(){
+    //     console.log("making sure this works");
+    //     for(var i=0; i<assets.length; ++i){
+    //         console.log("wassup");
+    //     }
+    // }
 </script>
