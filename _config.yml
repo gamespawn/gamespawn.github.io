@@ -31,5 +31,5 @@ defaults:
       path: ''
       type: assets
     values:
-      layout: asset_page
+      layout: assets_page
       extra_css: asset_page.css
