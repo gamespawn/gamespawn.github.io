@@ -27,7 +27,7 @@ extra_css: asset-page.css
     </div>
 
     <div class="text-align-center">
-        <div class="cover-img-container group-pic margin-auto">
+        <div class="cover-img-container">
             <div class="cover-img" style="background-image: url({{site.baseurl}}/img/about/group.jpg)"></div>
         </div>
 
@@ -72,10 +72,11 @@ extra_css: asset-page.css
         <h2>General</h2>
         {% for resource in site.assets %} 
             {% if resource.for == "General" %}
-                <div>
-                    <img class="member-img" src="{{site.baseurl}}/img/{{resource.thumbnail}}">
-
+                <div class="resourceMainBox">
+                    <img class="resourceThumbnail" src="{{site.baseurl}}/img/{{resource.thumbnail}}">
+                    <h4 class="resourceText">{{resource.title}}</h4>
                 </div>
+                <div class="spacer-large"></div>
             {% endif %}
         {% endfor %}
       </div>
@@ -85,10 +86,11 @@ extra_css: asset-page.css
         <h2>Artists</h2>
         {% for resource in site.assets %} 
             {% if resource.for == "Artists" %}
-                <div>
-                    <img class="member-img" src="{{site.baseurl}}/img/{{resource.thumbnail}}">
-
-                </div>
+            <div class="resourceMainBox">
+                <img class="resourceThumbnail" src="{{site.baseurl}}/img/{{resource.thumbnail}}">
+                <h4>{{resource.title}}</h4>
+            </div>
+            <div class="spacer-large"></div>
             {% endif %}
         {% endfor %}
       </div>
@@ -98,10 +100,11 @@ extra_css: asset-page.css
         <h2>Programmers</h2>
         {% for resource in site.assets %} 
             {% if resource.for == "Programmers" %}
-                <div>
-                    <img class="member-img" src="{{site.baseurl}}/img/{{resource.thumbnail}}">
-
-                </div>
+            <div class="resourceMainBox">
+                <img class="resourceThumbnail" src="{{site.baseurl}}/img/{{resource.thumbnail}}">
+                <h4>{{resource.title}}</h4>
+            </div>
+            <div class="spacer-large"></div>
             {% endif %}
         {% endfor %}
       </div>
@@ -111,10 +114,11 @@ extra_css: asset-page.css
         <h2>Writers</h2>
         {% for resource in site.assets %} 
             {% if resource.for == "Writers" %}
-                <div>
-                    <img class="member-img" src="{{site.baseurl}}/img/{{resource.thumbnail}}">
-
-                </div>
+            <div class="resourceMainBox">
+                <img class="resourceThumbnail" src="{{site.baseurl}}/img/{{resource.thumbnail}}">
+                <h4>{{resource.title}}</h4>
+            </div>
+            <div class="spacer-large"></div>
             {% endif %}
         {% endfor %}
       </div>
@@ -124,10 +128,11 @@ extra_css: asset-page.css
         <h2>Musicians</h2>
         {% for resource in site.assets %} 
             {% if resource.for == "Musicians" %}
-                <div>
-                    <img class="member-img" src="{{site.baseurl}}/img/{{resource.thumbnail}}">
-
-                </div>
+            <div class="resourceMainBox">
+                <img class="resourceThumbnail" src="{{site.baseurl}}/img/{{resource.thumbnail}}">
+                <h4>{{resource.title}}</h4>
+            </div>
+            <div class="spacer-large"></div>
             {% endif %}
         {% endfor %}
       </div>
