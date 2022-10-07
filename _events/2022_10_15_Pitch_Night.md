@@ -1,8 +1,8 @@
 ---
 title: "Pitch Night"
 event-name: "Pitch Night"
-event-date: "2022-09-23"
-event-time: "5:00 ~ 6:00 PM"
+event-date: "2022-10-14"
+event-time: "6:00 ~ 7:00 PM"
 event-location: "Zoom"
 event-bg-img: "img/events/pitch_night_bg.jpg"
 event-description: "

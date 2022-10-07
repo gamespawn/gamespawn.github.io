@@ -1,7 +1,7 @@
 ---
 title: "Intro to Unity"
 event-name: "Intro to Unity"
-event-regular-date: "Date: Thursday"
+event-regular-date: "Date: Friday"
 event-time: "3:00 ~ 4:00 pm"
 event-location: "Location: Discord VC"
 event-bg-img: "img/events/unity_bg.jpg"
