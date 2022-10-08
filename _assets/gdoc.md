@@ -1,7 +1,7 @@
 ---
 title: "Google Doc"
 for: "General"
-thumbnail: "img/projects/At_The_Heart_Of_The_Forest/thumbnail.png"
+thumbnail: "google_docs.png"
 description: 
   "Everyone knows what Google Docs is but just in case you don't, Google Docs is a text editor"
 projects: ["The Witches of Luminoire"]
