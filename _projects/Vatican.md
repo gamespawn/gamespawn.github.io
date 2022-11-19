@@ -1,13 +1,24 @@
 ---
 title: "Vatican"
-thumbnail: "img/projects/The_Witches_Of_Luminoire/thumbnail.png"
+thumbnail: "img/projects/Vatican/thumbnail.png"
 team: [
-  "Connor Ellis",
-  "Haocheng M."
+  "Connor",
+  "Kas",
+  "Jonathan",
+  "Will",
+  "Zergio",
+  "Vince",
+  "Hao",
+  "Allysa",
+  "Tann",
+  "Sal",
+  "Madison",
+  "Willow",
+  "Jasmine"
 ]
-email: "celli___@ucr.edu"
+email: "celli033@ucr.edu"
 platforms: ["PC"]
-description: "Page still under construction."
+description: "Vatican is a text adventure horror experience where you are an exorcist sent to investigate and exorcize a woman. You must investigate for signs of possession and exorcize the demon from the woman before a week passes and the police take over."
 tags: [
   "Horror",
   "Text-based"
