@@ -6,7 +6,7 @@ team: [
 ]
 email: "blai006@ucr.edu"
 platforms: ["PC"]
-description: "Connect 4 but 5!"
+description: "A reimagining of the classic connect four formula with a new twist! Line 'Em Up! adds power up abilities that each player are able to use to alter the course of the game."
 tags: [
   "Board Game",
   "3D",
