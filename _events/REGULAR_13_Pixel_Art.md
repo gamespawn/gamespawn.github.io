@@ -1,9 +1,9 @@
 ---
 title: "Pixel Art"
 event-name: "Pixel Art"
-event-regular-date: "Wednesday"
+event-regular-date: "Fridays"
 event-time: "2:00 ~ 3:00 pm"
 event-location: "Discord"
 event-bg-img: "img/events/aseprite.jpg"
-event-description: "Want to learn how to make pixel art? Well you're in luck! Many of our projects this time around need pixel artists so if you want to help out, come on by! Offering help in pixel art in general, tilemaps, and more, what's not gain?"
+event-description: "Starting out in game dev but not sure where to start in art? Look no further than the Aseprite workshop, where you can learn to use pixel art to start creating your own assets for your own games! Last quarter we worked on tile-making and tile-set, so this time around we'll be working on creating simple characters and animating them."
 ---

@@ -1,12 +1,12 @@
 ---
-title: "Advanced Unity"
-event-name: "Advanced Unity"
-event-regular-date: "Date: Thursday"
-event-time: "4:00 ~ 5:00 pm"
+title: "Intermediate Unity"
+event-name: "Intermediate Unity"
+event-regular-date: "Date: ???"
+event-time: "???"
 event-location: "Location: Discord VC"
 event-bg-img: "img/events/unity_bg_2.jpg"
 event-description: "Hone your skills in Unity by learning how to work with more nuanced parts of the program, as well as learning quick ways to get around Unity after understanding the basics. In this workshop, we will have a mini quarter-long project where you can get your feet wet into making an actual game with premade assets provided to you by GameSpawn and by other resources.<br>
-Please fill out this when2meet form: https://www.when2meet.com/?8838835-i61cc"
+Please fill out this when2meet form: https://www.when2meet.com/?18191857-w1wYb"
 ---
 <div class="warning-box">
   <h2> Important Notice </h2>
