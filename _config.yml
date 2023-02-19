@@ -14,7 +14,9 @@ collections:
 defaults:
   - 
     scope:
-      path: ''
+      path: "GGJProjects"
+      include: 
+      # I have not a single clue what path does send help
       type: projects
     values:
       layout: project_page
