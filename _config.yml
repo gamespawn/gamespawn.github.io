@@ -14,9 +14,9 @@ collections:
 defaults:
   - 
     scope:
-      path: "GGJProjects"
-      include: 
+      path: ''
       # I have not a single clue what path does send help
+      # ok so it turns out the entire config.yml file uses jekyll
       type: projects
     values:
       layout: project_page
