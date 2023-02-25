@@ -3,7 +3,7 @@ title: "Town Hall"
 event-name: "Town Hall"
 event-date: "2023-2-24"
 event-time: "6:00 ~ 7:00 PM"
-event-location: "Discord"
+event-location: "Zoom (https://ucr.zoom.us/j/92991609161?pwd=THFPMm5jQUJiYWdtdDVpQ0pocXNtZz09)"
 event-bg-img: "img/events/pitch_night_bg.jpg"
 event-description: "
   Wanna catch up with what Gamespawn is doing? Well, we have the event for you! Say hello to our Gamespawn Town Hall! Learn all about what we do and what we've done this quarter so far! That and you'll learn about the events coming up soon!
