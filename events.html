@@ -3,7 +3,7 @@ title: Events - Gamespawn
 layout: default
 extra_css: events.css
 ---
-
+<!-- Until <scripts>, it's all HTML. -->
 
 <div class="centered">
     <div class="text-align-center">
@@ -36,8 +36,11 @@ extra_css: events.css
     <div class="spacer-large"></div>
 </div>
 
-
+<!-- hooooooo boi jekyll time -->
 <script>
+    //ok so basically, site.events; site is a jekyll thing and events is something inside _config.yml
+    //what this is doing is grabbing each event and putting it in this array called events
+    //afterwards, it sorts it into either special_events or regular_events depending on if it has a date or if it has a regular_date
     var events = [
     {% for event in site.events %}
     {
@@ -57,6 +60,7 @@ extra_css: events.css
     var special_events = events.filter(e => !!e.date);
     var regular_events = events.filter(e => !!e.regular_date);
 
+    //this is the big one
     var featured_event_path = "Town_Hall.md";
 </script>
 

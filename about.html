@@ -4,6 +4,7 @@ layout: default
 extra_css: about.css
 description: We are a student organization that focuses on introducing students to game development. We do our best not only to motivate and encourage students to learn about game development, but also to provide a professional and comfortable environment for engineers, programmers, designers, and artists.
 ---
+<!-- This entire html page is for the about page. The top part (before all the officer headshots) are completely in html. Afterwards, ruby comes in to sort everything out. -->
 <div class="centered">
     <div class="text-align-center">
         <div class="spacer-large"></div>
@@ -28,12 +29,14 @@ description: We are a student organization that focuses on introducing students 
 
         <div class="spacer-medium"></div>
 
+        <!-- site.baseurl is a jekyll specific thing. What this links to is constitution.html which is a permalink. -->
         <h2>Constitution</h2>
         <p><a href="{{site.baseurl}}/constitution" style="text-decoration: underline">Gamespawn Constitution.pdf</a></p>
 
         <div class="spacer-medium"></div>
 
         <!-- We need to sort the officer boards in alphabetical order. We do this by extracting the filename of each officer board and putting it in an array. -->
+        <!-- capture is also a jekyll thing; what it does is assign officer_board_arr to be the officer board in alphabetical order. -->
         {% capture officer_board_arr %}
             {% for board_hash in site.data.officers %}{% assign board_filename = board_hash[0] %}{{board_filename}} {% endfor %}
         {% endcapture %}
