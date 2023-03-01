@@ -1,8 +1,8 @@
 ---
 title: "Intermediate Unity"
 event-name: "Intermediate Unity"
-event-regular-date: "Date: ???"
-event-time: "???"
+event-regular-date: "Date: Friday"
+event-time: "3:00 ~ 4:00 pm"
 event-location: "Location: Discord VC"
 event-bg-img: "img/events/unity_bg_2.jpg"
 event-description: "Hone your skills in Unity by learning how to work with more nuanced parts of the program, as well as learning quick ways to get around Unity after understanding the basics. In this workshop, we will have a mini quarter-long project where you can get your feet wet into making an actual game with premade assets provided to you by GameSpawn and by other resources.<br>
