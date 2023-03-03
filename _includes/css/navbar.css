@@ -185,6 +185,11 @@ nav a {
     transition: background-image 0.15s;
 }
 
+#navbar-youtube-img {
+    background-image: url({{site.baseurl}}/img/youtube-black.jpg);
+    transition: background-image 0.15s;
+}
+
 #navbar-discord-img {
     background-image: url({{site.baseurl}}/img/discord_logo.png);
     transition: background-image 0.15s;
@@ -202,6 +207,10 @@ nav a {
 
 #navbar-bookface-img:hover {
     background-image: url({{site.baseurl}}/img/bookface_logo_blue.png);
+}
+
+#navbar-youtube-img:hover {
+    background-image: url({{site.baseurl}}/img/youtube-blue.jpg);
 }
 
 #navbar-discord-img:hover {
