@@ -1,0 +1,62 @@
+---
+title: Tech Talks
+layout: default
+extra_css: techtalks.css
+---
+<!-- Hey. The name's Hao, Webmaster for 2022-2023. This is my futile attempt at understanding the website and how it works. If this page is not up to standard, feel free to nuke it / rewrite it. -->
+<script>
+    var assets = [
+    {% for resource in site.assets %}
+    {
+        name: "{{resource.title}}",
+        for: "{{resource.for}}",
+        projects: "{{resource.projects}}",
+        description: "{{resource.description}}",
+        thumbnail: "{{resource.thumbnail}}"
+    },
+    {% endfor %}
+    ];
+</script>
+
+
+<div class="centered">
+    <div class="text-align-center">
+        <div class="spacer-large"></div>
+        <h1>Tech Talks</h1>
+        <hr>
+        <div class="spacer-small"></div>
+    </div>
+
+    <div class="text-align-center">
+
+        <div class="spacer-medium"></div>
+
+        <div class="introCube">
+            <div>
+                <h2>What are Tech Talks?</h2>
+                <p>Well, we can first start off with the "why". So, why assets and resources? Well, you can't get much done without them otherwise, of course! Resources refer to 
+                    things such as softwares and other things that we use to make game devving easier, and so, here we have compiled
+                    a list of resources that we have used in games of our very own!
+                </p>
+            </div>
+
+            <div class="spacer-medium"></div>
+
+            <div>
+            <h2>Our Talkers</h2>
+            </div>
+        </div>
+
+        <div class="spacer-medium"></div>
+
+    </div>
+    <!-- Dear future webmasters I'm terribly sorry but I have no clue how these spacers work -->
+    <div class="spacer-large"></div>
+    <div class="spacer-large"></div>
+    <div class="spacer-large"></div>
+    <div class="spacer-large"></div>
+    <div class="spacer-large"></div>
+    <div class="spacer-large"></div>
+    <div class="spacer-large"></div>
+    <div class="spacer-large"></div>
+</div>
