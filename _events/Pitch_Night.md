@@ -1,9 +1,9 @@
 ---
 title: "Pitch Night"
 event-name: "Pitch Night"
-event-date: "2023-1-27"
+event-date: "2023-4-21"
 event-time: "6:00 ~ 7:00 PM"
-event-location: "Zoom (https://ucr.zoom.us/j/93324316182?pwd=OWs1UVFNdEJYRjlBQ0l0TUpnRnd4Zz09)"
+event-location: "Zoom"
 event-bg-img: "img/events/pitch_night_bg.jpg"
 event-description: "
   Interested in starting or joining a game project? Come on over to Pitch Night! Pitch Night is the time where game devs get to pitch their game project ideas and recruit interested members into their teams. Check out new or recurring projects, and befriend fellow devs! <br>
