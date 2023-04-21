@@ -82,8 +82,8 @@ html {
   }
   #preloader span {
       position:absolute;
-      border: 8px solid #ffe066;
-      border-top: 8px solid transparent;
+      border: 8px solid rgb(39, 101, 143);
+      border-top: 4px solid transparent;
       border-radius:999px;
   }
   
@@ -145,7 +145,7 @@ html {
   background-color: #F2F6F2;
 }
 .animate-border{
-  border: 40px solid #EDEBE6;
+  border: 20px solid #EDEBE6;
   transition: border .5s .2s ease;
 }
 .indexEverything.divide:before{
