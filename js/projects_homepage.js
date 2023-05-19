@@ -19,6 +19,28 @@ function changeSlide(moveTo) {
     navlinks[moveTo].classList.toggle("active");
     
     currentSlide = moveTo;
+    changeDesc(currentSlide);
+}
+
+function changeDesc(whichProject){
+    let descBox = document.getElementById("description");
+    let recBox = document.getElementById("recruiting");
+    let upBox = document.getElementById("updates");
+    switch(whichProject){
+        case 0:
+            descBox.innerHTML = "chi chi time.";
+            recBox.innerHTML = "";
+            break;
+        case 1:
+            descBox.innerHTML = "it's brentin time";
+            break;
+        case 2:
+            descBox.innerHTML = "heavenly chain time."
+            break;
+        case 3:
+            descBox.innerHTML = "and then wes said, 'it's augmentin time'."
+            break;
+    }
 }
 
 document.querySelectorAll('.slider__navlink').forEach((bullet, bulletIndex) => {
@@ -35,3 +57,7 @@ document.getElementById("GSprojects").addEventListener("click", () => {
 document.getElementById("GGJprojects").addEventListener("click", () => {
   window.location.href = "projects.html";
 });
+
+window.onload = function(){
+    changeDesc(currentSlide);
+}

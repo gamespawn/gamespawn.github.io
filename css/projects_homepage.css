@@ -139,21 +139,28 @@
     }
   }
 
+  .projectsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(1000px, 1fr));
+  }
+
   #GSprojects {
     margin: 20px;
     border-radius: 10px;
-    background: rgb(39, 101, 143);
+    background: linear-gradient(to right, rgb(39, 101, 143), rgba(39, 101, 143, 0));
     background-repeat: none;
     background-size: cover;
     background-position: center;
     color: white;
     border: black solid;
+    background-image: url(/img/events/gamejam.png);
+    height: 300px;
   }
 
   #GGJprojects {
     margin: 20px;
     border-radius: 10px;
-    background: rgb(39, 101, 143);
+    background: linear-gradient(to right, rgb(39, 101, 143), rgba(39, 101, 143, 0));
     background-repeat: none;
     background-size: cover;
     background-position: center;
