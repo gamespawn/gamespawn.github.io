@@ -1,3 +1,6 @@
+---
+---
+
 var featured_event = events.find(event => event.path === featured_event_path);
 
 Handlebars.registerHelper('prettydate', function(dateString) {
