@@ -1,0 +1,136 @@
+---
+title: Home - Gamespawn
+layout: default
+extra_css: index.css
+---
+
+{% include html/jam_banner.html %}
+
+<div id="hero">
+    <div id="hero-image-container">
+        <div id="hero-image" class="image-can-load"></div>
+    </div>
+    <div class="centered">
+        <div id="hero-text">
+            <h1>Welcome to <em class="top-gun-font">Gamespawn!</em></h1>
+            <h3>Want to make games? Gamespawn can help! We host workshops, guest lectures, socials, and more.</h3>
+            <div class="spacer-medium"></div>
+            <a href="{{site.baseurl}}/signup.html" class="btn-standard">Get started</a>
+        </div>
+    </div>
+</div>
+
+<div class="centered padded-section text-align-center">
+    <h2>Game Development For Everyone</h2>
+    <p class="text-optimal">Gamespawn is U.C. Riverside's game development club. Whether you're a programmer,
+        artist, composer, or just
+        a person that really loves games, Gamespawn has something to offer for everyone!</p>
+    <div class="spacer-medium"></div>
+    <div class="floatstop">
+        <div class="col-3 padding-10">
+            <a href="{{site.baseurl}}/events.html" class="text-black">
+                <object type="image/svg+xml" data="img/index/presenter.svg" alt="Image of a presenter">
+                    Your browser does not support SVG
+                </object>
+                <div class="spacer-small"></div>
+                <h3>Workshops</h3>
+                <p>Our student-led workshops cater towards all experience levels. Learn about 3D modeling, sound
+                    design, programming, and more.</p>
+            </a>
+
+        </div>
+        <div class="col-3 padding-10">
+            <a href="{{site.baseurl}}/projects.html" class="text-black">
+                <object type="image/svg+xml" data="img/index/project.svg" alt="Image of a gamepad">
+                    Your browser does not support SVG
+                </object>
+                <div class="spacer-small"></div>
+                <h3>Projects</h3>
+                <p>Our members have made many brilliant games over the years. Join one of our active projects or share
+                    one of your own.</p>
+            </a>
+        </div>
+        <div class="col-3 padding-10">
+            <a href="{{site.baseurl}}/events.html" class="text-black">
+                <object type="image/svg+xml" data="img/index/dice.svg" alt="Image of dice">
+                    Your browser does not support SVG
+                </object>
+                <div class="spacer-small"></div>
+                <h3>Socials</h3>
+                <p>Sit back, relax, and hang out with the Gamespawn family at our fun socials. We'll bring games and
+                    snacks.</p>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="full-width blue-bg floatstop">
+    <div class="col-2 height-500 cover-img-container">
+        <div class="cover-img" style="background-image: url(img/index/evolve_guest_lecture.jpg)" alt="Guest lecture from Turtle Rock Studios">
+        </div>
+    </div>
+    <div class="col-2 height-500 padded-section padding-20">
+        <div class="text-optimal-centered text-white vertical-align-responsive">
+            <h1>Meet the Pros</h1>
+            <p>Industry professionals frequently visit Gamespawn to share their personal success stories and advice
+                for aspiring game developers.
+                Previously, we have invited developers from Obsidian Entertainment, Blizzard, and Turtle Rock
+                Studios.
+            </p>
+            <div class="spacer-medium"></div>
+            <div class="center-items">
+                <img src="{{site.baseurl}}/img/index/Blizzard_Entertainment.png" alt="Blizzard Entertainment Logo"
+                    class="padding-10-right">
+                <img src="{{site.baseurl}}/img/index/Obsidian_Entertainment.png" alt="Obsidian Entertainment Logo"
+                    class="padding-10-right">
+                <img src="{{site.baseurl}}/img/index/Turtle_Rock_Studios.png" alt="Turtle Rock Studios Logo" class="padding-10-right">
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<div class="centered padded-section text-align-center">
+    <h2>Completed Projects</h2>
+    <p class="text-optimal">Play some of the games our members have made!</p>
+    <div class="spacer-medium"></div>
+    <div class="floatstop">
+        <div class="col-3 padding-20">
+            <a class="text-black" href="https://drive.google.com/a/ucr.edu/file/d/0B_dRwa4KtnbWd3I1VWZUYUpYZFE/view?usp=sharing">
+                <div class="cover-img-container thumbnail-height">
+                    <div class="cover-img" style="background-image: url(img/index/cnc_thumbnail.jpg)"></div>
+                </div>
+                <div class="spacer-small"></div>
+                <h3>Creation and Conquest</h3>
+            </a>
+        </div>
+
+        <div class="col-3 padding-20">
+            <a class="text-black" href="https://rainbowjellie.itch.io/star">
+                <div class="cover-img-container thumbnail-height">
+                    <div class="cover-img" style="background-image: url(img/projects/Star_Crossed/thumbnail.png)"></div>
+                </div>
+                <div class="spacer-small"></div>
+                <h3>Star-Crossed</h3>
+            </a>
+        </div>
+
+        <div class="col-3 padding-20">
+            <a class="text-black" href="https://mari-parasa126.itch.io/ua-matching-game">
+                <div class="cover-img-container thumbnail-height">
+                    <div class="cover-img" style="background-image: url(img/projects/UA_Matching_Game/thumbnail.png)"></div>
+                </div>
+                <div class="spacer-small"></div>
+                <h3>UA Matching Game</h3>
+            </a>
+
+        </div>
+    </div>
+    <a href="{{site.baseurl}}/projects.html" class="btn-outlined-grey">See all projects</a>
+
+</div>
+
+{% include html/cta_banner.html %}
+
+<script src="{{site.baseurl}}/js/index.js"></script>
