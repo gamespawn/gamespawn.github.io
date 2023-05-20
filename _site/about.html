@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#10739b" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="About - Gamespawn"/>
+
+    
+    <meta property="og:description" content="We are a student organization that focuses on introducing students to game development. We do our best not only to motivate and encourage students to learn about game development, but also to provide a professional and comfortable environment for engineers, programmers, designers, and artists."/>
+    
+
+    
+    <meta property="og:image" content="/img/Logo.png"/>
+    
+
+    <title>About - Gamespawn</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:300,400,500">
+    <link rel="stylesheet" href="/css/fonts/top_gun/stylesheet.css">
+    <link rel="stylesheet" href="/css/main.css">
+    
+    <link rel="stylesheet" href="/css/about.css">
+    
+    <link rel="icon" href="/img/favicon.jpg">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-67508291-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-67508291-3');
+    </script>
+
+</head>
+
+<body style="-webkit-text-size-adjust: none; -moz-text-size-adjust: none; -ms-text-size-adjust: none;">
+    <!-- Top Navigation Bar -->
+<!-- Requires common.css, navbar.css -->
+<nav>
+    <div class="floatstop centered">
+        <a href="/index.html" id="navbar-home-btn" title="Home" alt="Home button"><img src="/img/Logo.png" alt="Gamespawn logo"></a>
+        <div class="navbar-hamburger" onclick="toggle_navbar_links()">&#9776;</div>
+        <div class="navbar-links">
+            <ul class="navbar-text-links">
+                <!-- <li><a class="navbar-text-lk" href="/ggj.html">✨Global Game Jam✨</a></li
+                    > -->
+                 <li><a class="navbar-text-lk" href="/index.html">Home</a></li
+                ><li><a class="navbar-text-lk" href="/projects.html">Projects</a></li
+                ><li><a class="navbar-text-lk" href="/assets.html">Assets</a></li
+                ><li><a class="navbar-text-lk" href="/techtalks.html">Tech_Talks</a></li
+                ><li><a class="navbar-text-lk" href="/events.html">Events</a></li
+                ><li><a class="navbar-text-lk" href="/about.html">About</a></li
+                >
+            </ul>
+            <ul class="navbar-social-links">
+                <li><a href="https://www.facebook.com/groups/gamespawn/" target="_blank" title="Facebook group"><div id="navbar-bookface-img" alt="Facebook group"></div></a></li
+                ><li><a href="https://discordapp.com/invite/ejzg2Wb" target="_blank" title="Discord server"><div id="navbar-discord-img" alt="Discord server"></div></a></li>
+            </ul>
+        </div>
+    </div>
+    
+</nav>
+<div class="navbar-space"></div>
+<script src="/js/navbar.js"></script>
+
+    <!-- This entire html page is for the about page. The top part (before all the officer headshots) are completely in html. Afterwards, ruby comes in to sort everything out. -->
+<div class="centered">
+    <div class="text-align-center">
+        <div class="spacer-large"></div>
+        <h1>About</h1>
+        <hr>
+        <div class="spacer-small"></div>
+    </div>
+
+    <div class="text-align-center">
+        <div class="cover-img-container group-pic margin-auto">
+            <div class="cover-img" style="background-image: url(/img/about/group.jpg)"></div>
+        </div>
+
+        <div class="spacer-medium"></div>
+
+        <h2>Who we are</h2>
+        <p>Founded in 2014, Gamespawn @ University of California Riverside is a student organization that focuses on introducing
+            students to game development. Our organization teaches students game design, art, and programming through
+            competitions and guest speakers. We do our best not only to motivate and encourage students to learn about
+            game development, but also to provide a professional and comfortable environment for engineers,
+            programmers, designers, and artists.</p>
+
+        <div class="spacer-medium"></div>
+
+        <!-- site.baseurl is a jekyll specific thing. What this links to is constitution.html which is a permalink. -->
+        <h2>Constitution</h2>
+        <p><a href="/constitution" style="text-decoration: underline">Gamespawn Constitution.pdf</a></p>
+
+        <div class="spacer-medium"></div>
+
+        <!-- We need to sort the officer boards in alphabetical order. We do this by extracting the filename of each officer board and putting it in an array. -->
+        <!-- capture is also a jekyll thing; what it does is assign officer_board_arr to be the officer board in alphabetical order. -->
+        
+        
+        
+        <!-- Then we'll sort the array in reverse alphabetical order -->
+        
+        
+        
+            
+            
+            <hr>
+            <div class="spacer-medium"></div>
+            <h2>Executive Board 2023-2024</h2>
+            <div class="member-grid">
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/everlee-mai2.png"
+                        alt="Everlee Mai's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Everlee Mai</h3>
+                    <p class="member-position">President</p>
+                    <p><a class="member-email" href="mailto:everlee.mai@email.ucr.edu">everlee.mai@email.ucr.edu</a></p>
+                </div>
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/anna-gouvion.jpg"
+                        alt="Anna Gouvion's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Anna Gouvion</h3>
+                    <p class="member-position">Vice President</p>
+                    <p><a class="member-email" href="mailto:agouv002@ucr.edu">agouv002@ucr.edu</a></p>
+                </div>
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/niko-udria.jpg"
+                        alt="Niko Udria's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Niko Udria</h3>
+                    <p class="member-position">Treasurer & Outreach Coordinator</p>
+                    <p><a class="member-email" href="mailto:nudri001@ucr.edu">nudri001@ucr.edu</a></p>
+                </div>
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/alvin-chen.png"
+                        alt="Alvin Chen's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Alvin Chen</h3>
+                    <p class="member-position">Project Coordinator & WS Coordinator</p>
+                    <p><a class="member-email" href="mailto:achen452@ucr.edu">achen452@ucr.edu</a></p>
+                </div>
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/andy-jarean.png"
+                        alt="Andy Jarean's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Andy Jarean</h3>
+                    <p class="member-position">Project Coordinator</p>
+                    <p><a class="member-email" href="mailto:ajare002@ucr.edu">ajare002@ucr.edu</a></p>
+                </div>
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/haocheng-mai2.jpg"
+                        alt="Haocheng Mai's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Haocheng Mai</h3>
+                    <p class="member-position">Webmaster</p>
+                    <p><a class="member-email" href="mailto:hmai015@ucr.edu">hmai015@ucr.edu</a></p>
+                </div>
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/falak-tulsi.jpg"
+                        alt="Falak Tulsi's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Falak Tulsi</h3>
+                    <p class="member-position">Webmaster</p>
+                    <p><a class="member-email" href="mailto:ftuls001@ucr.edu">ftuls001@ucr.edu</a></p>
+                </div>
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/amina-penafiel.jpg"
+                        alt="Amina Penafiel's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Amina Penafiel</h3>
+                    <p class="member-position">Social Media Coordinator</p>
+                    <p><a class="member-email" href="mailto:apena080@ucr.edu">apena080@ucr.edu</a></p>
+                </div>
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/lauren-gager.jpg"
+                        alt="Lauren Gager's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Lauren Gager</h3>
+                    <p class="member-position">Social Media Coordinator</p>
+                    <p><a class="member-email" href="mailto:lgage001@ucr.edu">lgage001@ucr.edu</a></p>
+                </div>
+                
+            </div>
+        
+            
+            
+            <hr>
+            <div class="spacer-medium"></div>
+            <h2>Executive Board 2022-2023</h2>
+            <div class="member-grid">
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/david-kim.jpg"
+                        alt="David Kim's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">David Kim</h3>
+                    <p class="member-position">President</p>
+                    <p><a class="member-email" href="mailto:dkim422@ucr.edu">dkim422@ucr.edu</a></p>
+                </div>
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/prathmesh-jain.jpg"
+                        alt="Prathmesh Jain's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Prathmesh Jain</h3>
+                    <p class="member-position">Vice President</p>
+                    <p><a class="member-email" href="mailto:pjain016@ucr.edu">pjain016@ucr.edu</a></p>
+                </div>
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/bowen-lai.jpg"
+                        alt="Bowen Lai's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Bowen Lai</h3>
+                    <p class="member-position">Treasurer</p>
+                    <p><a class="member-email" href="mailto:blai006@ucr.edu">blai006@ucr.edu</a></p>
+                </div>
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/everlee-mai.jpg"
+                        alt="Everlee Mai's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Everlee Mai</h3>
+                    <p class="member-position">Event Coordinator</p>
+                    <p><a class="member-email" href="mailto:everlee.mai@email.ucr.edu">everlee.mai@email.ucr.edu</a></p>
+                </div>
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/jasmine-hernandez2.png"
+                        alt="Jasmine Hernandez's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Jasmine Hernandez</h3>
+                    <p class="member-position">Project Coordinator & WS Coordinator</p>
+                    <p><a class="member-email" href="mailto:jhern294@ucr.edu">jhern294@ucr.edu</a></p>
+                </div>
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/garrick-chiu.png"
+                        alt="Garrick Chiu's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Garrick Chiu</h3>
+                    <p class="member-position">Unity Workshop Leader</p>
+                    <p><a class="member-email" href="mailto:gchiu006@ucr.edu">gchiu006@ucr.edu</a></p>
+                </div>
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/haocheng-mai.jpg"
+                        alt="Haocheng Mai's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Haocheng Mai</h3>
+                    <p class="member-position">Webmaster</p>
+                    <p><a class="member-email" href="mailto:hmai015@ucr.edu">hmai015@ucr.edu</a></p>
+                </div>
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/amina-penafiel.jpg"
+                        alt="Amina Penafiel's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Amina Penafiel</h3>
+                    <p class="member-position">Social Media Coordinator</p>
+                    <p><a class="member-email" href="mailto:apena080@ucr.edu">apena080@ucr.edu</a></p>
+                </div>
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/donovan-frazier-real-cropped.jpg"
+                        alt="Donovan Frazier's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Donovan Frazier</h3>
+                    <p class="member-position"> Outreach</p>
+                    <p><a class="member-email" href="mailto:dfraz004@ucr.edu">dfraz004@ucr.edu</a></p>
+                </div>
+                
+            </div>
+        
+            
+            
+            <hr>
+            <div class="spacer-medium"></div>
+            <h2>Executive Board 2021-2022</h2>
+            <div class="member-grid">
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/leilia-lin-new.jpg"
+                        alt="Leilia Lin's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Leilia Lin</h3>
+                    <p class="member-position">President</p>
+                    <p><a class="member-email" href="mailto:llin063@ucr.edu">llin063@ucr.edu</a></p>
+                </div>
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/izzy-arcinue.png"
+                        alt="Izzy Arcinue's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Izzy Arcinue</h3>
+                    <p class="member-position">Vice President</p>
+                    <p><a class="member-email" href="mailto:iarci002@ucr.edu">iarci002@ucr.edu</a></p>
+                </div>
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/david-kim.jpg"
+                        alt="David Kim's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">David Kim</h3>
+                    <p class="member-position">Treasurer</p>
+                    <p><a class="member-email" href="mailto:dkim422@ucr.edu">dkim422@ucr.edu</a></p>
+                </div>
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/audrey-kim.jpg"
+                        alt="Audrey Kim's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Audrey Kim</h3>
+                    <p class="member-position">Event Coordinator</p>
+                    <p><a class="member-email" href="mailto:akim326@ucr.edu">akim326@ucr.edu</a></p>
+                </div>
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/jasmine-hernandez.png"
+                        alt="Jasmine Hernandez's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Jasmine Hernandez</h3>
+                    <p class="member-position">Project Coordinator</p>
+                    <p><a class="member-email" href="mailto:jhern294@ucr.edu">jhern294@ucr.edu</a></p>
+                </div>
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/calvin-yoh.jpg"
+                        alt="Calvin Yoh's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Calvin Yoh</h3>
+                    <p class="member-position">Unity Workshop Leader</p>
+                    <p><a class="member-email" href="mailto:cyoh001@ucr.edu">cyoh001@ucr.edu</a></p>
+                </div>
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/crystal-feng.jpg"
+                        alt="Crystal Feng's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Crystal Feng</h3>
+                    <p class="member-position">Webmaster</p>
+                    <p><a class="member-email" href="mailto:cfeng017@ucr.edu">cfeng017@ucr.edu</a></p>
+                </div>
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/rick-wang.jpg"
+                        alt="Rick Wang's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Rick Wang</h3>
+                    <p class="member-position">Webmaster II</p>
+                    <p><a class="member-email" href="mailto:ywang978@ucr.edu">ywang978@ucr.edu</a></p>
+                </div>
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/donovan-frazier.jpg"
+                        alt="Donovan Frazier's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Donovan Frazier</h3>
+                    <p class="member-position"> Outreach & WS Coordinator</p>
+                    <p><a class="member-email" href="mailto:dfraz004@ucr.edu">dfraz004@ucr.edu</a></p>
+                </div>
+                
+            </div>
+        
+            
+            
+            <hr>
+            <div class="spacer-medium"></div>
+            <h2>Executive Board 2020-2021</h2>
+            <div class="member-grid">
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/diane-ngo.jpg"
+                        alt="Diane Ngo's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Diane Ngo</h3>
+                    <p class="member-position">President</p>
+                    <p><a class="member-email" href="mailto:dngo024@ucr.edu">dngo024@ucr.edu</a></p>
+                </div>
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/leilia-lin.jpg"
+                        alt="Leilia Lin's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Leilia Lin</h3>
+                    <p class="member-position">Vice President</p>
+                    <p><a class="member-email" href="mailto:llin063@ucr.edu">llin063@ucr.edu</a></p>
+                </div>
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/david-kim.jpg"
+                        alt="David Kim's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">David Kim</h3>
+                    <p class="member-position">Treasurer</p>
+                    <p><a class="member-email" href="mailto:dkim422@ucr.edu">dkim422@ucr.edu</a></p>
+                </div>
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/annika-kirman.jpg"
+                        alt="Annika Kirman's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Annika Kirman</h3>
+                    <p class="member-position">Secretary</p>
+                    <p><a class="member-email" href="mailto:akirm001@ucr.edu">akirm001@ucr.edu</a></p>
+                </div>
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/yishan-luo.jpg"
+                        alt="Yishan Luo's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Yishan Luo</h3>
+                    <p class="member-position">Event Coordinator</p>
+                    <p><a class="member-email" href="mailto:yluo078@ucr.edu">yluo078@ucr.edu</a></p>
+                </div>
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/jasmine-hernandez.png"
+                        alt="Jasmine Hernandez's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Jasmine Hernandez</h3>
+                    <p class="member-position">Workshop Coordinator</p>
+                    <p><a class="member-email" href="mailto:jhern294@ucr.edu">jhern294@ucr.edu</a></p>
+                </div>
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/andre-amante.jpg"
+                        alt="Andre Amante's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Andre Amante</h3>
+                    <p class="member-position">Project Coordinator</p>
+                    <p><a class="member-email" href="mailto:aaman009@ucr.edu">aaman009@ucr.edu</a></p>
+                </div>
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/yvette-chen.jpg"
+                        alt="Yvette Chen's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Yvette Chen</h3>
+                    <p class="member-position">Outreach Coordinator</p>
+                    <p><a class="member-email" href="mailto:ychen431@ucr.edu">ychen431@ucr.edu</a></p>
+                </div>
+                
+            </div>
+        
+            
+            
+            <hr>
+            <div class="spacer-medium"></div>
+            <h2>Executive Board 2019-2020</h2>
+            <div class="member-grid">
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/diane-ngo.jpg"
+                        alt="Diane Ngo's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Diane Ngo</h3>
+                    <p class="member-position">President</p>
+                    <p><a class="member-email" href="mailto:dngo024@ucr.edu">dngo024@ucr.edu</a></p>
+                </div>
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/christopher-fleming.jpg"
+                        alt="Christopher Fleming's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Christopher Fleming</h3>
+                    <p class="member-position">Vice President</p>
+                    <p><a class="member-email" href="mailto:cflem003@ucr.edu">cflem003@ucr.edu</a></p>
+                </div>
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/jaclyn-huang.jpg"
+                        alt="Jaclyn Huang's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Jaclyn Huang</h3>
+                    <p class="member-position">Treasurer</p>
+                    <p><a class="member-email" href="mailto:jhuan057@ucr.edu">jhuan057@ucr.edu</a></p>
+                </div>
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/annika-kirman.jpg"
+                        alt="Annika Kirman's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Annika Kirman</h3>
+                    <p class="member-position">Secretary</p>
+                    <p><a class="member-email" href="mailto:akirm001@ucr.edu">akirm001@ucr.edu</a></p>
+                </div>
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/yishan-luo.jpg"
+                        alt="Yishan Luo's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Yishan Luo</h3>
+                    <p class="member-position">Event Coordinator</p>
+                    <p><a class="member-email" href="mailto:yluo078@ucr.edu">yluo078@ucr.edu</a></p>
+                </div>
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/leilia-lin.jpg"
+                        alt="Leilia Lin's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Leilia Lin</h3>
+                    <p class="member-position">Workshop Coordinator</p>
+                    <p><a class="member-email" href="mailto:llin063@ucr.edu">llin063@ucr.edu</a></p>
+                </div>
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/jose-omar-garcia.jpg"
+                        alt="Jose Omar Garcia's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Jose Omar Garcia</h3>
+                    <p class="member-position">Project Coordinator</p>
+                    <p><a class="member-email" href="mailto:JoseGarcia8064@gmail.com">JoseGarcia8064@gmail.com</a></p>
+                </div>
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/yvette-chen.jpg"
+                        alt="Yvette Chen's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Yvette Chen</h3>
+                    <p class="member-position">Outreach Coordinator</p>
+                    <p><a class="member-email" href="mailto:ychen431@ucr.edu">ychen431@ucr.edu</a></p>
+                </div>
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/kevin-huang.jpg"
+                        alt="Kevin Huang's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Kevin Huang</h3>
+                    <p class="member-position">Webmaster</p>
+                    <p><a class="member-email" href="mailto:khuan028@ucr.edu">khuan028@ucr.edu</a></p>
+                </div>
+                
+            </div>
+        
+            
+            
+            <hr>
+            <div class="spacer-medium"></div>
+            <h2>Executive Board 2018-2019</h2>
+            <div class="member-grid">
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/jasiel-jiminez.jpg"
+                        alt="Jasiel Jimenez's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Jasiel Jimenez</h3>
+                    <p class="member-position">President</p>
+                    <p><a class="member-email" href="mailto:jjime038@ucr.edu">jjime038@ucr.edu</a></p>
+                </div>
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/christian-alverado.jpg"
+                        alt="Christian Alvarado's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Christian Alvarado</h3>
+                    <p class="member-position">Vice President</p>
+                    <p><a class="member-email" href="mailto:calva038@ucr.edu">calva038@ucr.edu</a></p>
+                </div>
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/jaclyn-huang.jpg"
+                        alt="Jaclyn Huang's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Jaclyn Huang</h3>
+                    <p class="member-position">Treasurer</p>
+                    <p><a class="member-email" href="mailto:jhuan057@ucr.edu">jhuan057@ucr.edu</a></p>
+                </div>
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/alexious-jiminez.jpg"
+                        alt="Alexious Jimenez's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Alexious Jimenez</h3>
+                    <p class="member-position">Workshop Coordinator</p>
+                    <p><a class="member-email" href="mailto:ajime023@ucr.edu">ajime023@ucr.edu</a></p>
+                </div>
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/annika-kirman.jpg"
+                        alt="Annika Kirman's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Annika Kirman</h3>
+                    <p class="member-position">Secretary</p>
+                    <p><a class="member-email" href="mailto:akirm001@ucr.edu">akirm001@ucr.edu</a></p>
+                </div>
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/yvette-chen.jpg"
+                        alt="Yvette Chen's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Yvette Chen</h3>
+                    <p class="member-position">Outreach Coordinator</p>
+                    <p><a class="member-email" href="mailto:ychen431@ucr.edu">ychen431@ucr.edu</a></p>
+                </div>
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/diane-ngo.jpg"
+                        alt="Diane Ngo's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Diane Ngo</h3>
+                    <p class="member-position">Event Coordinator</p>
+                    <p><a class="member-email" href="mailto:dngo024@ucr.edu">dngo024@ucr.edu</a></p>
+                </div>
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/kevin-huang.jpg"
+                        alt="Kevin Huang's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Kevin Huang</h3>
+                    <p class="member-position">Webmaster</p>
+                    <p><a class="member-email" href="mailto:khuan028@ucr.edu">khuan028@ucr.edu</a></p>
+                </div>
+                
+            </div>
+        
+            
+            
+            <hr>
+            <div class="spacer-medium"></div>
+            <h2>Executive Board 2017-2018</h2>
+            <div class="member-grid">
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/darren-houn.jpg"
+                        alt="Darren Houn's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Darren Houn</h3>
+                    <p class="member-position">President</p>
+                    <p><a class="member-email" href="mailto:dhoun001@ucr.edu">dhoun001@ucr.edu</a></p>
+                </div>
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/rotem-werner.jpg"
+                        alt="Rotem Werner's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Rotem Werner</h3>
+                    <p class="member-position">Vice President</p>
+                    <p><a class="member-email" href="mailto:rwern002@ucr.edu">rwern002@ucr.edu</a></p>
+                </div>
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/jaclyn-huang.jpg"
+                        alt="Jacyln Huang's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Jacyln Huang</h3>
+                    <p class="member-position">Treasurer</p>
+                    <p><a class="member-email" href="mailto:jhuan057@ucr.edu">jhuan057@ucr.edu</a></p>
+                </div>
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/anjin-huang.jpg"
+                        alt="Anjin Huang's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Anjin Huang</h3>
+                    <p class="member-position">Secretary</p>
+                    <p><a class="member-email" href="mailto:ahuan022@ucr.edu">ahuan022@ucr.edu</a></p>
+                </div>
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/jasiel-jiminez.jpg"
+                        alt="Jasiel Jiminez's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Jasiel Jiminez</h3>
+                    <p class="member-position">Workshop Coordinator</p>
+                    <p><a class="member-email" href="mailto:jjime038@ucr.edu">jjime038@ucr.edu</a></p>
+                </div>
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/lorenzo-alamillo.jpg"
+                        alt="Lorenzo Alamillo's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Lorenzo Alamillo</h3>
+                    <p class="member-position">Project Coordinator</p>
+                    <p><a class="member-email" href="mailto:lalam003@ucr.edu">lalam003@ucr.edu</a></p>
+                </div>
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/chris-pribyl.jpg"
+                        alt="Chris Pribyl's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Chris Pribyl</h3>
+                    <p class="member-position">Outreach Coordinator</p>
+                    <p><a class="member-email" href="mailto:cprib001@ucr.edu">cprib001@ucr.edu</a></p>
+                </div>
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/emmilio-segovia.jpg"
+                        alt="Emmilio Segovia's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Emmilio Segovia</h3>
+                    <p class="member-position">Event Coordinator</p>
+                    <p><a class="member-email" href="mailto:esego001@ucr.edu">esego001@ucr.edu</a></p>
+                </div>
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/joseph-pacia.jpg"
+                        alt="Joseph Pacia's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Joseph Pacia</h3>
+                    <p class="member-position">Webmaster</p>
+                    <p><a class="member-email" href="mailto:jpaci001@ucr.edu">jpaci001@ucr.edu</a></p>
+                </div>
+                
+            </div>
+        
+            
+            
+            <hr>
+            <div class="spacer-medium"></div>
+            <h2>Executive Board 2016-2017</h2>
+            <div class="member-grid">
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/quynh-nguyen.jpg"
+                        alt="Quynh Nguyen's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Quynh Nguyen</h3>
+                    <p class="member-position">President</p>
+                    <p><a class="member-email" href="mailto:qnguy019@ucr.edu">qnguy019@ucr.edu</a></p>
+                </div>
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/david-zhang.png"
+                        alt="David Zhang's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">David Zhang</h3>
+                    <p class="member-position">Vice President</p>
+                    <p><a class="member-email" href="mailto:dzhan008@ucr.edu">dzhan008@ucr.edu</a></p>
+                </div>
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/darren-houn.png"
+                        alt="Darren Houn's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Darren Houn</h3>
+                    <p class="member-position">Treasurer</p>
+                    <p><a class="member-email" href="mailto:dhoun001@ucr.edu">dhoun001@ucr.edu</a></p>
+                </div>
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/anjin-huang.png"
+                        alt="Anjin Huang's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Anjin Huang</h3>
+                    <p class="member-position">Secretary</p>
+                    <p><a class="member-email" href="mailto:ahuan022@ucr.edu">ahuan022@ucr.edu</a></p>
+                </div>
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/chris-pribyl.png"
+                        alt="Chris Pribyl's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Chris Pribyl</h3>
+                    <p class="member-position">Workshop Coordinator</p>
+                    <p><a class="member-email" href="mailto:cprib001@ucr.edu">cprib001@ucr.edu</a></p>
+                </div>
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/john-li.png"
+                        alt="John Li's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">John Li</h3>
+                    <p class="member-position">Project Coordinator</p>
+                    <p><a class="member-email" href="mailto:jli042@ucr.edu">jli042@ucr.edu</a></p>
+                </div>
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/danny-diep.png"
+                        alt="Danny Diep's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Danny Diep</h3>
+                    <p class="member-position">Co-Project Coordinator</p>
+                    <p><a class="member-email" href="mailto:ddiep003@ucr.edu">ddiep003@ucr.edu</a></p>
+                </div>
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/nancy-gao.png"
+                        alt="Nancy Gao's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Nancy Gao</h3>
+                    <p class="member-position">Outreach Coordinator</p>
+                    <p><a class="member-email" href="mailto:ngao001@ucr.edu">ngao001@ucr.edu</a></p>
+                </div>
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/rotem-werner.png"
+                        alt="Rotem Werner's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Rotem Werner</h3>
+                    <p class="member-position">Event Coordinator</p>
+                    <p><a class="member-email" href="mailto:rwern002@ucr.edu">rwern002@ucr.edu</a></p>
+                </div>
+                
+            </div>
+        
+        
+        <!-- We can't forget about our wonderful website inventors -->
+        
+            
+            
+            <hr>
+            <div class="spacer-medium"></div>
+            <h2>Website Inventors</h2>
+            <div class="member-grid">
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/quynh-nguyen.jpg"
+                        alt="Quynh Nguyen's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Quynh Nguyen</h3>
+                    <p class="member-position">Software Engineer</p>
+                    <p><a class="member-email" href="mailto:qnguy019@ucr.edu">qnguy019@ucr.edu</a></p>
+                </div>
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/david-zhang.png"
+                        alt="David Zhang's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">David Zhang</h3>
+                    <p class="member-position">Software Engineer</p>
+                    <p><a class="member-email" href="mailto:dzhan008@ucr.edu">dzhan008@ucr.edu</a></p>
+                </div>
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/michaella-sheng.png"
+                        alt="Michaella Sheng's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Michaella Sheng</h3>
+                    <p class="member-position">Software Engineer</p>
+                    <p><a class="member-email" href="mailto:msheng@ucr.edu">msheng@ucr.edu</a></p>
+                </div>
+                
+                <div class="member-item">
+                    <img class="member-img" src="/img/about/brandon-gutzmann.png"
+                        alt="Brandon Gutzmann's profile image'">
+                    <div class="spacer-small"></div>
+                    <h3 class="member-name">Brandon Gutzmann</h3>
+                    <p class="member-position">Software Enginner</p>
+                    <p><a class="member-email" href="mailto:bgutz001@ucr.edu">bgutz001@ucr.edu</a></p>
+                </div>
+                
+            </div>
+        
+
+    </div>
+    <div class="spacer-large"></div>
+</div>
+
+    <!-- Footer -->
+<!-- Requires common.css -->
+
+<footer class="full-width padded-section grey-bg">
+    <div class="centered text-white floatstop">
+        <div class="col-3 padding-20">
+            <a href="./index.html" title="Home" alt="Home button"><img src="/img/Logo.png" alt="Gamespawn logo"></a>
+            <p class="copyright">Copyright &copy 2018 Gamespawn</p>
+            <ul class="navbar-social-links">
+                <li><a href="https://www.facebook.com/groups/gamespawn/" title="Facebook group">
+                        <div id="navbar-bookface-img" alt="Facebook group"></div>
+                    </a></li>
+                <li><a href="https://discordapp.com/invite/ejzg2Wb" title="Discord server">
+                        <div id="navbar-discord-img" alt="Discord server"></div>
+                    </a></li>
+                <li><a href="https://www.instagram.com/gamespawn.ucr/" title="Instagram Page">
+                        <div id="navbar-instagram-img" alt="Instagram page"></div>
+                    </a></li>
+            </ul>
+        </br>
+            <ul class="navbar-social-links">
+                <li><a href="https://highlanderlink.ucr.edu/organization/gamespawn" title="HighlanderLink">
+                    <div id="navbar-highlanderlink-img" alt="HighlanderLink"></div>
+                </a></li>
+                <li><a href="https://www.youtube.com/channel/UCDnCEGvQ-JMULHeqJrEuTDw" title="Youtube Page">
+                    <div id="navbar-youtube-img" alt="Youtube Page"></div>
+                </a></li>
+            </ul>
+        </div>
+        <div class="col-3 padding-20">
+            <h3>Get to know us</h3>
+            <p><a href="/about.html">About</a></p>
+            <p><a href="/constitution">Constitution</a></p>
+            <p><a href="/contact.html">Contact</a></p>
+        </div>
+        <div class="col-3 padding-20">
+            <h3>Get involved</h3>
+            <p><a href="/projects_homepage.html">Projects</a></p>
+            <p><a href="/live.html">Livestream</a></p>
+            <p><a href="/events.html">Events</a></p>
+            <p><a href="/signup.html">Mailing List</a></p>
+        </div>
+
+    </div>
+</footer>
+</body>
+
+</html>

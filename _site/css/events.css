@@ -1,0 +1,113 @@
+@keyframes move-left-in {
+    0% {
+        transform: translateX(250px);
+        opacity: 0%;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 100%;
+    }
+}
+
+.animate-left-in {
+    animation: 1s ease-out 1s 1 move-left-in;
+}
+
+.events-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+}
+
+.event-item {
+    margin: 20px;
+    border-radius: 10px;
+    background: rgb(39, 101, 143);
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    /* border: 1px solid rgb(181, 222, 255); */
+    
+    /* -webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.3); */
+}
+
+.event-item-overlay {
+    padding: 20px;
+    border-radius: 10px;
+    background: linear-gradient(to right, rgb(15, 39, 75), rgba(39, 101, 143, 0));
+}
+
+.event-item-overlay h3 {
+    font-size: 1.75rem;
+}
+
+#masthead-container {
+    margin-bottom: 50px;
+}
+
+#masthead {
+    background: rgb(39, 101, 143);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 0;
+}
+
+#masthead-overlay {
+    padding-top: 350px;
+}
+
+#masthead-text {
+    background-color: rgba(39, 101, 143, 0.664);
+    padding: 30px;
+    color: white;
+}
+
+#masthead-text h2 {
+    font-size: 3rem;
+}
+
+
+@media only screen and (max-width: 800px) {
+
+    #masthead {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #masthead-text h2 {
+        font-size: 2rem;
+    }
+
+    #masthead-overlay {
+        padding-top: 0;
+    }
+
+    #masthead-text {
+        padding-top: 150px;
+    }
+
+    .event-item {
+        margin: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .event-item-overlay {
+        background: rgba(15, 39, 75, 0.75);
+    }
+
+    .events-container {
+        grid-template-columns: 1fr;
+    }
+
+    .event-item-overlay p {
+        font-size: .825rem;
+    }
+
+    .event-item-overlay h3 {
+        font-size: 1.25rem;
+    }
+}

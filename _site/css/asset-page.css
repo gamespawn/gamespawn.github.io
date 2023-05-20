@@ -1,0 +1,23 @@
+.introCube{
+	float:left;
+	width:45%;
+	padding:15px;
+}
+
+.resourceMainBox{
+	float:left;
+	width:100%;
+	padding:15px;
+	clear:both;
+}
+
+.resourceThumbnail{
+	float:left;
+	width:40%;
+	height:300px;
+}
+
+.resourceText{
+	float:left;
+	padding-left: 15px;
+}

@@ -1,0 +1,95 @@
+h1 {
+  font-size: 3rem;
+}
+
+#page-area h2 {
+  margin-top: 3rem;
+  margin-bottom: 1.25rem;
+}
+
+#page-area p {
+  max-width: 40rem;
+  margin-bottom: 1.5rem;
+  margin-left: 0;
+}
+
+#page-area li {
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+
+#header-img-text p {
+  margin: 0;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+#back-button {
+  color: white;
+  margin-bottom: 1rem;
+  display: inline-block;
+  text-decoration: underline;
+}
+
+#back-button:visited {
+  color: white;
+}
+
+#header-img-text {
+  padding-top: 200px;
+  padding-bottom: 30px;
+  color: white;
+}
+
+#header-img-overlay {
+  background-color: #00000086;
+}
+
+#header-img {
+  background-color: white;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#page-area {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+#description {
+  margin-left: 0;
+  margin-right: 0;
+  line-height: 2rem;
+}
+
+#extra-links {
+  float: right;
+  border-left: 1px solid gray;
+  padding-left: 20px;
+  margin-top: 2.5rem;
+}
+
+.warning-box {
+  max-width: 40rem;
+  background-color: #ffde73;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+}
+
+@media only screen and (max-width: 800px) {
+  #header-img-text {
+    padding-top: 100px;
+  }
+
+  #page-area {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  #extra-links {
+    float: none;
+    border-left: none;
+    padding: 0;
+  }
+}

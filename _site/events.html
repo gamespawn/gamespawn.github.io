@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#10739b" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Events - Gamespawn"/>
+
+    
+    <meta property="og:description" content="We are a student organization that focuses on introducing students to game development. We do our best not only to motivate and encourage students to learn about game development, but also to provide a professional and comfortable environment for engineers, programmers, designers, and artists."/>
+    
+
+    
+    <meta property="og:image" content="/img/Logo.png"/>
+    
+
+    <title>Events - Gamespawn</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:300,400,500">
+    <link rel="stylesheet" href="/css/fonts/top_gun/stylesheet.css">
+    <link rel="stylesheet" href="/css/main.css">
+    
+    <link rel="stylesheet" href="/css/events.css">
+    
+    <link rel="icon" href="/img/favicon.jpg">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-67508291-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-67508291-3');
+    </script>
+
+</head>
+
+<body style="-webkit-text-size-adjust: none; -moz-text-size-adjust: none; -ms-text-size-adjust: none;">
+    <!-- Top Navigation Bar -->
+<!-- Requires common.css, navbar.css -->
+<nav>
+    <div class="floatstop centered">
+        <a href="/index.html" id="navbar-home-btn" title="Home" alt="Home button"><img src="/img/Logo.png" alt="Gamespawn logo"></a>
+        <div class="navbar-hamburger" onclick="toggle_navbar_links()">&#9776;</div>
+        <div class="navbar-links">
+            <ul class="navbar-text-links">
+                <!-- <li><a class="navbar-text-lk" href="/ggj.html">✨Global Game Jam✨</a></li
+                    > -->
+                 <li><a class="navbar-text-lk" href="/index.html">Home</a></li
+                ><li><a class="navbar-text-lk" href="/projects.html">Projects</a></li
+                ><li><a class="navbar-text-lk" href="/assets.html">Assets</a></li
+                ><li><a class="navbar-text-lk" href="/techtalks.html">Tech_Talks</a></li
+                ><li><a class="navbar-text-lk" href="/events.html">Events</a></li
+                ><li><a class="navbar-text-lk" href="/about.html">About</a></li
+                >
+            </ul>
+            <ul class="navbar-social-links">
+                <li><a href="https://www.facebook.com/groups/gamespawn/" target="_blank" title="Facebook group"><div id="navbar-bookface-img" alt="Facebook group"></div></a></li
+                ><li><a href="https://discordapp.com/invite/ejzg2Wb" target="_blank" title="Discord server"><div id="navbar-discord-img" alt="Discord server"></div></a></li>
+            </ul>
+        </div>
+    </div>
+    
+</nav>
+<div class="navbar-space"></div>
+<script src="/js/navbar.js"></script>
+
+    <!-- Until <scripts>, it's all HTML. -->
+
+<div class="centered">
+    <div class="text-align-center">
+        <div class="spacer-large"></div>
+        <h1>Events</h1>
+        <hr>
+        <div class="spacer-small"></div>
+    </div>
+</div>
+
+<div id="masthead-container">
+    <div class="loading-spinner"></div>
+</div>
+
+
+<div class="centered text-align-center">
+    <h2>⭐Special Events⭐</h2>
+    <hr>
+    <div class="spacer-small"></div>
+    <div id="special-events-container">
+        <div class="loading-spinner"></div>
+    </div>
+    <div class="spacer-large"></div>
+    <h2>Weekly/Biweekly Events</h2>
+    <hr>
+    <div class="spacer-small"></div>
+    <div id="regular-events-container">
+        <div class="loading-spinner"></div>
+    </div>
+    <div class="spacer-large"></div>
+</div>
+
+<!-- hooooooo boi jekyll time -->
+<script>
+    //ok so basically, site.events; site is a jekyll thing and events is something inside _config.yml
+    //what this is doing is grabbing each event and putting it in this array called events
+    //afterwards, it sorts it into either special_events or regular_events depending on if it has a date or if it has a regular_date
+    var events = [ 
+    {
+        path: "3DUCR_Collab_Seminar.md",
+        name: "Unreal Engine Seminar",
+        date: "2023-05-19",
+        regular_date: "",
+        time: "6:30 ~ 7:30 PM",
+        location: "Zoom",
+        description: "Learn how to navigate the basic controls of Unreal Engine and setup a 3D world! This is an introduction level workshop done in collaboration with 3DUCR that goes over basic materials, importing, and lighting. Make sure to have Unreal Engine installed if you want to follow along. Link to a download here -> https://www.unrealengine.com/en-US/download",
+        bg_img:  "/img/events/unreal.jpg" ,
+        url: "/events/3DUCR_Collab_Seminar.html"
+    },
+    
+    {
+        path: "FINANCE_SEMINAR.md",
+        name: "Finance Seminar",
+        date: "???",
+        regular_date: "",
+        time: "???",
+        location: "Discord VC",
+        description: "Learn budgeting basics, tax filings, and the meaning of life in the Financial Literacy Seminar! This is a 2-part seminar that is a crash course on getting started with managing your money independently. Topics include: credit, budgeting, banking, loans, and a brief intro on filing your taxes. Please fill out this when2meet if you are interested: https://www.when2meet.com/?19645060-Unrbw",
+        bg_img:  "/img/stockImages/young-man-holding-money-thumbs-up-white-background-48067323.jpg" ,
+        url: "/events/FINANCE_SEMINAR.html"
+    },
+    
+    {
+        path: "REGULAR_15_HOW_TO_GAME_JAM.md",
+        name: "How To Game Jam",
+        date: "",
+        regular_date: "TBD",
+        time: "???",
+        location: "Discord",
+        description: "Want to make a game in a weekend? Learn how to do so whether you have skills in art, audio, programming, or writing! This workshop will teach you how to find opportunities to make games successfully make one in a short timeframe! Please fill out this when2meet if you are interested: https://www.when2meet.com/?19645058-SQPZV ",
+        bg_img:  "/img/events/gamejam.png" ,
+        url: "/events/REGULAR_15_HOW_TO_GAME_JAM.html"
+    },
+    
+    {
+        path: "REGULAR_1_Hacknight.md",
+        name: "Hacknight",
+        date: "",
+        regular_date: "Date: Wednesday",
+        time: "5:00 ~ 8:00 pm",
+        location: "Location: Creat'R lab (Orbach Library 1st Floor)",
+        description: "Gamespawn invites you to the general meetings where game developers collaborate together on video game projects. We also share any on-campus events, workshops, and opportunities relating to video game development. The majority of the session consists on developing video games. For those interested, Gamespawn provides 1-on-1 help from experienced developers. You can also join an existing project or start your own!",
+        bg_img:  "/img/stockImages/manWithController.jpg" ,
+        url: "/events/REGULAR_1_Hacknight.html"
+    },
+    
+    {
+        path: "The_Royal_Banquet.md",
+        name: "The Royal Banquet",
+        date: "2023-06-16",
+        regular_date: "",
+        time: "4:00 ~ 7:00 PM",
+        location: "The Arts Basement",
+        description: "Awwwww man oh boy OOOOOHHHHH YEAHHHHHHH HERE WE GO AGAIN WELCOME BACK GAMERS TO GAMESPAWN'S 2ND ANNUAL GAMESPAWN BANQUET!!!! This time, our theme for the banquet is ✨ Royal ✨ so dress in your nicest clothes, put on some deodorant, and hop on down to the dungeons to engage in a night of luxury, vice, and sin! Signups here: https://forms.gle/nndUkxL8rke4pKUY7",
+        bg_img:  "/img/stockImages/young-man-holding-money-thumbs-up-white-background-48067323.jpg" ,
+        url: "/events/The_Royal_Banquet.html"
+    },
+    
+    ];
+
+    var special_events = events.filter(e => !!e.date);
+    var regular_events = events.filter(e => !!e.regular_date);
+
+    //this is the big one
+    var featured_event_path = "3DUCR_Collab_Seminar.md";
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.0/handlebars.min.js"></script>
+<script src="/js/events.js"></script> 
+
+    <!-- Footer -->
+<!-- Requires common.css -->
+
+<footer class="full-width padded-section grey-bg">
+    <div class="centered text-white floatstop">
+        <div class="col-3 padding-20">
+            <a href="./index.html" title="Home" alt="Home button"><img src="/img/Logo.png" alt="Gamespawn logo"></a>
+            <p class="copyright">Copyright &copy 2018 Gamespawn</p>
+            <ul class="navbar-social-links">
+                <li><a href="https://www.facebook.com/groups/gamespawn/" title="Facebook group">
+                        <div id="navbar-bookface-img" alt="Facebook group"></div>
+                    </a></li>
+                <li><a href="https://discordapp.com/invite/ejzg2Wb" title="Discord server">
+                        <div id="navbar-discord-img" alt="Discord server"></div>
+                    </a></li>
+                <li><a href="https://www.instagram.com/gamespawn.ucr/" title="Instagram Page">
+                        <div id="navbar-instagram-img" alt="Instagram page"></div>
+                    </a></li>
+            </ul>
+        </br>
+            <ul class="navbar-social-links">
+                <li><a href="https://highlanderlink.ucr.edu/organization/gamespawn" title="HighlanderLink">
+                    <div id="navbar-highlanderlink-img" alt="HighlanderLink"></div>
+                </a></li>
+                <li><a href="https://www.youtube.com/channel/UCDnCEGvQ-JMULHeqJrEuTDw" title="Youtube Page">
+                    <div id="navbar-youtube-img" alt="Youtube Page"></div>
+                </a></li>
+            </ul>
+        </div>
+        <div class="col-3 padding-20">
+            <h3>Get to know us</h3>
+            <p><a href="/about.html">About</a></p>
+            <p><a href="/constitution">Constitution</a></p>
+            <p><a href="/contact.html">Contact</a></p>
+        </div>
+        <div class="col-3 padding-20">
+            <h3>Get involved</h3>
+            <p><a href="/projects_homepage.html">Projects</a></p>
+            <p><a href="/live.html">Livestream</a></p>
+            <p><a href="/events.html">Events</a></p>
+            <p><a href="/signup.html">Mailing List</a></p>
+        </div>
+
+    </div>
+</footer>
+</body>
+
+</html>
