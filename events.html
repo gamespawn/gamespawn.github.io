@@ -42,20 +42,22 @@ extra_css: events.css
     //what this is doing is grabbing each event and putting it in this array called events
     //afterwards, it sorts it into either special_events or regular_events depending on if it has a date or if it has a regular_date
     var events = [
-    {% for event in site.events %}
+    {% for event in site.events -%}
     {
-        path: "{{event.path | split: '/' | last }}",
-        name: "{{event.event-name}}",
-        date: "{{event.event-date}}",
-        regular_date: "{{event.event-regular-date}}",
-        time: "{{event.event-time}}",
-        location: "{{event.event-location}}",
-        description: "{{event.event-description}}",
-        bg_img: {% if event.event-bg-img %} "{{site.baseurl}}/{{event.event-bg-img}}" {% else if %} null {% endif %},
-        url: "{{site.baseurl}}{{event.url}}"
-    },
-    {% endfor %}
-    ];
+        path: "{{ event.path | split: '/' | last }}",
+        name: "{{ event.event-name | strip_newlines }}",
+        date: "{{ event.event-date | strip_newlines }}",
+        regular_date: "{{ event.event-regular-date | strip_newlines }}",
+        time: "{{ event.event-time | strip_newlines }}",
+        location: "{{ event.event-location | strip_newlines }}",
+        description: "{{ event.event-description | strip_newlines }}",
+        bg_img: {% if event.event-bg-img %}"{{ site.baseurl }}/{{ event.event-bg-img | strip_newlines }}"{% else %}null{% endif %},
+        url: "{{ site.baseurl }}{{ event.url | strip_newlines }}"
+    }{%- unless forloop.last -%},{%- endunless -%}
+    {% endfor -%}
+];
+
+
 
     var special_events = events.filter(e => !!e.date);
     var regular_events = events.filter(e => !!e.regular_date);
