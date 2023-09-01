@@ -52,11 +52,14 @@ document.querySelectorAll('.slider__navlink').forEach((bullet, bulletIndex) => {
 })
 
 document.getElementById("GSprojects").addEventListener("click", () => {
-  window.location.href = "projects.html";
+  window.location.href = "projectsGS.html";
 });
 document.getElementById("GGJprojects").addEventListener("click", () => {
-  window.location.href = "projects.html";
+  window.location.href = "projectsGGJ.html";
 });
+document.getElementById("Personal").addEventListener("click", () => {
+    window.location.href = "projectsPersonal.html";
+  });
 
 window.onload = function(){
     changeDesc(currentSlide);

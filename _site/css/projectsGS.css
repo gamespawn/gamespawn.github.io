@@ -1,0 +1,74 @@
+/*******************************************
+
+    PROJECTS.GRID
+
+********************************************/
+.project-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.project-grid-item:hover {
+    background-color: rgba(0, 174, 255, 0.13);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.playable {
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+    transform: scale(0.75);
+}
+
+/*******************************************
+
+    PROJECTS.SORT-SELECTOR
+
+********************************************/
+#sort-selector-text {
+    display: inline-block;
+    margin: auto;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    
+}
+
+#sort-selector {
+    font-weight: 500;
+    border-radius: 5px;
+    background-color: #f3f3f3;
+    padding: 0.25rem;
+}
+
+/*******************************************
+
+    PROJECTS.MEDIA QUERIES
+
+********************************************/
+
+@media only screen and (max-width: 800px) {
+    .project-grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+
+    .project-grid-container .thumbnail-height {
+        height: 100px;
+        width: 100px;
+        margin: auto;
+        border-radius: 7px;
+    }
+
+    .project-grid-container .padding-20 {
+        padding: 10px;
+    }
+
+    .project-grid-container .thumbnail-title {
+        font-size: 0.8em;
+    }
+
+    .playable {
+        position: absolute;
+        right: -8px;
+        bottom: -8px;
+    }
+}

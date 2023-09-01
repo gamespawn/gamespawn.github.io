@@ -153,7 +153,8 @@
     background-position: center;
     color: white;
     border: black solid;
-    background-image: url(/img/events/gamejam.png);
+    background-image: url(/img/projects/Project_Homepage/gsprojects.png);
+    background-size:contain;
     height: 300px;
   }
 
@@ -166,4 +167,21 @@
     background-position: center;
     color: white;
     border: black solid;
+    background-image: url(/img/projects/Project_Homepage/ggjprojects.png);
+    background-size: contain;
+    height: 300px;
+  }
+
+  #Personal {
+    margin: 20px;
+    border-radius: 10px;
+    background: linear-gradient(to right, rgb(39, 101, 143), rgba(39, 101, 143, 0));
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    border: black solid;
+    background-image: url(/img/projects/Project_Homepage/personalprojects.png);
+    background-size: contain;
+    height: 300px;
   }

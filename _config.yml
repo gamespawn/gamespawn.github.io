@@ -10,6 +10,8 @@ collections:
     output: true
   assets:
     output: true
+  GGJProjects:
+    output: true
 
 defaults:
   - 
@@ -35,3 +37,10 @@ defaults:
     values:
       layout: assets_page
       extra_css: asset_page.css
+  -
+    scope:
+      path: ''
+      type: GGJProjects
+    values:
+      layout: 
+      extra_css:
