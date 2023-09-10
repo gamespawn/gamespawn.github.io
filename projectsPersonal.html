@@ -14,7 +14,7 @@ layout: default
     </p>
     <div id="projects">
       <div id="projects-by-year" class="">
-        {% assign groupedProjects = site.Personalprojects | sort:"school-year" | group_by:"school-year" | reverse %}
+        {% assign groupedProjects = site.projects | sort:"school-year" | group_by:"school-year" | reverse %}
         {% for project_section in groupedProjects %}
           {% capture section_name %}
           {{project_section.name | round}} - {{project_section.name | round | plus: 1}}
