@@ -25,7 +25,7 @@ layout: default
       </div>
       <div id="projects-by-title" class="hidden">
         {% assign section_name = "Projects (A-Z)" %}
-        {% assign section_projects = site.projects | sort:"title" %}
+        {% assign section_projects = site.GGJProjects | sort:"title" %}
         {% include html/local/project_section.html %}
       </div>
     </div>

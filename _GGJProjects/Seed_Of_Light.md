@@ -26,8 +26,7 @@ tags: [
   "Puzzle",
   "2D"
 ]
-school-year: "Special"
+school-year: 2023
 quarter-start-end: "Global Game Jam 2023"
-jam-event: "Global Game Jam"
 download-link: "https://chaffeygamedev.itch.io/seed-of-light"
 ---

@@ -10,9 +10,9 @@ platforms: ["PC"]
 description: "This is an investigative RPG in which you play as Tara Arceneaux, a freelance Arcana Detective that uses the mysterious power of the Justice Arcana to find the truth of the cyber attack that's at the center of a nearly two-year-old trial. The so-called \"decisive evidence\" is suspected to be hidden in a mental cloud called the MindNet, but with the mysterious AIs known only as the RKNA attempting to kill Tara at every turn, the light at the end of this tunnel grows yet dimmer for both the defense team and the defendant."
 tags: [
   "2D", 
+  "Mystery",
   "RPG", 
-  "mystery", 
-  "story"
+  "Story"
 ]
 school-year: 2019
 quarter-start-end: ""

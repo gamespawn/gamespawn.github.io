@@ -42,5 +42,5 @@ defaults:
       path: ''
       type: GGJProjects
     values:
-      layout: 
-      extra_css:
+      layout: project_page
+      extra_css: project_page.css

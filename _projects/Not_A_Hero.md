@@ -17,10 +17,10 @@ email: "rsun050@ucr.edu"
 platforms: ["PC"]
 description: "A game about an introvert who doesn’t really want to be a hero."
 tags: [
-  "Visual Novel",
-  "Ren'Py",
+  "Comedy",
   "Management",
-  "Comedy"
+  "Ren'Py",
+  "Visual Novel"
 ]
 school-year: 2022
 quarter-start-end: "Fall 2022 - Fall 2022"
