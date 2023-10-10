@@ -28,17 +28,24 @@ function changeDesc(whichProject){
     let upBox = document.getElementById("updates");
     switch(whichProject){
         case 0:
-            descBox.innerHTML = "chi chi time.";
+            descBox.innerHTML = "There are currently NO ongoing projects. Come back soon! (After Week 3!)";
             recBox.innerHTML = "";
+            upBox.innerHTML = "S o o n."
             break;
         case 1:
-            descBox.innerHTML = "it's brentin time";
+            descBox.innerHTML = "There are currently NO ongoing projects. Come back soon! (After Week 3!)";
+            recBox.innerHTML = "";
+            upBox.innerHTML = "S o o n."
             break;
         case 2:
-            descBox.innerHTML = "heavenly chain time."
+            descBox.innerHTML = "There are currently NO ongoing projects. Come back soon! (After Week 3!)";
+            recBox.innerHTML = "";
+            upBox.innerHTML = "S o o n."
             break;
         case 3:
-            descBox.innerHTML = "and then wes said, 'it's augmentin time'."
+            descBox.innerHTML = "There are currently NO ongoing projects. Come back soon! (After Week 3!)";
+            recBox.innerHTML = "";
+            upBox.innerHTML = "S o o n."
             break;
     }
 }
