@@ -15,7 +15,7 @@ tags: [
   "Western",
   "2D"
 ]
-school-year: "Special"
+school-year: 2023
 quarter-start-end: "Global Game Jam 2023"
 download-link: "https://ding0dongo.itch.io/taking-root-of-the-west"
 ---

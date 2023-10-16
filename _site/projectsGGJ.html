@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#10739b" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Projects - Gamespawn"/>
+
+    
+    <meta property="og:description" content="We are a student organization that focuses on introducing students to game development. We do our best not only to motivate and encourage students to learn about game development, but also to provide a professional and comfortable environment for engineers, programmers, designers, and artists."/>
+    
+
+    
+    <meta property="og:image" content="/img/Logo.png"/>
+    
+
+    <title>Projects - Gamespawn</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:300,400,500">
+    <link rel="stylesheet" href="/css/fonts/top_gun/stylesheet.css">
+    <link rel="stylesheet" href="/css/main.css">
+    
+    <link rel="stylesheet" href="/css/projectsGS.css">
+    
+    <link rel="icon" href="/img/favicon.jpg">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-67508291-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-67508291-3');
+    </script>
+
+</head>
+
+<body style="-webkit-text-size-adjust: none; -moz-text-size-adjust: none; -ms-text-size-adjust: none;">
+    <!-- Top Navigation Bar -->
+<!-- Requires common.css, navbar.css -->
+<nav>
+    <div class="floatstop centered">
+        <a href="/index.html" id="navbar-home-btn" title="Home" alt="Home button"><img src="/img/Logo.png" alt="Gamespawn logo"></a>
+        <div class="navbar-hamburger" onclick="toggle_navbar_links()">&#9776;</div>
+        <div class="navbar-links">
+            <ul class="navbar-text-links">
+                <!-- <li><a class="navbar-text-lk" href="/ggj.html">✨Global Game Jam✨</a></li
+                    > -->
+                 <li><a class="navbar-text-lk" href="/index.html">Home</a></li
+                ><li><a class="navbar-text-lk" href="/projects_homepage.html">Projects</a></li
+                ><li><a class="navbar-text-lk" href="/assets.html">Assets</a></li
+                ><li><a class="navbar-text-lk" href="/techtalks.html">Tech_Talks</a></li
+                ><li><a class="navbar-text-lk" href="/events.html">Events</a></li
+                ><li><a class="navbar-text-lk" href="/about.html">About</a></li
+                >
+            </ul>
+            <ul class="navbar-social-links">
+                <li><a href="https://www.facebook.com/groups/gamespawn/" target="_blank" title="Facebook group"><div id="navbar-bookface-img" alt="Facebook group"></div></a></li
+                ><li><a href="https://discordapp.com/invite/ejzg2Wb" target="_blank" title="Discord server"><div id="navbar-discord-img" alt="Discord server"></div></a></li>
+            </ul>
+        </div>
+    </div>
+    
+</nav>
+<div class="navbar-space"></div>
+<script src="/js/navbar.js"></script>
+
+    <div class="centered">
+  <div class="text-align-center text-black">
+    <div class="spacer-large"></div>
+    <h1>Projects</h1>
+    <div class="spacer-small"></div>
+
+    <p id="sort-selector-text">Sort by <select id="sort-selector"></select>
+    </p>
+    <div id="projects">
+      <div id="projects-by-year" class="">
+        
+        
+          
+          
+          <div>
+  <hr>
+  <h2>
+          2023 - 2024
+          </h2>
+  <div class="project-grid-container">
+    
+      <a class="text-black project-grid-item" href="/GGJProjects/Taking_Root_Of_The_West.html">
+        <div class="padding-20">
+          <div class="thumbnail-height"  style="position: relative;">
+            <div class="cover-img-container rounded-1" style="height: 100%;">
+              <div class="cover-img" style="background-image: url('img/projects/Taking_Root_Of_The_West/thumbnail.png');"></div>
+            </div>
+            
+            
+            <object type="image/svg+xml" data="img/playable.svg" alt="Playable demo available" class="playable">
+              Your browser does not support SVG
+            </object>
+            
+          </div>
+          <div class="spacer-small"></div>
+          <p class="thumbnail-title">Taking Root of the West</p>
+        </div>
+      </a>
+    
+      <a class="text-black project-grid-item" href="/GGJProjects/Seed_Of_Light.html">
+        <div class="padding-20">
+          <div class="thumbnail-height"  style="position: relative;">
+            <div class="cover-img-container rounded-1" style="height: 100%;">
+              <div class="cover-img" style="background-image: url('img/projects/Seed_Of_Light/thumbnail.png');"></div>
+            </div>
+            
+            
+            <object type="image/svg+xml" data="img/playable.svg" alt="Playable demo available" class="playable">
+              Your browser does not support SVG
+            </object>
+            
+          </div>
+          <div class="spacer-small"></div>
+          <p class="thumbnail-title">Seed of Light</p>
+        </div>
+      </a>
+    
+  </div>
+</div>
+
+
+        
+      </div>
+      <div id="projects-by-title" class="hidden">
+        
+        
+        <div>
+  <hr>
+  <h2>Projects (A-Z)</h2>
+  <div class="project-grid-container">
+    
+      <a class="text-black project-grid-item" href="/GGJProjects/Seed_Of_Light.html">
+        <div class="padding-20">
+          <div class="thumbnail-height"  style="position: relative;">
+            <div class="cover-img-container rounded-1" style="height: 100%;">
+              <div class="cover-img" style="background-image: url('img/projects/Seed_Of_Light/thumbnail.png');"></div>
+            </div>
+            
+            
+            <object type="image/svg+xml" data="img/playable.svg" alt="Playable demo available" class="playable">
+              Your browser does not support SVG
+            </object>
+            
+          </div>
+          <div class="spacer-small"></div>
+          <p class="thumbnail-title">Seed of Light</p>
+        </div>
+      </a>
+    
+      <a class="text-black project-grid-item" href="/GGJProjects/Taking_Root_Of_The_West.html">
+        <div class="padding-20">
+          <div class="thumbnail-height"  style="position: relative;">
+            <div class="cover-img-container rounded-1" style="height: 100%;">
+              <div class="cover-img" style="background-image: url('img/projects/Taking_Root_Of_The_West/thumbnail.png');"></div>
+            </div>
+            
+            
+            <object type="image/svg+xml" data="img/playable.svg" alt="Playable demo available" class="playable">
+              Your browser does not support SVG
+            </object>
+            
+          </div>
+          <div class="spacer-small"></div>
+          <p class="thumbnail-title">Taking Root of the West</p>
+        </div>
+      </a>
+    
+  </div>
+</div>
+
+
+      </div>
+    </div>
+    <div class="spacer-large"></div>
+  </div>
+</div>
+
+<!-- Call To Action Banner -->
+<!-- Requires common.css -->
+
+<div class="full-width blue-bg padded-section">
+    <div class="centered floatstop text-white">
+        <div class="inline-centered">
+            <span style="width: 100px; height: 100px; border: 2px #0d8cb6 solid; margin-right:10px;" onmouseover="alert('Bytes Incident Never Forget')">
+            </span>
+            <span><object type="image/svg+xml" data="img/gamespawn_logo.svg" alt="Gamespawn Logo" style="vertical-align: middle">
+                    Your browser does not support SVG
+            </object></span
+            ><span>
+                <p class="cta-text margin-10">&nbsp;&nbsp;Interested? Sign up for email updates.&nbsp;&nbsp;</p>
+            </span
+            ><span>
+                <a href="/signup.html" class="btn-outlined">Sign up</a>
+            </span>
+        </div>
+    </div>
+</div>
+
+<script>
+  let se = document.getElementById('sort-selector');
+  let sortOptionsList = se.options;
+  let sortOptions = [
+    {
+      name: "school year",
+      id: "projects-by-year"
+    },
+    {
+      name: "title",
+      id: "projects-by-title"
+    }
+  ];
+
+  function updateProjectsDisplay(sortName) {
+    var visibleElement = sortOptions.find(op => op.name == sortName);
+    if (visibleElement) {
+      var visibleElementId = visibleElement.id;
+      sortOptions.forEach(op => document.getElementById(op.id).classList.add("hidden"));
+      document.getElementById(visibleElementId).classList.remove("hidden");
+    }
+    else {
+      console.log(`Failed to find sort option with name ${sortName}`);
+    }
+  }
+
+  se.onchange = (evt) => updateProjectsDisplay(evt.target.value);
+
+  sortOptions.forEach(op => sortOptionsList.add(new Option(op.name)));
+</script>
+
+    <!-- Footer -->
+<!-- Requires common.css -->
+
+<footer class="full-width padded-section grey-bg">
+    <div class="centered text-white floatstop">
+        <div class="col-3 padding-20">
+            <a href="./index.html" title="Home" alt="Home button"><img src="/img/Logo.png" alt="Gamespawn logo"></a>
+            <p class="copyright">Copyright &copy 2018 Gamespawn</p>
+            <ul class="navbar-social-links">
+                <li><a href="https://www.facebook.com/groups/gamespawn/" title="Facebook group">
+                        <div id="navbar-bookface-img" alt="Facebook group"></div>
+                    </a></li>
+                <li><a href="https://discordapp.com/invite/ejzg2Wb" title="Discord server">
+                        <div id="navbar-discord-img" alt="Discord server"></div>
+                    </a></li>
+                <li><a href="https://www.instagram.com/gamespawn.ucr/" title="Instagram Page">
+                        <div id="navbar-instagram-img" alt="Instagram page"></div>
+                    </a></li>
+            </ul>
+        </br>
+            <ul class="navbar-social-links">
+                <li><a href="https://highlanderlink.ucr.edu/organization/gamespawn" title="HighlanderLink">
+                    <div id="navbar-highlanderlink-img" alt="HighlanderLink"></div>
+                </a></li>
+                <li><a href="https://www.youtube.com/channel/UCDnCEGvQ-JMULHeqJrEuTDw" title="Youtube Page">
+                    <div id="navbar-youtube-img" alt="Youtube Page"></div>
+                </a></li>
+            </ul>
+        </div>
+        <div class="col-3 padding-20">
+            <h3>Get to know us</h3>
+            <p><a href="/about.html">About</a></p>
+            <p><a href="/constitution">Constitution</a></p>
+            <p><a href="/contact.html">Contact</a></p>
+        </div>
+        <div class="col-3 padding-20">
+            <h3>Get involved</h3>
+            <p><a href="/projects_homepage.html">Projects</a></p>
+            <p><a href="/live.html">Livestream</a></p>
+            <p><a href="/events.html">Events</a></p>
+            <p><a href="/signup.html">Mailing List</a></p>
+        </div>
+
+    </div>
+</footer>
+</body>
+
+</html>

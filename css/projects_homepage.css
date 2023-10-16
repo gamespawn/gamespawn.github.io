@@ -147,23 +147,41 @@
   #GSprojects {
     margin: 20px;
     border-radius: 10px;
-    background: linear-gradient(to right, rgb(39, 101, 143), rgba(39, 101, 143, 0));
-    background-repeat: none;
     background-size: cover;
-    background-position: center;
-    color: white;
+    background-position: left;
     border: black solid;
-    background-image: url(/img/events/gamejam.png);
+    background-image: url(/img/gamespawnLogo.PNG), linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    background-repeat: no-repeat;
+    background-size:contain;
+    /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
+    background-blend-mode: normal;
     height: 300px;
   }
 
   #GGJprojects {
     margin: 20px;
     border-radius: 10px;
-    background: linear-gradient(to right, rgb(39, 101, 143), rgba(39, 101, 143, 0));
-    background-repeat: none;
     background-size: cover;
-    background-position: center;
-    color: white;
+    background-position: left;
     border: black solid;
+    background-image: url(/img/bluespawnLogo.PNG), linear-gradient(90deg, rgba(0,16,36,1) 0%, rgba(68,20,124,1) 35%, rgba(239,72,72,1) 100%);
+    background-repeat: no-repeat;
+    background-size:contain;
+    /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
+    background-blend-mode: normal;
+    height: 300px;
+  }
+
+  #Personal {
+    margin: 20px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: left;
+    border: black solid;
+    background-image: url(/img/hellspawnLogo.PNG), linear-gradient(90deg, rgba(0,16,36,1) 0%, rgba(121,9,53,1) 35%, rgba(255,156,0,1) 100%);
+    background-repeat: no-repeat;
+    background-size:contain;
+    /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
+    background-blend-mode: normal;
+    height: 300px;
   }
