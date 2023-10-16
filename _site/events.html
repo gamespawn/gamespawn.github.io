@@ -54,7 +54,7 @@
                 <!-- <li><a class="navbar-text-lk" href="/ggj.html">✨Global Game Jam✨</a></li
                     > -->
                  <li><a class="navbar-text-lk" href="/index.html">Home</a></li
-                ><li><a class="navbar-text-lk" href="/projects.html">Projects</a></li
+                ><li><a class="navbar-text-lk" href="/projects_homepage.html">Projects</a></li
                 ><li><a class="navbar-text-lk" href="/assets.html">Assets</a></li
                 ><li><a class="navbar-text-lk" href="/techtalks.html">Tech_Talks</a></li
                 ><li><a class="navbar-text-lk" href="/events.html">Events</a></li
@@ -112,19 +112,9 @@
     //afterwards, it sorts it into either special_events or regular_events depending on if it has a date or if it has a regular_date
     var events = [
     {
-        path: "3DUCR_Collab_Seminar.md",
-        name: "Unreal Engine Seminar",
-        date: "2023-05-19",
-        regular_date: "",
-        time: "6:30 ~ 7:30 PM",
-        location: "Zoom",
-        description: "Learn how to navigate the basic controls of Unreal Engine and setup a 3D world! This is an introduction level workshop done in collaboration with 3DUCR that goes over basic materials, importing, and lighting.Make sure to have Unreal Engine installed if you want to follow along, link to a download here -> https://www.unrealengine.com/en-US/download",
-        bg_img: "/img/events/unreal.jpg",
-        url: "/events/3DUCR_Collab_Seminar.html"
-    },{
-        path: "FINANCE_SEMINAR.md",
-        name: "Finance Seminar",
-        date: "???",
+        path: "SUMMER_BREAK.md",
+        name: "Summer Break",
+        date: "2023-09-28",
         regular_date: "",
         time: "???",
         location: "Discord VC",
@@ -179,7 +169,7 @@
     var regular_events = events.filter(e => !!e.regular_date);
 
     //this is the big one
-    var featured_event_path = "Town_Hall.md";
+    var featured_event_path = "SUMMER_BREAK.md";
 </script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.0/handlebars.min.js"></script>

@@ -1,0 +1,67 @@
+---
+title: Projects - Gamespawn
+extra_css: projectsGS.css
+layout: default
+---
+
+<div class="centered">
+  <div class="text-align-center text-black">
+    <div class="spacer-large"></div>
+    <h1>Projects</h1>
+    <div class="spacer-small"></div>
+
+    <p id="sort-selector-text">Sort by <select id="sort-selector"></select>
+    </p>
+    <div id="projects">
+      <div id="projects-by-year" class="">
+        {% assign groupedProjects = site.projects | sort:"school-year" | group_by:"school-year" | reverse %}
+        {% for project_section in groupedProjects %}
+          {% capture section_name %}
+          {{project_section.name | round}} - {{project_section.name | round | plus: 1}}
+          {% endcapture %}
+          {% assign section_projects = project_section.items %}
+          {% include html/local/project_section.html %}
+        {% endfor %}
+      </div>
+      <div id="projects-by-title" class="hidden">
+        {% assign section_name = "Projects (A-Z)" %}
+        {% assign section_projects = site.projects | sort:"title" %}
+        {% include html/local/project_section.html %}
+      </div>
+    </div>
+    <div class="spacer-large"></div>
+  </div>
+</div>
+
+{% include html/cta_banner.html %}
+
+<script>
+  let se = document.getElementById('sort-selector');
+  let sortOptionsList = se.options;
+  let sortOptions = [
+    {
+      name: "school year",
+      id: "projects-by-year"
+    },
+    {
+      name: "title",
+      id: "projects-by-title"
+    }
+  ];
+
+  function updateProjectsDisplay(sortName) {
+    var visibleElement = sortOptions.find(op => op.name == sortName);
+    if (visibleElement) {
+      var visibleElementId = visibleElement.id;
+      sortOptions.forEach(op => document.getElementById(op.id).classList.add("hidden"));
+      document.getElementById(visibleElementId).classList.remove("hidden");
+    }
+    else {
+      console.log(`Failed to find sort option with name ${sortName}`);
+    }
+  }
+
+  se.onchange = (evt) => updateProjectsDisplay(evt.target.value);
+
+  sortOptions.forEach(op => sortOptionsList.add(new Option(op.name)));
+</script>
