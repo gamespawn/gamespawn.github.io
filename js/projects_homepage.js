@@ -26,26 +26,25 @@ function changeDesc(whichProject){
     let descBox = document.getElementById("description");
     let recBox = document.getElementById("recruiting");
     let upBox = document.getElementById("updates");
+    let projName = document.getElementById("name")
     switch(whichProject){
         case 0:
-            descBox.innerHTML = "There are currently NO ongoing projects. Come back soon! (After Week 3!)";
+            descBox.innerHTML = "Join the colorful ensemble of four other idol trainees as you chase your grandest dreams, overcome the obstacles to stardom, and shine your way to a radiant stage!";
             recBox.innerHTML = "";
             upBox.innerHTML = "S o o n."
+            projName.innerHTML = "Project: StaRS"
             break;
         case 1:
-            descBox.innerHTML = "There are currently NO ongoing projects. Come back soon! (After Week 3!)";
+            descBox.innerHTML = "Join Hazel as she defends her flower from an onslaught of enemies' sent by her rival in this Godot-built, short but action-packed defense.";
             recBox.innerHTML = "";
             upBox.innerHTML = "S o o n."
+            projName.innerHTML = "The Alchemist's Stand"
             break;
         case 2:
-            descBox.innerHTML = "There are currently NO ongoing projects. Come back soon! (After Week 3!)";
+            descBox.innerHTML = "Go to the University of California and meet the lovely and dateable mascots across the UC's, take and skip classes to spend time with them, and confess and go to college";
             recBox.innerHTML = "";
             upBox.innerHTML = "S o o n."
-            break;
-        case 3:
-            descBox.innerHTML = "There are currently NO ongoing projects. Come back soon! (After Week 3!)";
-            recBox.innerHTML = "";
-            upBox.innerHTML = "S o o n."
+            projName.innerHTML = "Cross Campus"
             break;
     }
 }
