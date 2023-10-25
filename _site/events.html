@@ -54,7 +54,7 @@
                 <!-- <li><a class="navbar-text-lk" href="/ggj.html">✨Global Game Jam✨</a></li
                     > -->
                  <li><a class="navbar-text-lk" href="/index.html">Home</a></li
-                ><li><a class="navbar-text-lk" href="/projects_homepage.html">Projects</a></li
+                ><li><a class="navbar-text-lk" href="/projectsGS.html">Projects</a></li
                 ><li><a class="navbar-text-lk" href="/assets.html">Assets</a></li
                 ><li><a class="navbar-text-lk" href="/techtalks.html">Tech_Talks</a></li
                 ><li><a class="navbar-text-lk" href="/events.html">Events</a></li
@@ -112,16 +112,6 @@
     //afterwards, it sorts it into either special_events or regular_events depending on if it has a date or if it has a regular_date
     var events = [
     {
-        path: "Pitch_Night.md",
-        name: "Pitch Night",
-        date: "2023-10-20",
-        regular_date: "",
-        time: "6:00 ~ 7:00 PM",
-        location: "Zoom",
-        description: " Interested in starting or joining a game project? Come on over to Pitch Night! Pitch Night is the time where game devs get to pitch their game project ideas and recruit interested members into their teams. Check out new or recurring projects, and befriend fellow devs! <br> The requirements for pitching are listed in the events channel. The Zoom link will be made public on Discord a couple minutes prior to the start of Pitch Night.<br><br><br> ",
-        bg_img: "/img/events/pitch_night_bg.jpg",
-        url: "/events/Pitch_Night.html"
-    },{
         path: "REGULAR_10_Tabling.md",
         name: "Tabling",
         date: "",
@@ -130,7 +120,7 @@
         location: "Location: Right down Bronze Scotty Lane",
         description: "Come stop by and say hi to your favorite officers! We love your company!",
         bg_img: "/img/events/tabling2.jpg",
-        url: "/events/REGULAR_10_Tabling.html"
+        url: "/events/recurring_events/REGULAR_10_Tabling.html"
     },{
         path: "REGULAR_1_Hacknight.md",
         name: "Hacknight",
@@ -139,8 +129,8 @@
         time: "5:30 ~ 8:00 pm",
         location: "Location: Creat'R lab (Orbach Library 1st Floor)",
         description: "Gamespawn invites you to the general meetings where game developers collaborate together on video game projects. We also share any on-campus events, workshops, and opportunities relating to video game development. The majority of the session consists on developing video games. For those interested, Gamespawn provides 1-on-1 help from experienced developers. You can also join an existing project or start your own!",
-        bg_img: "/img/stockImages/manWithController.jpg",
-        url: "/events/REGULAR_1_Hacknight.html"
+        bg_img: "/img/stockImages/man_with_controller.jpg",
+        url: "/events/recurring_events/REGULAR_1_Hacknight.html"
     },{
         path: "REGULAR_5_Intro_to_Unity.md",
         name: "Intro to Unity",
@@ -150,7 +140,37 @@
         location: "Location: Discord VC",
         description: "Learn how to use the program Unity, a platform commonly used in the game development industry! This workshop is great for those with little to no computer programming knowledge as we go through the basics of coding and Unity. We're also accessible for those who do have some knowledge of programming but have a desire to learn more. *Please have Unity installed beforehand, but we can help you with unity as well.<br>",
         bg_img: "/img/events/unity_bg.jpg",
-        url: "/events/REGULAR_5_Intro_to_Unity.html"
+        url: "/events/recurring_events/REGULAR_5_Intro_to_Unity.html"
+    },{
+        path: "Autumn_Game_Jam.md",
+        name: "Autumn Game Jam",
+        date: "2023-11-11",
+        regular_date: "",
+        time: "10:00 ~ 10:00 PM",
+        location: "WCH",
+        description: " Our very first hackathon of the year! Autumn Game Jam is a 12 hour game jam running from 10 am till 10 pm on November 11th geared towards beginners and veterans alike to hone their skills and make a game (doesn't have to be complete) in this short time span! ",
+        bg_img: "/img/events/Autumn_Game_Jam_Premier_Flyer.png",
+        url: "/events/special_events/Autumn_Game_Jam.html"
+    },{
+        path: "Game_Design_Principles.md",
+        name: "Game Design Principles",
+        date: "2023-10-26",
+        regular_date: "",
+        time: "8:15 ~ 9:15 PM",
+        location: "Discord VC",
+        description: "A well designed game is more than just a good idea! This workshop aims to introduce the core principles of what makes a good game, and a process which you can follow to aid your design process. Learn how to extract genres, design gameplay loops, and identify and solve design problems.",
+        bg_img: "/img/events/profdev.jpg",
+        url: "/events/special_events/Game_Design_Principles.html"
+    },{
+        path: "Narrative_And_Character_Design.md",
+        name: "Narrative and Character Design Workshop",
+        date: "2023-10-25",
+        regular_date: "",
+        time: "7:30 ~ 9:30 PM",
+        location: "SSC Group Meeting 1",
+        description: "Learn to design compelling character visuals and narratives!  This is a hybrid format workshop that focuses on designing complete characters with strong visual, narrative, and dialogue design. ",
+        bg_img: "/img/stockImages/man_with_parts.jpg",
+        url: "/events/special_events/Narrative_And_Character_Design.html"
     }];
 
 
@@ -159,7 +179,7 @@
     var regular_events = events.filter(e => !!e.regular_date);
 
     //this is the big one
-    var featured_event_path = "Pitch_Night.md";
+    var featured_event_path = "Autumn_Game_Jam.md";
 </script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.0/handlebars.min.js"></script>
