@@ -186,4 +186,12 @@
     height: 300px;
   }
 
-  
+  .textInGradient {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    vertical-align: middle;
+    margin: auto;
+    width: 50%;
+  }
