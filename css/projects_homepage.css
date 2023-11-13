@@ -146,6 +146,8 @@
 
   #GSprojects {
     margin: 20px;
+    margin-inline: auto;
+    margin-top: 20px;
     border-radius: 10px;
     background-size: cover;
     background-position: left;
@@ -156,10 +158,12 @@
     /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
     background-blend-mode: normal;
     height: 300px;
+    width:95%;
   }
 
   #GGJprojects {
     margin: 20px;
+    margin-inline: auto;
     border-radius: 10px;
     background-size: cover;
     background-position: left;
@@ -170,10 +174,12 @@
     /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
     background-blend-mode: normal;
     height: 300px;
+    width:95%;
   }
 
   #Personal {
     margin: 20px;
+    margin-inline: auto;
     border-radius: 10px;
     background-size: cover;
     background-position: left;
@@ -184,6 +190,7 @@
     /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
     background-blend-mode: normal;
     height: 300px;
+    width:95%;
   }
 
   .textInGradient {
