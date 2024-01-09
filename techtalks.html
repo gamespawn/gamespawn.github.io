@@ -35,13 +35,11 @@ extra_css: techtalks.css
         <div class="spacer-medium"></div>
 
     </div>
-    <!-- Dear future webmasters I'm terribly sorry but I have no clue how these spacers work -->
-    <div class="spacer-large"></div>
-    <div class="spacer-large"></div>
-    <div class="spacer-large"></div>
-    <div class="spacer-large"></div>
-    <div class="spacer-large"></div>
-    <div class="spacer-large"></div>
-    <div class="spacer-large"></div>
-    <div class="spacer-large"></div>
+    <div id="techtalks">
+        <div id="techtalks-by-title" class="hidden">
+            {% assign section_name = "Tech Talks" %}
+            {% assign section_techtalks = site.TTalks | sort:"company" %}
+            {% include html/local/techtalks_section.html %}
+          </div>
+    </div>
 </div>

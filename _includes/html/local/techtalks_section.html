@@ -1,0 +1,20 @@
+<div>
+  <hr>
+  <h2>{{section_name}}</h2>
+  <div class="project-grid-container">
+    {% for techtalk in section_techtalks %}
+      <a class="text-black project-grid-item" href="{{site.baseurl}}{{techtalk.url}}">
+        <div class="padding-20">
+          <div class="thumbnail-height"  style="position: relative;">
+            <div class="cover-img-container rounded-1" style="height: 100%;">
+              <div class="cover-img" style="background-image: url('{{techtalk.thumbnail}}');"></div>
+            </div>
+            
+          </div>
+          <div class="spacer-small"></div>
+          <p class="thumbnail-title">{{techtalk.company}}</p>
+        </div>
+      </a>
+    {% endfor %}
+  </div>
+</div>
