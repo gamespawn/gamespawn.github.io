@@ -44,3 +44,10 @@ defaults:
     values:
       layout: project_page
       extra_css: project_page.css
+  -
+    scope:
+      path: ''
+      type: TTalks
+    values:
+      layout: ttalk_page
+      extra_css: ttalk_page.css
