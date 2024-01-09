@@ -12,6 +12,8 @@ collections:
     output: true
   GGJProjects:
     output: true
+  TTalks:
+    output: true
 
 defaults:
   - 
