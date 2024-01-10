@@ -13,13 +13,9 @@ extra_css: ttalk_page.css
     </div>
 
     <div class="text-align-center">
-
-        <div class="spacer-medium"></div>
-
         <div class="introCube">
             <div>
-                <h2>What are Tech Talks?</h2>
-                <p>Tech Talks are cool yo
+                <p>Dive into the world of technology with Gamespawn's Tech Talks – specially crafted events designed for students. These engaging sessions provide a unique opportunity for current club members to learn from industry professionals, some of whom may be UCR alumni. Immerse yourself in a platform where experienced speakers share their insights and knowledge, offering valuable perspectives to inspire and educate students. Don't miss out on this exciting opportunity to learn, connect, and be inspired by the vibrant tech community at Gamespawn.
                 </p>
             </div>
 
@@ -34,11 +30,12 @@ extra_css: ttalk_page.css
 
     </div>
     <div id="techtalks">
-        <div id="techtalks-by-title" class="hidden">
+        <div id="techtalks-by-title">
             {% assign section_name = "Tech Talks" %}
             {% assign section_techtalks = site.TTalks | sort:"company" %}
             {% include html/local/techtalks_section.html %}
-          </div>
+        </div>
     </div>
-    <p>The length of sectionttalks is {{section_techtalks | size}}</p>
+    <!-- <p>The length of sectionttalks is {{section_techtalks | size}}</p> -->
 </div>
+<div class="spacer-large"></div>

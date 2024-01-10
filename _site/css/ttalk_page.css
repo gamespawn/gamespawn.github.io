@@ -1,14 +1,14 @@
 /*******************************************
 
-    PROJECTS.GRID
+    techtalksS.GRID
 
 ********************************************/
-.project-grid-container {
+.techtalks-grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
-.project-grid-item:hover {
+.techtalks-grid-item:hover {
   background-color: rgba(0, 174, 255, 0.13);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 }
@@ -22,7 +22,7 @@
 
 /*******************************************
 
-  PROJECTS.SORT-SELECTOR
+  techtalksS.SORT-SELECTOR
 
 ********************************************/
 #sort-selector-text {
@@ -42,27 +42,27 @@
 
 /*******************************************
 
-  PROJECTS.MEDIA QUERIES
+  techtalksS.MEDIA QUERIES
 
 ********************************************/
 
 @media only screen and (max-width: 800px) {
-  .project-grid-container {
+  .techtalks-grid-container {
       grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
   }
 
-  .project-grid-container .thumbnail-height {
+  .techtalks-grid-container .thumbnail-height {
       height: 100px;
       width: 100px;
       margin: auto;
       border-radius: 7px;
   }
 
-  .project-grid-container .padding-20 {
+  .techtalks-grid-container .padding-20 {
       padding: 10px;
   }
 
-  .project-grid-container .thumbnail-title {
+  .techtalks-grid-container .thumbnail-title {
       font-size: 0.8em;
   }
 
