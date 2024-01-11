@@ -721,6 +721,11 @@ nav a {
     transition: background-image 0.15s;
 }
 
+#navbar-linktree-img {
+    background-image: url(/img/linktree_logo.png);
+    transition: background-image 0.15s;
+}
+
 #navbar-bookface-img:hover {
     background-image: url(/img/bookface_logo_blue.png);
 }
@@ -739,6 +744,10 @@ nav a {
 
 #navbar-highlanderlink-img:hover {
     background-image: url(/img/highlander_link_logo_blue.jpg);
+}
+
+#navbar-linktree-img:hover {
+    background-image: url(/img/linktree_logo_blue.png);
 }
 
 /*******************************************
