@@ -3,40 +3,65 @@ layout: default
 ---
 
 <div style="position: relative;">
-  <div id="bg-image" style="background-image: url({{site.baseurl}}/{{page.thumbnail}});"></div>
+  
   <div class="centered">
   <div class="spacer-medium"></div>
   <div class="floatstop">
       <div class="spacer-medium"></div>
       <a href="{{site.baseurl}}/techtalks.html"> &lt; Back to Tech Talks</a>
       <div class="spacer-medium"></div>
-      <h1 id="page-title">{{page.company}}</h1>
+      <div class="grid-1">
+        <h1 id="page-title">{{page.company}}</h1>
+        <img class="text-align-right" src="{{site.baseurl}}/{{page.thumbnail}}">
+      </div>
       <br>
-
+      <p>
+        {% if page.description and page.description != "" %}
+        {{ page.description | mardownify }}
+        {% endif %}
+      </p>
       <div class="spacer-medium"></div>
-      <p>
-          {% if page.email != "" %}
-            Contact: <a href="mailto:{{page.email}}">{{page.email}}</a> <br>
-          {% endif %}
-
-          {% if page.quarter-start-end == "" %}
-            Added on: {{page.school-year}} <br>
-          {% else %}
-            {{page.quarter-start-end}} <br>
-          {% endif %}
-
-          Tags: {{ page.tags | join: ", "}}
-      </p>
+      <div class="grid-1">
+        <div>
+          <h4>Links:</h4>
+          <p>
+              {% for link in page.links %}
+                {{link["name"]}}: <a href= "url({{link['link']}})" >{{link['link']}} </a> <br>
+              {% endfor %}
+          </p>
+        </div>
+        <div>
+          <h4>Projects:</h4>
+          <p>
+            {% for project in page.projects %}
+              {{project}}
+            {% endfor %}
+        </p>
+        </div>
+      </div>
       <hr>
-      <p>
-          {% if page.description and page.description != "" %}
-          {{ page.description | mardownify }}
-          {% endif %}
-      </p>
       <p>
         {% for talker in page.talkers%}
             <div>
-                <p>Hello {{talker["name"]}}</p>
+              <div class="grid-1">
+                <h3>{{talker["name"]}}</h3>
+                <img class="text-align-right" src="{{site.baseurl}}/{{talker['pic']}}">
+              </div>
+                <p>
+                  {% if talker["description"] != "" %}
+                    {{talker["description"]}}
+                  {% endif %}
+                </p>
+                <p>
+                  {% if talker["recording"] != "" %}
+                    Recording: <a href= "url({{talker['recording']}})" >{{talker['recording']}} </a> <br>
+                  {% endif %}
+                </p>
+                <p>
+                  {% if talker["contact"] != "" %}
+                    Contact: <a href="mailto:{{talker['contact']}}">{{talker['contact']}}</a> <br>
+                  {% endif %}
+                </p>
             </div>
         {% endfor %}
       </p>

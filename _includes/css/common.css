@@ -217,6 +217,10 @@ select:hover {
     text-align: center;
 }
 
+.text-align-right {
+    text-align: right;
+}
+
 .text-optimal {
     max-width: 700px;
 }
