@@ -5,4 +5,4 @@ _old/
 Gemfile
 Gemfile.lock
 .vscode/settings.json
-vendor/
+*vendor/
