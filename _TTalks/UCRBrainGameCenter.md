@@ -5,6 +5,14 @@ description: "Embark on a whimsical journey where your malleable bubble gum avat
 socials: [
 
 ]
+
+links: [
+  {
+  "name": "Website",
+  "link":"https://braingamecenter.ucr.edu/"
+}
+]
+
 projects: [
 
 ]

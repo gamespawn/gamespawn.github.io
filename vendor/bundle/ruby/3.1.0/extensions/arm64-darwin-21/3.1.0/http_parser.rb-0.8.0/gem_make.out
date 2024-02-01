@@ -1,0 +1,23 @@
+current directory: /Users/charleen/Downloads/gamespawn.github.io/vendor/bundle/ruby/3.1.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
+/Users/charleen/.rbenv/versions/3.1.0/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/charleen/Downloads/gamespawn.github.io/vendor/bundle/ruby/3.1.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20240201-50298-j5gr0r sitelibdir\=./.gem.20240201-50298-j5gr0r clean
+
+current directory: /Users/charleen/Downloads/gamespawn.github.io/vendor/bundle/ruby/3.1.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20240201-50298-j5gr0r sitelibdir\=./.gem.20240201-50298-j5gr0r
+compiling ruby_http_parser.c
+ruby_http_parser.c:365:17: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'long' [-Wsign-compare]
+    if (nparsed < len)
+        ~~~~~~~ ^ ~~~
+1 warning generated.
+compiling ryah_http_parser.c
+linking shared-object ruby_http_parser.bundle
+
+current directory: /Users/charleen/Downloads/gamespawn.github.io/vendor/bundle/ruby/3.1.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20240201-50298-j5gr0r sitelibdir\=./.gem.20240201-50298-j5gr0r install
+/usr/bin/install -c -m 0755 ruby_http_parser.bundle ./.gem.20240201-50298-j5gr0r
+
+current directory: /Users/charleen/Downloads/gamespawn.github.io/vendor/bundle/ruby/3.1.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20240201-50298-j5gr0r sitelibdir\=./.gem.20240201-50298-j5gr0r clean
