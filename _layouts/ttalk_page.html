@@ -10,16 +10,18 @@ layout: default
       <div class="spacer-medium"></div>
       <a href="{{site.baseurl}}/techtalks.html"> &lt; Back to Tech Talks</a>
       <div class="spacer-medium"></div>
-      <div class="grid-1">
-        <h1 id="page-title">{{page.company}}</h1>
-        <img class="text-align-right" src="{{site.baseurl}}/{{page.thumbnail}}">
-      </div>
+      <h1 id="page-title">{{page.company}}</h1>
       <br>
-      <p>
-        {% if page.description and page.description != "" %}
-        {{ page.description | mardownify }}
-        {% endif %}
-      </p>
+      <div class="techtalks-grid-container">
+        <p>
+          {% if page.description and page.description != "" %}
+          {{ page.description | mardownify }}
+          {% endif %}
+        </p>
+        <div class="techtalks-company-pic">
+          <img class="text-align-right" src="{{site.baseurl}}/{{page.thumbnail}}">
+        </div>
+      </div>
       <div class="spacer-medium"></div>
       <div class="grid-1">
         <div>
@@ -30,7 +32,7 @@ layout: default
               {% endfor %}
           </p>
         </div>
-        <div>
+        <div class="techtalks-project">
           <h4>Projects:</h4>
           <p>
             {% for project in page.projects %}
@@ -43,15 +45,17 @@ layout: default
       <p>
         {% for talker in page.talkers%}
             <div>
-              <div class="grid-1">
-                <h3>{{talker["name"]}}</h3>
-                <img class="text-align-right" src="{{site.baseurl}}/{{talker['pic']}}">
-              </div>
+              <h3>{{talker["name"]}}</h3>
+              <div class="techtalks-grid-container">
                 <p>
                   {% if talker["description"] != "" %}
                     {{talker["description"]}}
                   {% endif %}
                 </p>
+                <div class="techtalks-company-pic">
+                  <img class="text-align-right" src="{{site.baseurl}}/{{talker['pic']}}">
+                </div>
+              </div>
                 <p>
                   {% if talker["recording"] != "" %}
                     Recording: <a href= "url({{talker['recording']}})" >{{talker['recording']}} </a> <br>
