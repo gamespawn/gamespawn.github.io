@@ -1,7 +1,7 @@
 ---
 title: "Town Hall"
 event-name: "Town Hall"
-event-date: "2023-2-24"
+event-date: "2024-2-9"
 event-time: "6:00 ~ 7:00 PM"
 event-location: "Zoom"
 event-bg-img: "img/events/pitch_night_bg.jpg"
