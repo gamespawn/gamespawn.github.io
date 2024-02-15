@@ -1,7 +1,7 @@
 ---
-title: "Unity Essentials Part 2"
-event-name: "Unity Essentials Part 2"
-event-date: "2024-02-5"
+title: "Unity Essentials Part 3"
+event-name: "Unity Essentials Part 3"
+event-date: "2024-02-12"
 event-time: "7:00 ~ 8:00 pm"
 event-location: "Location: Discord VC"
 event-bg-img: "img/events/unity_bg.jpg"
