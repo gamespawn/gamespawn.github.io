@@ -1,21 +1,31 @@
 ---
-thumbnail: "img/projects/Bubble_Shift/thumbnail.png"
-company: "Twitch"
+thumbnail: "img/projects/Bubble_Shift/thumbnail.jpg"
+company: "Electronic Arts"
 description: "Embark on a whimsical journey where your malleable bubble gum avatar masters the art of transformation, morphing into various forms to navigate a world where the environment itself guides your path. Discover the enchanting mechanics of shape-shifting as you adapt to the ever-changing landscapes, turning each twist and turn into an adventure that tests the limits of your bubble-gummed ingenuity."
+
+socials: [
+
+]
+
 links: [
   {
   "name": "Website",
-  "link":"https://dalosadev.itch.io/bubble-shift"
+  "link":"https://www.ea.com/"
 }
 ]
-projects: ["all of the projects....all of them"]
+
+projects: [
+
+]
 talkers: [
   {
-    "name": "David Zhang",
-    "description": "Gamespawn alumni",
-    "recording": "uwu link",
-    "contact": "hit me up",
-    "pic": "img/projects/Bubble_Shift/thumbnail.png"
+    "name": "Ben Quach",
+    "picture": "",
+    "description" : "Gamespawn alumni and Graphics Engineer",
+    "recording" : "https://ucr.zoom.us/rec/share/NGDIfqo9MZhpqIOI1gctH4Uaiz9HDIPKncwmk0VwzoWSg4IdNb80eo8PTLF-hBRO.A5ktpvaH51j-HC5b ",
+    "contacts" : [
+
+    ]
   }
 ]
 ---
