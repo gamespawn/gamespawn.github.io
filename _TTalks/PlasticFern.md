@@ -20,7 +20,7 @@ talkers: [
   {
     "name": "Jay Fernandes",
     "picture": "",
-    "description" : "",
+    "description" : "Composition and sound designer",
     "recording" : "No recording",
     "contacts" : [
 

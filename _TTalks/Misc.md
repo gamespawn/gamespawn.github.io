@@ -1,15 +1,15 @@
 ---
 thumbnail: "img/projects/Bubble_Shift/thumbnail.jpg"
-company: "UCR Brain Game Center"
+company: "Miscellaneous"
 description: "Embark on a whimsical journey where your malleable bubble gum avatar masters the art of transformation, morphing into various forms to navigate a world where the environment itself guides your path. Discover the enchanting mechanics of shape-shifting as you adapt to the ever-changing landscapes, turning each twist and turn into an adventure that tests the limits of your bubble-gummed ingenuity."
+
 socials: [
 
 ]
 
 links: [
   {
-  "name": "Website",
-  "link":"https://braingamecenter.ucr.edu/"
+  
 }
 ]
 
@@ -18,12 +18,11 @@ projects: [
 ]
 talkers: [
   {
-    "name": "David Clamage",
+    "name": "Madeleine St. Marie",
     "picture": "",
-    "description" : "",
-    "recording" : "https://ucr.zoom.us/rec/share/nYrEa74WMINTLw-nW5E_ZhFlCWv3VUWFsKVdb1C2VRaao85Whj1sD3G_xK0di1_G.4m66V7fXsQEPXRcI",
-    "contacts" : [ "https://www.linkedin.com/in/david-clamage-63b1492/", 
-    "https://www.youtube.com/channel/UC1RUqXOT_iaH4b7iXKRWhLw",
+    "description" : "Graduate student",
+    "recording" : "https://ucr.zoom.us/rec/share/jBxnKJ8qiV8tihVVGIH5NuJccVT1qiW46eS5fusc2Z70kkfbKcLefOcVpokD_ZXn.qqYgMyEC6UdDppH5",
+    "contacts" : [
 
     ]
   }

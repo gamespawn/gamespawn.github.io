@@ -12,7 +12,7 @@ projects: ["all of the projects....all of them"]
 talkers: [
   {
     "name": "David Zhang",
-    "description": "Description",
+    "description": "Gamespawn alumni",
     "recording": "uwu link",
     "contact": "hit me up",
     "pic": "img/projects/Bubble_Shift/thumbnail.png"

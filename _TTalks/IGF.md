@@ -21,7 +21,7 @@ talkers: [
   {
     "name": "Sisi Jiang",
     "picture": "",
-    "description" : "IGF nominated Writer and Narrative Designer",
+    "description" : "IGF nominated indie writer and narrative designer",
     "recording" : "No recording",
     "contacts" : [
 
