@@ -3,11 +3,22 @@
     techtalksS.GRID
 
 ********************************************/
+
 .techtalks-grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-}
+  align-items: center; 
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 30fr;
+ }
 
+ .techtalks-company-pic {
+  display: grid;
+  align-items: center;
+  padding-left: 15%;
+ }
+.techtalks-project{
+  padding-left: 15%;
+}
 .techtalks-grid-item:hover {
   background-color: rgba(0, 174, 255, 0.13);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
