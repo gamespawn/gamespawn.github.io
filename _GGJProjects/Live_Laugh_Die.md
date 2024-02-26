@@ -8,9 +8,9 @@ team: [
 ]
 email: "ajare002@ucr.edu"
 platforms: ["PC"]
-description: ""Amuse me, player! How long can you last?"
+description: "'Amuse me, player! How long can you last?'
 
-A bullet hell game developed under 48 hours for Global Game Jam 2024 hosted by Gamespawn with the theme "Make Me Laugh"."
+A bullet hell game developed under 48 hours for Global Game Jam 2024 hosted by Gamespawn with the theme 'Make Me Laugh'."
 tags: [
   "2D",
   "Action",
