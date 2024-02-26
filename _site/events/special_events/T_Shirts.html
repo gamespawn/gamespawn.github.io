@@ -7,7 +7,7 @@
     <meta name="theme-color" content="#10739b" />
 
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Events - Gamespawn"/>
+    <meta property="og:title" content="Gamespawn T-Shirts"/>
 
     
     <meta property="og:description" content="We are a student organization that focuses on introducing students to game development. We do our best not only to motivate and encourage students to learn about game development, but also to provide a professional and comfortable environment for engineers, programmers, designers, and artists."/>
@@ -17,14 +17,14 @@
     <meta property="og:image" content="/img/Logo.png"/>
     
 
-    <title>Events - Gamespawn</title>
+    <title>Gamespawn T-Shirts</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:300,400,500">
     <link rel="stylesheet" href="/css/fonts/top_gun/stylesheet.css">
     <link rel="stylesheet" href="/css/main.css">
     
-    <link rel="stylesheet" href="/css/events.css">
+    <link rel="stylesheet" href="/css/event_page.css">
     
     <link rel="icon" href="/img/favicon.jpg">
 
@@ -71,98 +71,39 @@
 <div class="navbar-space"></div>
 <script src="/js/navbar.js"></script>
 
-    <!-- Until <scripts>, it's all HTML. -->
+    <div id="header-img" style="background-image: url( /img/events/Progressive_Graphics.jpeg );">
+  <div id="header-img-overlay">
+    <div class="centered">
+      <div id="header-img-text">
+        <div><a href="/events.html" id="back-button"> &lt; Back to events</a></div>
+        <h1>Gamespawn T-Shirts</h1>
 
-<div class="centered">
-    <div class="text-align-center">
-        <div class="spacer-large"></div>
-        <h1>Events</h1>
-        <hr>
-        <div class="spacer-small"></div>
+        
+          <p>February 23, 2024</p>
+        
+
+        
+          <p>11:59pm</p>
+        
+
+        
+          <p>Location: Discord</p>
+        
+      </div>
     </div>
+  </div>
+
+
 </div>
 
-<div id="masthead-container">
-    <div class="loading-spinner"></div>
+<div class="centered" id="page-area">
+  
+  <h2>About this event</h2>
+  <p id="description">I like free t-shirts! Do you like free t-shirts? Please fill out this form so that we can have a proper headcount of who wants a shirt! We've got a cool one coming up~ <3 Form: https://forms.gle/MNpSWeaBXQawMoQ9A<br></p>
+  <h2 id="prerequisites">Prerequisites</h2>
+<p>Join Gamespawn on Highlander Link!!</p>
+
 </div>
-
-
-<div class="centered text-align-center">
-    <h2>⭐Special Events⭐</h2>
-    <hr>
-    <div class="spacer-small"></div>
-    <div id="special-events-container">
-        <div class="loading-spinner"></div>
-    </div>
-    <div class="spacer-large"></div>
-    <h2>Weekly/Biweekly Events</h2>
-    <hr>
-    <div class="spacer-small"></div>
-    <div id="regular-events-container">
-        <div class="loading-spinner"></div>
-    </div>
-    <div class="spacer-large"></div>
-</div>
-
-<!-- hooooooo boi jekyll time -->
-<script>
-    //ok so basically, site.events; site is a jekyll thing and events is something inside _config.yml
-    //what this is doing is grabbing each event and putting it in this array called events
-    //afterwards, it sorts it into either special_events or regular_events depending on if it has a date or if it has a regular_date
-    var events = [
-        {
-            path: "REGULAR_10_Tabling.md",
-            name: "Tabling",
-            date: "",
-            regular_date: "Date: Wednesday",
-            time: "11:00 ~ 2:00 pm",
-            location: "Location: Right down Bronze Scotty Lane",
-            description: "Come stop by and say hi to your favorite officers! We love your company!",
-            bg_img: "/img/events/tabling2.jpg",
-            url: "/events/recurring_events/REGULAR_10_Tabling.html"
-        },{
-            path: "REGULAR_1_Hacknight.md",
-            name: "Hacknight",
-            date: "",
-            regular_date: "Date: Wednesday",
-            time: "5:30 ~ 8:00 pm",
-            location: "Location: Creat'R lab (Orbach Library 1st Floor)",
-            description: "Gamespawn invites you to the general meetings where game developers collaborate together on video game projects. We also share any on-campus events, workshops, and opportunities relating to video game development. The majority of the session consists on developing video games. For those interested, Gamespawn provides 1-on-1 help from experienced developers. You can also join an existing project or start your own!",
-            bg_img: "/img/stockImages/man_with_controller.jpg",
-            url: "/events/recurring_events/REGULAR_1_Hacknight.html"
-        },{
-            path: "Elections.md",
-            name: "Elections",
-            date: "2024-02-23",
-            regular_date: "",
-            time: "6:00 ~ 7:00 PM",
-            location: "Zoom",
-            description: " This is the time you'll hear the candidates of your future Gamespawn board say their speeches. This will be a momentous occasion for Gamespawn. Please attend and vote for who you believe will be the best candidate for a Gamespawn officer.<br> ",
-            bg_img: "/img/events/pitch_night_bg.jpg",
-            url: "/events/special_events/Elections.html"
-        },{
-            path: "T_Shirts.md",
-            name: "Gamespawn T-Shirts",
-            date: "2024-02-23",
-            regular_date: "",
-            time: "11:59pm",
-            location: "Location: Discord",
-            description: "I like free t-shirts! Do you like free t-shirts? Please fill out this form so that we can have a proper headcount of who wants a shirt! We've got a cool one coming up~ <3 Form: https://forms.gle/MNpSWeaBXQawMoQ9A<br>",
-            bg_img: "/img/events/Progressive_Graphics.jpeg",
-            url: "/events/special_events/T_Shirts.html"
-        }];
-
-
-
-    var special_events = events.filter(e => !!e.date);
-    var regular_events = events.filter(e => !!e.regular_date);
-
-    //this is the big one
-    var featured_event_path = "Elections.md";
-</script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.0/handlebars.min.js"></script>
-<script src="/js/events.js"></script> 
 
     <!-- Footer -->
 <!-- Requires common.css -->
