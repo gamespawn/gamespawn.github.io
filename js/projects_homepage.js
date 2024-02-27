@@ -29,22 +29,28 @@ function changeDesc(whichProject){
     let projName = document.getElementById("name")
     switch(whichProject){
         case 0:
-            descBox.innerHTML = "Join the colorful ensemble of four other idol trainees as you chase your grandest dreams, overcome the obstacles to stardom, and shine your way to a radiant stage!";
-            recBox.innerHTML = "";
-            upBox.innerHTML = "S o o n."
-            projName.innerHTML = "Project: StaRS"
-            break;
-        case 1:
-            descBox.innerHTML = "Join Hazel as she defends her flower from an onslaught of enemies' sent by her rival in this Godot-built, short but action-packed defense.";
-            recBox.innerHTML = "";
-            upBox.innerHTML = "S o o n."
-            projName.innerHTML = "The Alchemist's Stand"
-            break;
-        case 2:
             descBox.innerHTML = "Go to the University of California and meet the lovely and dateable mascots across the UC's, take and skip classes to spend time with them, and confess and go to college";
             recBox.innerHTML = "";
-            upBox.innerHTML = "S o o n."
+            upBox.innerHTML = ""
             projName.innerHTML = "Cross Campus"
+            break;
+        case 1:
+            descBox.innerHTML = "Lickety Split is an RPG set in the 2000s in a little place called Old Town that believes it's actually the 1700s. This town faces the threat of destruction to make way for a parking lot for Water Works, an evil company that specializes in making water balloons. With the approval of an Old Geezer, a revolver in one hand, and a water gun in the other, Bee sets out to save their town.";
+            recBox.innerHTML = "";
+            upBox.innerHTML = ""
+            projName.innerHTML = "Lickety Split"
+            break;
+        case 2:
+            descBox.innerHTML = "A little cat in a weird world.";
+            recBox.innerHTML = "";
+            upBox.innerHTML = ""
+            projName.innerHTML = "Ragdoll"
+            break;
+        case 3:
+            descBox.innerHTML = "Psychological Horror Game with an inconsistent narrator.";
+            recBox.innerHTML = "";
+            upBox.innerHTML = ""
+            projName.innerHTML = "There Is No Other Side"
             break;
     }
 }
