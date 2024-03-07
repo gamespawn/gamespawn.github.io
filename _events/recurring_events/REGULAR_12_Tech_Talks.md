@@ -1,7 +1,7 @@
 ---
 title: "Tech Talk"
 event-name: "Tech Talk"
-event-regular-date: "Date: 11/04/2022"
+event-regular-date: "Date: 3/04/2024"
 event-time: "6:00 ~ 7:00 pm"
 event-location: "Location: Discord"
 event-bg-img: "img/events/tech_talk.png"
