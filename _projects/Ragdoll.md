@@ -3,17 +3,17 @@ title: "Ragdoll"
 thumbnail: "img/projects/Ragdoll/thumbnail.png"
 team: [
   "Flora Huang",
-  "Vicki",
+  "Vicki Vo",
   "Brandon Marcus",
   "Falak Tulsi",
-  "Ryan",
+  "Ryan Kershaw",
   "Alvin Chen",
-  "Emlyn",
+  "Emlyn Zhai",
   "Haocheng Mai",
   "Neil Bayani",
   "Samantha Liu",
   "Jay Kulkarni",
-  "Rain",
+  "Rain Calabro",
   "Anna Gouvion"
 ]
 email: "fhuan048@ucr.edu"
