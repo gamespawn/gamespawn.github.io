@@ -1,7 +1,7 @@
 ---
 title: "Project StaRS"
 thumbnail: "img/projects/Project_StaRS/thumbnail.png"
-video-embed: "https://youtu.be/HeBEpc3yh3M?si=D-fHBvb1rtoJqgt8"
+video-embed: "https://www.youtube.com/embed/HeBEpc3yh3M?si=D-fHBvb1rtoJqgt8"
 team: [
   "Tingxuan Wu",
   "Flora Huang",
