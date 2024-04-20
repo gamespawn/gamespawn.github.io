@@ -26,7 +26,7 @@ function changeDesc(whichProject){
     let descBox = document.getElementById("description");
     let recBox = document.getElementById("recruiting");
     let upBox = document.getElementById("updates");
-    let projName = document.getElementById("name")
+    let projName = document.getElementById("name");
     switch(whichProject){
         case 0:
             descBox.innerHTML = "Go to the University of California and meet the lovely and dateable mascots across the UC's, take and skip classes to spend time with them, and confess and go to college";
@@ -35,22 +35,22 @@ function changeDesc(whichProject){
             projName.innerHTML = "Cross Campus"
             break;
         case 1:
-            descBox.innerHTML = "Lickety Split is an RPG set in the 2000s in a little place called Old Town that believes it's actually the 1700s. This town faces the threat of destruction to make way for a parking lot for Water Works, an evil company that specializes in making water balloons. With the approval of an Old Geezer, a revolver in one hand, and a water gun in the other, Bee sets out to save their town.";
+            descBox.innerHTML = "A game with questionable morals.";
             recBox.innerHTML = "";
             upBox.innerHTML = ""
-            projName.innerHTML = "Lickety Split"
+            projName.innerHTML = "Phantom Thief"
             break;
         case 2:
-            descBox.innerHTML = "A little cat in a weird world.";
+            descBox.innerHTML = "A puzzle room RPG where you have to navigate through a dungeon, uncover its mysteries, and ultimately escape!";
             recBox.innerHTML = "";
             upBox.innerHTML = ""
-            projName.innerHTML = "Ragdoll"
+            projName.innerHTML = "The Escape Room"
             break;
         case 3:
-            descBox.innerHTML = "Psychological Horror Game with an inconsistent narrator.";
+            descBox.innerHTML = "A game about a delusional main character who thinks they are an AI (they are human). Oh and you can gamble for characters.";
             recBox.innerHTML = "";
             upBox.innerHTML = ""
-            projName.innerHTML = "There Is No Other Side"
+            projName.innerHTML = "Synthetic Self Symphony"
             break;
     }
 }
