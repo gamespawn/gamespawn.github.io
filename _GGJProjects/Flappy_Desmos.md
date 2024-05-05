@@ -4,7 +4,7 @@ thumbnail: "img/projects/Flappy_Desmos/thumbnail.png"
 team: [
   "Joshua Hsu"
 ]
-email: "jhsu@ucr.edu"
+email: "jhsu094@ucr.edu"
 platforms: ["PC"]
 description: "Iz flappy bird. But calculator. 'Nuff said."
 tags: [
