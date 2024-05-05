@@ -66,7 +66,7 @@ layout: default
             {% assign download-link-domain = page.download-link | remove:'http://' | remove:'https://' | split:'/' | first | split:'.' | slice: -2, 2 | join: '.'%}
             {% if download-link-domain == "itch.io" %}
                 <a class="download-button itch" href='{{page.download-link}}'>&#9654; &nbsp;Play on itch.io</a>
-            {% elsif download-link-domain == "google.com" or download-link-domain == "github.com" %}
+            {% elsif download-link-domain == "google.com" or download-link-domain == "github.com" or download-link-domain == "play.google.com"%}
                 <a class="download-button" href='{{page.download-link}}'>Download</a>
             {% elsif download-link-domain == "steampowered.com" %}
                 <a class = "download-button steam" href = '{{page.download-link}}'>Play on Steam</a>
