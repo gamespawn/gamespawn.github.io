@@ -1,6 +1,7 @@
 ---
 title: "A Safe Space"
 thumbnail: "img/projects/A_Safe_Space/thumbnail.png"
+video-embed: "https://youtu.be/v3w5-roBR_c"
 team: [
   "Everlee Mai",
   "Codebolt",

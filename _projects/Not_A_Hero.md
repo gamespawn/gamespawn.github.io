@@ -1,6 +1,7 @@
 ---
 title: "Not A Hero"
 thumbnail: "img/projects/Not_A_Hero/thumbnail.png"
+video-embed: "https://www.youtube.com/watch?v=cL0ik_GuiJA"
 team: [
   "Ruth Sun",
   "Michael Collins",
