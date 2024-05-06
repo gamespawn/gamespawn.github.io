@@ -16,7 +16,7 @@ tags: [
   "Action",
   "Bullet Hell"
 ]
-school-year: 2024
+school-year: 2023
 quarter-start-end: "Global Game Jam 2024"
 download-link: "https://almondcrumbs.itch.io/live-laugh-die"
 ---

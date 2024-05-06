@@ -12,7 +12,7 @@ description: "Your a clown. with a leafblower. You shoot at other people raining
 tags: [
   "Action"
 ]
-school-year: 2024
+school-year: 2023
 quarter-start-end: "Winter 2024"
 download-link: "https://merkel03.itch.io/clown-chaos"
 ---

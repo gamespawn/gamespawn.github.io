@@ -10,7 +10,7 @@ description: "This game slaps"
 tags: [
   "2D Platformer"
 ]
-school-year: 2024
+school-year: 2023
 quarter-start-end: "Global Game Jam 2024"
 download-link: "https://wesm.itch.io/catch-these-hands"
 ---

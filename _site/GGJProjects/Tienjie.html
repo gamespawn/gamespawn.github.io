@@ -7,24 +7,24 @@
     <meta name="theme-color" content="#10739b" />
 
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Events - Gamespawn"/>
+    <meta property="og:title" content="Tienji Accidentally Released A Bunch of Monsters And Now Has To Clean Up Their Mess"/>
 
     
-    <meta property="og:description" content="We are a student organization that focuses on introducing students to game development. We do our best not only to motivate and encourage students to learn about game development, but also to provide a professional and comfortable environment for engineers, programmers, designers, and artists."/>
+    <meta property="og:description" content="You're a warrior who activated a mysterious stone that can turn you into a tiger! Controls: WASD - Move E - transform Spacebar - dash (in Tiger form) Left click - attack"/>
     
 
     
-    <meta property="og:image" content="/img/Logo.png"/>
+    <meta property="og:image" content="/img/projects/Tienjie/thumbnail.png"/>
     
 
-    <title>Events - Gamespawn</title>
+    <title>Tienji Accidentally Released A Bunch of Monsters And Now Has To Clean Up Their Mess</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:300,400,500">
     <link rel="stylesheet" href="/css/fonts/top_gun/stylesheet.css">
     <link rel="stylesheet" href="/css/main.css">
     
-    <link rel="stylesheet" href="/css/events.css">
+    <link rel="stylesheet" href="/css/project_page.css">
     
     <link rel="icon" href="/img/favicon.jpg">
 
@@ -71,88 +71,66 @@
 <div class="navbar-space"></div>
 <script src="/js/navbar.js"></script>
 
-    <!-- Until <scripts>, it's all HTML. -->
+    <div style="position: relative;">
+    <div id="bg-image" style="background-image: url(/img/projects/Tienjie/thumbnail.png);"></div>
+    <div class="centered">
+    <div class="spacer-large"></div>
+    <div class="spacer-large"></div>
+    <div class="floatstop">
+        <!-- <a href="/projects.html"> &lt; Back to Projects</a> -->
+        
+            <a href="/projectsGGJ.html"> &lt; Back to Projects</a>
+        
+        <h1 id="page-title">Tienji Accidentally Released A Bunch of Monsters And Now Has To Clean Up Their Mess</h1>
+        <p id="page-subtitle">By Leilia Lin, MattCallahanAudio, Tableu</p>
+        <br>
+        
 
-<div class="centered">
-    <div class="text-align-center">
-        <div class="spacer-large"></div>
-        <h1>Events</h1>
+        
+
+        
+            <img src="/img/projects/Tienjie/thumbnail.png" id="project-page-thumbnail">
+        
+        
+        <div class="download-link-container">
+            
+            
+                <a class="download-button" href='https://v3.globalgamejam.org/2022/games/tienji-accidentally-released-bunch-monsters-and-now-has-clean-their-mess-5'>&#9654; &nbsp;Play</a>
+            
+
+            <p>Tienji Accidentally Released A Bunch of Monsters And Now Has To Clean Up Their Mess</p>
+        </div>
+
+        
+        <div class="spacer-medium"></div>
+        <p>
+            
+              Contact: <a href="mailto:llin063@ucr.edu">llin063@ucr.edu</a> <br>
+            
+
+            
+              Global Game Jam 2022 <br>
+            
+
+            Tags: 2D, Action
+        </p>
         <hr>
-        <div class="spacer-small"></div>
-    </div>
-</div>
-
-<div id="masthead-container">
-    <div class="loading-spinner"></div>
-</div>
-
-
-<div class="centered text-align-center">
-    <h2>⭐Special Events⭐</h2>
-    <hr>
-    <div class="spacer-small"></div>
-    <div id="special-events-container">
-        <div class="loading-spinner"></div>
+        <p>
+            
+            You're a warrior who activated a mysterious stone that can turn you into a tiger! Controls: WASD - Move E - transform Spacebar - dash (in Tiger form) Left click - attack
+            
+        </p>
     </div>
     <div class="spacer-large"></div>
-    <h2>Weekly/Biweekly Events</h2>
-    <hr>
-    <div class="spacer-small"></div>
-    <div id="regular-events-container">
-        <div class="loading-spinner"></div>
-    </div>
     <div class="spacer-large"></div>
 </div>
-
-<!-- hooooooo boi jekyll time -->
-<script>
-    //ok so basically, site.events; site is a jekyll thing and events is something inside _config.yml
-    //what this is doing is grabbing each event and putting it in this array called events
-    //afterwards, it sorts it into either special_events or regular_events depending on if it has a date or if it has a regular_date
-    var events = [
-        {
-            path: "REGULAR_10_Tabling.md",
-            name: "Tabling",
-            date: "",
-            regular_date: "Date: Wednesday",
-            time: "11:00 ~ 2:00 pm",
-            location: "Location: Right down Bronze Scotty Lane",
-            description: "Come stop by and say hi to your favorite officers! We love your company!",
-            bg_img: "/img/events/tabling2.jpg",
-            url: "/events/recurring_events/REGULAR_10_Tabling.html"
-        },{
-            path: "REGULAR_1_Hacknight.md",
-            name: "Hacknight",
-            date: "",
-            regular_date: "Date: Wednesday",
-            time: "5:30 ~ 8:00 pm",
-            location: "Location: Creat'R lab (Orbach Library 1st Floor)",
-            description: "Gamespawn invites you to the general meetings where game developers collaborate together on video game projects. We also share any on-campus events, workshops, and opportunities relating to video game development. The majority of the session consists on developing video games. For those interested, Gamespawn provides 1-on-1 help from experienced developers. You can also join an existing project or start your own!",
-            bg_img: "/img/stockImages/man_with_controller.jpg",
-            url: "/events/recurring_events/REGULAR_1_Hacknight.html"
-        },{
-            path: "REGULAR_5_Intro_to_Unity.md",
-            name: "Intro to Unity",
-            date: "",
-            regular_date: "Date: Thursday",
-            time: "7:00 ~ 8:00 pm",
-            location: "Location: Discord VC",
-            description: "Learn how to use the program Unity, a platform commonly used in the game development industry! This workshop is great for those with little to no computer programming knowledge as we go through the basics of coding and Unity. We're also accessible for those who do have some knowledge of programming but have a desire to learn more. *Please have Unity installed beforehand, but we can help you with unity as well.<br>",
-            bg_img: "/img/events/unity_bg.jpg",
-            url: "/events/recurring_events/REGULAR_5_Intro_to_Unity.html"
-        }];
+</div>
 
 
 
-    var special_events = events.filter(e => !!e.date);
-    var regular_events = events.filter(e => !!e.regular_date);
 
-    //this is the big one
-    var featured_event_path = "REGULAR_10_Tabling.md";
-</script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.0/handlebars.min.js"></script>
-<script src="/js/events.js"></script> 
+
 
     <!-- Footer -->
 <!-- Requires common.css -->
