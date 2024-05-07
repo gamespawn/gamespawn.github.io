@@ -23,7 +23,7 @@ layout: default
           {% include html/local/project_section.html %}
         {% endfor %}
       </div>
-      <div id="projects-by-title" class="hidden">
+      <div id="projects-by-title" class="">
         {% assign section_name = "Projects (A-Z)" %}
         {% assign section_projects = site.GGJProjects | sort:"title" %}
         {% include html/local/project_section.html %}
