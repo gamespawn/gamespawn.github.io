@@ -6,7 +6,7 @@ team: [
   "Danny Diep"
 ]
 email: "ddiep003@ucr.edu"
-platforms: ["PC"]
+platforms: ["Mobile"]
 description: "J.A.R.G. (Just Another Rhythm Game) is a rhythm game made by Andy Do with the collaboration
 of Danny Diep as his first game jam project. It features song selection and preview as well as
 the core gameplay of a rhythm game. 
