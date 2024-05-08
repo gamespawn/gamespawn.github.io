@@ -12,6 +12,8 @@ collections:
     output: true
   GGJProjects:
     output: true
+  PersonalProjects:
+    output: true
   TTalks:
     output: true
 
@@ -53,3 +55,10 @@ defaults:
     values:
       layout: ttalk_page
       extra_css: ttalk_page.css
+  -
+    scope:
+      path: ''
+      type: PersonalProjects
+    values:
+      layout: project_page
+      extra_css: project_page.css
