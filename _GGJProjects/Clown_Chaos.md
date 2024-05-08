@@ -13,6 +13,6 @@ tags: [
   "Action"
 ]
 school-year: 2023
-quarter-start-end: "Winter 2024"
+quarter-start-end: "Global Game Jam 2024"
 download-link: "https://merkel03.itch.io/clown-chaos"
 ---
