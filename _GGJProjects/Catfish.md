@@ -1,6 +1,6 @@
 ---
 title: "Catfish"
-thumbnail: "img/projects/Catfish/clownchaos.png"
+thumbnail: "img/projects/Catfish/thumbnail.jpg"
 team: [
   "Lauren Gager"
 ]
@@ -12,5 +12,5 @@ tags: [
 ]
 school-year: 2022
 quarter-start-end: "Cutie Hack 2022"
-download-link: "https://merkel03.itch.io/clown-chaos"
+download-link: "https://devpost.com/software/online-catfish"
 ---
