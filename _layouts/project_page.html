@@ -11,7 +11,7 @@ layout: default
         <!-- <a href="{{site.baseurl}}/projects.html"> &lt; Back to Projects</a> -->
         {% if page.quarter-start-end contains "Game Jam" or page.quarter-start-end contains "Jam"%}
             <a href="{{site.baseurl}}/projectsGGJ.html"> &lt; Back to Game Jam Projects</a>
-        {% else if page.quarter-start-end contains "Personal"%}
+        {% elsif page.quarter-start-end contains "Personal"%}
             <a href="{{site.baseurl}}/projectsPersonal.html"> &lt; Back to Personal Projects</a>
         {% else %}
             <a href="{{site.baseurl}}/projectsGS.html"> &lt; Back to Gamespawn Projects</a>

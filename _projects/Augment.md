@@ -1,6 +1,7 @@
 ---
 title: "Augment"
 thumbnail: "img/projects/Augment/thumbnail.png"
+video-embed: "https://youtu.be/JkDgJ-9bHRA?si=0HJ7n3lQ3CtewJDM"
 team: ["Wes Montano",
         "Matt Yong",
         "Niko Udria",
