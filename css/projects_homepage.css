@@ -1,204 +1,219 @@
+.container {
+  display: flex;
+  align-items: left;
+  justify-content: center;
+}
 
-  
-  .container {
-      display: flex;
-      align-items: left;
-      justify-content: center;
-  }
+#sliderInfoBox {
+  display: block;
+  position: relative;
+  width: 50%;
+  max-width: 450px;
+  margin: 10px;
+  background-color: white;
+  overflow: hidden;
+  border: 2px black solid;
+}
 
-  #sliderInfoBox {
-    display: block;
-      position: relative;
-      width: 50%;
-      max-width: 450px;
-      margin: 10px;
-      background-color: white;
-      overflow: hidden;
-      border: 2px black solid;
-  }
-  
-  .slider {
-      display: block;
-      position: relative;
-      width: 50%;
-      max-width: 450px;
-      margin: 10px;
-      background-color: white;
-      overflow: hidden;
-      border: 2px black solid;
-  }
-  
-  .slider__slides {
-    width: 100%;
-    padding-top: 66%;
-  }
-  
-  .slider__slide {
-      position: absolute;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 50px;
-      font-weight: bold;   
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: lemonchiffon;
-      transition: 1s;
-      opacity: 0;
-  }
-  
-  .slider__slide.active {
-      opacity: 1;
-  }
-  
-  .slider__slide img {
-    width: 100%;
-  }
-  
+.slider {
+  display: block;
+  position: relative;
+  width: 50%;
+  max-width: 450px;
+  margin: 10px;
+  background-color: white;
+  overflow: hidden;
+  border: 2px black solid;
+}
+
+.slider__slides {
+  width: 100%;
+  padding-top: 66%;
+}
+
+.slider__slide {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  font-weight: bold;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: lemonchiffon;
+  transition: 1s;
+  opacity: 0;
+}
+
+.slider__slide.active {
+  opacity: 1;
+}
+
+.slider__slide img {
+  width: 100%;
+}
+
+.slider__nav-button {
+  position: absolute;
+  height: 70px;
+  width: 70px;
+  background-color: #333;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+#nav-button--prev {
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+#nav-button--next {
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+#nav-button--prev::after,
+#nav-button--next::after {
+  content: "";
+  position: absolute;
+  border: solid white;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 3px;
+  width: 40%;
+  height: 40%;
+}
+
+#nav-button--next::after {
+  top: 50%;
+  right: 50%;
+  transform: translate(25%, -50%) rotate(-45deg);
+}
+
+#nav-button--prev::after {
+  top: 50%;
+  right: 50%;
+  transform: translate(75%, -50%) rotate(135deg);
+}
+
+.slider__nav {
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.slider__navlink {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 1px #fff solid;
+  background-color: #333;
+  opacity: 1;
+  margin: 0 10px 0 10px;
+  cursor: pointer;
+}
+
+.slider__navlink.active {
+  background-color: #fff;
+  border: 1px #333 solid;
+}
+
+@media screen and (max-width: 640px) {
   .slider__nav-button {
-      position: absolute;
-      height: 70px;
-      width: 70px;
-      background-color: #333;
-      opacity: .8;
-      cursor: pointer;
+    height: 40px;
+    width: 40px;
   }
-  
-  #nav-button--prev {
-      top: 50%;
-      left: 0;
-      transform: translateY(-50%);
-  }
-  
-  #nav-button--next {
-      top: 50%;
-      right: 0;
-      transform: translateY(-50%);
-  }
-  
-  #nav-button--prev::after,
-  #nav-button--next::after {
-      content: "";
-      position: absolute;
-      border: solid white;
-      border-width: 0 4px 4px 0;
-      display: inline-block;
-      padding: 3px;
-      width: 40%;
-      height: 40%;
-  }
-  
-  #nav-button--next::after{
-      top: 50%;
-      right: 50%;
-      transform: translate(25%, -50%) rotate(-45deg);
-  }
-  
-  #nav-button--prev::after {
-      top: 50%;
-      right: 50%;
-      transform: translate(75%, -50%) rotate(135deg);
-  }
-  
-  .slider__nav {
-      position: absolute;
-      bottom: 3%;
-      left: 50%;
-      transform: translateX(-50%);
-      text-align: center;
-  }
-  
   .slider__navlink {
-      display: inline-block;
-      height: 20px;
-      width: 20px;
-      border-radius: 50%;
-      border: 1px #fff solid;
-      background-color: #333;
-      opacity: 1;
-      margin: 0 10px 0 10px;
-      cursor: pointer;
+    height: 12px;
+    width: 12px;
   }
-  
-  .slider__navlink.active {
-      background-color: #fff;
-      border: 1px #333 solid;
-  }
-  
-  
-  @media screen and (max-width: 640px) {
-    .slider__nav-button {
-      height: 40px;
-      width: 40px;
-    }
-    .slider__navlink {
-      height: 12px;
-      width: 12px;
-    }
-  }
+}
 
-  .projectsContainer {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(1000px, 1fr));
-  }
+.projectsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(0.8 * width, 1fr));
+}
 
-  #GSprojects {
-    margin: 20px;
-    margin-inline: auto;
-    margin-top: 20px;
-    border-radius: 10px;
-    background-size: cover;
-    background-position: left;
-    border: black solid;
-    background-image: url(/img/gamespawnLogo.PNG), linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
-    background-repeat: no-repeat;
-    background-size:contain;
-    /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
-    background-blend-mode: normal;
-    height: 300px;
-    width:95%;
-  }
+#GSprojects {
+  margin: 20px;
+  margin-inline: auto;
+  margin-top: 20px;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: left;
+  border: black solid;
+  background-image: url(/img/gamespawnLogo.PNG),
+    linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(9, 9, 121, 1) 35%,
+      rgba(0, 212, 255, 1) 100%
+    );
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
+  background-blend-mode: normal;
+  height: 300px;
+  width: 95%;
+}
 
-  #GGJprojects {
-    margin: 20px;
-    margin-inline: auto;
-    border-radius: 10px;
-    background-size: cover;
-    background-position: left;
-    border: black solid;
-    background-image: url(/img/bluespawnLogo.PNG), linear-gradient(90deg, rgba(0,16,36,1) 0%, rgba(68,20,124,1) 35%, rgba(239,72,72,1) 100%);
-    background-repeat: no-repeat;
-    background-size:contain;
-    /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
-    background-blend-mode: normal;
-    height: 300px;
-    width:95%;
-  }
+#GGJprojects {
+  margin: 20px;
+  margin-inline: auto;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: left;
+  border: black solid;
+  background-image: url(/img/bluespawnLogo.PNG),
+    linear-gradient(
+      90deg,
+      rgba(0, 16, 36, 1) 0%,
+      rgba(68, 20, 124, 1) 35%,
+      rgba(239, 72, 72, 1) 100%
+    );
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
+  background-blend-mode: normal;
+  height: 300px;
+  width: 95%;
+}
 
-  #Personal {
-    margin: 20px;
-    margin-inline: auto;
-    border-radius: 10px;
-    background-size: cover;
-    background-position: left;
-    border: black solid;
-    background-image: url(/img/hellspawnLogo.PNG), linear-gradient(90deg, rgba(0,16,36,1) 0%, rgba(121,9,53,1) 35%, rgba(255,156,0,1) 100%);
-    background-repeat: no-repeat;
-    background-size:contain;
-    /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
-    background-blend-mode: normal;
-    height: 300px;
-    width:95%;
-  }
+#Personal {
+  margin: 20px;
+  margin-inline: auto;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: left;
+  border: black solid;
+  background-image: url(/img/hellspawnLogo.PNG),
+    linear-gradient(
+      90deg,
+      rgba(0, 16, 36, 1) 0%,
+      rgba(121, 9, 53, 1) 35%,
+      rgba(255, 156, 0, 1) 100%
+    );
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
+  background-blend-mode: normal;
+  height: 300px;
+  width: 95%;
+}
 
-  .textInGradient {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    vertical-align: middle;
-    margin: auto;
-    width: 50%;
-  }
+.textInGradient {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  vertical-align: middle;
+  margin: auto;
+  width: 50%;
+}

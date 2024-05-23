@@ -1,0 +1,78 @@
+{
+  "TTalks": [
+      {
+        "Thumbnail": "img/techtalks/Companies/amazon_games.jpg",
+        "Company": "Amazon Games",
+        "Description": "Embark on a whimsical journey where your malleable bubble gum avatar masters the art of transformation, morphing into various forms to navigate a world where the environment itself guides your path. Discover the enchanting mechanics of shape-shifting as you adapt to the ever-changing landscapes, turning each twist and turn into an adventure that tests the limits of your bubble-gummed ingenuity.",
+        "Socials": [
+
+        ],
+        "Links": [
+          {
+            "Name": "Website",
+            "Link": "https://www.amazongames.com/en-us"
+          }
+        ],
+        "Projects":[
+
+        ],
+        "Talkers":[
+          {
+            "Name": "Bill Merill",
+            "Picture": "",
+            "Description": "Gameplay programmer on Fortnite",
+            "Recording": "No Recording",
+            "Contacts": [
+
+            ]
+          }
+        ]
+    },
+    {
+      "Thumbnail": "img/techtalks/Companies/blizzard.jpg",
+      "Company": "Blizzard",
+      "Description": "Embark on a whimsical journey where your malleable bubble gum avatar masters the art of transformation, morphing into various forms to navigate a world where the environment itself guides your path. Discover the enchanting mechanics of shape-shifting as you adapt to the ever-changing landscapes, turning each twist and turn into an adventure that tests the limits of your bubble-gummed ingenuity.",
+      "Socials": [
+
+      ],
+      "Links": [
+        {
+          "Name": "Website",
+          "Link": "https://www.blizzard.com/en-us/"
+        }
+      ],
+      "Projects":[
+
+      ],
+      "Talkers":[
+        {
+          "Name": "Matt Loesby",
+          "Picture": "",
+          "Description": "",
+          "Recording": "No Recording",
+          "Contacts": [
+            
+          ]
+        },
+        {
+          "Name": "Janice Chu",
+          "Picture": "",
+          "Description": "Senior UI/Concept Artist",
+          "Recording": "No Recording",
+          "Contacts": [
+            
+          ]
+        },
+        {
+          "Name": "Hector Tang",
+          "Picture": "",
+          "Description": "UCR alumni and Recruiter",
+          "Recording": "https://ucr.zoom.us/rec/share/EE1uoepgyUIO3eZ0hWfLU7nSO0yQGcWWOZpNvgDwI556aq1gAg1K2LaqqeQSpV2h.%7C%7CCa1GG6W5plrXUPsM%7C%7C",
+          "Contacts": [
+            
+          ]
+        }
+      ]
+  }
+  ]
+}
