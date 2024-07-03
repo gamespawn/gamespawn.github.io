@@ -4,6 +4,50 @@
   justify-content: center;
 }
 
+/* Ths s for the 3 contaners */
+
+.events-container {
+  display: grid;
+  justify-content: center;
+}
+
+.event-item {
+  margin: 20px;
+  border-radius: 10px;
+  background: rgb(39, 101, 143);
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  height: 300px;
+}
+
+.event-item-overlay {
+  padding: 100px;
+  border-radius: 10px;
+  background: linear-gradient(to right, rgb(15, 39, 75), rgba(39, 101, 143, 0));
+}
+
+.event-item-overlay h3 {
+  font-size: 1.75rem;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: 1400px;
+}
+
+.textInGradient {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  vertical-align: middle;
+  margin: auto;
+  width: 50%;
+}
+
+/* This is for the slider stuff */
 #sliderInfoBox {
   display: block;
   position: relative;
@@ -125,7 +169,30 @@
   border: 1px #333 solid;
 }
 
-@media screen and (max-width: 640px) {
+@media only screen and (max-width: 1200px) {
+
+  .event-item {
+      margin: 0;
+      margin-top: 10px;
+      margin-bottom: 10px;
+  }
+
+  .event-item-overlay {
+      background: rgba(15, 39, 75, 0.75);
+  }
+
+  .events-container {
+      grid-template-columns: 1fr;
+  }
+
+  .event-item-overlay p {
+      font-size: .825rem;
+  }
+
+  .event-item-overlay h3 {
+      font-size: 1.25rem;
+  }
+
   .slider__nav-button {
     height: 40px;
     width: 40px;
@@ -134,86 +201,4 @@
     height: 12px;
     width: 12px;
   }
-}
-
-.projectsContainer {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(0.8 * width, 1fr));
-}
-
-#GSprojects {
-  margin: 20px;
-  margin-inline: auto;
-  margin-top: 20px;
-  border-radius: 10px;
-  background-size: cover;
-  background-position: left;
-  border: black solid;
-  background-image: url(/img/gamespawnLogo.PNG),
-    linear-gradient(
-      90deg,
-      rgba(2, 0, 36, 1) 0%,
-      rgba(9, 9, 121, 1) 35%,
-      rgba(0, 212, 255, 1) 100%
-    );
-  background-repeat: no-repeat;
-  background-size: contain;
-  /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
-  background-blend-mode: normal;
-  height: 300px;
-  width: 95%;
-}
-
-#GGJprojects {
-  margin: 20px;
-  margin-inline: auto;
-  border-radius: 10px;
-  background-size: cover;
-  background-position: left;
-  border: black solid;
-  background-image: url(/img/bluespawnLogo.PNG),
-    linear-gradient(
-      90deg,
-      rgba(0, 16, 36, 1) 0%,
-      rgba(68, 20, 124, 1) 35%,
-      rgba(239, 72, 72, 1) 100%
-    );
-  background-repeat: no-repeat;
-  background-size: contain;
-  /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
-  background-blend-mode: normal;
-  height: 300px;
-  width: 95%;
-}
-
-#Personal {
-  margin: 20px;
-  margin-inline: auto;
-  border-radius: 10px;
-  background-size: cover;
-  background-position: left;
-  border: black solid;
-  background-image: url(/img/hellspawnLogo.PNG),
-    linear-gradient(
-      90deg,
-      rgba(0, 16, 36, 1) 0%,
-      rgba(121, 9, 53, 1) 35%,
-      rgba(255, 156, 0, 1) 100%
-    );
-  background-repeat: no-repeat;
-  background-size: contain;
-  /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
-  background-blend-mode: normal;
-  height: 300px;
-  width: 95%;
-}
-
-.textInGradient {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  vertical-align: middle;
-  margin: auto;
-  width: 50%;
 }
