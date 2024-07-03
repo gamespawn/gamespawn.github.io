@@ -1,7 +1,7 @@
 ---
 title: "Summer Break"
 event-name: "Summer Break"
-event-date: "2023-09-28"
+event-date: "2024-09-28"
 event-time: "???"
 event-location: "University of California - Riverside"
 event-bg-img: "img/events/summergamer.jpg"
