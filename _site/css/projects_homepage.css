@@ -4,8 +4,7 @@
   justify-content: center;
 }
 
-/* Ths s for the 3 contaners */
-
+/* This is for the 3 containers */
 .events-container {
   display: grid;
   justify-content: center;
@@ -20,16 +19,34 @@
   background-position: center;
   color: white;
   height: 300px;
+  position: relative; /* Make it relative to position overlay absolutely */
 }
 
 .event-item-overlay {
-  padding: 100px;
+  padding: 20px; /* Adjusted padding */
   border-radius: 10px;
-  background: linear-gradient(to right, rgb(15, 39, 75), rgba(39, 101, 143, 0));
+  background: linear-gradient(to top, rgb(15, 39, 75), rgba(39, 101, 143, 0));
+  position: absolute; /* Position overlay absolutely */
+  bottom: 0; /* Align to bottom */
+  width: 100%; /* Full width */
+  box-sizing: border-box; /* Include padding in width */
+  height: 100%; /* Ensure it takes the full height of the parent */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Ensure content aligns at the bottom */
 }
 
-.event-item-overlay h3 {
-  font-size: 1.75rem;
+.event-item-overlay .text-in-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Align text to bottom */
+  height: 100%; /* Full height */
+}
+
+.event-item-overlay h2,
+.event-item-overlay p {
+  margin: 0; /* Remove default margin */
+  text-align: center;
 }
 
 .projects-container {
@@ -38,13 +55,8 @@
 }
 
 .textInGradient {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: white;
-  vertical-align: middle;
-  margin: auto;
-  width: 50%;
+  margin: 0;
 }
 
 /* This is for the slider stuff */
