@@ -7,7 +7,7 @@
     <meta name="theme-color" content="#10739b" />
 
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Events - Gamespawn"/>
+    <meta property="og:title" content="Gamers Picnic Social"/>
 
     
     <meta property="og:description" content="We are a student organization that focuses on introducing students to game development. We do our best not only to motivate and encourage students to learn about game development, but also to provide a professional and comfortable environment for engineers, programmers, designers, and artists."/>
@@ -17,14 +17,14 @@
     <meta property="og:image" content="/img/Logo.png"/>
     
 
-    <title>Events - Gamespawn</title>
+    <title>Gamers Picnic Social</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:300,400,500">
     <link rel="stylesheet" href="/css/fonts/top_gun/stylesheet.css">
     <link rel="stylesheet" href="/css/main.css">
     
-    <link rel="stylesheet" href="/css/events.css">
+    <link rel="stylesheet" href="/css/event_page.css">
     
     <link rel="icon" href="/img/favicon.jpg">
 
@@ -71,108 +71,38 @@
 <div class="navbar-space"></div>
 <script src="/js/navbar.js"></script>
 
-    <!-- Until <scripts>, it's all HTML. -->
+    <div id="header-img" style="background-image: url( /img/events/threaten_grass.jpg );">
+  <div id="header-img-overlay">
+    <div class="centered">
+      <div id="header-img-text">
+        <div><a href="/events.html" id="back-button"> &lt; Back to events</a></div>
+        <h1>Gamers Picnic Social</h1>
 
-<div class="centered">
-  <div class="text-align-center">
-    <div class="spacer-large"></div>
-    <h1>Events</h1>
-    <hr />
-    <div class="spacer-small"></div>
+        
+          <p>November 13, 2024</p>
+        
+
+        
+          <p>3:00 PM</p>
+        
+
+        
+          <p>Belltower</p>
+        
+      </div>
+    </div>
   </div>
+
+
 </div>
 
-<div id="masthead-container">
-  <div class="loading-spinner"></div>
+<div class="centered" id="page-area">
+  
+  <h2>About this event</h2>
+  <p id="description">Time to touch grass! We are meeting at Belltower to then relocate to a picnic spot and do some picnic socialing!! It will be potlock style too so if you would like to culincarily contribute, fill in the spreadsheet: https://docs.google.com/spreadsheets/d/16j_fkgYJCBWlacZg_z6uTuSh1KRsE3zjJtCtOVTCfac/edit?usp=sharing <br></p>
+  
+
 </div>
-
-<div class="centered text-align-center">
-  <h2>⭐Special Events⭐</h2>
-  <hr />
-  <div class="spacer-small"></div>
-  <div id="special-events-container">
-    <div class="loading-spinner"></div>
-  </div>
-  <div class="spacer-large"></div>
-  <h2>Weekly/Biweekly Events</h2>
-  <hr />
-  <div class="spacer-small"></div>
-  <div id="regular-events-container">
-    <div class="loading-spinner"></div>
-  </div>
-  <div class="spacer-large"></div>
-</div>
-
-<!-- hooooooo boi jekyll time -->
-<script>
-  //ok so basically, site.events; site is a jekyll thing and events is something inside _config.yml
-  //what this is doing is grabbing each event and putting it in this array called events
-  //afterwards, it sorts it into either special_events or regular_events depending on if it has a date or if it has a regular_date
-  var events = [
-      {
-          path: "REGULAR_1_Hacknight.md",
-          name: "Hacknight",
-          date: "",
-          regular_date: "Date: Wednesday",
-          time: "5:30 ~ 8:00 pm",
-          location: "Location: Creat'R lab (Orbach Library 1st Floor)",
-          description: "Gamespawn invites you to the general meetings where game developers collaborate together on video game projects. We also share any on-campus events, workshops, and opportunities relating to video game development. The majority of the session consists on developing video games. For those interested, Gamespawn provides 1-on-1 help from experienced developers. You can also join an existing project or start your own!",
-          bg_img: "/img/stockImages/man_with_controller.jpg",
-          url: "/events/recurring_events/REGULAR_1_Hacknight.html"
-      },{
-          path: "Autumn_Game_Jam.md",
-          name: "Autumn Game Jam",
-          date: "2024-11-23",
-          regular_date: "",
-          time: "10:00 ~ 10:00 PM",
-          location: "WCH",
-          description: " Our very first hackathon of the year! Autumn Game Jam is a 12 hour game jam running from 10 am till 10 pm on November 11th geared towards beginners and veterans alike to hone their skills and make a game (doesn't have to be complete) in this short time span! ",
-          bg_img: "/img/events/Autumn_Game_Jam_Premier_Flyer.png",
-          url: "/events/special_events/Autumn_Game_Jam.html"
-      },{
-          path: "Junior_Officer_Applications.md",
-          name: "Junior Officer Applications",
-          date: "2024-11-15",
-          regular_date: "",
-          time: "11:59 PM",
-          location: "Google Form",
-          description: " Junior Officers will get the chance to shadow current officers, help out around the officer team, and have a better chance if you want to eventually apply for official staff! It's a great opportunity to learn leadership and teamwork skills and everything that comes with running Gamespawn! https://forms.gle/yTGrEQhbMaZh2fwj6 <br><br><br> ",
-          bg_img: "/img/events/junior_officer_applications.jpg",
-          url: "/events/special_events/Junior_Officer_Applications.html"
-      },{
-          path: "Picnic_Social.md",
-          name: "Gamers Picnic Social",
-          date: "2024-11-13",
-          regular_date: "",
-          time: "3:00 PM",
-          location: "Belltower",
-          description: "Time to touch grass! We are meeting at Belltower to then relocate to a picnic spot and do some picnic socialing!! It will be potlock style too so if you would like to culincarily contribute, fill in the spreadsheet: https://docs.google.com/spreadsheets/d/16j_fkgYJCBWlacZg_z6uTuSh1KRsE3zjJtCtOVTCfac/edit?usp=sharing <br>",
-          bg_img: "/img/events/threaten_grass.jpg",
-          url: "/events/special_events/Picnic_Social.html"
-      },{
-          path: "T_Shirts.md",
-          name: "Gamespawn T-Shirts",
-          date: "2024-11-15",
-          regular_date: "",
-          time: "11:59pm",
-          location: "Google Form",
-          description: "I like free t-shirts! Do you like free t-shirts? Please fill out this form so that we can have a proper headcount of who wants a shirt! We've got a cool one coming up~ <3 Form: https://forms.gle/KcDWupm55VxZ8rN37<br>",
-          bg_img: "/img/events/Progressive_Graphics.jpeg",
-          url: "/events/special_events/T_Shirts.html"
-      }];
-
-
-
-  var special_events = events.filter(e => !!e.date);
-  var regular_events = events.filter(e => !!e.regular_date);
-
-  //this is the big one
-  var featured_event_path = "Junior_Officer_Applications.md";
-</script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.0/handlebars.min.js"></script>
-<script src="/js/events.js"></script>
-
 
     <!-- Footer -->
 <!-- Requires common.css -->
