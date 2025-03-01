@@ -1,7 +1,7 @@
 ---
 title: "Elections"
 event-name: "Elections"
-event-date: "2024-02-23"
+event-date: "2025-02-28"
 event-time: "6:00 ~ 7:00 PM"
 event-location: "Zoom"
 event-bg-img: "img/events/pitch_night_bg.jpg"
