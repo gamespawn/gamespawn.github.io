@@ -29,10 +29,10 @@ function changeDesc(whichProject){
     let projName = document.getElementById("name");
     switch(whichProject){
         case 0:
-            descBox.innerHTML = "Summer Timeeeeeeee!!!!!! No projects! Come back in the fall quarter!";
+            descBox.innerHTML = "Come to Pitch Night on Friday, October 17th to see what projects we'll be working on this quarter.";
             recBox.innerHTML = "";
             upBox.innerHTML = ""
-            projName.innerHTML = "None"
+            projName.innerHTML = ""
             break;
     }
 }
