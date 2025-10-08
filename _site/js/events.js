@@ -72,5 +72,5 @@ var events_container_template = Handlebars.compile(`
 `);
 
 document.getElementById("masthead-container").innerHTML = featured_event_template({featured_event: featured_event});
-document.getElementById("special-events-container").innerHTML = events_container_template({events: special_events});
+//document.getElementById("special-events-container").innerHTML = events_container_template({events: special_events});
 document.getElementById("regular-events-container").innerHTML = events_container_template({events: regular_events});
