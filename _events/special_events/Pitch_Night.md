@@ -1,7 +1,7 @@
 ---
 title: "Pitch Night"
 event-name: "Pitch Night"
-event-date: "2024-10-18"
+event-date: "2025-10-17"
 event-time: "5:00 ~ 6:00 PM"
 event-location: "Zoom"
 event-bg-img: "img/events/pitch_night_bg.jpg"
