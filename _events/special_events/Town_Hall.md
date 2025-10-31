@@ -2,7 +2,7 @@
 title: "Town Hall"
 event-name: "Town Hall"
 event-date: "2025-11-07"
-event-time: "6:00 ~ 7:00 PM"
+event-time: "5:00 ~ 6:00 PM"
 event-location: "Zoom"
 event-bg-img: "img/events/pitch_night_bg.jpg"
 event-description: "
