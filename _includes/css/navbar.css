@@ -210,12 +210,12 @@ nav a {
     transition: background-image 0.15s;
 }
 
-#navbar-linkedin-img{
+#navbar-linkedin-img {
     background-image: url({{site.baseurl}}/img/linkedin.png);
     transition: backround-image 0.15s;
 }
 
-#navbar-linkedin-img:hover{
+#navbar-linkedin-img:hover {
     background-image: url({{site.baseurl}}/img/linkedin-blue.png);
 }
 
@@ -299,4 +299,5 @@ nav a {
         height: 70px;
         padding: 18px;
     }
+
 }
