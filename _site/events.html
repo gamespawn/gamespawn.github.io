@@ -120,25 +120,15 @@
           bg_img: "/img/stockImages/man_with_controller.jpg",
           url: "/events/recurring_events/REGULAR_1_Hacknight.html"
       },{
-          path: "Pitch_Night.md",
-          name: "Pitch Night",
-          date: "2025-10-17",
+          path: "winter_gen_meeting.md",
+          name: "General Meeting",
+          date: "Date: TBD",
           regular_date: "",
-          time: "5:00 ~ 6:00 PM",
-          location: "Zoom",
-          description: " Interested in starting or joining a game project? Come on over to Pitch Night! Pitch Night is the time where game devs get to pitch their game project ideas and recruit interested members into their teams. Check out new or recurring projects, and befriend fellow devs! <br> The requirements for pitching are listed in the events channel. The Zoom link will be made public on Discord a couple minutes prior to the start of Pitch Night.<br><br><br> ",
-          bg_img: "/img/events/pitch_night_bg.jpg",
-          url: "/events/special_events/Pitch_Night.html"
-      },{
-          path: "TechTalk1.md",
-          name: "Tech Talk by Diane Ngo ",
-          date: "2025-10-10",
-          regular_date: "",
-          time: "7pm",
-          location: "Zoom",
-          description: " Hear about a software engineer's journey from Gamespawn president to the industry! <br><br><br> ",
-          bg_img: "/img/events/junior_officer_applications.jpg",
-          url: "/events/special_events/TechTalk1.html"
+          time: "",
+          location: "Location: TBD",
+          description: "",
+          bg_img: "/img/events/REGULAR_4_General_Meeting.jpg",
+          url: "/events/special_events/winter_gen_meeting.html"
       }];
 
 
@@ -147,11 +137,12 @@
   var regular_events = events.filter(e => !!e.regular_date);
 
   //this is the big one
-  var featured_event_path = "Minecraft_Banquet.md";
+  var featured_event_path = "winter_gen_meeting.md";
 </script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.0/handlebars.min.js"></script>
 <script src="/js/events.js"></script>
+
 
 
     <!-- Footer -->
@@ -178,8 +169,12 @@
                 <li><a href="https://highlanderlink.ucr.edu/organization/gamespawn" title="HighlanderLink">
                     <div id="navbar-highlanderlink-img" alt="HighlanderLink"></div>
                 </a></li>
-                <li><a href="https://www.youtube.com/channel/UCDnCEGvQ-JMULHeqJrEuTDw" title="Youtube Page">
-                    <div id="navbar-youtube-img" alt="Youtube Page"></div>
+                <!-- <li><a href="https://www.youtube.com/channel/UCDnCEGvQ-JMULHeqJrEuTDw" title="Youtube Page">
+                    <div id="navbar-youtube-img" alt="Youtube Page"></div> 
+                </a></li>-->
+                <li>
+                    <a href="" title="LinkedIn">
+                    <div id="navbar-linkedin-img" alt="LinkedIn"></div>
                 </a></li>
                 <li><a href="https://linktr.ee/gamespawn" title="Linktree">
                     <div id="navbar-linktree-img" alt="Linktree"></div>
@@ -195,13 +190,14 @@
         <div class="col-3 padding-20">
             <h3>Get involved</h3>
             <p><a href="/projects_homepage.html">Projects</a></p>
-            <p><a href="/live.html">Livestream</a></p>
+            <!-- <p><a href="/live.html">Livestream</a></p> -->
             <p><a href="/events.html">Events</a></p>
             <p><a href="/signup.html">Mailing List</a></p>
         </div>
 
     </div>
 </footer>
+
 </body>
 
 </html>
