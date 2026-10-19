@@ -110,35 +110,55 @@
   //afterwards, it sorts it into either special_events or regular_events depending on if it has a date or if it has a regular_date
   var events = [
       {
+          path: "REGULAR_10_Tabling.md",
+          name: "Tabling",
+          date: "",
+          regular_date: "Date: Wednesday",
+          time: "10:00 ~ 2:00 pm",
+          location: "Location: Right down Bronze Scotty Lane",
+          description: "Come stop by and say hi to your favorite officers! We love your company!",
+          bg_img: "/img/events/tablingnew.jpg",
+          url: "/events/recurring_events/REGULAR_10_Tabling.html"
+      },{
           path: "REGULAR_1_Hacknight.md",
           name: "Hacknight",
           date: "",
-          regular_date: "Date: Wednesday",
-          time: "5:30 ~ 8:00 pm",
+          regular_date: "Date: Thursday",
+          time: "5:00 ~ 8:00 pm",
           location: "Location: SPOC (WC 102)",
           description: "Gamespawn invites you to the general meetings where game developers collaborate together on video game projects. We also share any on-campus events, workshops, and opportunities relating to video game development. The majority of the session consists on developing video games. For those interested, Gamespawn provides 1-on-1 help from experienced developers. You can also join an existing project or start your own!",
-          bg_img: "/img/stockImages/man_with_controller.jpg",
+          bg_img: "/img/events/Hacknight.jpg",
           url: "/events/recurring_events/REGULAR_1_Hacknight.html"
       },{
-          path: "Pitch_Night.md",
-          name: "Pitch Night",
-          date: "2025-10-17",
+          path: "DEEP_DIVE_HACKNIGHT.md",
+          name: "Deep Dive Hack Night",
+          date: "2026-10-22",
           regular_date: "",
-          time: "5:00 ~ 6:00 PM",
-          location: "Zoom",
-          description: " Interested in starting or joining a game project? Come on over to Pitch Night! Pitch Night is the time where game devs get to pitch their game project ideas and recruit interested members into their teams. Check out new or recurring projects, and befriend fellow devs! <br> The requirements for pitching are listed in the events channel. The Zoom link will be made public on Discord a couple minutes prior to the start of Pitch Night.<br><br><br> ",
-          bg_img: "/img/events/pitch_night_bg.jpg",
-          url: "/events/special_events/Pitch_Night.html"
+          time: "5:00 ~ 6:00 pm",
+          location: "SPOC",
+          description: "Deep dive night is a time where people will yap about their favorite games in a semi-casual way, showing people interesting facts about their favorite games.",
+          bg_img: "/img/events/gamejam.png",
+          url: "/events/special_events/DEEP_DIVE_HACKNIGHT.html"
       },{
-          path: "TechTalk1.md",
-          name: "Tech Talk by Diane Ngo ",
-          date: "2025-10-10",
+          path: "DISCORD_EVENTS.md",
+          name: "Discord Activity Gaming",
+          date: "2026-10-20",
           regular_date: "",
-          time: "7pm",
-          location: "Zoom",
-          description: " Hear about a software engineer's journey from Gamespawn president to the industry! <br><br><br> ",
-          bg_img: "/img/events/junior_officer_applications.jpg",
-          url: "/events/special_events/TechTalk1.html"
+          time: "8:30 ~ 10:00 pm",
+          location: "Discord",
+          description: "Join us in the GSP Discord server for some light party games from 8:30-10:00pm. Featured games include: Putt Party, Codenames, Blazings 8's {Uno}, and Catan ",
+          bg_img: "/img/events/Discord.avif",
+          url: "/events/special_events/DISCORD_EVENTS.html"
+      },{
+          path: "workshop1.md",
+          name: "Game Design Principles",
+          date: "2026-10-21",
+          regular_date: "",
+          time: "5:00 ~ 6:30 pm",
+          location: "WCH 127",
+          description: "  What makes a game a game?",
+          bg_img: "/img/geo.png",
+          url: "/events/special_events/workshop1.html"
       }];
 
 
@@ -152,6 +172,7 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.0/handlebars.min.js"></script>
 <script src="/js/events.js"></script>
+
 
 
     <!-- Footer -->
@@ -178,8 +199,12 @@
                 <li><a href="https://highlanderlink.ucr.edu/organization/gamespawn" title="HighlanderLink">
                     <div id="navbar-highlanderlink-img" alt="HighlanderLink"></div>
                 </a></li>
-                <li><a href="https://www.youtube.com/channel/UCDnCEGvQ-JMULHeqJrEuTDw" title="Youtube Page">
-                    <div id="navbar-youtube-img" alt="Youtube Page"></div>
+                <!-- <li><a href="https://www.youtube.com/channel/UCDnCEGvQ-JMULHeqJrEuTDw" title="Youtube Page">
+                    <div id="navbar-youtube-img" alt="Youtube Page"></div> 
+                </a></li>-->
+                <li>
+                    <a href="" title="LinkedIn">
+                    <div id="navbar-linkedin-img" alt="LinkedIn"></div>
                 </a></li>
                 <li><a href="https://linktr.ee/gamespawn" title="Linktree">
                     <div id="navbar-linktree-img" alt="Linktree"></div>
@@ -195,13 +220,14 @@
         <div class="col-3 padding-20">
             <h3>Get involved</h3>
             <p><a href="/projects_homepage.html">Projects</a></p>
-            <p><a href="/live.html">Livestream</a></p>
+            <!-- <p><a href="/live.html">Livestream</a></p> -->
             <p><a href="/events.html">Events</a></p>
             <p><a href="/signup.html">Mailing List</a></p>
         </div>
 
     </div>
 </footer>
+
 </body>
 
 </html>
