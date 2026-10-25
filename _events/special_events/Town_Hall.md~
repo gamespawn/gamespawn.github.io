@@ -1,9 +1,9 @@
 ---
 title: "Town Hall"
 event-name: "Town Hall"
-event-date: "2025-11-07"
+event-date: "2026-05-01"
 event-time: "5:00 ~ 6:00 PM"
-event-location: "Zoom"
+event-location: "TBD"
 event-bg-img: "img/events/pitch_night_bg.jpg"
 event-description: "
   Wanna catch up with what Gamespawn is doing? Well, we have the event for you! Say hello to our Gamespawn Town Hall! Learn all about what we do and what we've done this quarter so far! That and you'll learn about the events coming up soon!
